@@ -5,7 +5,7 @@
         {$CERT_ACME_DNS}
 }
 
-(plane_proxy) {
+(kardon_proxy) {
         request_body {
                 max_size {$FILE_SIZE_LIMIT}
         }
