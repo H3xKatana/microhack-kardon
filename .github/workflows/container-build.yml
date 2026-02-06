@@ -96,10 +96,15 @@ jobs:
           cache-from: type=gha,scope=${{ matrix.service }}
           cache-to: type=gha,mode=max,scope=${{ matrix.service }}
 
+      - name: Set Trivy image ref
+        id: trivy-image
+        run: |
+          echo "image-ref=$(echo '${{ steps.meta.outputs.tags }}' | head -n1)" >> $GITHUB_OUTPUT
+
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: ${{ steps.meta.outputs.tags }}
+          image-ref: ${{ steps.trivy-image.outputs.image-ref }}
           format: sarif
           output: trivy-results-${{ matrix.service }}.sarif
           severity: CRITICAL,HIGH
