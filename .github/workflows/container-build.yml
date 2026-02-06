@@ -1,0 +1,131 @@
+name: Container Build
+
+on:
+  push:
+    paths:
+      - "apps/**"
+      - "packages/**"
+      - "Dockerfile*"
+      - "docker-compose*.yml"
+    branches:
+      - main
+      - feat/CI-CD-prepartions
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  build:
+    name: Build & Scan ${{ matrix.service }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - service: web
+            dockerfile: ./apps/web/Dockerfile.web
+            context: .
+          - service: admin
+            dockerfile: ./apps/admin/Dockerfile.admin
+            context: .
+          - service: space
+            dockerfile: ./apps/space/Dockerfile.space
+            context: .
+          - service: api
+            dockerfile: ./apps/api/Dockerfile.api
+            context: ./apps/api
+          - service: worker
+            context: ./apps/api
+            dockerfile: Dockerfile.api
+          - service: beat-worker
+            context: ./apps/api
+            dockerfile: Dockerfile.api
+          - service: migrator
+            context: ./apps/api
+            dockerfile: Dockerfile.api
+          - service: live
+            dockerfile: ./apps/live/Dockerfile.live
+            context: .
+          - service: proxy
+            dockerfile: ./apps/proxy/Dockerfile.ce
+            context: ./apps/proxy
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to GitHub Container Registry
+        if: github.event_name == 'push'
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract metadata for ${{ matrix.service }}
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}/${{ matrix.service }}
+          tags: |
+            ${{ github.event_name == 'push' && 'type=raw,value=latest' || 'type=raw,value=pr-dev' }}
+            ${{ github.event_name == 'push' && 'type=raw,value=main' || '' }}
+            type=sha
+
+      - name: Build ${{ matrix.service }}
+        id: build
+        uses: docker/build-push-action@v5
+        with:
+          context: ${{ matrix.context }}
+          file: ${{ matrix.dockerfile }}
+          push: ${{ github.event_name == 'push' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            DOCKER_BUILDKIT=1
+          cache-from: type=gha,scope=${{ matrix.service }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.service }}
+
+      - name: Run Trivy vulnerability scanner
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: ${{ steps.meta.outputs.tags }}
+          format: sarif
+          output: trivy-results-${{ matrix.service }}.sarif
+          severity: CRITICAL,HIGH
+          exit-code: 1
+
+      - name: Upload Trivy scan results to GitHub Security
+        uses: github/codeql-action/upload-sarif@v2
+        if: always()
+        with:
+          sarif_file: trivy-results-${{ matrix.service }}.sarif
+          category: Trivy/${{ matrix.service }}
+
+  summary:
+    name: Build Summary
+    needs: build
+    runs-on: ubuntu-latest
+    if: always()
+
+    steps:
+      - name: Summary
+        run: |
+          echo "Container Build Pipeline"
+          echo "========================"
+          echo "Trigger: ${{ github.event_name }}"
+          echo "Branch: ${{ github.ref_name }}"
+          echo ""
+          if [ "${{ needs.build.result }}" == "success" ]; then
+            echo "All builds passed with security scans!"
+          else
+            echo "Some builds failed. Check Trivy results for security issues."
+          fi
