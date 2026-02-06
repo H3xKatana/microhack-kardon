@@ -6,7 +6,6 @@ namespace: kardon
 resources:
   - ../../base/00-namespace.yaml
   - ../../base/01-configmap.yaml
-  - ../../base/02-secrets.yaml
   - ../../base/services/web.yaml
   - ../../base/services/admin.yaml
   - ../../base/services/space.yaml
