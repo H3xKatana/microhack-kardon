@@ -18,7 +18,7 @@ export function ProductUpdatesFooter() {
     <div className="flex items-center justify-between flex-shrink-0 gap-4 m-6 mb-4">
       <div className="flex items-center gap-2">
         <a
-          href="https://go.kardon.so/p-docs"
+          href="https://github.com/H3xKatana/microhack-kardon/blob/main/README.md"
           target="_blank"
           className="text-13 text-secondary hover:text-primary hover:underline underline-offset-1 outline-none"
           rel="noreferrer"
@@ -52,12 +52,12 @@ export function ProductUpdatesFooter() {
           <circle cx={1} cy={1} r={1} />
         </svg>
         <a
-          href="https://go.kardon.so/p-discord"
+          href="https://github.com/H3xKatana/microhack-kardon"
           target="_blank"
           className="text-13 text-secondary hover:text-primary hover:underline underline-offset-1 outline-none"
           rel="noreferrer"
         >
-          Discord
+          Github
         </a>
       </div>
       <a

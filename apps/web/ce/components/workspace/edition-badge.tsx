@@ -1,46 +1,41 @@
-/**
- * Copyright (c) 2023-present Kardon Software, Inc. and contributors
- * SPDX-License-Identifier: AGPL-3.0-only
- * See the LICENSE file for details.
- */
-
 import { useState } from "react";
 import { observer } from "mobx-react";
-// ui
-import { useTranslation } from "@kardon/i18n";
-import { Tooltip } from "@kardon/propel/tooltip";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
-import packageJson from "package.json";
+
 // local components
-import { PaidPlanUpgradeModal } from "../license";
-import { Button } from "@kardon/propel/button";
+
+
+// import logo
+import logo from "@/app/assets/logo.png";
 
 export const WorkspaceEditionBadge = observer(function WorkspaceEditionBadge() {
   // states
   const [isPaidPlanPurchaseModalOpen, setIsPaidPlanPurchaseModalOpen] = useState(false);
-  // translation
-  const { t } = useTranslation();
   // platform
   const { isMobile } = usePlatformOS();
 
   return (
-    <>
-      <PaidPlanUpgradeModal
-        isOpen={isPaidPlanPurchaseModalOpen}
-        handleClose={() => setIsPaidPlanPurchaseModalOpen(false)}
+    <div className="flex mx-auto items-center ">
+      <img
+        src={logo}
+        className="scale-200"
+        alt="Workspace Logo"
+        style={{
+          height: isMobile ? 24 : 52,
+          width: "auto",
+          display: "block",
+        }}
       />
-      <Tooltip tooltipContent={`Version: v${packageJson.version}`} isMobile={isMobile}>
-        <Button
-          variant="tertiary"
-          size="lg"
-          onClick={() => setIsPaidPlanPurchaseModalOpen(true)}
-          aria-haspopup="dialog"
-          aria-label={t("aria_labels.projects_sidebar.edition_badge")}
-        >
-          Community
-        </Button>
-      </Tooltip>
-    </>
+      <div
+        className="mx-2 font-bold text-[24px]"
+        style={{
+          color: "#FFFF90", // golden color
+          fontFamily: "Georgia, 'Times New Roman', serif", // classical font
+        }}
+      >
+        TAVROS
+      </div>
+    </div>
   );
 });

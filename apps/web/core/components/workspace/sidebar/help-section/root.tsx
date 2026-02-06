@@ -50,7 +50,7 @@ export const HelpMenuRoot = observer(function HelpMenuRoot() {
         maxHeight="lg"
         closeOnSelect
       >
-        <CustomMenu.MenuItem onClick={() => window.open("https://go.kardon.so/p-docs", "_blank")}>
+        <CustomMenu.MenuItem onClick={() => window.open("https://github.com/H3xKatana/microhack-kardon/blob/main/README.md", "_blank")}>
           <div className="flex items-center gap-x-2 rounded-sm text-11">
             <PageIcon className="h-3.5 w-3.5 text-secondary" height={14} width={14} />
             <span className="text-11">{t("documentation")}</span>
@@ -94,10 +94,10 @@ export const HelpMenuRoot = observer(function HelpMenuRoot() {
           </button>
         </CustomMenu.MenuItem>
         <CustomMenu.MenuItem
-          onClick={() => window.open("https://go.kardon.so/p-discord", "_blank", "noopener,noreferrer")}
+          onClick={() => window.open("https://github.com/H3xKatana/microhack-kardon", "_blank", "noopener,noreferrer")}
         >
           <div className="flex items-center gap-x-2 rounded-sm text-11">
-            <span className="text-11">Discord</span>
+            <span className="text-11">Github</span>
           </div>
         </CustomMenu.MenuItem>
         <div className="px-1 pt-2 mt-1 text-11 text-secondary border-t border-subtle">

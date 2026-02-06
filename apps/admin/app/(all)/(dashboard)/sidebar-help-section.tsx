@@ -21,17 +21,12 @@ import { useInstance, useTheme } from "@/hooks/store";
 const helpOptions = [
   {
     name: "Documentation",
-    href: "https://docs.kardon.so/",
+    href: "https://github.com/H3xKatana/microhack-kardon/blob/main/README.md",
     Icon: PageIcon,
   },
   {
-    name: "Join our Discord",
-    href: "https://discord.com/invite/A92xrEGCge",
-    Icon: DiscordIcon,
-  },
-  {
     name: "Report a bug",
-    href: "https://github.com/makekardon/kardon/issues/new/choose",
+    href: "https://github.com/H3xKatana/microhack-kardon/issues/new/choose",
     Icon: GithubIcon,
   },
 ];

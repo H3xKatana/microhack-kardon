@@ -48,19 +48,6 @@ export const usePowerKHelpCommands = (): TPowerKCommandConfig[] => {
       closeOnSelect: true,
     },
     {
-      id: "join_discord",
-      type: "action",
-      group: "help",
-      i18n_title: "power_k.help_actions.join_discord",
-      icon: DiscordIcon,
-      action: () => {
-        window.open("https://discord.com/invite/A92xrEGCge", "_blank", "noopener,noreferrer");
-      },
-      isEnabled: () => true,
-      isVisible: () => true,
-      closeOnSelect: true,
-    },
-    {
       id: "report_bug",
       type: "action",
       group: "help",

@@ -21,16 +21,16 @@ function ErrorPage() {
             That crashed Kardon, pun intended. No worries, though. Our engineers have been notified. If you have more
             details, please write to{" "}
             <a href="mailto:support@kardon.so" className="text-accent-primary">
-              support@kardon.so
+              contact@hawiyat.org
             </a>{" "}
             or on our{" "}
             <a
-              href="https://discord.com/invite/A92xrEGCge"
+              href="https://github.com/H3xKatana/microhack-kardon"
               target="_blank"
               className="text-accent-primary"
               rel="noopener noreferrer"
             >
-              Discord
+              Github
             </a>
             .
           </p>

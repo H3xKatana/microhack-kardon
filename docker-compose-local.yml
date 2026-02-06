@@ -63,50 +63,50 @@ services:
     ports:
       - "5432:5432"
 
-  web:
-    build:
-      context: .
-      dockerfile: ./web/Dockerfile.dev
-    restart: unless-stopped
-    networks:
-      - dev_env
-    volumes:
-      - ./web:/app/web
-    env_file:
-      - .env
-    depends_on:
-      - api
-      - worker
-    ports:
-      - 3000:3000
+  # web:
+  #   build:
+  #     context: .
+  #     dockerfile: ./web/Dockerfile.dev
+  #   restart: unless-stopped
+  #   networks:
+  #     - dev_env
+  #   volumes:
+  #     - ./web:/app/web
+  #   env_file:
+  #     - .env
+  #   depends_on:
+  #     - api
+  #     - worker
+  #   ports:
+  #     - 3000:3000
 
-  space:
-    build:
-      context: .
-      dockerfile: ./space/Dockerfile.dev
-    restart: unless-stopped
-    networks:
-      - dev_env
-    volumes:
-      - ./space:/app/space
-    depends_on:
-      - api
-      - worker
-      - web
+  # space:
+  #   build:
+  #     context: .
+  #     dockerfile: ./space/Dockerfile.dev
+  #   restart: unless-stopped
+  #   networks:
+  #     - dev_env
+  #   volumes:
+  #     - ./space:/app/space
+  #   depends_on:
+  #     - api
+  #     - worker
+  #     - web
 
-  admin:
-    build:
-      context: .
-      dockerfile: ./admin/Dockerfile.dev
-    restart: unless-stopped
-    networks:
-      - dev_env
-    volumes:
-      - ./admin:/app/admin
-    depends_on:
-      - api
-      - worker
-      - web
+  # admin:
+  #   build:
+  #     context: .
+  #     dockerfile: ./admin/Dockerfile.dev
+  #   restart: unless-stopped
+  #   networks:
+  #     - dev_env
+  #   volumes:
+  #     - ./admin:/app/admin
+  #   depends_on:
+  #     - api
+  #     - worker
+  #     - web
 
   api:
     build:

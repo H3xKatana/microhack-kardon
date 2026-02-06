@@ -112,12 +112,7 @@ function WorkspaceInvitationPage() {
               ) : (
                 <EmptySpaceItem Icon={Boxes} title="Continue to home" href="/" />
               )}
-              <EmptySpaceItem Icon={Star} title="Star us on GitHub" href="https://github.com/makekardon" />
-              <EmptySpaceItem
-                Icon={Share2}
-                title="Join our community of active creators"
-                href="https://discord.com/invite/A92xrEGCge"
-              />
+            
             </EmptySpace>
           )
         ) : (
