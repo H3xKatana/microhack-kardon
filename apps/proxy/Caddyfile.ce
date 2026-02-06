@@ -5,7 +5,7 @@
         {$CERT_ACME_DNS}
 }
 
-(plane_proxy) {
+(kardon_proxy) {
         request_body {
                 max_size {$FILE_SIZE_LIMIT}
         }
@@ -24,8 +24,8 @@
 
         reverse_proxy /static/* api:8000
 
-        reverse_proxy /{$BUCKET_NAME}/* plane-minio:9000
-        reverse_proxy /{$BUCKET_NAME} plane-minio:9000
+        reverse_proxy /{$BUCKET_NAME}/* kardon-minio:9000
+        reverse_proxy /{$BUCKET_NAME} kardon-minio:9000
 
         reverse_proxy /* web:3000
 }
