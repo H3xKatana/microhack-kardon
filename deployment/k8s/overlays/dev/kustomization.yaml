@@ -1,0 +1,55 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: kardon-dev
+
+namePrefix: dev-
+
+bases:
+  - ../../base
+
+resources:
+  - namespace-dev.yaml
+
+configMapGenerator:
+  - behavior: merge
+    files:
+      - app-config.yaml
+    name: kardon-config
+    options:
+      disableNameSuffixHash: true
+
+images:
+  - name: ghcr.io/h3xkatana/microhack-kardon/web
+    newTag: sha-dev
+  - name: ghcr.io/h3xkatana/microhack-kardon/admin
+    newTag: sha-dev
+  - name: ghcr.io/h3xkatana/microhack-kardon/space
+    newTag: sha-dev
+  - name: ghcr.io/h3xkatana/microhack-kardon/api
+    newTag: sha-dev
+  - name: ghcr.io/h3xkatana/microhack-kardon/worker
+    newTag: sha-dev
+  - name: ghcr.io/h3xkatana/microhack-kardon/beat-worker
+    newTag: sha-dev
+  - name: ghcr.io/h3xkatana/microhack-kardon/migrator
+    newTag: sha-dev
+  - name: ghcr.io/h3xkatana/microhack-kardon/live
+    newTag: sha-dev
+  - name: ghcr.io/h3xkatana/microhack-kardon/proxy
+    newTag: sha-dev
+
+patches:
+  - patch: |
+      - op: replace
+        path: /spec/replicas
+        value: 1
+    target:
+      kind: Deployment
+  - patch: |
+      - op: replace
+        path: /metadata/name
+        value: dev-kardon-tls
+    target:
+      kind: Secret
+      name: kardon-tls

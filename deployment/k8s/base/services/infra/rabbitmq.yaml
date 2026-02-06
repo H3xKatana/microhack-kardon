@@ -1,0 +1,108 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: kardon-mq
+  namespace: kardon-infra
+  labels:
+    app: kardon-mq
+    tier: messaging
+spec:
+  serviceName: kardon-mq
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kardon-mq
+  template:
+    metadata:
+      labels:
+        app: kardon-mq
+        tier: messaging
+    spec:
+      serviceAccountName: kardon-mq
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 999
+        fsGroup: 999
+      containers:
+        - name: rabbitmq
+          image: rabbitmq:3.13.6-management-alpine
+          ports:
+            - containerPort: 5672
+              name: amqp
+            - containerPort: 15672
+              name: http-mgmt
+          envFrom:
+            - secretRef:
+                name: kardon-secrets
+          env:
+            - name: RABBITMQ_DEFAULT_VHOST
+              value: "/"
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "250m"
+            limits:
+              memory: "2Gi"
+              cpu: "1000m"
+          volumeMounts:
+            - name: rabbitmq-data
+              mountPath: /var/lib/rabbitmq
+          livenessProbe:
+            exec:
+              command:
+                - rabbitmq-diagnostics
+                - check_port_connectivity
+            initialDelaySeconds: 60
+            periodSeconds: 30
+          readinessProbe:
+            exec:
+              command:
+                - rabbitmq-diagnostics
+                - check_port_connectivity
+            initialDelaySeconds: 30
+            periodSeconds: 10
+      volumes:
+        - name: rabbitmq-data
+          persistentVolumeClaim:
+            claimName: rabbitmq-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: kardon-mq
+  namespace: kardon-infra
+  labels:
+    app: kardon-mq
+spec:
+  type: ClusterIP
+  ports:
+    - port: 5672
+      targetPort: 5672
+      protocol: TCP
+      name: amqp
+    - port: 15672
+      targetPort: 15672
+      protocol: TCP
+      name: http-mgmt
+  selector:
+    app: kardon-mq
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: rabbitmq-pvc
+  namespace: kardon-infra
+  labels:
+    app: kardon-mq
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: kardon-mq
+  namespace: kardon-infra

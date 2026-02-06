@@ -1,0 +1,143 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: kardon-db
+  namespace: kardon-infra
+  labels:
+    app: kardon-db
+    tier: database
+spec:
+  serviceName: kardon-db
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kardon-db
+  template:
+    metadata:
+      labels:
+        app: kardon-db
+        tier: database
+    spec:
+      serviceAccountName: kardon-db
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 999
+        fsGroup: 999
+      containers:
+        - name: postgres
+          image: postgres:15.7-alpine
+          args:
+            - "postgres"
+            - "-c"
+            - "max_connections=1000"
+          ports:
+            - containerPort: 5432
+              name: tcp-postgres
+          envFrom:
+            - secretRef:
+                name: kardon-secrets
+          env:
+            - name: PGDATA
+              value: /var/lib/postgresql/data/pgdata
+          resources:
+            requests:
+              memory: "1Gi"
+              cpu: "500m"
+            limits:
+              memory: "4Gi"
+              cpu: "2000m"
+          volumeMounts:
+            - name: postgres-data
+              mountPath: /var/lib/postgresql/data
+          livenessProbe:
+            exec:
+              command:
+                - pg_isready
+                - -U
+                - postgres
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            exec:
+              command:
+                - pg_isready
+                - -U
+                - postgres
+            initialDelaySeconds: 5
+            periodSeconds: 5
+      volumes:
+        - name: postgres-data
+          persistentVolumeClaim:
+            claimName: postgres-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: kardon-db
+  namespace: kardon-infra
+  labels:
+    app: kardon-db
+spec:
+  type: ClusterIP
+  ports:
+    - port: 5432
+      targetPort: 5432
+      protocol: TCP
+      name: tcp-postgres
+  selector:
+    app: kardon-db
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: postgres-pvc
+  namespace: kardon-infra
+  labels:
+    app: kardon-db
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 50Gi
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata:
+  name: kardon-db-pdb
+  namespace: kardon-infra
+spec:
+  maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: kardon-db
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: kardon-db
+  namespace: kardon-infra
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: kardon-db
+  namespace: kardon-infra
+rules:
+  - apiGroups: [""]
+    resources: ["pods"]
+    verbs: ["get", "list"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: kardon-db
+  namespace: kardon-infra
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: kardon-db
+subjects:
+  - kind: ServiceAccount
+    name: kardon-db
+    namespace: kardon-infra

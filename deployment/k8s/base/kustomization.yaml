@@ -1,0 +1,63 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: kardon
+
+resources:
+  - ../../base/00-namespace.yaml
+  - ../../base/01-configmap.yaml
+  - ../../base/02-secrets.yaml
+  - ../../base/services/web.yaml
+  - ../../base/services/admin.yaml
+  - ../../base/services/space.yaml
+  - ../../base/services/api.yaml
+  - ../../base/services/worker.yaml
+  - ../../base/services/beat-worker.yaml
+  - ../../base/services/migrator.yaml
+  - ../../base/services/live.yaml
+  - ../../base/services/proxy.yaml
+  - ../../base/services/infra/postgresql.yaml
+  - ../../base/services/infra/redis.yaml
+  - ../../base/services/infra/rabbitmq.yaml
+  - ../../base/services/infra/minio.yaml
+
+configMapGenerator:
+  - files:
+      - app-config.yaml
+    name: proxy-config
+
+images:
+  - name: ghcr.io/h3xkatana/microhack-kardon/web
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/admin
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/space
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/api
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/worker
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/beat-worker
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/migrator
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/live
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/proxy
+    newTag: latest
+
+patches:
+  - patch: |
+      - op: replace
+        path: /spec/replicas
+        value: 1
+    target:
+      kind: Deployment
+      labelSelector: "tier=frontend"
+  - patch: |
+      - op: replace
+        path: /spec/replicas
+        value: 1
+    target:
+      kind: Deployment
+      labelSelector: "tier=backend"

@@ -1,0 +1,54 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: kardon-prod
+
+namePrefix: prod-
+
+bases:
+  - ../../base
+
+resources:
+  - namespace-prod.yaml
+
+configMapGenerator:
+  - behavior: merge
+    files:
+      - app-config.yaml
+    name: kardon-config
+    options:
+      disableNameSuffixHash: true
+
+secretGenerator:
+  - behavior: replace
+    files:
+      - secrets.yaml
+    name: kardon-secrets
+    options:
+      disableNameSuffixHash: true
+
+images:
+  - name: ghcr.io/h3xkatana/microhack-kardon/web
+    newTag: main
+  - name: ghcr.io/h3xkatana/microhack-kardon/admin
+    newTag: main
+  - name: ghcr.io/h3xkatana/microhack-kardon/space
+    newTag: main
+  - name: ghcr.io/h3xkatana/microhack-kardon/api
+    newTag: main
+  - name: ghcr.io/h3xkatana/microhack-kardon/worker
+    newTag: main
+  - name: ghcr.io/h3xkatana/microhack-kardon/beat-worker
+    newTag: main
+  - name: ghcr.io/h3xkatana/microhack-kardon/migrator
+    newTag: main
+  - name: ghcr.io/h3xkatana/microhack-kardon/live
+    newTag: main
+  - name: ghcr.io/h3xkatana/microhack-kardon/proxy
+    newTag: main
+
+replicas:
+  - count: 3
+    name: api
+  - count: 2
+    name: worker

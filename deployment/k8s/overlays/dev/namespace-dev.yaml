@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kardon-dev
+  labels:
+    app: kardon
+    env: development
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kardon-config
+  namespace: kardon-dev
+data:
+  DEBUG: "true"
+  ALLOWED_HOSTS: "*"
