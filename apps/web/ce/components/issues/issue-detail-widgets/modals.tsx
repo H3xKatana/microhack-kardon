@@ -5,8 +5,8 @@
  */
 
 import type { FC } from "react";
-// plane types
-import type { TIssueServiceType, TWorkItemWidgets } from "@plane/types";
+// kardon types
+import type { TIssueServiceType, TWorkItemWidgets } from "@kardon/types";
 
 export type TWorkItemAdditionalWidgetModalsProps = {
   hideWidgets: TWorkItemWidgets[];

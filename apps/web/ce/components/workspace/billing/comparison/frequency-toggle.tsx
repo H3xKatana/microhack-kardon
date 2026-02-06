@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// kardon imports
 import { observer } from "mobx-react";
-import type { EProductSubscriptionEnum, TBillingFrequency } from "@plane/types";
-import { calculateYearlyDiscount, cn } from "@plane/utils";
+import type { EProductSubscriptionEnum, TBillingFrequency } from "@kardon/types";
+import { calculateYearlyDiscount, cn } from "@kardon/utils";
 
 type TPlanFrequencyToggleProps = {
   subscriptionType: EProductSubscriptionEnum;

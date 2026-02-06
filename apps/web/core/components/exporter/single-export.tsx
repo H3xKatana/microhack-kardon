@@ -7,10 +7,10 @@
 import type { FC } from "react";
 import { useState } from "react";
 // ui
-import { Button } from "@plane/propel/button";
-import type { IExportData } from "@plane/types";
+import { Button } from "@kardon/propel/button";
+import type { IExportData } from "@kardon/types";
 // helpers
-import { getDate, renderFormattedDate } from "@plane/utils";
+import { getDate, renderFormattedDate } from "@kardon/utils";
 // types
 
 type Props = {

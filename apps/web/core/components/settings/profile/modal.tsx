@@ -7,9 +7,9 @@
 import { useCallback } from "react";
 import { X } from "lucide-react";
 import { observer } from "mobx-react";
-// plane imports
-import { IconButton } from "@plane/propel/icon-button";
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+// kardon imports
+import { IconButton } from "@kardon/propel/icon-button";
+import { EModalPosition, EModalWidth, ModalCore } from "@kardon/ui";
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
 // local imports

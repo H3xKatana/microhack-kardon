@@ -5,12 +5,12 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { IconButton } from "@plane/propel/icon-button";
-import { FilterIcon, FilterAppliedIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
-import type { IFilterInstance } from "@plane/shared-state";
-import type { TExternalFilter, TFilterProperty } from "@plane/types";
+// kardon imports
+import { IconButton } from "@kardon/propel/icon-button";
+import { FilterIcon, FilterAppliedIcon } from "@kardon/propel/icons";
+import { cn } from "@kardon/utils";
+import type { IFilterInstance } from "@kardon/shared-state";
+import type { TExternalFilter, TFilterProperty } from "@kardon/types";
 // components
 import { AddFilterButton } from "@/components/rich-filters/add-filters/button";
 

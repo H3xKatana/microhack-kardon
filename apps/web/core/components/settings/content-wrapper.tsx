@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { ScrollArea } from "@plane/propel/scrollarea";
-import { cn } from "@plane/utils";
+// kardon imports
+import { ScrollArea } from "@kardon/propel/scrollarea";
+import { cn } from "@kardon/utils";
 // components
 import { AppHeader } from "@/components/core/app-header";
 

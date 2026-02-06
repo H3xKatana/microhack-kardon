@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { TProjectAppliedDisplayFilterKeys, TProjectOrderByOptions } from "@plane/types";
+// kardon imports
+import type { TProjectAppliedDisplayFilterKeys, TProjectOrderByOptions } from "@kardon/types";
 // local imports
 
 export type TNetworkChoiceIconKey = "Lock" | "Globe2";

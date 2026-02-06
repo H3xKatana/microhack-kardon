@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { CycleIcon, ModuleIcon, PageIcon, ViewsIcon, WorkItemsIcon } from "@plane/propel/icons";
-import type { ISvgIcons } from "@plane/propel/icons";
+// kardon imports
+import { CycleIcon, ModuleIcon, PageIcon, ViewsIcon, WorkItemsIcon } from "@kardon/propel/icons";
+import type { ISvgIcons } from "@kardon/propel/icons";
 // types
 import type { TTourSteps } from "./root";
 

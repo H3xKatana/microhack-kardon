@@ -8,9 +8,9 @@ import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane imports
-import { ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@plane/constants";
-import { EIssuesStoreType } from "@plane/types";
+// kardon imports
+import { ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@kardon/constants";
+import { EIssuesStoreType } from "@kardon/types";
 // components
 import { ProjectLevelWorkItemFiltersHOC } from "@/components/work-item-filters/filters-hoc/project-level";
 // hooks

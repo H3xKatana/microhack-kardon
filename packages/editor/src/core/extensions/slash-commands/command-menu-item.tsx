@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane utils
-import { cn } from "@plane/utils";
+// kardon utils
+import { cn } from "@kardon/utils";
 // types
 import type { ISlashCommandItem } from "@/types";
 

@@ -9,8 +9,8 @@ import { Plugin, PluginKey } from "@tiptap/pm/state";
 import type { EditorState, Transaction } from "@tiptap/pm/state";
 // constants
 import { CORE_EDITOR_META } from "@/constants/meta";
-// plane editor imports
-import { NODE_FILE_MAP } from "@/plane-editor/constants/utility";
+// kardon editor imports
+import { NODE_FILE_MAP } from "@/kardon-editor/constants/utility";
 // types
 import type { TFileHandler } from "@/types";
 // local imports

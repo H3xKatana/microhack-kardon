@@ -7,12 +7,12 @@
 import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { ChevronRightIcon } from "@plane/propel/icons";
+import { Logo } from "@kardon/propel/emoji-icon-picker";
+import { ChevronRightIcon } from "@kardon/propel/icons";
 // icons
-import { Row } from "@plane/ui";
+import { Row } from "@kardon/ui";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 import { useProject } from "@/hooks/store/use-project";
 
 type Props = {

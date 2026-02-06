@@ -7,9 +7,9 @@
 import React from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
-import { AUTH_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { PlaneLockup } from "@plane/propel/icons";
+import { AUTH_TRACKER_ELEMENTS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { PlaneLockup } from "@kardon/propel/icons";
 import { PageHead } from "@/components/core/page-title";
 import { EAuthModes } from "@/helpers/authentication.helper";
 import { useInstance } from "@/hooks/store/use-instance";
@@ -17,7 +17,7 @@ import { useInstance } from "@/hooks/store/use-instance";
 const authContentMap = {
   [EAuthModes.SIGN_IN]: {
     pageTitle: "Sign up",
-    text: "auth.common.new_to_plane",
+    text: "auth.common.new_to_kardon",
     linkText: "Sign up",
     linkHref: "/sign-up",
   },

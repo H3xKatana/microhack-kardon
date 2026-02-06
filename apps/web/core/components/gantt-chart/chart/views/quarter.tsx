@@ -5,8 +5,8 @@
  */
 
 import { observer } from "mobx-react";
-// plane utils
-import { cn } from "@plane/utils";
+// kardon utils
+import { cn } from "@kardon/utils";
 // hooks
 import { useTimeLineChartStore } from "@/hooks/use-timeline-chart";
 //

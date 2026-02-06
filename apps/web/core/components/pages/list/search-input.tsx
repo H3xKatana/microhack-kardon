@@ -5,11 +5,11 @@
  */
 
 import { useRef, useState } from "react";
-// plane imports
-import { useOutsideClickDetector } from "@plane/hooks";
-import { IconButton } from "@plane/propel/icon-button";
-import { SearchIcon, CloseIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+// kardon imports
+import { useOutsideClickDetector } from "@kardon/hooks";
+import { IconButton } from "@kardon/propel/icon-button";
+import { SearchIcon, CloseIcon } from "@kardon/propel/icons";
+import { cn } from "@kardon/utils";
 
 type Props = {
   searchQuery: string;

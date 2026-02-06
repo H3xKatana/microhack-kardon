@@ -6,11 +6,11 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
-import { EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateDetailed } from "@plane/propel/empty-state";
-import { EIssuesStoreType, EUserProjectRoles } from "@plane/types";
+// kardon imports
+import { EUserPermissionsLevel } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { EmptyStateDetailed } from "@kardon/propel/empty-state";
+import { EIssuesStoreType, EUserProjectRoles } from "@kardon/types";
 // hooks
 import { useUserPermissions } from "@/hooks/store/user";
 import { useWorkItemFilterInstance } from "@/hooks/store/work-item-filters/use-work-item-filter-instance";
@@ -22,7 +22,7 @@ export const ProjectArchivedEmptyState = observer(function ProjectArchivedEmptyS
   const { workspaceSlug: routerWorkspaceSlug, projectId: routerProjectId } = useParams();
   const workspaceSlug = routerWorkspaceSlug ? routerWorkspaceSlug.toString() : undefined;
   const projectId = routerProjectId ? routerProjectId.toString() : undefined;
-  // plane hooks
+  // kardon hooks
   const { t } = useTranslation();
   // store hooks
   const { allowPermissions } = useUserPermissions();

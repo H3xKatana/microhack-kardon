@@ -6,20 +6,20 @@
 
 import { useState } from "react";
 import { Controller, useFormContext } from "react-hook-form";
-// plane imports
-import { ETabIndices } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@plane/propel/emoji-icon-picker";
-import { CloseIcon } from "@plane/propel/icons";
-// plane types
-import type { IProject } from "@plane/types";
-// plane ui
-import { getTabIndex } from "@plane/utils";
+// kardon imports
+import { ETabIndices } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@kardon/propel/emoji-icon-picker";
+import { CloseIcon } from "@kardon/propel/icons";
+// kardon types
+import type { IProject } from "@kardon/types";
+// kardon ui
+import { getTabIndex } from "@kardon/utils";
 // components
 import { CoverImage } from "@/components/common/cover-image";
 import { ImagePickerPopover } from "@/components/core/image-picker-popover";
-// plane web imports
-import { ProjectTemplateSelect } from "@/plane-web/components/projects/create/template-select";
+// kardon web imports
+import { ProjectTemplateSelect } from "@/kardon-web/components/projects/create/template-select";
 
 type Props = {
   handleClose: () => void;

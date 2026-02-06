@@ -157,7 +157,7 @@ export default defineConfig([
           project: "{apps,packages}/*/tsconfig.json",
         },
       },
-      "import/internal-regex": "^@plane/",
+      "import/internal-regex": "^@kardon/",
     },
     rules: {
       "import/consistent-type-specifier-style": ["error", "prefer-top-level"],

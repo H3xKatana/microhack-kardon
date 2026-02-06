@@ -7,9 +7,9 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 
-import { useTranslation } from "@plane/i18n";
-import { PlusIcon } from "@plane/propel/icons";
-import { Row } from "@plane/ui";
+import { useTranslation } from "@kardon/i18n";
+import { PlusIcon } from "@kardon/propel/icons";
+import { Row } from "@kardon/ui";
 import type { TQuickAddIssueButton } from "../root";
 
 export const GanttQuickAddIssueButton = observer(function GanttQuickAddIssueButton(props: TQuickAddIssueButton) {

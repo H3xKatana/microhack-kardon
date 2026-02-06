@@ -4,11 +4,11 @@
  * See the LICENSE file for details.
  */
 
-import { API_BASE_URL } from "@plane/constants";
-import type { TIssueRelation, TIssue } from "@plane/types";
+import { API_BASE_URL } from "@kardon/constants";
+import type { TIssueRelation, TIssue } from "@kardon/types";
 // helpers
 // Plane-web
-import type { TIssueRelationTypes } from "@/plane-web/types";
+import type { TIssueRelationTypes } from "@/kardon-web/types";
 // services
 import { APIService } from "@/services/api.service";
 

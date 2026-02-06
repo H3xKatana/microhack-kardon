@@ -10,14 +10,14 @@ import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 // icons
 import { Eye, EyeOff } from "lucide-react";
-// plane imports
-import { E_PASSWORD_STRENGTH } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Input, PasswordStrengthIndicator } from "@plane/ui";
+// kardon imports
+import { E_PASSWORD_STRENGTH } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { Button } from "@kardon/propel/button";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { Input, PasswordStrengthIndicator } from "@kardon/ui";
 // components
-import { getPasswordStrength } from "@plane/utils";
+import { getPasswordStrength } from "@kardon/utils";
 // hooks
 import { useUser } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
@@ -59,7 +59,7 @@ export const SetPasswordForm = observer(function SetPasswordForm() {
   const [csrfToken, setCsrfToken] = useState<string | undefined>(undefined);
   const [isPasswordInputFocused, setIsPasswordInputFocused] = useState(false);
   const [isRetryPasswordInputFocused, setIsRetryPasswordInputFocused] = useState(false);
-  // plane hooks
+  // kardon hooks
   const { t } = useTranslation();
   // hooks
   const { data: user, handleSetPassword } = useUser();

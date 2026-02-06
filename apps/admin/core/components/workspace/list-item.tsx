@@ -6,11 +6,11 @@
 
 import { observer } from "mobx-react";
 
-// plane internal packages
-import { WEB_BASE_URL } from "@plane/constants";
-import { NewTabIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import { getFileURL } from "@plane/utils";
+// kardon internal packages
+import { WEB_BASE_URL } from "@kardon/constants";
+import { NewTabIcon } from "@kardon/propel/icons";
+import { Tooltip } from "@kardon/propel/tooltip";
+import { getFileURL } from "@kardon/utils";
 // hooks
 import { useWorkspace } from "@/hooks/store";
 

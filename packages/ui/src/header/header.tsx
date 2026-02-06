@@ -77,6 +77,6 @@ function RightItem(props: HeaderProps) {
 
 Header.LeftItem = LeftItem;
 Header.RightItem = RightItem;
-Header.displayName = "plane-ui-header";
+Header.displayName = "kardon-ui-header";
 
 export { Header, EHeaderVariant };

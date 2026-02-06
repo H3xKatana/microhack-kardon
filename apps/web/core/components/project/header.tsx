@@ -7,18 +7,18 @@
 import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
 // i18n
-import { EUserPermissions, EUserPermissionsLevel, PROJECT_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+import { EUserPermissions, EUserPermissionsLevel, PROJECT_TRACKER_ELEMENTS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
 // ui
-import { Button } from "@plane/propel/button";
-import { ProjectIcon } from "@plane/propel/icons";
-import { Breadcrumbs, Header } from "@plane/ui";
+import { Button } from "@kardon/propel/button";
+import { ProjectIcon } from "@kardon/propel/icons";
+import { Breadcrumbs, Header } from "@kardon/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web constants
+// kardon web constants
 // components
 import HeaderFilters from "./filters";
 import { ProjectSearch } from "./search-projects";

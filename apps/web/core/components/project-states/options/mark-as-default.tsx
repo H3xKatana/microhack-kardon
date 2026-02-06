@@ -6,9 +6,9 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { TStateOperationsCallbacks } from "@plane/types";
-import { cn } from "@plane/utils";
+// kardon imports
+import type { TStateOperationsCallbacks } from "@kardon/types";
+import { cn } from "@kardon/utils";
 
 type TStateMarksAsDefault = {
   stateId: string;

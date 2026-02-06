@@ -6,8 +6,8 @@
 
 import type { FC } from "react";
 import { useState } from "react";
-// plane imports
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+// kardon imports
+import { EModalPosition, EModalWidth, ModalCore } from "@kardon/ui";
 // hooks
 import useKeypress from "@/hooks/use-keypress";
 // local imports

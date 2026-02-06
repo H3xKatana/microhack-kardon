@@ -4,13 +4,13 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
+// kardon imports
 import type {
   TAllAvailableOperatorsForDisplay,
   TFilterExpression,
   TFilterProperty,
   TSupportedOperators,
-} from "@plane/types";
+} from "@kardon/types";
 
 /**
  * Helper function to get the display operator for a condition.

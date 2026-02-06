@@ -8,12 +8,12 @@ import type { FC } from "react";
 import { useEffect, useRef } from "react";
 import { observer } from "mobx-react";
 import type { UseFormRegister, UseFormSetFocus } from "react-hook-form";
-// plane constants
-// plane helpers
-import { useOutsideClickDetector } from "@plane/hooks";
+// kardon constants
+// kardon helpers
+import { useOutsideClickDetector } from "@kardon/hooks";
 // types
-import type { TIssue } from "@plane/types";
-import { EIssueLayoutTypes } from "@plane/types";
+import type { TIssue } from "@kardon/types";
+import { EIssueLayoutTypes } from "@kardon/types";
 // components
 import type { TQuickAddIssueForm } from "@/components/issues/issue-layouts/quick-add";
 import {

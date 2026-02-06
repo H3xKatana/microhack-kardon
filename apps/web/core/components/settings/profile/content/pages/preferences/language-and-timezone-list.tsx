@@ -5,10 +5,10 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { SUPPORTED_LANGUAGES, useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { CustomSelect } from "@plane/ui";
+// kardon imports
+import { SUPPORTED_LANGUAGES, useTranslation } from "@kardon/i18n";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { CustomSelect } from "@kardon/ui";
 // components
 import { TimezoneSelect } from "@/components/global";
 import { StartOfWeekPreference } from "@/components/profile/start-of-week-preference";

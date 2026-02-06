@@ -9,10 +9,10 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 import { Disclosure } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { Collapsible } from "@plane/ui";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { ChevronDownIcon } from "@kardon/propel/icons";
+import { Collapsible } from "@kardon/ui";
 // components
 import { CountChip } from "@/components/common/count-chip";
 import { MembersSettingsLoader } from "@/components/ui/loader/settings/members";

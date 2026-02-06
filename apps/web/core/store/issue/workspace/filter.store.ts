@@ -7,9 +7,9 @@
 import { isEmpty, set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import type { TSupportedFilterTypeForUpdate } from "@plane/constants";
-import { EIssueFilterType } from "@plane/constants";
+// kardon imports
+import type { TSupportedFilterTypeForUpdate } from "@kardon/constants";
+import { EIssueFilterType } from "@kardon/constants";
 import type {
   IIssueDisplayFilterOptions,
   IIssueDisplayProperties,
@@ -20,11 +20,11 @@ import type {
   IssuePaginationOptions,
   TWorkItemFilterExpression,
   TSupportedFilterForUpdate,
-} from "@plane/types";
-import { EIssuesStoreType, EIssueLayoutTypes, STATIC_VIEW_TYPES } from "@plane/types";
-import { handleIssueQueryParamsByLayout } from "@plane/utils";
+} from "@kardon/types";
+import { EIssuesStoreType, EIssueLayoutTypes, STATIC_VIEW_TYPES } from "@kardon/types";
+import { handleIssueQueryParamsByLayout } from "@kardon/utils";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/kardon-web/services";
 // local imports
 import type { IBaseIssueFilterStore, IIssueFilterHelperStore } from "../helpers/issue-filter-helper.store";
 import { IssueFilterHelperStore } from "../helpers/issue-filter-helper.store";

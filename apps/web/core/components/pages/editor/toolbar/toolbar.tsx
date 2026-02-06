@@ -5,12 +5,12 @@
  */
 
 import React, { useEffect, useState, useCallback } from "react";
-import type { EditorRefApi } from "@plane/editor";
-// plane imports
-import { CheckIcon, ChevronDownIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import { CustomMenu } from "@plane/ui";
-import { cn } from "@plane/utils";
+import type { EditorRefApi } from "@kardon/editor";
+// kardon imports
+import { CheckIcon, ChevronDownIcon } from "@kardon/propel/icons";
+import { Tooltip } from "@kardon/propel/tooltip";
+import { CustomMenu } from "@kardon/ui";
+import { cn } from "@kardon/utils";
 // constants
 import type { ToolbarMenuItem } from "@/constants/editor";
 import { TOOLBAR_ITEMS, TYPOGRAPHY_ITEMS } from "@/constants/editor";

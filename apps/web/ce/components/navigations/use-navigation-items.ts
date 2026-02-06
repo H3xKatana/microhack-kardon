@@ -5,10 +5,10 @@
  */
 
 import { useMemo, useCallback } from "react";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon, WorkItemsIcon } from "@plane/propel/icons";
-import type { EUserProjectRoles, IPartialProject } from "@plane/types";
+// kardon imports
+import { EUserPermissions, EUserPermissionsLevel } from "@kardon/constants";
+import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon, WorkItemsIcon } from "@kardon/propel/icons";
+import type { EUserProjectRoles, IPartialProject } from "@kardon/types";
 import type { TNavigationItem } from "@/components/navigation/tab-navigation-root";
 
 type UseNavigationItemsProps = {

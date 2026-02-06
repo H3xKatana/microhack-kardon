@@ -6,17 +6,17 @@
 
 import { useMemo } from "react";
 import { useParams } from "next/navigation";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssueServiceType, TSubIssueOperations } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-import { copyUrlToClipboard } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import type { TIssueServiceType, TSubIssueOperations } from "@kardon/types";
+import { EIssueServiceType } from "@kardon/types";
+import { copyUrlToClipboard } from "@kardon/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProjectState } from "@/hooks/store/use-project-state";
-// plane web helpers
-import { updateEpicAnalytics } from "@/plane-web/helpers/epic-analytics";
+// kardon web helpers
+import { updateEpicAnalytics } from "@/kardon-web/helpers/epic-analytics";
 
 export const useSubIssueOperations = (issueServiceType: TIssueServiceType): TSubIssueOperations => {
   // router

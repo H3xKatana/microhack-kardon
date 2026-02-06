@@ -5,21 +5,21 @@
  */
 
 import { enableStaticRendering } from "mobx-react";
-// plane imports
-import { FALLBACK_LANGUAGE, LANGUAGE_STORAGE_KEY } from "@plane/i18n";
-import type { IWorkItemFilterStore } from "@plane/shared-state";
-import { WorkItemFilterStore } from "@plane/shared-state";
-// plane web store
-import type { IAnalyticsStore } from "@/plane-web/store/analytics.store";
-import { AnalyticsStore } from "@/plane-web/store/analytics.store";
-import type { ICommandPaletteStore } from "@/plane-web/store/command-palette.store";
-import { CommandPaletteStore } from "@/plane-web/store/command-palette.store";
-import { PowerKStore } from "@/plane-web/store/power-k.store";
-import type { IPowerKStore } from "@/plane-web/store/power-k.store";
-import type { RootStore } from "@/plane-web/store/root.store";
-import type { IStateStore } from "@/plane-web/store/state.store";
-import { StateStore } from "@/plane-web/store/state.store";
-import { WorkspaceRootStore } from "@/plane-web/store/workspace";
+// kardon imports
+import { FALLBACK_LANGUAGE, LANGUAGE_STORAGE_KEY } from "@kardon/i18n";
+import type { IWorkItemFilterStore } from "@kardon/shared-state";
+import { WorkItemFilterStore } from "@kardon/shared-state";
+// kardon web store
+import type { IAnalyticsStore } from "@/kardon-web/store/analytics.store";
+import { AnalyticsStore } from "@/kardon-web/store/analytics.store";
+import type { ICommandPaletteStore } from "@/kardon-web/store/command-palette.store";
+import { CommandPaletteStore } from "@/kardon-web/store/command-palette.store";
+import { PowerKStore } from "@/kardon-web/store/power-k.store";
+import type { IPowerKStore } from "@/kardon-web/store/power-k.store";
+import type { RootStore } from "@/kardon-web/store/root.store";
+import type { IStateStore } from "@/kardon-web/store/state.store";
+import { StateStore } from "@/kardon-web/store/state.store";
+import { WorkspaceRootStore } from "@/kardon-web/store/workspace";
 // stores
 import type { ICycleStore } from "./cycle.store";
 import { CycleStore } from "./cycle.store";

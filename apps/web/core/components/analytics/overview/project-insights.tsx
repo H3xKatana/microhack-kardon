@@ -8,20 +8,20 @@ import { lazy, Suspense } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane package imports
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import type { TChartData } from "@plane/types";
+// kardon package imports
+import { useTranslation } from "@kardon/i18n";
+import { EmptyStateCompact } from "@kardon/propel/empty-state";
+import type { TChartData } from "@kardon/types";
 // hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
 // services
 import { AnalyticsService } from "@/services/analytics.service";
-// plane web components
+// kardon web components
 import AnalyticsSectionWrapper from "../analytics-section-wrapper";
 import { ProjectInsightsLoader } from "../loaders";
 
 const RadarChart = lazy(function RadarChart() {
-  return import("@plane/propel/charts/radar-chart").then((mod) => ({
+  return import("@kardon/propel/charts/radar-chart").then((mod) => ({
     default: mod.RadarChart,
   }));
 });

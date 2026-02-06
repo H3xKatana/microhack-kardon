@@ -7,10 +7,10 @@
 import { useCallback, useEffect } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-// plane imports
-import { ENotificationLoader, ENotificationQueryParamType } from "@plane/constants";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import { cn } from "@plane/utils";
+// kardon imports
+import { ENotificationLoader, ENotificationQueryParamType } from "@kardon/constants";
+import { EmptyStateCompact } from "@kardon/propel/empty-state";
+import { cn } from "@kardon/utils";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";
 // hooks
@@ -18,8 +18,8 @@ import { useWorkspaceNotifications } from "@/hooks/store/notifications";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserPermissions } from "@/hooks/store/user";
 import { useWorkspaceIssueProperties } from "@/hooks/use-workspace-issue-properties";
-// plane web imports
-import { useNotificationPreview } from "@/plane-web/hooks/use-notification-preview";
+// kardon web imports
+import { useNotificationPreview } from "@/kardon-web/hooks/use-notification-preview";
 // local imports
 import { InboxContentRoot } from "../inbox/content";
 

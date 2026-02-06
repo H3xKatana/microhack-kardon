@@ -8,16 +8,16 @@
 import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
 import { SettingsIcon } from "lucide-react";
-import { ContextMenu } from "@plane/propel/context-menu";
-import { CheckIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+import { ContextMenu } from "@kardon/propel/context-menu";
+import { CheckIcon } from "@kardon/propel/icons";
+import { cn } from "@kardon/utils";
 // components
 import { AppSidebarItem } from "@/components/sidebar/sidebar-item";
 // hooks
 import { useAppRailPreferences } from "@/hooks/use-navigation-preferences";
 import { useAppRailVisibility } from "@/lib/app-rail/context";
-// plane web imports
-import { DesktopSidebarWorkspaceMenu } from "@/plane-web/components/desktop";
+// kardon web imports
+import { DesktopSidebarWorkspaceMenu } from "@/kardon-web/components/desktop";
 // local imports
 import { AppSidebarItemsRoot } from "./items-root";
 

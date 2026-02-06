@@ -5,8 +5,8 @@
  */
 
 import { cloneDeep, uniqBy } from "lodash-es";
-// plane imports
-import type { ChartDataType } from "@plane/types";
+// kardon imports
+import type { ChartDataType } from "@kardon/types";
 // local imports
 import { months } from "../data";
 import { getNumberOfDaysBetweenTwoDates, getNumberOfDaysInMonth } from "./helpers";

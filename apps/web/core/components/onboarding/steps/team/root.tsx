@@ -18,19 +18,19 @@ import { Controller, useFieldArray, useForm } from "react-hook-form";
 import { usePopper } from "react-popper";
 import { XCircle } from "lucide-react";
 import { Listbox } from "@headlessui/react";
-// plane imports
-import type { EUserPermissions } from "@plane/constants";
-import { ROLE, ROLE_DETAILS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { PlusIcon, CheckIcon, ChevronDownIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { EOnboardingSteps } from "@plane/types";
-import { Input, Spinner } from "@plane/ui";
+// kardon imports
+import type { EUserPermissions } from "@kardon/constants";
+import { ROLE, ROLE_DETAILS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { Button } from "@kardon/propel/button";
+import { PlusIcon, CheckIcon, ChevronDownIcon } from "@kardon/propel/icons";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { EOnboardingSteps } from "@kardon/types";
+import { Input, Spinner } from "@kardon/ui";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/kardon-web/services";
 // components
 import { CommonOnboardingHeader } from "../common";
 
@@ -343,7 +343,7 @@ export const InviteTeamStep = observer(function InviteTeamStep(props: Props) {
     >
       <CommonOnboardingHeader
         title="Invite your teammates"
-        description="Work in plane happens best with your team. Invite them now to use Plane to its potential."
+        description="Work in kardon happens best with your team. Invite them now to use Plane to its potential."
       />
       <div className="w-full text-13 py-4">
         <div className="group relative grid grid-cols-10 gap-4 mx-8 py-2">

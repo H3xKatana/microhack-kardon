@@ -10,9 +10,9 @@ import { useParams } from "next/navigation";
 import { Controller, useForm } from "react-hook-form";
 import { Info, SquareUser } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
-import { MODULE_STATUS, EUserPermissions, EUserPermissionsLevel, EEstimateSystem } from "@plane/constants";
-// plane types
-import { useTranslation } from "@plane/i18n";
+import { MODULE_STATUS, EUserPermissions, EUserPermissionsLevel, EEstimateSystem } from "@kardon/constants";
+// kardon types
+import { useTranslation } from "@kardon/i18n";
 import {
   PlusIcon,
   MembersPropertyIcon,
@@ -21,14 +21,14 @@ import {
   StartDatePropertyIcon,
   ChevronDownIcon,
   ChevronRightIcon,
-} from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { ILinkDetails, IModule, ModuleLink } from "@plane/types";
-// plane ui
-import { Loader, CustomSelect, TextArea } from "@plane/ui";
+} from "@kardon/propel/icons";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import type { ILinkDetails, IModule, ModuleLink } from "@kardon/types";
+// kardon ui
+import { Loader, CustomSelect, TextArea } from "@kardon/ui";
 // components
 // helpers
-import { getDate, renderFormattedPayloadDate } from "@plane/utils";
+import { getDate, renderFormattedPayloadDate } from "@kardon/utils";
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { MemberDropdown } from "@/components/dropdowns/member/dropdown";
 import { CreateUpdateModuleLinkModal, ModuleAnalyticsProgress, ModuleLinksList } from "@/components/modules";
@@ -36,7 +36,7 @@ import { CreateUpdateModuleLinkModal, ModuleAnalyticsProgress, ModuleLinksList }
 import { useProjectEstimates } from "@/hooks/store/estimates";
 import { useModule } from "@/hooks/store/use-module";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web constants
+// kardon web constants
 const defaultValues: Partial<IModule> = {
   lead_id: "",
   member_ids: [],

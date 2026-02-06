@@ -7,12 +7,12 @@
 import type { ReactNode } from "react";
 import { useRef, useState } from "react";
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@kardon/i18n";
 // ui
-import { CycleIcon, ChevronDownIcon } from "@plane/propel/icons";
-import { ComboDropDown } from "@plane/ui";
+import { CycleIcon, ChevronDownIcon } from "@kardon/propel/icons";
+import { ComboDropDown } from "@kardon/ui";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 // hooks
 import { useCycle } from "@/hooks/store/use-cycle";
 import { useDropdown } from "@/hooks/use-dropdown";

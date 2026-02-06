@@ -8,12 +8,12 @@ import type { FC } from "react";
 import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
-import { useTranslation } from "@plane/i18n";
-// plane types
-import { Button } from "@plane/propel/button";
-import type { TIssueLinkEditableFields, TIssueServiceType } from "@plane/types";
-// plane ui
-import { Input, ModalCore } from "@plane/ui";
+import { useTranslation } from "@kardon/i18n";
+// kardon types
+import { Button } from "@kardon/propel/button";
+import type { TIssueLinkEditableFields, TIssueServiceType } from "@kardon/types";
+// kardon ui
+import { Input, ModalCore } from "@kardon/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // types

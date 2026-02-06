@@ -10,6 +10,7 @@ node_modules
 
 # Testing
 /coverage
+.husky/
 
 # Next.js
 /.next/
@@ -80,15 +81,13 @@ package-lock.json
 # lock files
 package-lock.json
 
-
-
 .secrets
 tmp/
 
 ## packages
 dist
 .temp/
-deploy/selfhost/plane-app/
+deploy/selfhost/kardon-app/
 
 ## Storybook
 *storybook.log
@@ -102,6 +101,7 @@ dev-editor
 storybook-static
 
 CLAUDE.md
+QWEN.md
 
 build/
 .react-router/

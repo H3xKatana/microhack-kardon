@@ -7,12 +7,12 @@
 import { Command } from "cmdk";
 import { observer } from "mobx-react";
 import { Triangle } from "lucide-react";
-// plane types
-import { useTranslation } from "@plane/i18n";
-import { EEstimateSystem } from "@plane/types";
-import type { TIssue } from "@plane/types";
-import { Spinner } from "@plane/ui";
-import { convertMinutesToHoursMinutesString } from "@plane/utils";
+// kardon types
+import { useTranslation } from "@kardon/i18n";
+import { EEstimateSystem } from "@kardon/types";
+import type { TIssue } from "@kardon/types";
+import { Spinner } from "@kardon/ui";
+import { convertMinutesToHoursMinutesString } from "@kardon/utils";
 // hooks
 import { useEstimate, useProjectEstimates } from "@/hooks/store/estimates";
 // local imports

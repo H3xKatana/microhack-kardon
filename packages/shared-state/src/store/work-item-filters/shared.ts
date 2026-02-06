@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { EIssuesStoreType, TWorkItemFilterExpression, TWorkItemFilterProperty } from "@plane/types";
+// kardon imports
+import type { EIssuesStoreType, TWorkItemFilterExpression, TWorkItemFilterProperty } from "@kardon/types";
 // local imports
 import type { IFilterInstance } from "../rich-filters";
 

@@ -9,11 +9,11 @@ import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { MessageSquare, MoreVertical } from "lucide-react";
 import { Menu, Transition } from "@headlessui/react";
-// plane imports
-import type { EditorRefApi } from "@plane/editor";
-import { CheckIcon, CloseIcon } from "@plane/propel/icons";
-import type { TIssuePublicComment } from "@plane/types";
-import { getFileURL } from "@plane/utils";
+// kardon imports
+import type { EditorRefApi } from "@kardon/editor";
+import { CheckIcon, CloseIcon } from "@kardon/propel/icons";
+import type { TIssuePublicComment } from "@kardon/types";
+import { getFileURL } from "@kardon/utils";
 // components
 import { LiteTextEditor } from "@/components/editor/lite-text-editor";
 import { CommentReactions } from "@/components/issues/peek-overview/comment/comment-reactions";

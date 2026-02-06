@@ -6,7 +6,7 @@
 
 import type { FC } from "react";
 
-import { CheckIcon } from "@plane/propel/icons";
+import { CheckIcon } from "@kardon/propel/icons";
 
 type Props = {
   isChecked: boolean;

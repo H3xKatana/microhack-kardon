@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import type { TPage, TPageExtended } from "@plane/types";
-import type { RootStore } from "@/plane-web/store/root.store";
+import type { TPage, TPageExtended } from "@kardon/types";
+import type { RootStore } from "@/kardon-web/store/root.store";
 import type { TBasePageServices } from "@/store/pages/base-page";
 
 export type TExtendedPageInstance = TPageExtended & {

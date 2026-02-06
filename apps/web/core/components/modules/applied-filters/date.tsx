@@ -6,9 +6,9 @@
 
 import { observer } from "mobx-react";
 // icons
-import { DATE_AFTER_FILTER_OPTIONS } from "@plane/constants";
-import { CloseIcon } from "@plane/propel/icons";
-import { renderFormattedDate, capitalizeFirstLetter } from "@plane/utils";
+import { DATE_AFTER_FILTER_OPTIONS } from "@kardon/constants";
+import { CloseIcon } from "@kardon/propel/icons";
+import { renderFormattedDate, capitalizeFirstLetter } from "@kardon/utils";
 // helpers
 // constants
 

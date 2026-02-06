@@ -12,7 +12,7 @@ import maintenanceModeLightModeImage from "@/app/assets/instance/maintenance-mod
 // layouts
 import DefaultLayout from "@/layouts/default-layout";
 // components
-import { MaintenanceMessage } from "@/plane-web/components/instance";
+import { MaintenanceMessage } from "@/kardon-web/components/instance";
 
 export function MaintenanceView() {
   // hooks

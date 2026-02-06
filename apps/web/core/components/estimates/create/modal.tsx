@@ -7,14 +7,14 @@
 import type { FC } from "react";
 import { useEffect, useMemo, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { EEstimateSystem, ESTIMATE_SYSTEMS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { ChevronLeftIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IEstimateFormData, TEstimateSystemKeys, TEstimatePointsObject, TEstimateTypeError } from "@plane/types";
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+// kardon imports
+import { EEstimateSystem, ESTIMATE_SYSTEMS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { Button } from "@kardon/propel/button";
+import { ChevronLeftIcon } from "@kardon/propel/icons";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import type { IEstimateFormData, TEstimateSystemKeys, TEstimatePointsObject, TEstimateTypeError } from "@kardon/types";
+import { EModalPosition, EModalWidth, ModalCore } from "@kardon/ui";
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
 // local imports

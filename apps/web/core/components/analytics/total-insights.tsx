@@ -4,15 +4,15 @@
  * See the LICENSE file for details.
  */
 
-// plane package imports
+// kardon package imports
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-import type { IInsightField } from "@plane/constants";
-import { ANALYTICS_INSIGHTS_FIELDS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { IAnalyticsResponse, TAnalyticsTabsBase } from "@plane/types";
-import { cn } from "@plane/utils";
+import type { IInsightField } from "@kardon/constants";
+import { ANALYTICS_INSIGHTS_FIELDS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import type { IAnalyticsResponse, TAnalyticsTabsBase } from "@kardon/types";
+import { cn } from "@kardon/utils";
 // hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
 // services

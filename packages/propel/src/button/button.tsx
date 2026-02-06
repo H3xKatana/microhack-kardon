@@ -40,6 +40,6 @@ const Button = React.forwardRef(function Button(props: ButtonProps, ref: React.F
   );
 });
 
-Button.displayName = "plane-ui-button";
+Button.displayName = "kardon-ui-button";
 
 export { Button };

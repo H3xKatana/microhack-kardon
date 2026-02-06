@@ -18,7 +18,7 @@ import type {
   TSupportedFilterFieldConfigs,
   TSupportedOperators,
   TOperatorSpecificConfigs,
-} from "@plane/types";
+} from "@kardon/types";
 
 /**
  * Helper to create a type-safe filter config

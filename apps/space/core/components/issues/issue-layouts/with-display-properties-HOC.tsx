@@ -5,8 +5,8 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import type { IIssueDisplayProperties } from "@plane/types";
+// kardon imports
+import type { IIssueDisplayProperties } from "@kardon/types";
 
 interface IWithDisplayPropertiesHOC {
   displayProperties: IIssueDisplayProperties;

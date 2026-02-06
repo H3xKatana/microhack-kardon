@@ -6,16 +6,16 @@
 
 import { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { ISSUE_LAYOUT_MAP } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CheckIcon } from "@plane/propel/icons";
-import { EIssueLayoutTypes } from "@plane/types";
-import { Dropdown } from "@plane/ui";
-import { cn } from "@plane/utils";
+// kardon imports
+import { ISSUE_LAYOUT_MAP } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { CheckIcon } from "@kardon/propel/icons";
+import { EIssueLayoutTypes } from "@kardon/types";
+import { Dropdown } from "@kardon/ui";
+import { cn } from "@kardon/utils";
 // components
 import { IssueLayoutIcon } from "@/components/issues/issue-layouts/layout-icon";
-import { getIconButtonStyling } from "@plane/propel/icon-button";
+import { getIconButtonStyling } from "@kardon/propel/icon-button";
 
 type TLayoutDropDown = {
   onChange: (value: EIssueLayoutTypes) => void;
@@ -25,7 +25,7 @@ type TLayoutDropDown = {
 
 export const LayoutDropDown = observer(function LayoutDropDown(props: TLayoutDropDown) {
   const { onChange, value = EIssueLayoutTypes.LIST, disabledLayouts = [] } = props;
-  // plane i18n
+  // kardon i18n
   const { t } = useTranslation();
   // derived values
   const availableLayouts = useMemo(

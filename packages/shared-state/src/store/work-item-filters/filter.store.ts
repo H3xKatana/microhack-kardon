@@ -6,11 +6,11 @@
 
 import { action, makeObservable, observable } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import type { TExpressionOptions } from "@plane/constants";
-import type { EIssuesStoreType, TWorkItemFilterExpression, TWorkItemFilterProperty } from "@plane/types";
-import { LOGICAL_OPERATOR } from "@plane/types";
-import { getOperatorForPayload } from "@plane/utils";
+// kardon imports
+import type { TExpressionOptions } from "@kardon/constants";
+import type { EIssuesStoreType, TWorkItemFilterExpression, TWorkItemFilterProperty } from "@kardon/types";
+import { LOGICAL_OPERATOR } from "@kardon/types";
+import { getOperatorForPayload } from "@kardon/utils";
 // local imports
 import type { TWorkItemFilterCondition } from "../../utils";
 import { buildWorkItemFilterExpressionFromConditions } from "../../utils";

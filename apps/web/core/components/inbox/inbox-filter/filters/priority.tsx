@@ -7,11 +7,11 @@
 import type { FC } from "react";
 import { useState } from "react";
 import { observer } from "mobx-react";
-import { ISSUE_PRIORITIES } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { PriorityIcon } from "@plane/propel/icons";
-import type { TIssuePriorities } from "@plane/types";
-// plane constants
+import { ISSUE_PRIORITIES } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { PriorityIcon } from "@kardon/propel/icons";
+import type { TIssuePriorities } from "@kardon/types";
+// kardon constants
 // components
 import { FilterHeader, FilterOption } from "@/components/issues/issue-layouts/filters";
 // hooks

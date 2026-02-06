@@ -4,16 +4,16 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
+// kardon imports
+import { API_BASE_URL } from "@kardon/constants";
 // api service
-import type { TDuplicateAssetData, TDuplicateAssetResponse } from "@plane/types";
+import type { TDuplicateAssetData, TDuplicateAssetResponse } from "@kardon/types";
 import { APIService } from "../api.service";
 // helpers
 import { getAssetIdFromUrl } from "./helper";
 
 /**
- * Service class for managing file operations within plane applications.
+ * Service class for managing file operations within kardon applications.
  * Extends APIService to handle HTTP requests to the file-related endpoints.
  * @extends {APIService}
  */

@@ -7,11 +7,11 @@
 import type { ReactNode } from "react";
 import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import type { IModule } from "@plane/types";
-import { ComboDropDown } from "@plane/ui";
-import { cn } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import type { IModule } from "@kardon/types";
+import { ComboDropDown } from "@kardon/ui";
+import { cn } from "@kardon/utils";
 // hooks
 import { useDropdown } from "@/hooks/use-dropdown";
 import { usePlatformOS } from "@/hooks/use-platform-os";

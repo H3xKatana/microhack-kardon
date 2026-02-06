@@ -7,8 +7,8 @@
 import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { useSearchParams, useRouter } from "next/navigation";
-// plane imports
-import { isValidNextPath } from "@plane/utils";
+// kardon imports
+import { isValidNextPath } from "@kardon/utils";
 // components
 import { UserLoggedIn } from "@/components/account/user-logged-in";
 import { LogoSpinner } from "@/components/common/logo-spinner";

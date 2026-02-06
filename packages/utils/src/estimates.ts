@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane web constants
-import { EEstimateSystem } from "@plane/constants";
+// kardon web constants
+import { EEstimateSystem } from "@kardon/constants";
 
 export const isEstimatePointValuesRepeated = (
   estimatePoints: string[],

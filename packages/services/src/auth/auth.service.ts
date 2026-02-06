@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-import { API_BASE_URL } from "@plane/constants";
+import { API_BASE_URL } from "@kardon/constants";
 // types
-import type { ICsrfTokenData, IEmailCheckData, IEmailCheckResponse } from "@plane/types";
+import type { ICsrfTokenData, IEmailCheckData, IEmailCheckResponse } from "@kardon/types";
 // services
 import { APIService } from "../api.service";
 

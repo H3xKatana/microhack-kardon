@@ -6,16 +6,16 @@
 
 import { useRef, useState } from "react";
 import { observer } from "mobx-react";
-// plane hooks
-import { useOutsideClickDetector } from "@plane/hooks";
+// kardon hooks
+import { useOutsideClickDetector } from "@kardon/hooks";
 // i18n
-import { useTranslation } from "@plane/i18n";
-import { SearchIcon, CloseIcon } from "@plane/propel/icons";
+import { useTranslation } from "@kardon/i18n";
+import { SearchIcon, CloseIcon } from "@kardon/propel/icons";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 // hooks
 import { useProjectFilter } from "@/hooks/store/use-project-filter";
-import { IconButton } from "@plane/propel/icon-button";
+import { IconButton } from "@kardon/propel/icon-button";
 
 export const ProjectSearch = observer(function ProjectSearch() {
   // i18n

@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 import useSWR from "swr";
 import { Boxes, Share2, Star, User2 } from "lucide-react";
-import { CheckIcon, CloseIcon } from "@plane/propel/icons";
+import { CheckIcon, CloseIcon } from "@kardon/propel/icons";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";
 import { EmptySpace, EmptySpaceItem } from "@/components/ui/empty-space";
@@ -22,7 +22,7 @@ import { useUser } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
 // wrappers
 import { AuthenticationWrapper } from "@/lib/wrappers/authentication-wrapper";
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/kardon-web/services";
 // services
 
 // service initialization
@@ -112,7 +112,7 @@ function WorkspaceInvitationPage() {
               ) : (
                 <EmptySpaceItem Icon={Boxes} title="Continue to home" href="/" />
               )}
-              <EmptySpaceItem Icon={Star} title="Star us on GitHub" href="https://github.com/makeplane" />
+              <EmptySpaceItem Icon={Star} title="Star us on GitHub" href="https://github.com/makekardon" />
               <EmptySpaceItem
                 Icon={Share2}
                 title="Join our community of active creators"

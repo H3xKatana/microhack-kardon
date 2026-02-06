@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { TDraggableData } from "@plane/constants";
-import { STATE_GROUPS } from "@plane/constants";
-import type { IState, IStateResponse } from "@plane/types";
+// kardon imports
+import type { TDraggableData } from "@kardon/constants";
+import { STATE_GROUPS } from "@kardon/constants";
+import type { IState, IStateResponse } from "@kardon/types";
 
 export const orderStateGroups = (unorderedStateGroups: IStateResponse | undefined): IStateResponse | undefined => {
   if (!unorderedStateGroups) return undefined;

@@ -5,10 +5,10 @@
  */
 
 import { useState } from "react";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import type { IWorkspaceMember, TProjectMembership } from "@plane/types";
-import { renderFormattedDate } from "@plane/utils";
+// kardon imports
+import { EUserPermissions, EUserPermissionsLevel } from "@kardon/constants";
+import type { IWorkspaceMember, TProjectMembership } from "@kardon/types";
+import { renderFormattedDate } from "@kardon/utils";
 // components
 import { MemberHeaderColumn } from "@/components/project/member-header-column";
 import { AccountTypeColumn, NameColumn } from "@/components/project/settings/member-columns";

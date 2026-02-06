@@ -8,13 +8,13 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Eye, EyeOff } from "lucide-react";
-// plane imports
-import { E_PASSWORD_STRENGTH } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Input, PasswordStrengthIndicator } from "@plane/ui";
-import { getPasswordStrength } from "@plane/utils";
+// kardon imports
+import { E_PASSWORD_STRENGTH } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { Button } from "@kardon/propel/button";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { Input, PasswordStrengthIndicator } from "@kardon/ui";
+import { getPasswordStrength } from "@kardon/utils";
 // components
 import { ProfileSettingsHeading } from "@/components/settings/profile/heading";
 // helpers

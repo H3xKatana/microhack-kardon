@@ -5,9 +5,9 @@
  */
 
 import React from "react";
-// plane package imports
-import { useTranslation } from "@plane/i18n";
-import { cn } from "@plane/utils";
+// kardon package imports
+import { useTranslation } from "@kardon/i18n";
+import { cn } from "@kardon/utils";
 
 type Props = {
   i18nTitle: string;

@@ -16,9 +16,9 @@ import {
   Legend,
   CartesianGrid,
 } from "recharts";
-// plane imports
-import { AXIS_LABEL_CLASSNAME } from "@plane/constants";
-import type { TBarChartProps } from "@plane/types";
+// kardon imports
+import { AXIS_LABEL_CLASSNAME } from "@kardon/constants";
+import type { TBarChartProps } from "@kardon/types";
 // local components
 import { getLegendProps } from "../components/legend";
 import { CustomXAxisTick, CustomYAxisTick } from "../components/tick";

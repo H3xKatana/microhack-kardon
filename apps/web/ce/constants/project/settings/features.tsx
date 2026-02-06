@@ -5,9 +5,9 @@
  */
 
 import type { ReactNode } from "react";
-// plane imports
-import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon } from "@plane/propel/icons";
-import type { IProject } from "@plane/types";
+// kardon imports
+import { CycleIcon, IntakeIcon, ModuleIcon, PageIcon, ViewsIcon } from "@kardon/propel/icons";
+import type { IProject } from "@kardon/types";
 
 export type TProperties = {
   key: string;

@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { Loader } from "@plane/ui";
+// kardon imports
+import { Loader } from "@kardon/ui";
 
 export function IssueActivityLoader() {
   return (

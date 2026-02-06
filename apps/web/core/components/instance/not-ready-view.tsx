@@ -7,13 +7,13 @@
 import type { FC } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-import { GOD_MODE_URL } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { PlaneLockup } from "@plane/propel/icons";
+import { GOD_MODE_URL } from "@kardon/constants";
+import { Button } from "@kardon/propel/button";
+import { PlaneLockup } from "@kardon/propel/icons";
 // assets
 import PlaneBackgroundPatternDark from "@/app/assets/auth/background-pattern-dark.svg?url";
 import PlaneBackgroundPattern from "@/app/assets/auth/background-pattern.svg?url";
-import PlaneTakeOffImage from "@/app/assets/plane-takeoff.png?url";
+import PlaneTakeOffImage from "@/app/assets/kardon-takeoff.png?url";
 
 export function InstanceNotReady() {
   const { resolvedTheme } = useTheme();

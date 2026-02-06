@@ -5,8 +5,8 @@
  */
 
 import { Download } from "lucide-react";
-// plane imports
-import { Tooltip } from "@plane/propel/tooltip";
+// kardon imports
+import { Tooltip } from "@kardon/propel/tooltip";
 
 type Props = {
   src: string;

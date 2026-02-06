@@ -8,21 +8,21 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 // constants
-import { EPageAccess } from "@plane/constants";
-// plane types
-import { Button } from "@plane/propel/button";
-import { PageIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TPage } from "@plane/types";
-// plane ui
-import { Breadcrumbs, Header } from "@plane/ui";
+import { EPageAccess } from "@kardon/constants";
+// kardon types
+import { Button } from "@kardon/propel/button";
+import { PageIcon } from "@kardon/propel/icons";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import type { TPage } from "@kardon/types";
+// kardon ui
+import { Breadcrumbs, Header } from "@kardon/ui";
 // helpers
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
-// plane web imports
-import { CommonProjectBreadcrumbs } from "@/plane-web/components/breadcrumbs/common";
-import { EPageStoreType, usePageStore } from "@/plane-web/hooks/store";
+// kardon web imports
+import { CommonProjectBreadcrumbs } from "@/kardon-web/components/breadcrumbs/common";
+import { EPageStoreType, usePageStore } from "@/kardon-web/hooks/store";
 
 export const PagesListHeader = observer(function PagesListHeader() {
   // states

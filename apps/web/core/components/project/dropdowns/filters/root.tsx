@@ -6,9 +6,9 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-import { SearchIcon, CloseIcon } from "@plane/propel/icons";
-// plane imports
-import type { TProjectDisplayFilters, TProjectFilters } from "@plane/types";
+import { SearchIcon, CloseIcon } from "@kardon/propel/icons";
+// kardon imports
+import type { TProjectDisplayFilters, TProjectFilters } from "@kardon/types";
 // components
 import { FilterOption } from "@/components/issues/issue-layouts/filters";
 // hooks

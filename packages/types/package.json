@@ -1,5 +1,5 @@
 {
-  "name": "@plane/types",
+  "name": "@kardon/types",
   "version": "1.2.0",
   "license": "AGPL-3.0",
   "private": true,
@@ -23,7 +23,7 @@
     "react-dom": "catalog:"
   },
   "devDependencies": {
-    "@plane/typescript-config": "workspace:*",
+    "@kardon/typescript-config": "workspace:*",
     "@types/node": "catalog:",
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",

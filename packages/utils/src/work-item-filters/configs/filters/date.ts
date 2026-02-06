@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { TFilterProperty } from "@plane/types";
+// kardon imports
+import type { TFilterProperty } from "@kardon/types";
 // local imports
 import type { TCreateFilterConfig, TCreateDateFilterParams } from "../../../rich-filters";
 import { createFilterConfig, getSupportedDateOperators } from "../../../rich-filters";

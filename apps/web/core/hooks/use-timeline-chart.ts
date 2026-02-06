@@ -6,12 +6,12 @@
 
 import { useContext } from "react";
 // types
-import type { TTimelineType } from "@plane/types";
+import type { TTimelineType } from "@kardon/types";
 // lib
 import { StoreContext } from "@/lib/store-context";
 // Plane-web
-import { getTimelineStore } from "@/plane-web/hooks/use-timeline-chart";
-import type { IBaseTimelineStore } from "@/plane-web/store/timeline/base-timeline.store";
+import { getTimelineStore } from "@/kardon-web/hooks/use-timeline-chart";
+import type { IBaseTimelineStore } from "@/kardon-web/store/timeline/base-timeline.store";
 import { useTimeLineType } from "../components/gantt-chart/contexts";
 
 export const useTimeLineChart = (timelineType: TTimelineType): IBaseTimelineStore => {

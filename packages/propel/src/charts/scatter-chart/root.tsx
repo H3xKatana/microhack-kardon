@@ -15,9 +15,9 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-// plane imports
-import { AXIS_LABEL_CLASSNAME } from "@plane/constants";
-import type { TScatterChartProps } from "@plane/types";
+// kardon imports
+import { AXIS_LABEL_CLASSNAME } from "@kardon/constants";
+import type { TScatterChartProps } from "@kardon/types";
 // local components
 import { getLegendProps } from "../components/legend";
 import { CustomXAxisTick, CustomYAxisTick } from "../components/tick";

@@ -7,22 +7,22 @@
 import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import { LinkIcon, EditIcon, TrashIcon, CloseIcon } from "@plane/propel/icons";
-// plane imports
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TIssue, TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-import { ControlLink, CustomMenu } from "@plane/ui";
-import { generateWorkItemLink } from "@plane/utils";
+import { useTranslation } from "@kardon/i18n";
+import { LinkIcon, EditIcon, TrashIcon, CloseIcon } from "@kardon/propel/icons";
+// kardon imports
+import { Tooltip } from "@kardon/propel/tooltip";
+import type { TIssue, TIssueServiceType } from "@kardon/types";
+import { EIssueServiceType } from "@kardon/types";
+import { ControlLink, CustomMenu } from "@kardon/ui";
+import { generateWorkItemLink } from "@kardon/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
 import useIssuePeekOverviewRedirection from "@/hooks/use-issue-peek-overview-redirection";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web imports
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
-import type { TIssueRelationTypes } from "@/plane-web/types";
+// kardon web imports
+import { IssueIdentifier } from "@/kardon-web/components/issues/issue-details/issue-identifier";
+import type { TIssueRelationTypes } from "@/kardon-web/types";
 // local imports
 import { useRelationOperations } from "../issue-detail-widgets/relations/helper";
 import { RelationIssueProperty } from "./properties";

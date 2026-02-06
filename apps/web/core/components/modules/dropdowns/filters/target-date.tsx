@@ -6,10 +6,10 @@
 
 import React, { useState } from "react";
 import { observer } from "mobx-react";
-// plane constants
-import { DATE_AFTER_FILTER_OPTIONS } from "@plane/constants";
+// kardon constants
+import { DATE_AFTER_FILTER_OPTIONS } from "@kardon/constants";
 // components
-import { isInDateFormat } from "@plane/utils";
+import { isInDateFormat } from "@kardon/utils";
 import { DateFilterModal } from "@/components/core/filters/date-filter-modal";
 import { FilterHeader, FilterOption } from "@/components/issues/issue-layouts/filters";
 // helpers

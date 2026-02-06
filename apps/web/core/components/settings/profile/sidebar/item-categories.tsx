@@ -9,11 +9,11 @@ import type { LucideIcon } from "lucide-react";
 import { Activity, Bell, CircleUser, KeyRound, LockIcon, Settings2 } from "lucide-react";
 import { observer } from "mobx-react";
 import { useParams } from "react-router";
-// plane imports
-import { GROUPED_PROFILE_SETTINGS, PROFILE_SETTINGS_CATEGORIES } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { ISvgIcons } from "@plane/propel/icons";
-import type { TProfileSettingsTabs } from "@plane/types";
+// kardon imports
+import { GROUPED_PROFILE_SETTINGS, PROFILE_SETTINGS_CATEGORIES } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import type { ISvgIcons } from "@kardon/propel/icons";
+import type { TProfileSettingsTabs } from "@kardon/types";
 // local imports
 import { SettingsSidebarItem } from "../../sidebar/item";
 import { ProfileSettingsSidebarWorkspaceOptions } from "./workspace-options";

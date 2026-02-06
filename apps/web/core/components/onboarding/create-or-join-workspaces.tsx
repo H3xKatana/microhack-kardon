@@ -7,14 +7,14 @@
 import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { OctagonAlert } from "lucide-react";
-// plane imports
-import type { IWorkspaceMemberInvitation, TOnboardingSteps } from "@plane/types";
+// kardon imports
+import type { IWorkspaceMemberInvitation, TOnboardingSteps } from "@kardon/types";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";
 // hooks
 import { useUser } from "@/hooks/store/user";
-// plane web helpers
-import { getIsWorkspaceCreationDisabled } from "@/plane-web/helpers/instance.helper";
+// kardon web helpers
+import { getIsWorkspaceCreationDisabled } from "@/kardon-web/helpers/instance.helper";
 // local imports
 import { CreateWorkspace } from "./create-workspace";
 import { Invitations } from "./invitations";

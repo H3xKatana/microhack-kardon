@@ -5,21 +5,21 @@
  */
 
 import { Briefcase, FileText, Layers, LayoutGrid } from "lucide-react";
-// plane imports
-import { ContrastIcon, DiceIcon } from "@plane/propel/icons";
+// kardon imports
+import { ContrastIcon, DiceIcon } from "@kardon/propel/icons";
 import type {
   IWorkspaceDefaultSearchResult,
   IWorkspaceIssueSearchResult,
   IWorkspacePageSearchResult,
   IWorkspaceProjectSearchResult,
   IWorkspaceSearchResult,
-} from "@plane/types";
-import { generateWorkItemLink } from "@plane/utils";
+} from "@kardon/types";
+import { generateWorkItemLink } from "@kardon/utils";
 // components
 import type { TPowerKSearchResultsKeys } from "@/components/power-k/core/types";
-// plane web imports
-import { SEARCH_RESULTS_GROUPS_MAP_EXTENDED } from "@/plane-web/components/command-palette/power-k/search/search-results-map";
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+// kardon web imports
+import { SEARCH_RESULTS_GROUPS_MAP_EXTENDED } from "@/kardon-web/components/command-palette/power-k/search/search-results-map";
+import { IssueIdentifier } from "@/kardon-web/components/issues/issue-details/issue-identifier";
 
 export type TPowerKSearchResultGroupDetails = {
   icon?: React.ComponentType<{ className?: string }>;

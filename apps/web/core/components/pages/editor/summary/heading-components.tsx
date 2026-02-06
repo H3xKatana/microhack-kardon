@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { IMarking } from "@plane/editor";
-import { cn } from "@plane/utils";
+// kardon imports
+import type { IMarking } from "@kardon/editor";
+import { cn } from "@kardon/utils";
 
 export type THeadingComponentProps = {
   marking: IMarking;

@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-import { EmptyStateDetailed } from "@plane/propel/empty-state";
+import { EmptyStateDetailed } from "@kardon/propel/empty-state";
 
 type TProductUpdatesFallbackProps = {
   description: string;
@@ -16,8 +16,8 @@ export function ProductUpdatesFallback(props: TProductUpdatesFallbackProps) {
   // derived values
   const changelogUrl =
     variant === "cloud"
-      ? "https://plane.so/changelog?category=cloud"
-      : "https://plane.so/changelog?category=self-hosted";
+      ? "https://kardon.so/changelog?category=cloud"
+      : "https://kardon.so/changelog?category=self-hosted";
 
   return (
     <div className="py-8">

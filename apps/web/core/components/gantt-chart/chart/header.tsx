@@ -6,12 +6,12 @@
 
 import { observer } from "mobx-react";
 import { Expand, Shrink } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-// plane
-import type { TGanttViews } from "@plane/types";
-import { Row } from "@plane/ui";
+import { useTranslation } from "@kardon/i18n";
+// kardon
+import type { TGanttViews } from "@kardon/types";
+import { Row } from "@kardon/ui";
 // components
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 import { VIEWS_LIST } from "@/components/gantt-chart/data";
 // helpers
 // hooks

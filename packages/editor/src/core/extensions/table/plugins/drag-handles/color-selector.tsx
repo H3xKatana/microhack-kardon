@@ -7,9 +7,9 @@
 import { Disclosure } from "@headlessui/react";
 import type { Editor } from "@tiptap/core";
 import { Ban, Palette } from "lucide-react";
-// plane imports
-import { ChevronRightIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+// kardon imports
+import { ChevronRightIcon } from "@kardon/propel/icons";
+import { cn } from "@kardon/utils";
 // constants
 import { COLORS_LIST } from "@/constants/common";
 import { CORE_EXTENSIONS } from "@/constants/extension";

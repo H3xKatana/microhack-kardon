@@ -8,12 +8,12 @@ import type { MutableRefObject } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, useSearchParams } from "next/navigation";
-// plane types
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IIssueDisplayProperties } from "@plane/types";
-// plane ui
-// plane utils
-import { cn } from "@plane/utils";
+// kardon types
+import { Tooltip } from "@kardon/propel/tooltip";
+import type { IIssueDisplayProperties } from "@kardon/types";
+// kardon ui
+// kardon utils
+import { cn } from "@kardon/utils";
 // components
 import { WithDisplayPropertiesHOC } from "@/components/issues/issue-layouts/with-display-properties-HOC";
 // helpers

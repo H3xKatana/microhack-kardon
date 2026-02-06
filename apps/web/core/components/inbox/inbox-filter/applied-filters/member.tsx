@@ -7,13 +7,13 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 
-// plane types
-import { CloseIcon } from "@plane/propel/icons";
-import type { TInboxIssueFilterMemberKeys } from "@plane/types";
-// plane ui
-import { Avatar, Tag } from "@plane/ui";
+// kardon types
+import { CloseIcon } from "@kardon/propel/icons";
+import type { TInboxIssueFilterMemberKeys } from "@kardon/types";
+// kardon ui
+import { Avatar, Tag } from "@kardon/ui";
 // helpers
-import { getFileURL } from "@plane/utils";
+import { getFileURL } from "@kardon/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";

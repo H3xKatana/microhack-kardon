@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { IProject, TOperatorConfigMap, TSupportedOperators } from "@plane/types";
-import { COMPARISON_OPERATOR, EQUALITY_OPERATOR } from "@plane/types";
+// kardon imports
+import type { IProject, TOperatorConfigMap, TSupportedOperators } from "@kardon/types";
+import { COMPARISON_OPERATOR, EQUALITY_OPERATOR } from "@kardon/types";
 // local imports
 import type { IFilterIconConfig, TCreateDateFilterParams, TCreateFilterConfigParams } from "../../../rich-filters";
 import {

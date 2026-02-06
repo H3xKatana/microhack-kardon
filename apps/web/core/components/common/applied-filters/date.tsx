@@ -6,10 +6,10 @@
 
 import { observer } from "mobx-react";
 // icons
-import { DATE_BEFORE_FILTER_OPTIONS } from "@plane/constants";
-import { CloseIcon } from "@plane/propel/icons";
-// plane constants
-import { renderFormattedDate, capitalizeFirstLetter } from "@plane/utils";
+import { DATE_BEFORE_FILTER_OPTIONS } from "@kardon/constants";
+import { CloseIcon } from "@kardon/propel/icons";
+// kardon constants
+import { renderFormattedDate, capitalizeFirstLetter } from "@kardon/utils";
 // helpers
 type Props = {
   editable: boolean | undefined;

@@ -5,19 +5,19 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { setPromiseToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IProject } from "@plane/types";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { setPromiseToast } from "@kardon/propel/toast";
+import { Tooltip } from "@kardon/propel/tooltip";
+import type { IProject } from "@kardon/types";
 // components
 import { SettingsBoxedControlItem } from "@/components/settings/boxed-control-item";
 import { SettingsHeading } from "@/components/settings/heading";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
-// plane web imports
-import { UpgradeBadge } from "@/plane-web/components/workspace/upgrade-badge";
-import { PROJECT_FEATURES_LIST } from "@/plane-web/constants/project/settings";
+// kardon web imports
+import { UpgradeBadge } from "@/kardon-web/components/workspace/upgrade-badge";
+import { PROJECT_FEATURES_LIST } from "@/kardon-web/constants/project/settings";
 // local imports
 import { ProjectFeatureToggle } from "./helper";
 

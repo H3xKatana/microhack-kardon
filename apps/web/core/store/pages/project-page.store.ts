@@ -8,14 +8,14 @@ import { unset, set } from "lodash-es";
 import { makeObservable, observable, runInAction, action, reaction, computed } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import { EUserPermissions } from "@plane/constants";
-import type { TPage, TPageFilters, TPageNavigationTabs } from "@plane/types";
-import { EUserProjectRoles } from "@plane/types";
+import { EUserPermissions } from "@kardon/constants";
+import type { TPage, TPageFilters, TPageNavigationTabs } from "@kardon/types";
+import { EUserProjectRoles } from "@kardon/types";
 // helpers
-import { filterPagesByPageType, getPageName, orderPages, shouldFilterPage } from "@plane/utils";
-// plane web constants
-// plane web store
-import type { RootStore } from "@/plane-web/store/root.store";
+import { filterPagesByPageType, getPageName, orderPages, shouldFilterPage } from "@kardon/utils";
+// kardon web constants
+// kardon web store
+import type { RootStore } from "@/kardon-web/store/root.store";
 // services
 import { ProjectPageService } from "@/services/page";
 // store

@@ -41,8 +41,8 @@ import {
   setText,
   openEmojiPicker,
 } from "@/helpers/editor-commands";
-// plane editor extensions
-import { coreEditorAdditionalSlashCommandOptions } from "@/plane-editor/extensions";
+// kardon editor extensions
+import { coreEditorAdditionalSlashCommandOptions } from "@/kardon-editor/extensions";
 // types
 import type { CommandProps, ISlashCommandItem, TSlashCommandSectionKeys } from "@/types";
 // local types

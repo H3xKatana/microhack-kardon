@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-import type { TIssueLayout } from "@plane/constants";
-import { ListLayoutIcon, BoardLayoutIcon } from "@plane/propel/icons";
-import type { ISvgIcons } from "@plane/propel/icons";
+import type { TIssueLayout } from "@kardon/constants";
+import { ListLayoutIcon, BoardLayoutIcon } from "@kardon/propel/icons";
+import type { ISvgIcons } from "@kardon/propel/icons";
 
 export function IssueLayoutIcon({
   layout,

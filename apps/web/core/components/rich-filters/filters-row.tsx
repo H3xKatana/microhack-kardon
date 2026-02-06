@@ -8,11 +8,11 @@ import React, { useCallback, useState } from "react";
 import { observer } from "mobx-react";
 import { ListFilterPlus } from "lucide-react";
 import { Transition } from "@headlessui/react";
-// plane imports
-import { Button } from "@plane/propel/button";
-import type { IFilterInstance } from "@plane/shared-state";
-import type { TExternalFilter, TFilterProperty } from "@plane/types";
-import { cn, EHeaderVariant, Header, Loader } from "@plane/ui";
+// kardon imports
+import { Button } from "@kardon/propel/button";
+import type { IFilterInstance } from "@kardon/shared-state";
+import type { TExternalFilter, TFilterProperty } from "@kardon/types";
+import { cn, EHeaderVariant, Header, Loader } from "@kardon/ui";
 // local imports
 import type { TAddFilterButtonProps } from "./add-filters/button";
 import { AddFilterButton } from "./add-filters/button";

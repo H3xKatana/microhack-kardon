@@ -10,8 +10,8 @@ import { BubbleMenu, useEditorState } from "@tiptap/react";
 import type { BubbleMenuProps } from "@tiptap/react";
 import type { FC } from "react";
 import { useEffect, useState, useRef } from "react";
-// plane utils
-import { cn } from "@plane/utils";
+// kardon utils
+import { cn } from "@kardon/utils";
 // components
 import type { EditorMenuItem } from "@/components/menus";
 import {

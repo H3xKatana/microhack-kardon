@@ -7,12 +7,12 @@
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { useForm } from "react-hook-form";
-// plane package imports
-import { useTranslation } from "@plane/i18n";
-import type { IAnalyticsParams } from "@plane/types";
-import { ChartXAxisProperty, ChartYAxisMetric } from "@plane/types";
-import { cn } from "@plane/utils";
-// plane web components
+// kardon package imports
+import { useTranslation } from "@kardon/i18n";
+import type { IAnalyticsParams } from "@kardon/types";
+import { ChartXAxisProperty, ChartYAxisMetric } from "@kardon/types";
+import { cn } from "@kardon/utils";
+// kardon web components
 import AnalyticsSectionWrapper from "../analytics-section-wrapper";
 import { AnalyticsSelectParams } from "../select/analytics-params";
 import PriorityChart from "./priority-chart";

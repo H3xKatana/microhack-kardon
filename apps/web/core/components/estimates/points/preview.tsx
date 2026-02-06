@@ -8,14 +8,14 @@ import type { FC } from "react";
 import { useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
 import { GripVertical } from "lucide-react";
-// plane imports
-import { EEstimateSystem, estimateCount } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EditIcon, TrashIcon } from "@plane/propel/icons";
-import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@plane/types";
-import { convertMinutesToHoursMinutesString } from "@plane/utils";
-// plane web imports
-import { EstimatePointDelete } from "@/plane-web/components/estimates";
+// kardon imports
+import { EEstimateSystem, estimateCount } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { EditIcon, TrashIcon } from "@kardon/propel/icons";
+import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeErrorObject } from "@kardon/types";
+import { convertMinutesToHoursMinutesString } from "@kardon/utils";
+// kardon web imports
+import { EstimatePointDelete } from "@/kardon-web/components/estimates";
 // local imports
 import { EstimatePointUpdate } from "./update";
 

@@ -4,14 +4,14 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { STATE_GROUPS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { PieChart } from "@plane/propel/charts/pie-chart";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import type { IUserProfileData, IUserStateDistribution } from "@plane/types";
-import { Card } from "@plane/ui";
-import { capitalizeFirstLetter } from "@plane/utils";
+// kardon imports
+import { STATE_GROUPS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { PieChart } from "@kardon/propel/charts/pie-chart";
+import { EmptyStateCompact } from "@kardon/propel/empty-state";
+import type { IUserProfileData, IUserStateDistribution } from "@kardon/types";
+import { Card } from "@kardon/ui";
+import { capitalizeFirstLetter } from "@kardon/utils";
 
 type Props = {
   stateDistribution: IUserStateDistribution[];

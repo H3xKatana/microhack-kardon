@@ -5,9 +5,9 @@
  */
 
 import type { FC } from "react";
-// plane imports
-import type { TActivityFilters, TActivityFilterOption } from "@plane/constants";
-import { ACTIVITY_FILTER_TYPE_OPTIONS } from "@plane/constants";
+// kardon imports
+import type { TActivityFilters, TActivityFilterOption } from "@kardon/constants";
+import { ACTIVITY_FILTER_TYPE_OPTIONS } from "@kardon/constants";
 // components
 import { ActivityFilter } from "@/components/issues/issue-detail/issue-activity";
 

@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane package imports
-import type { ChartXAxisProperty } from "@plane/types";
-import { CustomSelect } from "@plane/ui";
+// kardon package imports
+import type { ChartXAxisProperty } from "@kardon/types";
+import { CustomSelect } from "@kardon/ui";
 
 type Props = {
   value?: ChartXAxisProperty;

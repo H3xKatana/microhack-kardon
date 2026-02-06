@@ -5,13 +5,13 @@
  */
 
 import { Database as HocuspocusDatabase } from "@hocuspocus/extension-database";
-// plane imports
+// kardon imports
 import {
   getAllDocumentFormatsFromDocumentEditorBinaryData,
   getBinaryDataFromDocumentEditorHTMLString,
-} from "@plane/editor";
-import type { TDocumentPayload } from "@plane/types";
-import { logger } from "@plane/logger";
+} from "@kardon/editor";
+import type { TDocumentPayload } from "@kardon/types";
+import { logger } from "@kardon/logger";
 // lib
 import { AppError } from "@/lib/errors";
 // services
@@ -43,10 +43,10 @@ const fetchDocument = async ({ context, documentName: pageId, instance }: FetchP
             convertedBinaryData,
             true
           );
-          const payload: TDocumentPayload = {
+          const payload = {
             description_binary: contentBinaryEncoded,
             description_html: contentHTML,
-            description_json: contentJSON,
+            description: contentJSON,
           };
           await service.updateDescriptionBinary(pageId, payload);
         } catch (e) {
@@ -83,10 +83,10 @@ const storeDocument = async ({
       true
     );
     // create payload
-    const payload: TDocumentPayload = {
+    const payload = {
       description_binary: contentBinaryEncoded,
       description_html: contentHTML,
-      description_json: contentJSON,
+      description: contentJSON,
     };
     await service.updateDescriptionBinary(pageId, payload);
   } catch (error) {

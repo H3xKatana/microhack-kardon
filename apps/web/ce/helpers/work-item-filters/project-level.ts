@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { EIssuesStoreType } from "@plane/types";
-// plane web imports
-import type { TWorkItemFiltersEntityProps } from "@/plane-web/hooks/work-item-filters/use-work-item-filters-config";
+// kardon imports
+import type { EIssuesStoreType } from "@kardon/types";
+// kardon web imports
+import type { TWorkItemFiltersEntityProps } from "@/kardon-web/hooks/work-item-filters/use-work-item-filters-config";
 
 export type TGetAdditionalPropsForProjectLevelFiltersHOCParams = {
   entityType: EIssuesStoreType;

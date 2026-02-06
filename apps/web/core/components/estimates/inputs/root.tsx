@@ -5,11 +5,11 @@
  */
 
 import type { FC } from "react";
-// plane imports
-import type { TEstimateSystemKeys } from "@plane/types";
-import { EEstimateSystem } from "@plane/types";
-// plane web imports
-import { EstimateTimeInput } from "@/plane-web/components/estimates/inputs";
+// kardon imports
+import type { TEstimateSystemKeys } from "@kardon/types";
+import { EEstimateSystem } from "@kardon/types";
+// kardon web imports
+import { EstimateTimeInput } from "@/kardon-web/components/estimates/inputs";
 // local imports
 import { EstimateNumberInput } from "./number-input";
 import { EstimateTextInput } from "./text-input";

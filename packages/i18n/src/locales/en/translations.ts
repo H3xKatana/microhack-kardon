@@ -243,7 +243,7 @@ export default {
   full_changelog: "Full changelog",
   support: "Support",
   discord: "Discord",
-  powered_by_plane_pages: "Powered by Plane Pages",
+  powered_by_kardon_pages: "Powered by Plane Pages",
   please_select_at_least_one_invitation: "Please select at least one invitation.",
   please_select_at_least_one_invitation_description: "Please select at least one invitation to join the workspace.",
   we_see_that_someone_has_invited_you_to_join_a_workspace: "We see that someone has invited you to join a workspace",
@@ -455,7 +455,7 @@ export default {
         issues: "Work items",
       },
     },
-    new_at_plane: {
+    new_at_kardon: {
       title: "New at Plane",
     },
     quick_tutorial: {
@@ -2508,8 +2508,8 @@ export default {
     edited_by: "Edited by",
   },
   self_hosted_maintenance_message: {
-    plane_didnt_start_up_this_could_be_because_one_or_more_plane_services_failed_to_start:
-      "Plane didn't start up. This could be because one or more Plane services failed to start.",
+    kardon_didnt_start_up_this_could_be_because_one_or_more_kardon_services_failed_to_start:
+      "Kardon didn't start up. This could be because one or more Kardon services failed to start.",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "Choose View Logs from setup.sh and Docker logs to be sure.",
   },
@@ -2694,7 +2694,7 @@ export default {
     },
     help_actions: {
       open_keyboard_shortcuts: "Open keyboard shortcuts",
-      open_plane_documentation: "Open Plane documentation",
+      open_kardon_documentation: "Open Plane documentation",
       join_discord: "Join our Discord",
       report_bug: "Report a bug",
       chat_with_us: "Chat with us",

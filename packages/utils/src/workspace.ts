@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { IWorkspace } from "@plane/types";
+// kardon imports
+import type { IWorkspace } from "@kardon/types";
 
 export const orderWorkspacesList = (workspaces: IWorkspace[]): IWorkspace[] =>
   workspaces.sort((a, b) => a.name.localeCompare(b.name));

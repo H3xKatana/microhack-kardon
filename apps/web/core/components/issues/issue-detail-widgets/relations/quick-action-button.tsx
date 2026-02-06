@@ -8,16 +8,16 @@ import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
 
-import { useTranslation } from "@plane/i18n";
-import { PlusIcon } from "@plane/propel/icons";
-// plane imports
-import type { TIssueServiceType } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+import { useTranslation } from "@kardon/i18n";
+import { PlusIcon } from "@kardon/propel/icons";
+// kardon imports
+import type { TIssueServiceType } from "@kardon/types";
+import { CustomMenu } from "@kardon/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // Plane-web
-import { useTimeLineRelationOptions } from "@/plane-web/components/relations";
-import type { TIssueRelationTypes } from "@/plane-web/types";
+import { useTimeLineRelationOptions } from "@/kardon-web/components/relations";
+import type { TIssueRelationTypes } from "@/kardon-web/types";
 
 type Props = {
   issueId: string;

@@ -6,12 +6,12 @@
 
 import { observer } from "mobx-react";
 // types
-import type { TPageNavigationTabs } from "@plane/types";
+import type { TPageNavigationTabs } from "@kardon/types";
 // components
 import { ListLayout } from "@/components/core/list";
-// plane web hooks
-import type { EPageStoreType } from "@/plane-web/hooks/store";
-import { usePageStore } from "@/plane-web/hooks/store";
+// kardon web hooks
+import type { EPageStoreType } from "@/kardon-web/hooks/store";
+import { usePageStore } from "@/kardon-web/hooks/store";
 // local imports
 import { PageListBlock } from "./block";
 

@@ -6,9 +6,9 @@
 
 import { observer } from "mobx-react";
 import { ArrowDown, ArrowUp } from "lucide-react";
-// plane imports
-import { Button } from "@plane/propel/button";
-import { cn } from "@plane/utils";
+// kardon imports
+import { Button } from "@kardon/propel/button";
+import { cn } from "@kardon/utils";
 // constants
 import type { TPlanePlans } from "@/constants/plans";
 import { ComingSoonBadge, PLANE_PLANS, PLANS_LIST } from "@/constants/plans";
@@ -16,7 +16,7 @@ import { ComingSoonBadge, PLANE_PLANS, PLANS_LIST } from "@/constants/plans";
 import { PlanFeatureDetail } from "./feature-detail";
 
 type TPlansComparisonBaseProps = {
-  planeDetails: React.ReactNode;
+  kardonDetails: React.ReactNode;
   isSelfManaged: boolean;
   isCompareAllFeaturesSectionOpen: boolean;
   setIsCompareAllFeaturesSectionOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -31,7 +31,7 @@ export const shouldRenderPlanDetail = (planKey: TPlanePlans) => {
 };
 
 export const PlansComparisonBase = observer(function PlansComparisonBase(props: TPlansComparisonBaseProps) {
-  const { planeDetails, isSelfManaged, isCompareAllFeaturesSectionOpen, setIsCompareAllFeaturesSectionOpen } = props;
+  const { kardonDetails, isSelfManaged, isCompareAllFeaturesSectionOpen, setIsCompareAllFeaturesSectionOpen } = props;
   // plan details
   const { planDetails, planHighlights, planComparison } = PLANE_PLANS;
   const numberOfPlansToRender = Object.keys(planDetails).filter((planKey) =>
@@ -51,7 +51,7 @@ export const PlansComparisonBase = observer(function PlansComparisonBase(props: 
             }}
           >
             <div className="col-span-1 p-3 space-y-0.5 text-body-sm-medium" />
-            {planeDetails}
+            {kardonDetails}
           </div>
           {/* Plan Headers */}
           <section className="flex-shrink-0">

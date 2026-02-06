@@ -5,10 +5,10 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { CalendarLayoutIcon } from "@plane/propel/icons";
-import { cn, renderFormattedDate, getDate } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { CalendarLayoutIcon } from "@kardon/propel/icons";
+import { cn, renderFormattedDate, getDate } from "@kardon/utils";
 
 export type TReadonlyDateProps = {
   className?: string;

@@ -5,8 +5,8 @@
  */
 
 import { useTheme } from "next-themes";
-// plane imports
-import { Button } from "@plane/propel/button";
+// kardon imports
+import { Button } from "@kardon/propel/button";
 // assets
 import maintenanceModeDarkModeImage from "@/app/assets/instance/maintenance-mode-dark.svg?url";
 import maintenanceModeLightModeImage from "@/app/assets/instance/maintenance-mode-light.svg?url";
@@ -17,17 +17,17 @@ const linkMap = [
   {
     key: "mail_to",
     label: "Contact Support",
-    value: "mailto:support@plane.so",
+    value: "mailto:support@kardon.so",
   },
   {
     key: "status",
     label: "Status Page",
-    value: "https://status.plane.so/",
+    value: "https://status.kardon.so/",
   },
   {
     key: "twitter_handle",
-    label: "@planepowers",
-    value: "https://x.com/planepowers",
+    label: "@kardonpowers",
+    value: "https://x.com/kardonpowers",
   },
 ];
 

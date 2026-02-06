@@ -5,12 +5,12 @@
  */
 
 import { useState } from "react";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@kardon/i18n";
 // ui
-import { Button } from "@plane/propel/button";
-import { TrashIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { Button } from "@kardon/propel/button";
+import { TrashIcon } from "@kardon/propel/icons";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { EModalPosition, EModalWidth, ModalCore } from "@kardon/ui";
 // hooks
 import { useUser } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";

@@ -5,8 +5,8 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { EIssueLayoutTypes } from "@plane/types";
+// kardon imports
+import { EIssueLayoutTypes } from "@kardon/types";
 // components
 import { CalendarLayoutLoader } from "@/components/ui/loader/layouts/calendar-layout-loader";
 import { GanttLayoutLoader } from "@/components/ui/loader/layouts/gantt-layout-loader";

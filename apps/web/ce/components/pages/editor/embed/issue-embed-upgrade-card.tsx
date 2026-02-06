@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { getButtonStyling } from "@plane/propel/button";
-import { cn } from "@plane/utils";
+// kardon imports
+import { getButtonStyling } from "@kardon/propel/button";
+import { cn } from "@kardon/utils";
 // components
 import { ProIcon } from "@/components/common/pro-icon";
 
@@ -27,7 +27,7 @@ export function IssueEmbedUpgradeCard(props: any) {
         </p>
       </div>
       <a
-        href="https://plane.so/pro"
+        href="https://kardon.so/pro"
         target="_blank"
         rel="noopener noreferrer"
         className={cn(getButtonStyling("primary", "base"), "no-underline")}

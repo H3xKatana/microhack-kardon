@@ -7,8 +7,8 @@
 import { Command } from "cmdk";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
-import type { IWorkspaceSearchResults } from "@plane/types";
+// kardon imports
+import type { IWorkspaceSearchResults } from "@kardon/types";
 // hooks
 import { useAppRouter } from "@/hooks/use-app-router";
 // helpers

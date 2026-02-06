@@ -6,12 +6,12 @@
 
 import type { FC } from "react";
 import { observer } from "mobx-react";
-import { PAST_DURATION_FILTER_OPTIONS } from "@plane/constants";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TInboxIssueFilterDateKeys } from "@plane/types";
+import { PAST_DURATION_FILTER_OPTIONS } from "@kardon/constants";
+import { CloseIcon } from "@kardon/propel/icons";
+import type { TInboxIssueFilterDateKeys } from "@kardon/types";
 // helpers
-import { Tag } from "@plane/ui";
-import { renderFormattedDate } from "@plane/utils";
+import { Tag } from "@kardon/ui";
+import { renderFormattedDate } from "@kardon/utils";
 // constants
 // hooks
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";

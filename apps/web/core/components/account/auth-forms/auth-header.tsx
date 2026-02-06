@@ -6,15 +6,15 @@
 
 import { observer } from "mobx-react";
 import useSWR from "swr";
-import { useTranslation } from "@plane/i18n";
-import type { IWorkspaceMemberInvitation } from "@plane/types";
+import { useTranslation } from "@kardon/i18n";
+import type { IWorkspaceMemberInvitation } from "@kardon/types";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";
 import { WorkspaceLogo } from "@/components/workspace/logo";
 // helpers
 import { EAuthModes, EAuthSteps } from "@/helpers/authentication.helper";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/kardon-web/services";
 
 type TAuthHeader = {
   workspaceSlug: string | undefined;
@@ -59,7 +59,7 @@ const workSpaceService = new WorkspaceService();
 
 export const AuthHeader = observer(function AuthHeader(props: TAuthHeader) {
   const { workspaceSlug, invitationId, invitationEmail, authMode, currentAuthStep } = props;
-  // plane imports
+  // kardon imports
   const { t } = useTranslation();
 
   const { data: invitation, isLoading } = useSWR(

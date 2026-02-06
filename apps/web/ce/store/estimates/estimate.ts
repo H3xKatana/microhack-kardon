@@ -12,9 +12,9 @@ import type {
   IEstimate as IEstimateType,
   IEstimatePoint as IEstimatePointType,
   TEstimateSystemKeys,
-} from "@plane/types";
-// plane web services
-import estimateService from "@/plane-web/services/project/estimate.service";
+} from "@kardon/types";
+// kardon web services
+import estimateService from "@/kardon-web/services/project/estimate.service";
 // store
 import type { IEstimatePoint } from "@/store/estimates/estimate-point";
 import { EstimatePoint } from "@/store/estimates/estimate-point";

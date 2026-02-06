@@ -8,13 +8,13 @@ import { useMemo, useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { ImageIcon } from "lucide-react";
-// plane imports
-import { E_PASSWORD_STRENGTH } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
-import { cn, getFileURL, getPasswordStrength } from "@plane/utils";
+// kardon imports
+import { E_PASSWORD_STRENGTH } from "@kardon/constants";
+import { Button } from "@kardon/propel/button";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import type { IUser } from "@kardon/types";
+import { EOnboardingSteps } from "@kardon/types";
+import { cn, getFileURL, getPasswordStrength } from "@kardon/utils";
 // components
 import { UserImageUploadModal } from "@/components/core/modals/user-image-upload-modal";
 // hooks

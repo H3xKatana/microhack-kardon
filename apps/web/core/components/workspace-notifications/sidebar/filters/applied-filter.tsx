@@ -5,11 +5,11 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { ENotificationFilterType, FILTER_TYPE_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import { Header, EHeaderVariant, Tag } from "@plane/ui";
+// kardon imports
+import { ENotificationFilterType, FILTER_TYPE_OPTIONS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { CloseIcon } from "@kardon/propel/icons";
+import { Header, EHeaderVariant, Tag } from "@kardon/ui";
 // hooks
 import { useWorkspaceNotifications } from "@/hooks/store/notifications";
 

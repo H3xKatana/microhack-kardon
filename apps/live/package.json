@@ -36,10 +36,10 @@
     "@hocuspocus/extension-redis": "2.15.2",
     "@hocuspocus/server": "2.15.2",
     "@hocuspocus/transformer": "2.15.2",
-    "@plane/decorators": "workspace:*",
-    "@plane/editor": "workspace:*",
-    "@plane/logger": "workspace:*",
-    "@plane/types": "workspace:*",
+    "@kardon/decorators": "workspace:*",
+    "@kardon/editor": "workspace:*",
+    "@kardon/logger": "workspace:*",
+    "@kardon/types": "workspace:*",
     "@react-pdf/renderer": "^4.3.0",
     "@react-pdf/types": "^2.9.2",
     "@sentry/node": "catalog:",
@@ -64,7 +64,7 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@plane/typescript-config": "workspace:*",
+    "@kardon/typescript-config": "workspace:*",
     "@types/compression": "1.8.1",
     "@types/cors": "^2.8.17",
     "@types/express": "4.17.23",

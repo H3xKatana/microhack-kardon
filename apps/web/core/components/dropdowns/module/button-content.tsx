@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { CloseIcon, ModuleIcon, ChevronDownIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import { cn } from "@plane/utils";
+// kardon imports
+import { CloseIcon, ModuleIcon, ChevronDownIcon } from "@kardon/propel/icons";
+import { Tooltip } from "@kardon/propel/tooltip";
+import { cn } from "@kardon/utils";
 // hooks
 import { useModule } from "@/hooks/store/use-module";
 import { usePlatformOS } from "@/hooks/use-platform-os";

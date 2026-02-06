@@ -5,8 +5,8 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import type { EIssuesStoreType } from "@plane/types";
+// kardon imports
+import type { EIssuesStoreType } from "@kardon/types";
 // components
 import { FiltersToggle } from "@/components/rich-filters/filters-toggle";
 // hooks

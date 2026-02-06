@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
-import type { TInboxIssue, TIssue, TInboxIssueWithPagination } from "@plane/types";
-import { EInboxIssueSource } from "@plane/types";
+// kardon imports
+import { API_BASE_URL } from "@kardon/constants";
+import type { TInboxIssue, TIssue, TInboxIssueWithPagination } from "@kardon/types";
+import { EInboxIssueSource } from "@kardon/types";
 // helpers
 // services
 import { APIService } from "@/services/api.service";

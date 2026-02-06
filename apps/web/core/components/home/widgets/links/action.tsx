@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import { useTranslation } from "@plane/i18n";
-import { PlusIcon } from "@plane/propel/icons";
+import { useTranslation } from "@kardon/i18n";
+import { PlusIcon } from "@kardon/propel/icons";
 
 type TProps = {
   onClick: () => void;

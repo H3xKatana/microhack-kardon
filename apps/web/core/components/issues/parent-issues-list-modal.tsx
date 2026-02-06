@@ -11,21 +11,21 @@ import { Rocket } from "lucide-react";
 // headless ui
 import { Combobox } from "@headlessui/react";
 // i18n
-import { useTranslation } from "@plane/i18n";
-import { SearchIcon } from "@plane/propel/icons";
+import { useTranslation } from "@kardon/i18n";
+import { SearchIcon } from "@kardon/propel/icons";
 // types
-import type { ISearchIssueResponse } from "@plane/types";
+import type { ISearchIssueResponse } from "@kardon/types";
 // ui
-import { Loader, EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
-import { generateWorkItemLink, getTabIndex } from "@plane/utils";
+import { Loader, EModalPosition, EModalWidth, ModalCore } from "@kardon/ui";
+import { generateWorkItemLink, getTabIndex } from "@kardon/utils";
 // components
 import { IssueSearchModalEmptyState } from "@/components/core/modals/issue-search-modal-empty-state";
 // helpers
 // hooks
 import useDebounce from "@/hooks/use-debounce";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web components
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+// kardon web components
+import { IssueIdentifier } from "@/kardon-web/components/issues/issue-details/issue-identifier";
 // services
 import { ProjectService } from "@/services/project";
 

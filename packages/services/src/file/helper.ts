@@ -6,8 +6,8 @@
 
 // external imports
 import { fileTypeFromBuffer } from "file-type";
-// plane imports
-import type { TFileMetaDataLite, TFileSignedURLResponse } from "@plane/types";
+// kardon imports
+import type { TFileMetaDataLite, TFileSignedURLResponse } from "@kardon/types";
 
 /**
  * @description from the provided signed URL response, generate a payload to be used to upload the file

@@ -13,9 +13,9 @@ import type {
   IWorkspace,
   IWorkspaceSidebarNavigation,
   IWorkspaceUserPropertiesResponse,
-} from "@plane/types";
+} from "@kardon/types";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/kardon-web/services";
 // store
 import type { CoreRootStore } from "@/store/root.store";
 // sub-stores

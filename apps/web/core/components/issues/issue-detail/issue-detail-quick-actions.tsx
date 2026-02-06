@@ -6,14 +6,14 @@
 
 import { useRef } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { CopyLinkIcon } from "@plane/propel/icons";
-import { IconButton } from "@plane/propel/icon-button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import { EIssuesStoreType } from "@plane/types";
-import { generateWorkItemLink, copyTextToClipboard } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { CopyLinkIcon } from "@kardon/propel/icons";
+import { IconButton } from "@kardon/propel/icon-button";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { Tooltip } from "@kardon/propel/tooltip";
+import { EIssuesStoreType } from "@kardon/types";
+import { generateWorkItemLink, copyTextToClipboard } from "@kardon/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useIssues } from "@/hooks/store/use-issues";

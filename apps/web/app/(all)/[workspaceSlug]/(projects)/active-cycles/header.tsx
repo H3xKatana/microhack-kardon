@@ -5,14 +5,14 @@
  */
 
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@kardon/i18n";
 // ui
-import { CycleIcon } from "@plane/propel/icons";
-import { Breadcrumbs, Header } from "@plane/ui";
+import { CycleIcon } from "@kardon/propel/icons";
+import { Breadcrumbs, Header } from "@kardon/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
-// plane web components
-import { UpgradeBadge } from "@/plane-web/components/workspace/upgrade-badge";
+// kardon web components
+import { UpgradeBadge } from "@/kardon-web/components/workspace/upgrade-badge";
 
 export const WorkspaceActiveCycleHeader = observer(function WorkspaceActiveCycleHeader() {
   const { t } = useTranslation();

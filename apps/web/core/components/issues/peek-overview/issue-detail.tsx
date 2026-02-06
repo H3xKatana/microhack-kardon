@@ -7,12 +7,12 @@
 import type { FC } from "react";
 import { useEffect } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { EditorRefApi } from "@plane/editor";
-import { EFileAssetType } from "@plane/types";
-import type { TNameDescriptionLoader } from "@plane/types";
+// kardon imports
+import type { EditorRefApi } from "@kardon/editor";
+import { EFileAssetType } from "@kardon/types";
+import type { TNameDescriptionLoader } from "@kardon/types";
 // components
-import { getTextContent } from "@plane/utils";
+import { getTextContent } from "@kardon/utils";
 // components
 import { DescriptionVersionsRoot } from "@/components/core/description-versions";
 import { DescriptionInput } from "@/components/editor/rich-text/description-input";
@@ -22,11 +22,11 @@ import { useMember } from "@/hooks/store/use-member";
 import { useProject } from "@/hooks/store/use-project";
 import { useUser } from "@/hooks/store/user";
 import useReloadConfirmations from "@/hooks/use-reload-confirmation";
-// plane web components
-import { DeDupeIssuePopoverRoot } from "@/plane-web/components/de-dupe/duplicate-popover";
-import { IssueTypeSwitcher } from "@/plane-web/components/issues/issue-details/issue-type-switcher";
-// plane web hooks
-import { useDebouncedDuplicateIssues } from "@/plane-web/hooks/use-debounced-duplicate-issues";
+// kardon web components
+import { DeDupeIssuePopoverRoot } from "@/kardon-web/components/de-dupe/duplicate-popover";
+import { IssueTypeSwitcher } from "@/kardon-web/components/issues/issue-details/issue-type-switcher";
+// kardon web hooks
+import { useDebouncedDuplicateIssues } from "@/kardon-web/hooks/use-debounced-duplicate-issues";
 // services
 import { WorkItemVersionService } from "@/services/issue";
 // local components

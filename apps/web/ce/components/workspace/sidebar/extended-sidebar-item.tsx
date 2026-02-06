@@ -12,13 +12,13 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, usePathname } from "next/navigation";
 import { Pin, PinOff } from "lucide-react";
-// plane imports
-import type { IWorkspaceSidebarNavigationItem } from "@plane/constants";
-import { EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
-import { DragHandle, DropIndicator } from "@plane/ui";
-import { cn } from "@plane/utils";
+// kardon imports
+import type { IWorkspaceSidebarNavigationItem } from "@kardon/constants";
+import { EUserPermissionsLevel } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { Tooltip } from "@kardon/propel/tooltip";
+import { DragHandle, DropIndicator } from "@kardon/ui";
+import { cn } from "@kardon/utils";
 // components
 import { SidebarNavItem } from "@/components/sidebar/sidebar-navigation";
 // hooks

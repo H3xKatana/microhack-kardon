@@ -5,12 +5,12 @@
  */
 
 import type { FC } from "react";
-// plane imports
-import type { I_THEME_OPTION } from "@plane/constants";
-import { THEME_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+// kardon imports
+import type { I_THEME_OPTION } from "@kardon/constants";
+import { THEME_OPTIONS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
 // constants
-import { CustomSelect } from "@plane/ui";
+import { CustomSelect } from "@kardon/ui";
 // ui
 
 type Props = {

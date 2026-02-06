@@ -6,9 +6,9 @@
 
 import { memo } from "react";
 import { ArrowUpWideNarrow, ArrowDownWideNarrow } from "lucide-react";
-// plane package imports
-import { E_SORT_ORDER } from "@plane/constants";
-import { IconButton } from "@plane/propel/icon-button";
+// kardon package imports
+import { E_SORT_ORDER } from "@kardon/constants";
+import { IconButton } from "@kardon/propel/icon-button";
 
 export type TActivitySortRoot = {
   sortOrder: E_SORT_ORDER;

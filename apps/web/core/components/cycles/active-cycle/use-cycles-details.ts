@@ -7,9 +7,9 @@
 import { useCallback } from "react";
 import { useRouter } from "next/navigation";
 import useSWR from "swr";
-// plane imports
-import type { TWorkItemFilterCondition } from "@plane/shared-state";
-import { EIssuesStoreType } from "@plane/types";
+// kardon imports
+import type { TWorkItemFilterCondition } from "@kardon/shared-state";
+import { EIssuesStoreType } from "@kardon/types";
 // constants
 import { CYCLE_ISSUES_WITH_PARAMS } from "@/constants/fetch-keys";
 // hooks

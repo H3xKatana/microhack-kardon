@@ -7,10 +7,10 @@
 import type { SetStateAction } from "react";
 import { observer } from "mobx-react";
 import { GripVertical } from "lucide-react";
-import { EIconSize, STATE_TRACKER_ELEMENTS } from "@plane/constants";
-// plane imports
-import { EditIcon, StateGroupIcon } from "@plane/propel/icons";
-import type { IState, TStateOperationsCallbacks } from "@plane/types";
+import { EIconSize, STATE_TRACKER_ELEMENTS } from "@kardon/constants";
+// kardon imports
+import { EditIcon, StateGroupIcon } from "@kardon/propel/icons";
+import type { IState, TStateOperationsCallbacks } from "@kardon/types";
 // local imports
 import { useProjectState } from "@/hooks/store/use-project-state";
 import { StateDelete, StateMarksAsDefault } from "./options";

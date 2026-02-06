@@ -5,8 +5,8 @@
  */
 
 import { subDays } from "date-fns";
-// plane imports
-import { EPastDurationFilters } from "@plane/constants";
+// kardon imports
+import { EPastDurationFilters } from "@kardon/constants";
 // local imports
 import { renderFormattedPayloadDate } from "./datetime";
 

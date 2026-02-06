@@ -8,11 +8,11 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 // icons
 import { Settings2 } from "lucide-react";
-// plane internal packages
-import { getButtonStyling } from "@plane/propel/button";
-import type { TInstanceAuthenticationMethodKeys } from "@plane/types";
-import { ToggleSwitch } from "@plane/ui";
-import { cn } from "@plane/utils";
+// kardon internal packages
+import { getButtonStyling } from "@kardon/propel/button";
+import type { TInstanceAuthenticationMethodKeys } from "@kardon/types";
+import { ToggleSwitch } from "@kardon/ui";
+import { cn } from "@kardon/utils";
 // hooks
 import { useInstance } from "@/hooks/store";
 

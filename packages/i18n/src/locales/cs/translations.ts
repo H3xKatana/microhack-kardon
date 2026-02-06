@@ -88,7 +88,7 @@ export default {
       already_have_an_account: "Už máte účet?",
       login: "Přihlásit se",
       create_account: "Vytvořit účet",
-      new_to_plane: "Nový v Plane?",
+      new_to_kardon: "Nový v Plane?",
       back_to_sign_in: "Zpět k přihlášení",
       resend_in: "Znovu odeslat za {seconds} sekund",
       sign_in_with_unique_code: "Přihlásit se pomocí jedinečného kódu",
@@ -408,7 +408,7 @@ export default {
   full_changelog: "Úplný změnový protokol",
   support: "Podpora",
   discord: "Discord",
-  powered_by_plane_pages: "Poháněno Plane Pages",
+  powered_by_kardon_pages: "Poháněno Plane Pages",
   please_select_at_least_one_invitation: "Vyberte alespoň jednu pozvánku.",
   please_select_at_least_one_invitation_description:
     "Vyberte alespoň jednu pozvánku pro připojení k pracovnímu prostoru.",
@@ -616,7 +616,7 @@ export default {
         issues: "Úkoly",
       },
     },
-    new_at_plane: {
+    new_at_kardon: {
       title: "Novinky v Plane",
     },
     quick_tutorial: {
@@ -2613,7 +2613,7 @@ export default {
     edited_by: "Upraveno uživatelem",
   },
   self_hosted_maintenance_message: {
-    plane_didnt_start_up_this_could_be_because_one_or_more_plane_services_failed_to_start:
+    kardon_didnt_start_up_this_could_be_because_one_or_more_kardon_services_failed_to_start:
       "Plane se nespustil. To může být způsobeno tím, že se jeden nebo více služeb Plane nepodařilo spustit.",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "Vyberte View Logs z setup.sh a Docker logů, abyste si byli jisti.",

@@ -6,9 +6,9 @@
 
 import type { Editor } from "@tiptap/core";
 import { Plugin, PluginKey } from "@tiptap/pm/state";
-// plane imports
-import { convertHTMLToMarkdown } from "@plane/utils";
-import type { TCustomComponentsMetaData } from "@plane/utils";
+// kardon imports
+import { convertHTMLToMarkdown } from "@kardon/utils";
+import type { TCustomComponentsMetaData } from "@kardon/utils";
 
 type TArgs = {
   editor: Editor;
@@ -38,7 +38,7 @@ export const MarkdownClipboardPlugin = (args: TArgs): Plugin => {
             });
             event.clipboardData?.setData("text/plain", markdown);
             event.clipboardData?.setData("text/html", clipboardHTML);
-            event.clipboardData?.setData("text/plane-editor-html", clipboardHTML);
+            event.clipboardData?.setData("text/kardon-editor-html", clipboardHTML);
             return true;
           } catch (error) {
             console.error("Failed to copy markdown content to clipboard:", error);

@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { TFilterValue, TSupportedOperators, TBaseFilterFieldConfig } from "@plane/types";
-import { FILTER_FIELD_TYPE } from "@plane/types";
+// kardon imports
+import type { TFilterValue, TSupportedOperators, TBaseFilterFieldConfig } from "@kardon/types";
+import { FILTER_FIELD_TYPE } from "@kardon/types";
 // local imports
 import type { IFilterIconConfig } from "./shared";
 import { createFilterFieldConfig } from "./shared";

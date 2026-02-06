@@ -5,18 +5,18 @@
  */
 
 import { FileText, FolderPlus, Layers, SquarePlus } from "lucide-react";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { ContrastIcon, DiceIcon, LayersIcon } from "@plane/propel/icons";
+// kardon imports
+import { EUserPermissions, EUserPermissionsLevel } from "@kardon/constants";
+import { ContrastIcon, DiceIcon, LayersIcon } from "@kardon/propel/icons";
 // components
-import { EUserProjectRoles } from "@plane/types";
+import { EUserProjectRoles } from "@kardon/types";
 import type { TPowerKCommandConfig, TPowerKContext } from "@/components/power-k/core/types";
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useProject } from "@/hooks/store/use-project";
 import { useUser } from "@/hooks/store/user";
-// plane web imports
-import { getIsWorkspaceCreationDisabled } from "@/plane-web/helpers/instance.helper";
+// kardon web imports
+import { getIsWorkspaceCreationDisabled } from "@/kardon-web/helpers/instance.helper";
 
 export type TPowerKCreationCommandKeys =
   | "create_work_item"

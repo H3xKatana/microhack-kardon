@@ -7,10 +7,10 @@
 import type { FC } from "react";
 import React, { useMemo } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import type { TIssueServiceType } from "@plane/types";
-import { CollapsibleButton } from "@plane/ui";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import type { TIssueServiceType } from "@kardon/types";
+import { CollapsibleButton } from "@kardon/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // local imports

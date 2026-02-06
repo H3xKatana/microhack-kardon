@@ -9,14 +9,14 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { Settings, UserPlus } from "lucide-react";
 import { Menu } from "@headlessui/react";
-// plane imports
-import { EUserPermissions } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CheckIcon } from "@plane/propel/icons";
-import type { IWorkspace } from "@plane/types";
-import { cn, getFileURL, getUserRole } from "@plane/utils";
-// plane web imports
-import { SubscriptionPill } from "@/plane-web/components/common/subscription/subscription-pill";
+// kardon imports
+import { EUserPermissions } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { CheckIcon } from "@kardon/propel/icons";
+import type { IWorkspace } from "@kardon/types";
+import { cn, getFileURL, getUserRole } from "@kardon/utils";
+// kardon web imports
+import { SubscriptionPill } from "@/kardon-web/components/common/subscription/subscription-pill";
 
 type TProps = {
   workspace: IWorkspace;

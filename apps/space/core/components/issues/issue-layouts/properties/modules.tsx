@@ -5,11 +5,11 @@
  */
 
 import { observer } from "mobx-react";
-// plane ui
-import { ModuleIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-// plane utils
-import { cn } from "@plane/utils";
+// kardon ui
+import { ModuleIcon } from "@kardon/propel/icons";
+import { Tooltip } from "@kardon/propel/tooltip";
+// kardon utils
+import { cn } from "@kardon/utils";
 // hooks
 import { useModule } from "@/hooks/store/use-module";
 

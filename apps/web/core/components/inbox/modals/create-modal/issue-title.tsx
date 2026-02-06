@@ -6,13 +6,13 @@
 
 import type { FC } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { ETabIndices } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { TIssue } from "@plane/types";
-import { Input } from "@plane/ui";
+// kardon imports
+import { ETabIndices } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import type { TIssue } from "@kardon/types";
+import { Input } from "@kardon/ui";
 // helpers
-import { getTabIndex } from "@plane/utils";
+import { getTabIndex } from "@kardon/utils";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 

@@ -7,10 +7,10 @@
 import { computed, makeObservable } from "mobx";
 import { computedFn } from "mobx-utils";
 // constants
-import { EPageAccess, EUserPermissions } from "@plane/constants";
-import type { TPage } from "@plane/types";
-// plane web store
-import type { RootStore } from "@/plane-web/store/root.store";
+import { EPageAccess, EUserPermissions } from "@kardon/constants";
+import type { TPage } from "@kardon/types";
+// kardon web store
+import type { RootStore } from "@/kardon-web/store/root.store";
 // services
 import { ProjectPageService } from "@/services/page";
 const projectPageService = new ProjectPageService();

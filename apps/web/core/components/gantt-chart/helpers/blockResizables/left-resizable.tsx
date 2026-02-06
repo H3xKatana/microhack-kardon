@@ -6,8 +6,8 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane utils
-import { cn, renderFormattedDate } from "@plane/utils";
+// kardon utils
+import { cn, renderFormattedDate } from "@kardon/utils";
 //helpers
 //
 //hooks

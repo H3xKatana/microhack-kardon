@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-import type { TEpicAnalyticsGroup } from "@plane/types";
+import type { TEpicAnalyticsGroup } from "@kardon/types";
 
 export const updateEpicAnalytics = () => {
   const updateAnalytics = (

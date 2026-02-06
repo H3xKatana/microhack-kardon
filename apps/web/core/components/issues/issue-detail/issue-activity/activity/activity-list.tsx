@@ -6,12 +6,12 @@
 
 import { observer } from "mobx-react";
 // helpers
-import { getValidKeysFromObject } from "@plane/utils";
+import { getValidKeysFromObject } from "@kardon/utils";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// plane web components
-import { IssueTypeActivity, AdditionalActivityRoot } from "@/plane-web/components/issues/issue-details";
-import { useTimeLineRelationOptions } from "@/plane-web/components/relations";
+// kardon web components
+import { IssueTypeActivity, AdditionalActivityRoot } from "@/kardon-web/components/issues/issue-details";
+import { useTimeLineRelationOptions } from "@/kardon-web/components/relations";
 // local components
 import {
   IssueDefaultActivity,

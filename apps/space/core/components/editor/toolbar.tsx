@@ -5,12 +5,12 @@
  */
 
 import React, { useEffect, useState, useCallback } from "react";
-// plane imports
-import { TOOLBAR_ITEMS } from "@plane/editor";
-import type { ToolbarMenuItem, EditorRefApi } from "@plane/editor";
-import { Button } from "@plane/propel/button";
-import { Tooltip } from "@plane/propel/tooltip";
-import { cn } from "@plane/utils";
+// kardon imports
+import { TOOLBAR_ITEMS } from "@kardon/editor";
+import type { ToolbarMenuItem, EditorRefApi } from "@kardon/editor";
+import { Button } from "@kardon/propel/button";
+import { Tooltip } from "@kardon/propel/tooltip";
+import { cn } from "@kardon/utils";
 
 type Props = {
   executeCommand: (item: ToolbarMenuItem) => void;

@@ -4,11 +4,11 @@
  * See the LICENSE file for details.
  */
 
-// plane package imports
+// kardon package imports
 import React from "react";
 import { TrendingDown, TrendingUp } from "lucide-react";
-import { cn } from "@plane/utils";
-// plane web components
+import { cn } from "@kardon/utils";
+// kardon web components
 
 type Props = {
   percentage: number;

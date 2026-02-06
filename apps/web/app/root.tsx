@@ -10,9 +10,9 @@ import Script from "next/script";
 import { Links, Meta, Outlet, Scripts } from "react-router";
 import type { LinksFunction } from "react-router";
 import { ThemeProvider, useTheme } from "next-themes";
-// plane imports
-import { SITE_DESCRIPTION, SITE_NAME } from "@plane/constants";
-import { cn } from "@plane/utils";
+// kardon imports
+import { SITE_DESCRIPTION, SITE_NAME } from "@kardon/constants";
+import { cn } from "@kardon/utils";
 // types
 // assets
 import favicon16 from "@/app/assets/favicon/favicon-16x16.png?url";
@@ -103,7 +103,7 @@ export const meta: Route.MetaFunction = () => [
     property: "og:description",
     content: "Open-source project management tool to manage work items, cycles, and product roadmaps easily",
   },
-  { property: "og:url", content: "https://app.plane.so/" },
+  { property: "og:url", content: "https://app.kardon.so/" },
   { property: "og:image", content: ogImage },
   { property: "og:image:width", content: "1200" },
   { property: "og:image:height", content: "630" },
@@ -113,7 +113,7 @@ export const meta: Route.MetaFunction = () => [
     content:
       "software development, plan, ship, software, accelerate, code management, release management, project management, work item tracking, agile, scrum, kanban, collaboration",
   },
-  { name: "twitter:site", content: "@planepowers" },
+  { name: "twitter:site", content: "@kardonpowers" },
   { name: "twitter:card", content: "summary_large_image" },
   { name: "twitter:image", content: ogImage },
   { name: "twitter:image:width", content: "1200" },

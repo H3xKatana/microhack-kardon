@@ -6,7 +6,7 @@
 
 import type { MutableRefObject } from "react";
 import { observer } from "mobx-react";
-// plane imports
+// kardon imports
 import type {
   GroupByColumnTypes,
   IGroupByColumn,
@@ -18,12 +18,12 @@ import type {
   TIssueKanbanFilters,
   TIssueGroupByOptions,
   TIssueOrderByOptions,
-} from "@plane/types";
-import { Row } from "@plane/ui";
+} from "@kardon/types";
+import { Row } from "@kardon/ui";
 // hooks
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
-// plane web imports
-import { useWorkFlowFDragNDrop } from "@/plane-web/components/workflow";
+// kardon web imports
+import { useWorkFlowFDragNDrop } from "@/kardon-web/components/workflow";
 // local imports
 import type { TRenderQuickActions } from "../list/list-view-types";
 import type { GroupDropLocation } from "../utils";

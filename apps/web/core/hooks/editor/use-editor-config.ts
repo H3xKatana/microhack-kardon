@@ -5,14 +5,14 @@
  */
 
 import { useCallback } from "react";
-// plane imports
-import type { TFileHandler } from "@plane/editor";
-import { getEditorAssetDownloadSrc, getEditorAssetSrc } from "@plane/utils";
+// kardon imports
+import type { TFileHandler } from "@kardon/editor";
+import { getEditorAssetDownloadSrc, getEditorAssetSrc } from "@kardon/utils";
 // hooks
 import { useEditorAsset } from "@/hooks/store/use-editor-asset";
-// plane web hooks
-import { useExtendedEditorConfig } from "@/plane-web/hooks/editor/use-extended-editor-config";
-import { useFileSize } from "@/plane-web/hooks/use-file-size";
+// kardon web hooks
+import { useExtendedEditorConfig } from "@/kardon-web/hooks/editor/use-extended-editor-config";
+import { useFileSize } from "@/kardon-web/hooks/use-file-size";
 // services
 import { FileService } from "@/services/file.service";
 const fileService = new FileService();

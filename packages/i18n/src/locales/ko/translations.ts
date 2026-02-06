@@ -88,7 +88,7 @@ export default {
       already_have_an_account: "이미 계정이 있으신가요?",
       login: "로그인",
       create_account: "계정 만들기",
-      new_to_plane: "Plane을 처음 사용하시나요?",
+      new_to_kardon: "Plane을 처음 사용하시나요?",
       back_to_sign_in: "로그인으로 돌아가기",
       resend_in: "{seconds}초 후 다시 전송",
       sign_in_with_unique_code: "고유 코드로 로그인",
@@ -403,7 +403,7 @@ export default {
   full_changelog: "전체 변경 로그",
   support: "지원",
   discord: "디스코드",
-  powered_by_plane_pages: "Plane Pages 제공",
+  powered_by_kardon_pages: "Plane Pages 제공",
   please_select_at_least_one_invitation: "최소 하나의 초대를 선택하세요.",
   please_select_at_least_one_invitation_description: "작업 공간에 참여하려면 최소 하나의 초대를 선택하세요.",
   we_see_that_someone_has_invited_you_to_join_a_workspace: "누군가가 작업 공간에 참여하도록 초대했습니다",
@@ -611,7 +611,7 @@ export default {
         issues: "작업 항목",
       },
     },
-    new_at_plane: {
+    new_at_kardon: {
       title: "Plane의 새로운 기능",
     },
     quick_tutorial: {
@@ -2623,7 +2623,7 @@ export default {
     edited_by: "편집자",
   },
   self_hosted_maintenance_message: {
-    plane_didnt_start_up_this_could_be_because_one_or_more_plane_services_failed_to_start:
+    kardon_didnt_start_up_this_could_be_because_one_or_more_kardon_services_failed_to_start:
       "Plane이 시작되지 않았습니다. 이는 하나 이상의 Plane 서비스가 시작에 실패했기 때문일 수 있습니다.",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "확실히 하려면 setup.sh와 Docker 로그에서 View Logs를 선택하세요.",

@@ -15,8 +15,8 @@ import {
   ProjectIcon,
   ViewsIcon,
   YourWorkIcon,
-} from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+} from "@kardon/propel/icons";
+import { cn } from "@kardon/utils";
 
 export const getSidebarNavigationItemIcon = (key: string, className: string = "") => {
   switch (key) {

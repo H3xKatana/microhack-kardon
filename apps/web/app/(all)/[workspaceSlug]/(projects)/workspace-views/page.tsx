@@ -6,11 +6,11 @@
 
 import React, { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { DEFAULT_GLOBAL_VIEWS_LIST } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { SearchIcon } from "@plane/propel/icons";
-import { Input } from "@plane/ui";
+// kardon imports
+import { DEFAULT_GLOBAL_VIEWS_LIST } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { SearchIcon } from "@kardon/propel/icons";
+import { Input } from "@kardon/ui";
 // components
 import { PageHead } from "@/components/core/page-title";
 import { GlobalDefaultViewListItem } from "@/components/workspace/views/default-view-list-item";

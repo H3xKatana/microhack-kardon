@@ -5,11 +5,11 @@
  */
 
 // editor
-import type { TEmbedConfig } from "@plane/editor";
-// plane types
-import type { TSearchEntityRequestPayload, TSearchResponse } from "@plane/types";
-// plane web components
-import { IssueEmbedUpgradeCard } from "@/plane-web/components/pages";
+import type { TEmbedConfig } from "@kardon/editor";
+// kardon types
+import type { TSearchEntityRequestPayload, TSearchResponse } from "@kardon/types";
+// kardon web components
+import { IssueEmbedUpgradeCard } from "@/kardon-web/components/pages";
 
 export type TIssueEmbedHookProps = {
   fetchEmbedSuggestions?: (payload: TSearchEntityRequestPayload) => Promise<TSearchResponse>;

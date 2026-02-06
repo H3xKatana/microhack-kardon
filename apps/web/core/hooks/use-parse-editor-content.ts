@@ -5,15 +5,15 @@
  */
 
 import { useCallback } from "react";
-// plane types
-import type { TSearchEntities } from "@plane/types";
+// kardon types
+import type { TSearchEntities } from "@kardon/types";
 // helpers
-import { getBase64Image, getEditorAssetSrc } from "@plane/utils";
-import type { TCustomComponentsMetaData } from "@plane/utils";
+import { getBase64Image, getEditorAssetSrc } from "@kardon/utils";
+import type { TCustomComponentsMetaData } from "@kardon/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
-// plane web hooks
-import { useAdditionalEditorMention } from "@/plane-web/hooks/use-additional-editor-mention";
+// kardon web hooks
+import { useAdditionalEditorMention } from "@/kardon-web/hooks/use-additional-editor-mention";
 
 type TArgs = {
   projectId?: string;

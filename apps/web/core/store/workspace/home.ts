@@ -6,10 +6,10 @@
 
 import { orderBy, clone, set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
-// plane imports
-import type { THomeWidgetKeys, TWidgetEntityData } from "@plane/types";
-// plane web services
-import { WorkspaceService } from "@/plane-web/services";
+// kardon imports
+import type { THomeWidgetKeys, TWidgetEntityData } from "@kardon/types";
+// kardon web services
+import { WorkspaceService } from "@/kardon-web/services";
 // store
 import type { IWorkspaceLinkStore } from "./link.store";
 import { WorkspaceLinkStore } from "./link.store";

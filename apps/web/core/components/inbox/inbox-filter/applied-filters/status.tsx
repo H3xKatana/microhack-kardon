@@ -6,12 +6,12 @@
 
 import type { FC } from "react";
 import { observer } from "mobx-react";
-import { INBOX_STATUS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TInboxIssueStatus } from "@plane/types";
+import { INBOX_STATUS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { CloseIcon } from "@kardon/propel/icons";
+import type { TInboxIssueStatus } from "@kardon/types";
 // constants
-import { Tag } from "@plane/ui";
+import { Tag } from "@kardon/ui";
 // hooks
 import { useProjectInbox } from "@/hooks/store/use-project-inbox";
 import { InboxStatusIcon } from "../../inbox-status-icon";

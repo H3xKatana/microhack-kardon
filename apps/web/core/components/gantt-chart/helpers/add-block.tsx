@@ -7,12 +7,12 @@
 import { useEffect, useRef, useState } from "react";
 import { addDays } from "date-fns";
 import { observer } from "mobx-react";
-import { PlusIcon } from "@plane/propel/icons";
+import { PlusIcon } from "@kardon/propel/icons";
 // ui
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IBlockUpdateData, IGanttBlock } from "@plane/types";
+import { Tooltip } from "@kardon/propel/tooltip";
+import type { IBlockUpdateData, IGanttBlock } from "@kardon/types";
 // helpers
-import { renderFormattedDate, renderFormattedPayloadDate } from "@plane/utils";
+import { renderFormattedDate, renderFormattedPayloadDate } from "@kardon/utils";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 import { useTimeLineChartStore } from "@/hooks/use-timeline-chart";

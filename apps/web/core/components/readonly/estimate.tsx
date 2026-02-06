@@ -6,10 +6,10 @@
 
 import { useEffect } from "react";
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import { EstimatePropertyIcon } from "@plane/propel/icons";
-import { EEstimateSystem } from "@plane/types";
-import { cn, convertMinutesToHoursMinutesString } from "@plane/utils";
+import { useTranslation } from "@kardon/i18n";
+import { EstimatePropertyIcon } from "@kardon/propel/icons";
+import { EEstimateSystem } from "@kardon/types";
+import { cn, convertMinutesToHoursMinutesString } from "@kardon/utils";
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
 import { useEstimate } from "@/hooks/store/estimates/use-estimate";

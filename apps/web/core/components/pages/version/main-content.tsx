@@ -8,13 +8,13 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
 import { EyeIcon, TriangleAlert } from "lucide-react";
-// plane imports
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TPageVersion } from "@plane/types";
-import { renderFormattedDate, renderFormattedTime } from "@plane/utils";
+// kardon imports
+import { Button } from "@kardon/propel/button";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import type { TPageVersion } from "@kardon/types";
+import { renderFormattedDate, renderFormattedTime } from "@kardon/utils";
 // helpers
-import type { EPageStoreType } from "@/plane-web/hooks/store";
+import type { EPageStoreType } from "@/kardon-web/hooks/store";
 // local imports
 import type { TVersionEditorProps } from "./editor";
 

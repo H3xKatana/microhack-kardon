@@ -7,12 +7,12 @@
 import { useState } from "react";
 import { mutate } from "swr";
 // types
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { APITokenService } from "@plane/services";
-import type { IApiToken } from "@plane/types";
+import { useTranslation } from "@kardon/i18n";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { APITokenService } from "@kardon/services";
+import type { IApiToken } from "@kardon/types";
 // ui
-import { AlertModalCore } from "@plane/ui";
+import { AlertModalCore } from "@kardon/ui";
 // fetch-keys
 import { API_TOKENS_LIST } from "@/constants/fetch-keys";
 

@@ -6,16 +6,16 @@
 
 import { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { ProjectIcon } from "@plane/propel/icons";
-import type { ICustomSearchSelectOption } from "@plane/types";
-import { CustomSearchSelect } from "@plane/ui";
+// kardon imports
+import { ProjectIcon } from "@kardon/propel/icons";
+import type { ICustomSearchSelectOption } from "@kardon/types";
+import { CustomSearchSelect } from "@kardon/ui";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
-import { useNavigationItems } from "@/plane-web/components/navigations";
+// kardon web imports
+import { useNavigationItems } from "@/kardon-web/components/navigations";
 // local imports
 import { SwitcherLabel } from "../common/switcher-label";
 import { ProjectHeaderButton } from "./project-header-button";

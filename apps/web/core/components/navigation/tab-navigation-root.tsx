@@ -8,16 +8,16 @@ import type { FC } from "react";
 import React, { useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams, useLocation, Link, useNavigate } from "react-router";
-import { EUserPermissionsLevel, EUserPermissions } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TabNavigationList, TabNavigationItem } from "@plane/propel/tab-navigation";
-import type { EUserProjectRoles } from "@plane/types";
+import { EUserPermissionsLevel, EUserPermissions } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { TabNavigationList, TabNavigationItem } from "@kardon/propel/tab-navigation";
+import type { EUserProjectRoles } from "@kardon/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web imports
-import { useNavigationItems } from "@/plane-web/components/navigations";
+// kardon web imports
+import { useNavigationItems } from "@/kardon-web/components/navigations";
 // local imports
 import { LeaveProjectModal } from "../project/leave-project-modal";
 import { PublishProjectModal } from "../project/publish-project/modal";

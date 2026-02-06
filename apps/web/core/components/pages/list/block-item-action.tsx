@@ -6,16 +6,16 @@
 
 import { observer } from "mobx-react";
 import { Earth, Info, Minus } from "lucide-react";
-// plane imports
-import { LockIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import { Avatar, FavoriteStar } from "@plane/ui";
-import { renderFormattedDate, getFileURL } from "@plane/utils";
+// kardon imports
+import { LockIcon } from "@kardon/propel/icons";
+import { Tooltip } from "@kardon/propel/tooltip";
+import { Avatar, FavoriteStar } from "@kardon/ui";
+import { renderFormattedDate, getFileURL } from "@kardon/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { usePageOperations } from "@/hooks/use-page-operations";
-// plane web hooks
-import type { EPageStoreType } from "@/plane-web/hooks/store";
+// kardon web hooks
+import type { EPageStoreType } from "@/kardon-web/hooks/store";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 // local imports

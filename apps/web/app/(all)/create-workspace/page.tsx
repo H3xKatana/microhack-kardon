@@ -7,11 +7,11 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { PlaneLogo } from "@plane/propel/icons";
-import type { IWorkspace } from "@plane/types";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { Button, getButtonStyling } from "@kardon/propel/button";
+import { PlaneLogo } from "@kardon/propel/icons";
+import type { IWorkspace } from "@kardon/types";
 // assets
 import WorkspaceCreationDisabled from "@/app/assets/workspace/workspace-creation-disabled.png?url";
 // components
@@ -21,8 +21,8 @@ import { useUser, useUserProfile } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
 // wrappers
 import { AuthenticationWrapper } from "@/lib/wrappers/authentication-wrapper";
-// plane web helpers
-import { getIsWorkspaceCreationDisabled } from "@/plane-web/helpers/instance.helper";
+// kardon web helpers
+import { getIsWorkspaceCreationDisabled } from "@/kardon-web/helpers/instance.helper";
 
 const CreateWorkspacePage = observer(function CreateWorkspacePage() {
   const { t } = useTranslation();

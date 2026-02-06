@@ -5,10 +5,10 @@
  */
 
 import { CalendarDays } from "lucide-react";
-// plane imports
-import { DueDatePropertyIcon, StartDatePropertyIcon } from "@plane/propel/icons";
-import type { TStateGroups } from "@plane/types";
-import { cn, renderFormattedDate, shouldHighlightIssueDueDate } from "@plane/utils";
+// kardon imports
+import { DueDatePropertyIcon, StartDatePropertyIcon } from "@kardon/propel/icons";
+import type { TStateGroups } from "@kardon/types";
+import { cn, renderFormattedDate, shouldHighlightIssueDueDate } from "@kardon/utils";
 
 type Props = {
   startDate: string | null;

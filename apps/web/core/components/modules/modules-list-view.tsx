@@ -7,11 +7,11 @@
 import { observer } from "mobx-react";
 import { useParams, useSearchParams } from "next/navigation";
 // components
-import { EUserPermissionsLevel, MODULE_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateDetailed } from "@plane/propel/empty-state";
-import { EUserProjectRoles } from "@plane/types";
-import { ContentWrapper, Row, ERowVariant } from "@plane/ui";
+import { EUserPermissionsLevel, MODULE_TRACKER_ELEMENTS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { EmptyStateDetailed } from "@kardon/propel/empty-state";
+import { EUserProjectRoles } from "@kardon/types";
+import { ContentWrapper, Row, ERowVariant } from "@kardon/ui";
 // components
 import { ListLayout } from "@/components/core/list";
 import { ModuleCardItem, ModuleListItem, ModulePeekOverview, ModulesListGanttChartView } from "@/components/modules";
@@ -29,7 +29,7 @@ export const ModulesListView = observer(function ModulesListView() {
   const { workspaceSlug, projectId } = useParams();
   const searchParams = useSearchParams();
   const peekModule = searchParams.get("peekModule");
-  // plane hooks
+  // kardon hooks
   const { t } = useTranslation();
   // store hooks
   const { toggleCreateModuleModal } = useCommandPalette();

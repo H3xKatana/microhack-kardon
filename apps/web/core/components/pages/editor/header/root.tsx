@@ -7,9 +7,9 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { SmilePlus } from "lucide-react";
-// plane imports
-import { EmojiPicker, EmojiIconPickerTypes } from "@plane/propel/emoji-icon-picker";
-import { cn } from "@plane/utils";
+// kardon imports
+import { EmojiPicker, EmojiIconPickerTypes } from "@kardon/propel/emoji-icon-picker";
+import { cn } from "@kardon/utils";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 // local imports

@@ -7,12 +7,12 @@
 import type { Dispatch, SetStateAction } from "react";
 import { useEffect, useMemo, useRef } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { EditorRefApi } from "@plane/editor";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssue, TNameDescriptionLoader } from "@plane/types";
-import { EFileAssetType, EInboxIssueSource, EInboxIssueStatus } from "@plane/types";
-import { getTextContent } from "@plane/utils";
+// kardon imports
+import type { EditorRefApi } from "@kardon/editor";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import type { TIssue, TNameDescriptionLoader } from "@kardon/types";
+import { EFileAssetType, EInboxIssueSource, EInboxIssueStatus } from "@kardon/types";
+import { getTextContent } from "@kardon/utils";
 // components
 import { DescriptionVersionsRoot } from "@/components/core/description-versions";
 import { DescriptionInput } from "@/components/editor/rich-text/description-input";
@@ -30,8 +30,8 @@ import { useProjectInbox } from "@/hooks/store/use-project-inbox";
 import { useUser } from "@/hooks/store/user";
 import useReloadConfirmations from "@/hooks/use-reload-confirmation";
 // store types
-import { DeDupeIssuePopoverRoot } from "@/plane-web/components/de-dupe/duplicate-popover";
-import { useDebouncedDuplicateIssues } from "@/plane-web/hooks/use-debounced-duplicate-issues";
+import { DeDupeIssuePopoverRoot } from "@/kardon-web/components/de-dupe/duplicate-popover";
+import { useDebouncedDuplicateIssues } from "@/kardon-web/hooks/use-debounced-duplicate-issues";
 // services
 import { IntakeWorkItemVersionService } from "@/services/inbox";
 // stores

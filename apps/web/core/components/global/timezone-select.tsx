@@ -5,9 +5,9 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { CustomSearchSelect } from "@plane/ui";
-import { cn } from "@plane/utils";
+// kardon imports
+import { CustomSearchSelect } from "@kardon/ui";
+import { cn } from "@kardon/utils";
 // hooks
 import useTimezone from "@/hooks/use-timezone";
 

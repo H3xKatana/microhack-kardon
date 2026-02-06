@@ -6,18 +6,18 @@
 
 import { observer } from "mobx-react";
 import { Shapes } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { HomeIcon } from "@plane/propel/icons";
-import { Breadcrumbs, Header } from "@plane/ui";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { Button } from "@kardon/propel/button";
+import { HomeIcon } from "@kardon/propel/icons";
+import { Breadcrumbs, Header } from "@kardon/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 // hooks
 import { useHome } from "@/hooks/store/use-home";
 
 export const WorkspaceDashboardHeader = observer(function WorkspaceDashboardHeader() {
-  // plane hooks
+  // kardon hooks
   const { t } = useTranslation();
   // hooks
   const { toggleWidgetSettings } = useHome();

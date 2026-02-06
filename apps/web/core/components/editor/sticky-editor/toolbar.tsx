@@ -7,14 +7,14 @@
 import React, { useEffect, useState, useCallback } from "react";
 import { Palette } from "lucide-react";
 // editor
-import type { EditorRefApi } from "@plane/editor";
+import type { EditorRefApi } from "@kardon/editor";
 // ui
-import { useOutsideClickDetector } from "@plane/hooks";
-import { TrashIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TSticky } from "@plane/types";
+import { useOutsideClickDetector } from "@kardon/hooks";
+import { TrashIcon } from "@kardon/propel/icons";
+import { Tooltip } from "@kardon/propel/tooltip";
+import type { TSticky } from "@kardon/types";
 // constants
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 import type { ToolbarMenuItem } from "@/constants/editor";
 import { TOOLBAR_ITEMS } from "@/constants/editor";
 // helpers

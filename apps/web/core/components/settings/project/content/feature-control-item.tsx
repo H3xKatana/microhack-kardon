@@ -5,10 +5,10 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { setPromiseToast } from "@plane/propel/toast";
-import type { IProject } from "@plane/types";
-import { ToggleSwitch } from "@plane/ui";
+// kardon imports
+import { setPromiseToast } from "@kardon/propel/toast";
+import type { IProject } from "@kardon/types";
+import { ToggleSwitch } from "@kardon/ui";
 // components
 import { SettingsBoxedControlItem } from "@/components/settings/boxed-control-item";
 // hooks

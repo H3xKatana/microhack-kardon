@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import { useTranslation } from "@plane/i18n";
-import { Input } from "@plane/ui";
+import { useTranslation } from "@kardon/i18n";
+import { Input } from "@kardon/ui";
 
 type Props = {
   value: string;

@@ -6,11 +6,11 @@
 
 import { observable, action, makeObservable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import type { TCreateModalStoreTypes, TCreatePageModal } from "@plane/constants";
-import { DEFAULT_CREATE_PAGE_MODAL_DATA, EPageAccess } from "@plane/constants";
-import type { TProfileSettingsTabs } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
+// kardon imports
+import type { TCreateModalStoreTypes, TCreatePageModal } from "@kardon/constants";
+import { DEFAULT_CREATE_PAGE_MODAL_DATA, EPageAccess } from "@kardon/constants";
+import type { TProfileSettingsTabs } from "@kardon/types";
+import { EIssuesStoreType } from "@kardon/types";
 // lib
 import { store } from "@/lib/store-context";
 

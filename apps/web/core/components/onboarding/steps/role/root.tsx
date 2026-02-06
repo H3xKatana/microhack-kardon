@@ -7,12 +7,12 @@
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { Box, PenTool, Rocket, Monitor, RefreshCw } from "lucide-react";
-// plane imports
-import { Button } from "@plane/propel/button";
-import { CheckIcon, ViewsIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TUserProfile } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
+// kardon imports
+import { Button } from "@kardon/propel/button";
+import { CheckIcon, ViewsIcon } from "@kardon/propel/icons";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import type { TUserProfile } from "@kardon/types";
+import { EOnboardingSteps } from "@kardon/types";
 // hooks
 import { useUserProfile } from "@/hooks/store/user";
 // local components

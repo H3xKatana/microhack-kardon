@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { EUserProjectRoles } from "@plane/types";
-import type { TProjectSettingsItem, TProjectSettingsTabs } from "@plane/types";
+// kardon imports
+import { EUserProjectRoles } from "@kardon/types";
+import type { TProjectSettingsItem, TProjectSettingsTabs } from "@kardon/types";
 
 export enum PROJECT_SETTINGS_CATEGORY {
   GENERAL = "general",

@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { IFavorite } from "@plane/types";
+// kardon imports
+import type { IFavorite } from "@kardon/types";
 // components
-import { getPageName } from "@plane/utils";
+import { getPageName } from "@kardon/utils";
 import {
   generateFavoriteItemLink,
   getFavoriteItemIcon,
@@ -18,9 +18,9 @@ import { useCycle } from "@/hooks/store/use-cycle";
 import { useModule } from "@/hooks/store/use-module";
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectView } from "@/hooks/store/use-project-view";
-// plane web hooks
-import { EPageStoreType, usePage } from "@/plane-web/hooks/store";
-import { useAdditionalFavoriteItemDetails } from "@/plane-web/hooks/use-additional-favorite-item-details";
+// kardon web hooks
+import { EPageStoreType, usePage } from "@/kardon-web/hooks/store";
+import { useAdditionalFavoriteItemDetails } from "@/kardon-web/hooks/use-additional-favorite-item-details";
 
 export const useFavoriteItemDetails = (workspaceSlug: string, favorite: IFavorite) => {
   const {

@@ -7,13 +7,13 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { Loader } from "lucide-react";
-import { CloseIcon } from "@plane/propel/icons";
-// plane imports
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IState, TStateOperationsCallbacks } from "@plane/types";
-import { AlertModalCore } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { CloseIcon } from "@kardon/propel/icons";
+// kardon imports
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { Tooltip } from "@kardon/propel/tooltip";
+import type { IState, TStateOperationsCallbacks } from "@kardon/types";
+import { AlertModalCore } from "@kardon/ui";
+import { cn } from "@kardon/utils";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 

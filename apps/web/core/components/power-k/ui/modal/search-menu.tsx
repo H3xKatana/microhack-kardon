@@ -6,16 +6,16 @@
 
 import { useState, useEffect } from "react";
 import { useParams } from "next/navigation";
-// plane imports
-import { WORKSPACE_DEFAULT_SEARCH_RESULT } from "@plane/constants";
-import type { IWorkspaceSearchResults } from "@plane/types";
-import { cn } from "@plane/utils";
+// kardon imports
+import { WORKSPACE_DEFAULT_SEARCH_RESULT } from "@kardon/constants";
+import type { IWorkspaceSearchResults } from "@kardon/types";
+import { cn } from "@kardon/utils";
 // hooks
 import { usePowerK } from "@/hooks/store/use-power-k";
 import useDebounce from "@/hooks/use-debounce";
-// plane web imports
-import { PowerKModalNoSearchResultsCommand } from "@/plane-web/components/command-palette/power-k/search/no-results-command";
-import { WorkspaceService } from "@/plane-web/services";
+// kardon web imports
+import { PowerKModalNoSearchResultsCommand } from "@/kardon-web/components/command-palette/power-k/search/no-results-command";
+import { WorkspaceService } from "@/kardon-web/services";
 // local imports
 import type { TPowerKContext, TPowerKPageType } from "../../core/types";
 import { PowerKModalSearchResults } from "./search-results";

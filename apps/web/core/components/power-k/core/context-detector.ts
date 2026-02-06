@@ -5,8 +5,8 @@
  */
 
 import type { Params } from "react-router";
-// plane web imports
-import { detectExtendedContextFromURL } from "@/plane-web/components/command-palette/power-k/context-detector";
+// kardon web imports
+import { detectExtendedContextFromURL } from "@/kardon-web/components/command-palette/power-k/context-detector";
 // local imports
 import type { TPowerKContextType } from "./types";
 

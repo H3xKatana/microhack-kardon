@@ -5,14 +5,14 @@
  */
 
 import { sortBy } from "lodash-es";
-// plane imports
+// kardon imports
 import type {
   TPage,
   TPageFilterProps,
   TPageFiltersSortBy,
   TPageFiltersSortKey,
   TPageNavigationTabs,
-} from "@plane/types";
+} from "@kardon/types";
 // local imports
 import { getDate } from "./datetime";
 import { satisfiesDateFilter } from "./filter";

@@ -4,13 +4,13 @@
  * See the LICENSE file for details.
  */
 
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-// plane imports
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TProjectAppliedDisplayFilterKeys, TProjectFilters } from "@plane/types";
-import { EHeaderVariant, Header, Tag } from "@plane/ui";
-import { replaceUnderscoreIfSnakeCase } from "@plane/utils";
+import { useTranslation } from "@kardon/i18n";
+import { CloseIcon } from "@kardon/propel/icons";
+// kardon imports
+import { Tooltip } from "@kardon/propel/tooltip";
+import type { TProjectAppliedDisplayFilterKeys, TProjectFilters } from "@kardon/types";
+import { EHeaderVariant, Header, Tag } from "@kardon/ui";
+import { replaceUnderscoreIfSnakeCase } from "@kardon/utils";
 // local imports
 import { AppliedAccessFilters } from "./access";
 import { AppliedDateFilters } from "./date";

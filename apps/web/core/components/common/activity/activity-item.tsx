@@ -7,7 +7,7 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 
-import type { TProjectActivity } from "@/plane-web/types";
+import type { TProjectActivity } from "@/kardon-web/types";
 import { ActivityBlockComponent } from "./activity-block";
 import { iconsMap, messages } from "./helper";
 

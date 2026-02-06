@@ -1,5 +1,5 @@
 {
-  "name": "@plane/services",
+  "name": "@kardon/services",
   "version": "1.2.0",
   "license": "AGPL-3.0",
   "private": true,
@@ -22,13 +22,13 @@
     "clean": "rm -rf .turbo && rm -rf .next && rm -rf node_modules && rm -rf dist"
   },
   "dependencies": {
-    "@plane/constants": "workspace:*",
-    "@plane/types": "workspace:*",
+    "@kardon/constants": "workspace:*",
+    "@kardon/types": "workspace:*",
     "axios": "catalog:",
     "file-type": "^21.0.0"
   },
   "devDependencies": {
-    "@plane/typescript-config": "workspace:*",
+    "@kardon/typescript-config": "workspace:*",
     "tsdown": "catalog:",
     "typescript": "catalog:"
   },

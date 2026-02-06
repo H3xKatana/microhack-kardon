@@ -6,12 +6,12 @@
 
 import { observer } from "mobx-react";
 // ui
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { EModalPosition, EModalWidth, ModalCore } from "@kardon/ui";
 // components
 import { ProductUpdatesFooter } from "@/components/global";
-// plane web components
-import { ProductUpdatesChangelog } from "@/plane-web/components/global/product-updates/changelog";
-import { ProductUpdatesHeader } from "@/plane-web/components/global/product-updates/header";
+// kardon web components
+import { ProductUpdatesChangelog } from "@/kardon-web/components/global/product-updates/changelog";
+import { ProductUpdatesHeader } from "@/kardon-web/components/global/product-updates/header";
 
 export type ProductUpdatesModalProps = {
   isOpen: boolean;

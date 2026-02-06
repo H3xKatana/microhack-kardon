@@ -6,9 +6,9 @@
 
 import { useCallback, useEffect, useMemo, useRef } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { LIVE_BASE_PATH, LIVE_BASE_URL } from "@plane/constants";
-import { CollaborativeDocumentEditorWithRef } from "@plane/editor";
+// kardon imports
+import { LIVE_BASE_PATH, LIVE_BASE_URL } from "@kardon/constants";
+import { CollaborativeDocumentEditorWithRef } from "@kardon/editor";
 import type {
   CollaborationState,
   EditorRefApi,
@@ -18,11 +18,11 @@ import type {
   TFileHandler,
   TRealtimeConfig,
   TServerHandler,
-} from "@plane/editor";
-import { useTranslation } from "@plane/i18n";
-import type { TSearchEntityRequestPayload, TSearchResponse, TWebhookConnectionQueryParams } from "@plane/types";
-import { ERowVariant, Row } from "@plane/ui";
-import { cn, generateRandomColor, hslToHex } from "@plane/utils";
+} from "@kardon/editor";
+import { useTranslation } from "@kardon/i18n";
+import type { TSearchEntityRequestPayload, TSearchResponse, TWebhookConnectionQueryParams } from "@kardon/types";
+import { ERowVariant, Row } from "@kardon/ui";
+import { cn, generateRandomColor, hslToHex } from "@kardon/utils";
 // components
 import { EditorMentionsRoot } from "@/components/editor/embeds/mentions";
 // hooks
@@ -32,13 +32,13 @@ import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUser } from "@/hooks/store/user";
 import { usePageFilters } from "@/hooks/use-page-filters";
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
-// plane web imports
+// kardon web imports
 import type { TCustomEventHandlers } from "@/hooks/use-realtime-page-events";
 import { useRealtimePageEvents } from "@/hooks/use-realtime-page-events";
-import { EditorAIMenu } from "@/plane-web/components/pages";
-import type { TExtendedEditorExtensionsConfig } from "@/plane-web/hooks/pages";
-import type { EPageStoreType } from "@/plane-web/hooks/store";
-import { useEditorFlagging } from "@/plane-web/hooks/use-editor-flagging";
+import { EditorAIMenu } from "@/kardon-web/components/pages";
+import type { TExtendedEditorExtensionsConfig } from "@/kardon-web/hooks/pages";
+import type { EPageStoreType } from "@/kardon-web/hooks/store";
+import { useEditorFlagging } from "@/kardon-web/hooks/use-editor-flagging";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 // local imports

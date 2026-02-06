@@ -7,8 +7,8 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import tippy from "tippy.js";
 import type { Instance } from "tippy.js";
-// plane utils
-import { cn } from "@plane/utils";
+// kardon utils
+import { cn } from "@kardon/utils";
 // types
 import type { TAIHandler } from "@/types";
 

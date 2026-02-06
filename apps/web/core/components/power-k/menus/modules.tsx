@@ -6,9 +6,9 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { ModuleStatusIcon } from "@plane/propel/icons";
-import type { IModule } from "@plane/types";
+// kardon imports
+import { ModuleStatusIcon } from "@kardon/propel/icons";
+import type { IModule } from "@kardon/types";
 // local imports
 import { PowerKMenuBuilder } from "./builder";
 

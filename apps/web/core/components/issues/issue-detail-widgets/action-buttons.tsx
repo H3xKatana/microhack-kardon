@@ -7,12 +7,12 @@
 import type { FC } from "react";
 import React from "react";
 import { Paperclip } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-import { LinkIcon, ViewsIcon, RelationPropertyIcon } from "@plane/propel/icons";
-// plane imports
-import type { TIssueServiceType, TWorkItemWidgets } from "@plane/types";
-// plane web imports
-import { WorkItemAdditionalWidgetActionButtons } from "@/plane-web/components/issues/issue-detail-widgets/action-buttons";
+import { useTranslation } from "@kardon/i18n";
+import { LinkIcon, ViewsIcon, RelationPropertyIcon } from "@kardon/propel/icons";
+// kardon imports
+import type { TIssueServiceType, TWorkItemWidgets } from "@kardon/types";
+// kardon web imports
+import { WorkItemAdditionalWidgetActionButtons } from "@/kardon-web/components/issues/issue-detail-widgets/action-buttons";
 // local imports
 import { IssueAttachmentActionButton } from "./attachments";
 import { IssueLinksActionButton } from "./links";

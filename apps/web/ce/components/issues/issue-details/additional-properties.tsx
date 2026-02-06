@@ -6,7 +6,7 @@
 
 import type { FC } from "react";
 import React from "react";
-// plane imports
+// kardon imports
 
 export type TWorkItemAdditionalSidebarProperties = {
   workItemId: string;

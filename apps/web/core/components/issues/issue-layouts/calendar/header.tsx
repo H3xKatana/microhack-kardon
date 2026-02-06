@@ -7,14 +7,14 @@
 import { observer } from "mobx-react";
 
 // components
-import type { TSupportedFilterTypeForUpdate } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { ChevronLeftIcon, ChevronRightIcon } from "@plane/propel/icons";
-import type { TSupportedFilterForUpdate } from "@plane/types";
-import { Row } from "@plane/ui";
+import type { TSupportedFilterTypeForUpdate } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { ChevronLeftIcon, ChevronRightIcon } from "@kardon/propel/icons";
+import type { TSupportedFilterForUpdate } from "@kardon/types";
+import { Row } from "@kardon/ui";
 // icons
 import { useCalendarView } from "@/hooks/store/use-calendar-view";
-import type { IProjectEpicsFilter } from "@/plane-web/store/issue/epic";
+import type { IProjectEpicsFilter } from "@/kardon-web/store/issue/epic";
 import type { ICycleIssuesFilter } from "@/store/issue/cycle";
 import type { IModuleIssuesFilter } from "@/store/issue/module";
 import type { IProjectIssuesFilter } from "@/store/issue/project";

@@ -4,13 +4,13 @@
  * See the LICENSE file for details.
  */
 
-import { USER_TRACKER_ELEMENTS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+import { USER_TRACKER_ELEMENTS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
 // ui
-import { getButtonStyling } from "@plane/propel/button";
-import { PlaneLogo } from "@plane/propel/icons";
+import { getButtonStyling } from "@kardon/propel/button";
+import { PlaneLogo } from "@kardon/propel/icons";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 
 export function ProductUpdatesFooter() {
   const { t } = useTranslation();
@@ -18,7 +18,7 @@ export function ProductUpdatesFooter() {
     <div className="flex items-center justify-between flex-shrink-0 gap-4 m-6 mb-4">
       <div className="flex items-center gap-2">
         <a
-          href="https://go.plane.so/p-docs"
+          href="https://go.kardon.so/p-docs"
           target="_blank"
           className="text-13 text-secondary hover:text-primary hover:underline underline-offset-1 outline-none"
           rel="noreferrer"
@@ -30,7 +30,7 @@ export function ProductUpdatesFooter() {
         </svg>
         <a
           data-ph-element={USER_TRACKER_ELEMENTS.CHANGELOG_REDIRECTED}
-          href="https://go.plane.so/p-changelog"
+          href="https://go.kardon.so/p-changelog"
           target="_blank"
           className="text-13 text-secondary hover:text-primary hover:underline underline-offset-1 outline-none"
           rel="noreferrer"
@@ -41,7 +41,7 @@ export function ProductUpdatesFooter() {
           <circle cx={1} cy={1} r={1} />
         </svg>
         <a
-          href="mailto:support@plane.so"
+          href="mailto:support@kardon.so"
           target="_blank"
           className="text-13 text-secondary hover:text-primary hover:underline underline-offset-1 outline-none"
           rel="noreferrer"
@@ -52,7 +52,7 @@ export function ProductUpdatesFooter() {
           <circle cx={1} cy={1} r={1} />
         </svg>
         <a
-          href="https://go.plane.so/p-discord"
+          href="https://go.kardon.so/p-discord"
           target="_blank"
           className="text-13 text-secondary hover:text-primary hover:underline underline-offset-1 outline-none"
           rel="noreferrer"
@@ -61,7 +61,7 @@ export function ProductUpdatesFooter() {
         </a>
       </div>
       <a
-        href="https://plane.so/pages"
+        href="https://kardon.so/pages"
         target="_blank"
         className={cn(
           getButtonStyling("secondary", "base"),
@@ -70,7 +70,7 @@ export function ProductUpdatesFooter() {
         rel="noreferrer"
       >
         <PlaneLogo className="h-4 w-auto text-primary" />
-        {t("powered_by_plane_pages")}
+        {t("powered_by_kardon_pages")}
       </a>
     </div>
   );

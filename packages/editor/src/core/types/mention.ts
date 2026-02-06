@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane types
-import type { TSearchEntities } from "@plane/types";
+// kardon types
+import type { TSearchEntities } from "@kardon/types";
 
 export type TMentionSuggestion = {
   entity_identifier: string;

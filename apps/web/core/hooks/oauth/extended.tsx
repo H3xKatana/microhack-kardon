@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { TOAuthConfigs } from "@plane/types";
+// kardon imports
+import type { TOAuthConfigs } from "@kardon/types";
 
 export const useExtendedOAuthConfig = (_oauthActionText: string): TOAuthConfigs => {
   return {

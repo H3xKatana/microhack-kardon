@@ -6,8 +6,8 @@
 
 import type { HocuspocusProvider } from "@hocuspocus/provider";
 import type { Editor } from "@tiptap/react";
-// plane imports
-import { cn } from "@plane/utils";
+// kardon imports
+import { cn } from "@kardon/utils";
 // components
 import { DocumentContentLoader, EditorContainer, EditorContentWrapper } from "@/components/editors";
 import { BlockMenu, EditorBubbleMenu } from "@/components/menus";

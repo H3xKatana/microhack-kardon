@@ -5,12 +5,12 @@
  */
 
 import { ArrowDownWideNarrow, ArrowUpWideNarrow, Check } from "lucide-react";
-// plane imports
-import { getButtonStyling } from "@plane/propel/button";
+// kardon imports
+import { getButtonStyling } from "@kardon/propel/button";
 // types
-import { CheckIcon, ChevronDownIcon } from "@plane/propel/icons";
-import type { TPageFiltersSortBy, TPageFiltersSortKey } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+import { CheckIcon, ChevronDownIcon } from "@kardon/propel/icons";
+import type { TPageFiltersSortBy, TPageFiltersSortKey } from "@kardon/types";
+import { CustomMenu } from "@kardon/ui";
 
 type Props = {
   onChange: (value: { key?: TPageFiltersSortKey; order?: TPageFiltersSortBy }) => void;

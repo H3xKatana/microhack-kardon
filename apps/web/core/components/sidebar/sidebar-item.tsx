@@ -5,7 +5,7 @@
  */
 
 import Link from "next/link";
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 
 // ============================================================================
 // TYPES

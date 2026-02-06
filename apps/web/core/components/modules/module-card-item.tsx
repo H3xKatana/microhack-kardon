@@ -10,21 +10,21 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams, usePathname, useSearchParams } from "next/navigation";
 import { Info, SquareUser } from "lucide-react";
-// plane package imports
+// kardon package imports
 import {
   MODULE_STATUS,
   PROGRESS_STATE_GROUPS_DETAILS,
   EUserPermissions,
   EUserPermissionsLevel,
   IS_FAVORITE_MENU_OPEN,
-} from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
-import { WorkItemsIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setPromiseToast, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IModule } from "@plane/types";
-import { Card, FavoriteStar, LinearProgressIndicator } from "@plane/ui";
-import { getDate, renderFormattedPayloadDate, generateQueryParams } from "@plane/utils";
+} from "@kardon/constants";
+import { useLocalStorage } from "@kardon/hooks";
+import { WorkItemsIcon } from "@kardon/propel/icons";
+import { TOAST_TYPE, setPromiseToast, setToast } from "@kardon/propel/toast";
+import { Tooltip } from "@kardon/propel/tooltip";
+import type { IModule } from "@kardon/types";
+import { Card, FavoriteStar, LinearProgressIndicator } from "@kardon/ui";
+import { getDate, renderFormattedPayloadDate, generateQueryParams } from "@kardon/utils";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { ButtonAvatars } from "@/components/dropdowns/member/avatar";

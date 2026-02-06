@@ -88,7 +88,7 @@ export default {
       already_have_an_account: "Haben Sie bereits ein Konto?",
       login: "Anmelden",
       create_account: "Konto erstellen",
-      new_to_plane: "Neu bei Plane?",
+      new_to_kardon: "Neu bei Plane?",
       back_to_sign_in: "Zurück zur Anmeldung",
       resend_in: "Erneut senden in {seconds} Sekunden",
       sign_in_with_unique_code: "Mit einmaligem Code anmelden",
@@ -419,7 +419,7 @@ export default {
   full_changelog: "Vollständiges Änderungsprotokoll",
   support: "Support",
   discord: "Discord",
-  powered_by_plane_pages: "Bereitgestellt von Plane Pages",
+  powered_by_kardon_pages: "Bereitgestellt von Plane Pages",
   please_select_at_least_one_invitation: "Bitte wählen Sie mindestens eine Einladung aus.",
   please_select_at_least_one_invitation_description:
     "Wählen Sie mindestens eine Einladung aus, um dem Arbeitsbereich beizutreten.",
@@ -630,7 +630,7 @@ export default {
         issues: "Arbeitselemente",
       },
     },
-    new_at_plane: {
+    new_at_kardon: {
       title: "Neu in Plane",
     },
     quick_tutorial: {
@@ -2643,7 +2643,7 @@ export default {
     edited_by: "Bearbeitet von",
   },
   self_hosted_maintenance_message: {
-    plane_didnt_start_up_this_could_be_because_one_or_more_plane_services_failed_to_start:
+    kardon_didnt_start_up_this_could_be_because_one_or_more_kardon_services_failed_to_start:
       "Plane ist nicht gestartet. Dies könnte daran liegen, dass einer oder mehrere Plane-Services nicht starten konnten.",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "Wählen Sie View Logs aus setup.sh und Docker-Logs, um sicherzugehen.",

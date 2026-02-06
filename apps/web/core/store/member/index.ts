@@ -6,12 +6,12 @@
 
 import { makeObservable, observable } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import type { IUserLite } from "@plane/types";
-// plane web imports
-import type { IProjectMemberStore } from "@/plane-web/store/member/project-member.store";
-import { ProjectMemberStore } from "@/plane-web/store/member/project-member.store";
-import type { RootStore } from "@/plane-web/store/root.store";
+// kardon imports
+import type { IUserLite } from "@kardon/types";
+// kardon web imports
+import type { IProjectMemberStore } from "@/kardon-web/store/member/project-member.store";
+import { ProjectMemberStore } from "@/kardon-web/store/member/project-member.store";
+import type { RootStore } from "@/kardon-web/store/root.store";
 // local imports
 import type { IWorkspaceMemberStore } from "./workspace/workspace-member.store";
 import { WorkspaceMemberStore } from "./workspace/workspace-member.store";

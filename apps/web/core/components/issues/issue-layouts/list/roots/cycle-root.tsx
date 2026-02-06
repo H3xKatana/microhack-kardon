@@ -7,9 +7,9 @@
 import React, { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { EIssuesStoreType } from "@plane/types";
+// kardon imports
+import { EUserPermissions, EUserPermissionsLevel } from "@kardon/constants";
+import { EIssuesStoreType } from "@kardon/types";
 // hooks
 import { useCycle } from "@/hooks/store/use-cycle";
 import { useIssues } from "@/hooks/store/use-issues";

@@ -6,10 +6,10 @@
 
 import type { FC } from "react";
 import { ListFilter } from "lucide-react";
-import { getButtonStyling } from "@plane/propel/button";
-// plane imports
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+import { getButtonStyling } from "@kardon/propel/button";
+// kardon imports
+import { ChevronDownIcon } from "@kardon/propel/icons";
+import { cn } from "@kardon/utils";
 // components
 import { FiltersDropdown } from "@/components/issues/issue-layouts/filters";
 // hooks

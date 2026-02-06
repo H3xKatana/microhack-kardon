@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { TWebhookConnectionQueryParams } from "@plane/types";
-import type { TExtendedFileHandler } from "@/plane-editor/types/config";
+// kardon imports
+import type { TWebhookConnectionQueryParams } from "@kardon/types";
+import type { TExtendedFileHandler } from "@/kardon-editor/types/config";
 
 export type TFileHandler = {
   assetsUploadStatus: Record<string, number>; // blockId => progress percentage

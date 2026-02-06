@@ -5,12 +5,12 @@
  */
 
 import { Controller, useFormContext } from "react-hook-form";
-// plane imports
-import { NETWORK_CHOICES, ETabIndices } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { IProject } from "@plane/types";
-import { CustomSelect } from "@plane/ui";
-import { getTabIndex } from "@plane/utils";
+// kardon imports
+import { NETWORK_CHOICES, ETabIndices } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import type { IProject } from "@kardon/types";
+import { CustomSelect } from "@kardon/ui";
+import { getTabIndex } from "@kardon/utils";
 // components
 import { MemberDropdown } from "@/components/dropdowns/member/dropdown";
 import { ProjectNetworkIcon } from "@/components/project/project-network-icon";

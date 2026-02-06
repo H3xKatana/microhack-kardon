@@ -6,10 +6,10 @@
 
 import { observer } from "mobx-react";
 import { ArchiveRestore } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { ArchiveIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { ArchiveIcon } from "@kardon/propel/icons";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
 // store
 import type { INotification } from "@/store/notifications/notification";
 // local imports

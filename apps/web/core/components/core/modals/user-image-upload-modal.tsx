@@ -7,14 +7,14 @@
 import { useState } from "react";
 import { observer } from "mobx-react";
 import { useDropzone } from "react-dropzone";
-// plane imports
-import { ACCEPTED_AVATAR_IMAGE_MIME_TYPES_FOR_REACT_DROPZONE, MAX_FILE_SIZE } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { UserCirclePropertyIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { EFileAssetType } from "@plane/types";
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
-import { getAssetIdFromUrl, getFileURL, checkURLValidity } from "@plane/utils";
+// kardon imports
+import { ACCEPTED_AVATAR_IMAGE_MIME_TYPES_FOR_REACT_DROPZONE, MAX_FILE_SIZE } from "@kardon/constants";
+import { Button } from "@kardon/propel/button";
+import { UserCirclePropertyIcon } from "@kardon/propel/icons";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { EFileAssetType } from "@kardon/types";
+import { EModalPosition, EModalWidth, ModalCore } from "@kardon/ui";
+import { getAssetIdFromUrl, getFileURL, checkURLValidity } from "@kardon/utils";
 // services
 import { FileService } from "@/services/file.service";
 const fileService = new FileService();

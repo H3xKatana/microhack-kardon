@@ -4,11 +4,11 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { MAX_FILE_SIZE } from "@plane/constants";
-import type { TFileHandler } from "@plane/editor";
-import { SitesFileService } from "@plane/services";
-import { getFileURL } from "@plane/utils";
+// kardon imports
+import { MAX_FILE_SIZE } from "@kardon/constants";
+import type { TFileHandler } from "@kardon/editor";
+import { SitesFileService } from "@kardon/services";
+import { getFileURL } from "@kardon/utils";
 // services
 const sitesFileService = new SitesFileService();
 

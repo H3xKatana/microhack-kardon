@@ -8,11 +8,11 @@ import React, { useCallback, useMemo } from "react";
 import { observer } from "mobx-react";
 import { useParams, useSearchParams } from "next/navigation";
 import useSWR from "swr";
-// plane imports
-import { GLOBAL_VIEW_TRACKER_ELEMENTS, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@plane/constants";
-import { EmptyStateDetailed } from "@plane/propel/empty-state";
-import type { EIssueLayoutTypes } from "@plane/types";
-import { EIssuesStoreType, STATIC_VIEW_TYPES } from "@plane/types";
+// kardon imports
+import { GLOBAL_VIEW_TRACKER_ELEMENTS, ISSUE_DISPLAY_FILTERS_BY_PAGE } from "@kardon/constants";
+import { EmptyStateDetailed } from "@kardon/propel/empty-state";
+import type { EIssueLayoutTypes } from "@kardon/types";
+import { EIssuesStoreType, STATIC_VIEW_TYPES } from "@kardon/types";
 // assets
 import emptyView from "@/app/assets/empty-state/view.svg?url";
 // components

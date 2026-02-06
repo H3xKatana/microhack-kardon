@@ -6,16 +6,16 @@
 
 import { observer } from "mobx-react";
 import { PanelRight } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
-import { cn } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { Tooltip } from "@kardon/propel/tooltip";
+import { cn } from "@kardon/utils";
 // components
 import { PageToolbar } from "@/components/pages/editor/toolbar";
 // hooks
 import { usePageFilters } from "@/hooks/use-page-filters";
-// plane web components
-import { PageCollaboratorsList } from "@/plane-web/components/pages/header/collaborators-list";
+// kardon web components
+import { PageCollaboratorsList } from "@/kardon-web/components/pages/header/collaborators-list";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 

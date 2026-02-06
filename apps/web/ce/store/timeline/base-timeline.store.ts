@@ -14,8 +14,8 @@ import type {
   IGanttBlock,
   TGanttViews,
   EGanttBlockType,
-} from "@plane/types";
-import { renderFormattedPayloadDate } from "@plane/utils";
+} from "@kardon/types";
+import { renderFormattedPayloadDate } from "@kardon/utils";
 import { currentViewDataWithView } from "@/components/gantt-chart/data";
 import {
   getDateFromPositionOnGantt,
@@ -24,7 +24,7 @@ import {
 } from "@/components/gantt-chart/views/helpers";
 // helpers
 // store
-import type { RootStore } from "@/plane-web/store/root.store";
+import type { RootStore } from "@/kardon-web/store/root.store";
 
 // types
 type BlockData = {

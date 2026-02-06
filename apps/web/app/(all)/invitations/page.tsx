@@ -10,15 +10,15 @@ import Link from "next/link";
 
 import useSWR, { mutate } from "swr";
 import { CheckCircle2 } from "lucide-react";
-// plane imports
-import { ROLE } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+// kardon imports
+import { ROLE } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
 // types
-import { Button } from "@plane/propel/button";
-import { PlaneLogo } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IWorkspaceMemberInvitation } from "@plane/types";
-import { truncateText } from "@plane/utils";
+import { Button } from "@kardon/propel/button";
+import { PlaneLogo } from "@kardon/propel/icons";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import type { IWorkspaceMemberInvitation } from "@kardon/types";
+import { truncateText } from "@kardon/utils";
 // assets
 import emptyInvitation from "@/app/assets/empty-state/invitation.svg?url";
 // components
@@ -31,8 +31,8 @@ import { useUser, useUserProfile } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
 // services
 import { AuthenticationWrapper } from "@/lib/wrappers/authentication-wrapper";
-// plane web services
-import { WorkspaceService } from "@/plane-web/services";
+// kardon web services
+import { WorkspaceService } from "@/kardon-web/services";
 
 const workspaceService = new WorkspaceService();
 

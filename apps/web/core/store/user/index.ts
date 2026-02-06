@@ -6,13 +6,13 @@
 
 import { cloneDeep, set } from "lodash-es";
 import { action, makeObservable, observable, runInAction, computed } from "mobx";
-// plane imports
-import { EUserPermissions, API_BASE_URL } from "@plane/constants";
-import type { IUser, TUserPermissions } from "@plane/types";
-// plane web imports
-import type { RootStore } from "@/plane-web/store/root.store";
-import type { IUserPermissionStore } from "@/plane-web/store/user/permission.store";
-import { UserPermissionStore } from "@/plane-web/store/user/permission.store";
+// kardon imports
+import { EUserPermissions, API_BASE_URL } from "@kardon/constants";
+import type { IUser, TUserPermissions } from "@kardon/types";
+// kardon web imports
+import type { RootStore } from "@/kardon-web/store/root.store";
+import type { IUserPermissionStore } from "@/kardon-web/store/user/permission.store";
+import { UserPermissionStore } from "@/kardon-web/store/user/permission.store";
 // services
 import { AuthService } from "@/services/auth.service";
 import { UserService } from "@/services/user.service";

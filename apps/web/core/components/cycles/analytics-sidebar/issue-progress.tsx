@@ -10,17 +10,17 @@ import { isEmpty } from "lodash-es";
 import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
 import { Disclosure, Transition } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { ChevronUpIcon, ChevronDownIcon } from "@plane/propel/icons";
-import type { ICycle, TCyclePlotType, TProgressSnapshot } from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-import { getDate } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { ChevronUpIcon, ChevronDownIcon } from "@kardon/propel/icons";
+import type { ICycle, TCyclePlotType, TProgressSnapshot } from "@kardon/types";
+import { EIssuesStoreType } from "@kardon/types";
+import { getDate } from "@kardon/utils";
 // hooks
 import { useCycle } from "@/hooks/store/use-cycle";
-// plane web components
+// kardon web components
 import { useWorkItemFilters } from "@/hooks/store/work-item-filters/use-work-item-filters";
-import { SidebarChartRoot } from "@/plane-web/components/cycles";
+import { SidebarChartRoot } from "@/kardon-web/components/cycles";
 // local imports
 import { CycleProgressStats } from "./progress-stats";
 
@@ -64,7 +64,7 @@ export const CycleAnalyticsProgress = observer(function CycleAnalyticsProgress(p
   // router
   const searchParams = useSearchParams();
   const peekCycle = searchParams.get("peekCycle") || undefined;
-  // plane hooks
+  // kardon hooks
   const { t } = useTranslation();
   // store hooks
   const { getPlotTypeByCycleId, getEstimateTypeByCycleId, getCycleById } = useCycle();

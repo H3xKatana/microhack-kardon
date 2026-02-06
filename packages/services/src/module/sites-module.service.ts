@@ -4,17 +4,17 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
+// kardon imports
+import { API_BASE_URL } from "@kardon/constants";
 // api service
-import type { TPublicModule } from "@plane/types";
+import type { TPublicModule } from "@kardon/types";
 import { APIService } from "../api.service";
 
 /**
- * Service class for managing modules within plane sites application.
+ * Service class for managing modules within kardon sites application.
  * Extends APIService to handle HTTP requests to the module-related endpoints.
  * @extends {APIService}
- * @remarks This service is only available for plane sites
+ * @remarks This service is only available for kardon sites
  */
 export class SitesModuleService extends APIService {
   constructor(BASE_URL?: string) {

@@ -8,10 +8,10 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { CheckCircle } from "lucide-react";
 import { Tab } from "@headlessui/react";
-// plane imports
+// kardon imports
 // helpers
-import type { EProductSubscriptionEnum, TBillingFrequency, TSubscriptionPrice } from "@plane/types";
-import { cn, getBaseSubscriptionName, getSubscriptionName } from "@plane/utils";
+import type { EProductSubscriptionEnum, TBillingFrequency, TSubscriptionPrice } from "@kardon/types";
+import { cn, getBaseSubscriptionName, getSubscriptionName } from "@kardon/utils";
 
 export type TBasePaidPlanCardProps = {
   planVariant: EProductSubscriptionEnum;
@@ -38,7 +38,7 @@ export const BasePaidPlanCard = observer(function BasePaidPlanCard(props: TBaseP
   const [selectedPlan, setSelectedPlan] = useState<TBillingFrequency>("month");
   const basePlan = getBaseSubscriptionName(planVariant);
   // Plane details
-  const planeName = getSubscriptionName(planVariant);
+  const kardonName = getSubscriptionName(planVariant);
 
   return (
     <div className="flex flex-col py-6 px-3 bg-layer-2 rounded-xl border border-subtle">
@@ -67,7 +67,7 @@ export const BasePaidPlanCard = observer(function BasePaidPlanCard(props: TBaseP
           {prices.map((price: TSubscriptionPrice) => (
             <Tab.Panel key={price.key}>
               <div className="pt-6 text-center">
-                <div className="text-h4-medium">Plane {planeName}</div>
+                <div className="text-h4-medium">Plane {kardonName}</div>
                 {renderActionButton(price)}
               </div>
               <div className="px-2 pt-6 pb-2">

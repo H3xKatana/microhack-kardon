@@ -8,8 +8,8 @@
 import { useCallback, useMemo } from "react";
 // types
 import { useParams } from "next/navigation";
-import type { TSupportedFilterTypeForUpdate } from "@plane/constants";
-import { EDraftIssuePaginationType } from "@plane/constants";
+import type { TSupportedFilterTypeForUpdate } from "@kardon/constants";
+import { EDraftIssuePaginationType } from "@kardon/constants";
 import type {
   IIssueDisplayFilterOptions,
   IIssueDisplayProperties,
@@ -19,13 +19,13 @@ import type {
   TLoader,
   TProfileViews,
   TSupportedFilterForUpdate,
-} from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
+} from "@kardon/types";
+import { EIssuesStoreType } from "@kardon/types";
 import {
   useTeamIssueActions,
   useTeamProjectWorkItemsActions,
   useTeamViewIssueActions,
-} from "@/plane-web/helpers/issue-action-helper";
+} from "@/kardon-web/helpers/issue-action-helper";
 import { useIssues } from "./store/use-issues";
 
 export interface IssueActions {

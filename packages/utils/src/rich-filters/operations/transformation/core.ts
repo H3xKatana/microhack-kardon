@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { TFilterExpression, TFilterGroupNode, TFilterProperty } from "@plane/types";
+// kardon imports
+import type { TFilterExpression, TFilterGroupNode, TFilterProperty } from "@kardon/types";
 // local imports
 import { isConditionNode, isGroupNode } from "../../types/core";
 import { getGroupChildren } from "../../types/shared";

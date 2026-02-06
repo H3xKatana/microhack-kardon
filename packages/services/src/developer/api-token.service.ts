@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import { API_BASE_URL } from "@plane/constants";
-import type { IApiToken } from "@plane/types";
+import { API_BASE_URL } from "@kardon/constants";
+import type { IApiToken } from "@kardon/types";
 import { APIService } from "../api.service";
 
 export class APITokenService extends APIService {

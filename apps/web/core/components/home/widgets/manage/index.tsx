@@ -6,10 +6,10 @@
 
 import type { FC } from "react";
 import { observer } from "mobx-react";
-// plane types
-// plane ui
-import { useTranslation } from "@plane/i18n";
-import { EModalWidth, ModalCore } from "@plane/ui";
+// kardon types
+// kardon ui
+import { useTranslation } from "@kardon/i18n";
+import { EModalWidth, ModalCore } from "@kardon/ui";
 import { WidgetList } from "./widget-list";
 
 export type TProps = {

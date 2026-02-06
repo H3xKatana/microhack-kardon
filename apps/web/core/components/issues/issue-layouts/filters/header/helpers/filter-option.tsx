@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-import { CheckIcon } from "@plane/propel/icons";
+import { CheckIcon } from "@kardon/propel/icons";
 
 type Props = {
   icon?: React.ReactNode;

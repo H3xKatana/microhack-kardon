@@ -14,8 +14,8 @@ import { useEffect, useMemo } from "react";
 import { HeadingListExtension, SideMenuExtension } from "@/extensions";
 // hooks
 import { useEditor } from "@/hooks/use-editor";
-// plane editor extensions
-import { DocumentEditorAdditionalExtensions } from "@/plane-editor/extensions";
+// kardon editor extensions
+import { DocumentEditorAdditionalExtensions } from "@/kardon-editor/extensions";
 // types
 import type {
   TCollaborativeEditorHookProps,

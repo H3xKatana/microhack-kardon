@@ -7,17 +7,17 @@
 import { useMemo, useState } from "react";
 import { observer } from "mobx-react";
 import { ArrowUpToLine, Clipboard, History } from "lucide-react";
-// plane imports
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { ToggleSwitch } from "@plane/ui";
-import { copyTextToClipboard } from "@plane/utils";
+// kardon imports
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { ToggleSwitch } from "@kardon/ui";
+import { copyTextToClipboard } from "@kardon/utils";
 // hooks
 import { useAppRouter } from "@/hooks/use-app-router";
 import { usePageFilters } from "@/hooks/use-page-filters";
 import { useQueryParams } from "@/hooks/use-query-params";
-// plane web imports
-import type { TPageNavigationPaneTab } from "@/plane-web/components/pages/navigation-pane";
-import type { EPageStoreType } from "@/plane-web/hooks/store";
+// kardon web imports
+import type { TPageNavigationPaneTab } from "@/kardon-web/components/pages/navigation-pane";
+import type { EPageStoreType } from "@/kardon-web/hooks/store";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 // local imports

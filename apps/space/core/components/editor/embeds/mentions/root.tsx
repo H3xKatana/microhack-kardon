@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane web imports
-import type { TEditorMentionComponentProps } from "@/plane-web/components/editor/embeds/mentions";
-import { EditorAdditionalMentionsRoot } from "@/plane-web/components/editor/embeds/mentions";
+// kardon web imports
+import type { TEditorMentionComponentProps } from "@/kardon-web/components/editor/embeds/mentions";
+import { EditorAdditionalMentionsRoot } from "@/kardon-web/components/editor/embeds/mentions";
 // local components
 import { EditorUserMention } from "./user";
 

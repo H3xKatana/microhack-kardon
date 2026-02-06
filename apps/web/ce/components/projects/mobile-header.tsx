@@ -8,11 +8,11 @@ import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { ListFilter } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import type { TProjectFilters } from "@plane/types";
-import { calculateTotalFilters } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { ChevronDownIcon } from "@kardon/propel/icons";
+import type { TProjectFilters } from "@kardon/types";
+import { calculateTotalFilters } from "@kardon/utils";
 // components
 import { FiltersDropdown } from "@/components/issues/issue-layouts/filters";
 import { ProjectFiltersSelection } from "@/components/project/dropdowns/filters";

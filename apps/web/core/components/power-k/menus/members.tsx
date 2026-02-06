@@ -6,9 +6,9 @@
 
 import { Command } from "cmdk";
 import { observer } from "mobx-react";
-// plane imports
-import { Avatar } from "@plane/ui";
-import { getFileURL } from "@plane/utils";
+// kardon imports
+import { Avatar } from "@kardon/ui";
+import { getFileURL } from "@kardon/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 // local imports

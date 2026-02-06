@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { RANDOM_EMOJI_CODES } from "@plane/constants";
+// kardon imports
+import { RANDOM_EMOJI_CODES } from "@kardon/constants";
 
 /**
  * Converts a hyphen-separated hexadecimal emoji code to its decimal representation

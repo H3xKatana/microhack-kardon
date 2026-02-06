@@ -6,9 +6,9 @@
 
 import type { FC } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { ENotificationLoader, ENotificationQueryParamType } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+// kardon imports
+import { ENotificationLoader, ENotificationQueryParamType } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
 // components
 import { NotificationItem } from "@/components/workspace-notifications/sidebar/notification-card/item";
 // hooks

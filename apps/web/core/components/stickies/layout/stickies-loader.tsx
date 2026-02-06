@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane ui
-import { Loader } from "@plane/ui";
+// kardon ui
+import { Loader } from "@kardon/ui";
 
 export function StickiesLoader() {
   return (

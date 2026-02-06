@@ -7,11 +7,11 @@
 import { useEffect, useRef } from "react";
 import { observer } from "mobx-react";
 import { useForm } from "react-hook-form";
-import type { EditorRefApi } from "@plane/editor";
-import { CheckIcon, CloseIcon } from "@plane/propel/icons";
-// plane imports
-import type { TCommentsOperations, TIssueComment } from "@plane/types";
-import { cn, isCommentEmpty } from "@plane/utils";
+import type { EditorRefApi } from "@kardon/editor";
+import { CheckIcon, CloseIcon } from "@kardon/propel/icons";
+// kardon imports
+import type { TCommentsOperations, TIssueComment } from "@kardon/types";
+import { cn, isCommentEmpty } from "@kardon/utils";
 // components
 import { LiteTextEditor } from "@/components/editor/lite-text";
 

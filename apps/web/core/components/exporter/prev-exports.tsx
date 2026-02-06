@@ -8,12 +8,12 @@ import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import useSWR, { mutate } from "swr";
 import { MoveLeft, MoveRight, RefreshCw } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import type { IExportData } from "@plane/types";
-import { Table } from "@plane/ui";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { Button } from "@kardon/propel/button";
+import { EmptyStateCompact } from "@kardon/propel/empty-state";
+import type { IExportData } from "@kardon/types";
+import { Table } from "@kardon/ui";
 // components
 import { ImportExportSettingsLoader } from "@/components/ui/loader/settings/import-and-export";
 // constants

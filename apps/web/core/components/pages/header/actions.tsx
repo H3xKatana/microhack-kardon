@@ -5,12 +5,12 @@
  */
 
 import { observer } from "mobx-react";
-// plane web components
-import { PageLockControl } from "@/plane-web/components/pages/header/lock-control";
-import { PageMoveControl } from "@/plane-web/components/pages/header/move-control";
-import { PageShareControl } from "@/plane-web/components/pages/header/share-control";
-// plane web hooks
-import type { EPageStoreType } from "@/plane-web/hooks/store";
+// kardon web components
+import { PageLockControl } from "@/kardon-web/components/pages/header/lock-control";
+import { PageMoveControl } from "@/kardon-web/components/pages/header/move-control";
+import { PageShareControl } from "@/kardon-web/components/pages/header/share-control";
+// kardon web hooks
+import type { EPageStoreType } from "@/kardon-web/hooks/store";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 // local imports

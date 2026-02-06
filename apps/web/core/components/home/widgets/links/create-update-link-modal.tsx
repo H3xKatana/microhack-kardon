@@ -8,12 +8,12 @@ import type { FC } from "react";
 import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
-// plane types
-// plane ui
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import type { TLinkEditableFields } from "@plane/types";
-import { Input, ModalCore } from "@plane/ui";
+// kardon types
+// kardon ui
+import { useTranslation } from "@kardon/i18n";
+import { Button } from "@kardon/propel/button";
+import type { TLinkEditableFields } from "@kardon/types";
+import { Input, ModalCore } from "@kardon/ui";
 import type { TLinkOperations } from "./use-links";
 
 export type TLinkOperationsModal = Exclude<TLinkOperations, "remove">;

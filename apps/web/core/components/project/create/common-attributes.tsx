@@ -7,18 +7,18 @@
 import type { ChangeEvent } from "react";
 import type { UseFormSetValue } from "react-hook-form";
 import { Controller, useFormContext } from "react-hook-form";
-import { InfoIcon } from "@plane/propel/icons";
-// plane imports
-import { ETabIndices } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+import { InfoIcon } from "@kardon/propel/icons";
+// kardon imports
+import { ETabIndices } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
 // ui
-import { Tooltip } from "@plane/propel/tooltip";
-import { Input, TextArea } from "@plane/ui";
-import { cn, projectIdentifierSanitizer, getTabIndex } from "@plane/utils";
-// plane utils
+import { Tooltip } from "@kardon/propel/tooltip";
+import { Input, TextArea } from "@kardon/ui";
+import { cn, projectIdentifierSanitizer, getTabIndex } from "@kardon/utils";
+// kardon utils
 // helpers
-// plane-web types
-import type { TProject } from "@/plane-web/types/projects";
+// kardon-web types
+import type { TProject } from "@/kardon-web/types/projects";
 
 type Props = {
   setValue: UseFormSetValue<TProject>;

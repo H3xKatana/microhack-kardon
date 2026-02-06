@@ -7,9 +7,9 @@
 import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { Layers } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { cn } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { cn } from "@kardon/utils";
 // hooks
 import { useModule } from "@/hooks/store/use-module";
 

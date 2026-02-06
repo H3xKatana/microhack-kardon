@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane editor
-import type { TCallbackMentionComponentProps } from "@plane/editor";
+// kardon editor
+import type { TCallbackMentionComponentProps } from "@kardon/editor";
 
 export type TEditorMentionComponentProps = TCallbackMentionComponentProps;
 

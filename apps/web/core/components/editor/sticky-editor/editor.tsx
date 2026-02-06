@@ -5,20 +5,20 @@
  */
 
 import React, { useState } from "react";
-// plane constants
-import type { EIssueCommentAccessSpecifier } from "@plane/constants";
-// plane editor
-import { LiteTextEditorWithRef } from "@plane/editor";
-import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@plane/editor";
+// kardon constants
+import type { EIssueCommentAccessSpecifier } from "@kardon/constants";
+// kardon editor
+import { LiteTextEditorWithRef } from "@kardon/editor";
+import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@kardon/editor";
 // components
-import type { TSticky } from "@plane/types";
+import type { TSticky } from "@kardon/types";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 // hooks
 import { useEditorConfig } from "@/hooks/editor";
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
-// plane web hooks
-import { useEditorFlagging } from "@/plane-web/hooks/use-editor-flagging";
+// kardon web hooks
+import { useEditorFlagging } from "@/kardon-web/hooks/use-editor-flagging";
 import { StickyEditorToolbar } from "./toolbar";
 
 interface StickyEditorWrapperProps extends Omit<

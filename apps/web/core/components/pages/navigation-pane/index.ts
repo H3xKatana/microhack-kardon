@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane web imports
-import { ORDERED_PAGE_NAVIGATION_TABS_LIST } from "@/plane-web/components/pages/navigation-pane";
+// kardon web imports
+import { ORDERED_PAGE_NAVIGATION_TABS_LIST } from "@/kardon-web/components/pages/navigation-pane";
 
 export * from "./root";
 export * from "./types";

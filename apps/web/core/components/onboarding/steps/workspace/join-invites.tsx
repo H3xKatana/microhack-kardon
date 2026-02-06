@@ -5,19 +5,19 @@
  */
 
 import { useState } from "react";
-// plane imports
-import { ROLE } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import type { IWorkspaceMemberInvitation } from "@plane/types";
-import { Checkbox, Spinner } from "@plane/ui";
-import { truncateText } from "@plane/utils";
+// kardon imports
+import { ROLE } from "@kardon/constants";
+import { Button } from "@kardon/propel/button";
+import type { IWorkspaceMemberInvitation } from "@kardon/types";
+import { Checkbox, Spinner } from "@kardon/ui";
+import { truncateText } from "@kardon/utils";
 // constants
 import { WorkspaceLogo } from "@/components/workspace/logo";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserSettings } from "@/hooks/store/user";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/kardon-web/services";
 // local components
 import { CommonOnboardingHeader } from "../common";
 

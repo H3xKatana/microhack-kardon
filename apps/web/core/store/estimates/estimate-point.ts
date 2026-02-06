@@ -9,9 +9,9 @@
 import { set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 // types
-import type { IEstimate, IEstimatePoint as IEstimatePointType } from "@plane/types";
-// plane web services
-import estimateService from "@/plane-web/services/project/estimate.service";
+import type { IEstimate, IEstimatePoint as IEstimatePointType } from "@kardon/types";
+// kardon web services
+import estimateService from "@/kardon-web/services/project/estimate.service";
 // store
 import type { CoreRootStore } from "@/store/root.store";
 

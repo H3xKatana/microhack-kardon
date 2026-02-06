@@ -6,10 +6,10 @@
 
 import { Suspense } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { ScrollArea } from "@plane/propel/scrollarea";
-import type { TProfileSettingsTabs } from "@plane/types";
-import { cn } from "@plane/utils";
+// kardon imports
+import { ScrollArea } from "@kardon/propel/scrollarea";
+import type { TProfileSettingsTabs } from "@kardon/types";
+import { cn } from "@kardon/utils";
 // local imports
 import { PROFILE_SETTINGS_PAGES_MAP } from "./pages";
 

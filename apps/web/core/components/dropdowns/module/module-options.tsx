@@ -9,11 +9,11 @@ import type { Placement } from "@popperjs/core";
 import { observer } from "mobx-react";
 import { usePopper } from "react-popper";
 import { Combobox } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { CheckIcon, SearchIcon, ModuleIcon } from "@plane/propel/icons";
-import type { IModule } from "@plane/types";
-import { cn } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { CheckIcon, SearchIcon, ModuleIcon } from "@kardon/propel/icons";
+import type { IModule } from "@kardon/types";
+import { cn } from "@kardon/utils";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 
@@ -42,7 +42,7 @@ export const ModuleOptions = observer(function ModuleOptions(props: Props) {
   // states
   const [query, setQuery] = useState("");
   const [popperElement, setPopperElement] = useState<HTMLDivElement | null>(null);
-  // plane hooks
+  // kardon hooks
   const { t } = useTranslation();
   // store hooks
   const { isMobile } = usePlatformOS();

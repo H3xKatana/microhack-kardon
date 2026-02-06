@@ -5,9 +5,9 @@
  */
 
 import { CheckCircle2, Minus, MinusCircle } from "lucide-react";
-import type { EProductSubscriptionEnum } from "@plane/types";
-// plane imports
-import { cn } from "@plane/utils";
+import type { EProductSubscriptionEnum } from "@kardon/types";
+// kardon imports
+import { cn } from "@kardon/utils";
 // constants
 import type { TPlanFeatureData } from "@/constants/plans";
 

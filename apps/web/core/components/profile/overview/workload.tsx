@@ -4,12 +4,12 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { STATE_GROUPS } from "@plane/constants";
+// kardon imports
+import { STATE_GROUPS } from "@kardon/constants";
 // types
-import { useTranslation } from "@plane/i18n";
-import type { IUserStateDistribution } from "@plane/types";
-import { Card, ECardDirection, ECardSpacing } from "@plane/ui";
+import { useTranslation } from "@kardon/i18n";
+import type { IUserStateDistribution } from "@kardon/types";
+import { Card, ECardDirection, ECardSpacing } from "@kardon/ui";
 // constants
 
 type Props = {

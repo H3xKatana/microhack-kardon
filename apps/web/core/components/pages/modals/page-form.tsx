@@ -8,16 +8,16 @@ import type { FormEvent } from "react";
 import { useState } from "react";
 import type { LucideIcon } from "lucide-react";
 
-// plane imports
-import { ETabIndices, EPageAccess } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@plane/propel/emoji-icon-picker";
-import { GlobeIcon, LockIcon, PageIcon } from "@plane/propel/icons";
-import type { ISvgIcons } from "@plane/propel/icons";
-import type { TPage } from "@plane/types";
-import { Input } from "@plane/ui";
-import { getTabIndex } from "@plane/utils";
+// kardon imports
+import { ETabIndices, EPageAccess } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { Button } from "@kardon/propel/button";
+import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@kardon/propel/emoji-icon-picker";
+import { GlobeIcon, LockIcon, PageIcon } from "@kardon/propel/icons";
+import type { ISvgIcons } from "@kardon/propel/icons";
+import type { TPage } from "@kardon/types";
+import { Input } from "@kardon/ui";
+import { getTabIndex } from "@kardon/utils";
 // components
 import { AccessField } from "@/components/common/access-field";
 // hooks

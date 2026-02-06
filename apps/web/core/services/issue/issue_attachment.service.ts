@@ -5,11 +5,11 @@
  */
 
 import type { AxiosRequestConfig } from "axios";
-import { API_BASE_URL } from "@plane/constants";
-// plane types
-import { getFileMetaDataForUpload, generateFileUploadPayload } from "@plane/services";
-import type { TIssueAttachment, TIssueAttachmentUploadResponse, TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+import { API_BASE_URL } from "@kardon/constants";
+// kardon types
+import { getFileMetaDataForUpload, generateFileUploadPayload } from "@kardon/services";
+import type { TIssueAttachment, TIssueAttachmentUploadResponse, TIssueServiceType } from "@kardon/types";
+import { EIssueServiceType } from "@kardon/types";
 // services
 import { APIService } from "@/services/api.service";
 import { FileUploadService } from "@/services/file-upload.service";

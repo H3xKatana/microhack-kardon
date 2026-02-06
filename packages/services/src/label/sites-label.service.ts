@@ -4,17 +4,17 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
-import type { IIssueLabel } from "@plane/types";
+// kardon imports
+import { API_BASE_URL } from "@kardon/constants";
+import type { IIssueLabel } from "@kardon/types";
 // api service
 import { APIService } from "../api.service";
 
 /**
- * Service class for managing labels within plane sites application.
+ * Service class for managing labels within kardon sites application.
  * Extends APIService to handle HTTP requests to the label-related endpoints.
  * @extends {APIService}
- * @remarks This service is only available for plane sites
+ * @remarks This service is only available for kardon sites
  */
 export class SitesLabelService extends APIService {
   constructor(BASE_URL?: string) {

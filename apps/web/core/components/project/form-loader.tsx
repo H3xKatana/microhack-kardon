@@ -5,7 +5,7 @@
  */
 
 // components
-import { Loader } from "@plane/ui";
+import { Loader } from "@kardon/ui";
 
 export function ProjectDetailsFormLoader() {
   return (

@@ -6,7 +6,7 @@
 
 import type { FC } from "react";
 //
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 
 type TCountChip = {
   count: string | number;

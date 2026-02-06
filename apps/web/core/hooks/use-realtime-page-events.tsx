@@ -5,18 +5,18 @@
  */
 
 import { useCallback, useMemo } from "react";
-// plane imports
-import type { EventToPayloadMap } from "@plane/editor";
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
+// kardon imports
+import type { EventToPayloadMap } from "@kardon/editor";
+import { setToast, TOAST_TYPE } from "@kardon/propel/toast";
 // types
-import type { IUserLite } from "@plane/types";
+import type { IUserLite } from "@kardon/types";
 // components
 import type { TEditorBodyHandlers } from "@/components/pages/editor/editor-body";
 // hooks
 import { useUser } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
-import type { EPageStoreType } from "@/plane-web/hooks/store";
-import { usePageStore } from "@/plane-web/hooks/store";
+import type { EPageStoreType } from "@/kardon-web/hooks/store";
+import { usePageStore } from "@/kardon-web/hooks/store";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 

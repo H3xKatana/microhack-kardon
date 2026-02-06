@@ -1,8 +1,8 @@
 <br /><br />
 
 <p align="center">
-<a href="https://plane.so">
-  <img src="https://plane-marketing.s3.ap-south-1.amazonaws.com/plane-readme/plane_logo_.webp" alt="Plane Logo" width="70">
+<a href="https://kardon.so">
+  <img src="https://kardon-marketing.s3.ap-south-1.amazonaws.com/kardon-readme/kardon_logo_.webp" alt="Plane Logo" width="70">
 </a>
 </p>
 

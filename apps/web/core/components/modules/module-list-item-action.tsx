@@ -16,14 +16,14 @@ import {
   IS_FAVORITE_MENU_OPEN,
   MODULE_TRACKER_EVENTS,
   MODULE_TRACKER_ELEMENTS,
-} from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setPromiseToast, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IModule } from "@plane/types";
-import { FavoriteStar } from "@plane/ui";
-import { renderFormattedPayloadDate, getDate } from "@plane/utils";
+} from "@kardon/constants";
+import { useLocalStorage } from "@kardon/hooks";
+import { useTranslation } from "@kardon/i18n";
+import { TOAST_TYPE, setPromiseToast, setToast } from "@kardon/propel/toast";
+import { Tooltip } from "@kardon/propel/tooltip";
+import type { IModule } from "@kardon/types";
+import { FavoriteStar } from "@kardon/ui";
+import { renderFormattedPayloadDate, getDate } from "@kardon/utils";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { ModuleQuickActions } from "@/components/modules";

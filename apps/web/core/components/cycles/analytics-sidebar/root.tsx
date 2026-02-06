@@ -6,8 +6,8 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { Loader } from "@plane/ui";
+// kardon imports
+import { Loader } from "@kardon/ui";
 // local imports
 import useCyclesDetails from "../active-cycle/use-cycles-details";
 import { CycleAnalyticsProgress } from "./issue-progress";

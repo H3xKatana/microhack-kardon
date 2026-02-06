@@ -7,8 +7,8 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { Layers } from "lucide-react";
-// plane imports
-import type { IProjectView } from "@plane/types";
+// kardon imports
+import type { IProjectView } from "@kardon/types";
 // local imports
 import { PowerKMenuBuilder } from "./builder";
 

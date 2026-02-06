@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
-import { EIssueServiceType } from "@plane/types";
+// kardon imports
+import { API_BASE_URL } from "@kardon/constants";
+import { EIssueServiceType } from "@kardon/types";
 import type {
   TIssueParams,
   IIssueDisplayProperties,
@@ -17,7 +17,7 @@ import type {
   TIssueServiceType,
   TIssuesResponse,
   TIssueSubIssues,
-} from "@plane/types";
+} from "@kardon/types";
 // services
 import { APIService } from "@/services/api.service";
 

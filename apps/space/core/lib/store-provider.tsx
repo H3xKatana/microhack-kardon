@@ -5,8 +5,8 @@
  */
 
 import { createContext } from "react";
-// plane web store
-import { RootStore } from "@/plane-web/store/root.store";
+// kardon web store
+import { RootStore } from "@/kardon-web/store/root.store";
 
 let rootStore = new RootStore();
 

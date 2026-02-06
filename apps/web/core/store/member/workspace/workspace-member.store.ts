@@ -8,11 +8,11 @@ import { set, sortBy } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import type { EUserPermissions } from "@plane/constants";
-import type { IWorkspaceBulkInviteFormData, IWorkspaceMember, IWorkspaceMemberInvitation } from "@plane/types";
-// plane-web constants
+import type { EUserPermissions } from "@kardon/constants";
+import type { IWorkspaceBulkInviteFormData, IWorkspaceMember, IWorkspaceMemberInvitation } from "@kardon/types";
+// kardon-web constants
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/kardon-web/services";
 // types
 import type { IRouterStore } from "@/store/router.store";
 import type { IUserStore } from "@/store/user";
@@ -20,7 +20,7 @@ import type { IUserStore } from "@/store/user";
 import type { IMemberRootStore } from "../index.ts";
 import type { IWorkspaceMemberFiltersStore } from "./workspace-member-filters.store";
 import { WorkspaceMemberFiltersStore } from "./workspace-member-filters.store";
-import type { RootStore } from "@/plane-web/store/root.store";
+import type { RootStore } from "@/kardon-web/store/root.store";
 
 export interface IWorkspaceMembership {
   id: string;

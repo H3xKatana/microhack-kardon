@@ -4,12 +4,12 @@
  * See the LICENSE file for details.
  */
 
-// plane package imports
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { ProjectIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import { cn } from "@plane/utils";
-// plane web hooks
+// kardon package imports
+import { Logo } from "@kardon/propel/emoji-icon-picker";
+import { ProjectIcon } from "@kardon/propel/icons";
+import { Tooltip } from "@kardon/propel/tooltip";
+import { cn } from "@kardon/utils";
+// kardon web hooks
 import { useProject } from "@/hooks/store/use-project";
 
 type Props = {

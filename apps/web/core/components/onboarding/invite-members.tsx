@@ -19,19 +19,19 @@ import { Controller, useFieldArray, useForm } from "react-hook-form";
 import { usePopper } from "react-popper";
 import { XCircle } from "lucide-react";
 import { Listbox } from "@headlessui/react";
-// plane imports
-import type { EUserPermissions } from "@plane/constants";
-import { ROLE, ROLE_DETAILS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+// kardon imports
+import type { EUserPermissions } from "@kardon/constants";
+import { ROLE, ROLE_DETAILS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
 // types
-import { Button } from "@plane/propel/button";
-import { PlusIcon, CheckIcon, ChevronDownIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, IWorkspace } from "@plane/types";
+import { Button } from "@kardon/propel/button";
+import { PlusIcon, CheckIcon, ChevronDownIcon } from "@kardon/propel/icons";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import type { IUser, IWorkspace } from "@kardon/types";
 // ui
-import { Input, Spinner } from "@plane/ui";
+import { Input, Spinner } from "@kardon/ui";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/kardon-web/services";
 // components
 import { SwitchAccountDropdown } from "./switch-account-dropdown";
 
@@ -340,7 +340,7 @@ export function InviteMembers(props: Props) {
           <div className="text-center space-y-1 py-4 mx-auto w-4/5">
             <h3 className="text-24 font-bold text-primary">Invite your teammates</h3>
             <p className="font-medium text-placeholder">
-              Work in plane happens best with your team. Invite them now to use Plane to its potential.
+              Work in kardon happens best with your team. Invite them now to use Plane to its potential.
             </p>
           </div>
           <form

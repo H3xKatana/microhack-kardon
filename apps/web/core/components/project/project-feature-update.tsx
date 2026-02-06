@@ -6,16 +6,16 @@
 
 import { observer } from "mobx-react";
 import Link from "next/link";
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@kardon/i18n";
 // ui
-import { Button, getButtonStyling } from "@plane/propel/button";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { Row } from "@plane/ui";
+import { Button, getButtonStyling } from "@kardon/propel/button";
+import { Logo } from "@kardon/propel/emoji-icon-picker";
+import { Row } from "@kardon/ui";
 // components
 // hooks
 import { useProject } from "@/hooks/store/use-project";
-// plane web imports
-import { ProjectFeaturesList } from "@/plane-web/components/projects/settings/features-list";
+// kardon web imports
+import { ProjectFeaturesList } from "@/kardon-web/components/projects/settings/features-list";
 
 type Props = {
   workspaceSlug: string;

@@ -4,13 +4,13 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { BarChart } from "@plane/propel/charts/bar-chart";
-import { EmptyStateCompact } from "@plane/propel/empty-state";
-import type { IUserProfileData } from "@plane/types";
-import { Loader, Card } from "@plane/ui";
-import { capitalizeFirstLetter } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { BarChart } from "@kardon/propel/charts/bar-chart";
+import { EmptyStateCompact } from "@kardon/propel/empty-state";
+import type { IUserProfileData } from "@kardon/types";
+import { Loader, Card } from "@kardon/ui";
+import { capitalizeFirstLetter } from "@kardon/utils";
 
 type Props = {
   userProfile: IUserProfileData | undefined;

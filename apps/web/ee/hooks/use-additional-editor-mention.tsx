@@ -4,4 +4,4 @@
  * See the LICENSE file for details.
  */
 
-export * from "@/plane-web/hooks/use-additional-editor-mention";
+export * from "@/kardon-web/hooks/use-additional-editor-mention";

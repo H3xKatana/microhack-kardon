@@ -5,11 +5,11 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IProject } from "@plane/types";
+// kardon imports
+import { EUserPermissions, EUserPermissionsLevel } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import type { IProject } from "@kardon/types";
 import { NotAuthorizedView } from "@/components/auth-screens/not-authorized-view";
 import { AutoArchiveAutomation, AutoCloseAutomation } from "@/components/automation";
 import { PageHead } from "@/components/core/page-title";
@@ -18,8 +18,8 @@ import { SettingsHeading } from "@/components/settings/heading";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web imports
-import { CustomAutomationsRoot } from "@/plane-web/components/automations/root";
+// kardon web imports
+import { CustomAutomationsRoot } from "@/kardon-web/components/automations/root";
 // local imports
 import type { Route } from "./+types/page";
 import { AutomationsProjectSettingsHeader } from "./header";

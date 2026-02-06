@@ -5,8 +5,8 @@
  */
 
 import { useCallback, useMemo } from "react";
-// plane editor
-import type { TEditorFontSize, TEditorFontStyle } from "@plane/editor";
+// kardon editor
+import type { TEditorFontSize, TEditorFontStyle } from "@kardon/editor";
 // hooks
 import useLocalStorage from "@/hooks/use-local-storage";
 

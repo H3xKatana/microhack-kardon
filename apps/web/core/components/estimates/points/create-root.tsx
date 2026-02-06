@@ -7,12 +7,12 @@
 import type { Dispatch, FC, SetStateAction } from "react";
 import { useCallback, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { estimateCount } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { PlusIcon } from "@plane/propel/icons";
-import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeError } from "@plane/types";
-import { Sortable } from "@plane/ui";
+// kardon imports
+import { estimateCount } from "@kardon/constants";
+import { Button } from "@kardon/propel/button";
+import { PlusIcon } from "@kardon/propel/icons";
+import type { TEstimatePointsObject, TEstimateSystemKeys, TEstimateTypeError } from "@kardon/types";
+import { Sortable } from "@kardon/ui";
 // local imports
 import { EstimatePointCreate } from "./create";
 import { EstimatePointItemPreview } from "./preview";

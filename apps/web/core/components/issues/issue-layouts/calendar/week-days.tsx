@@ -5,13 +5,13 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import type { TGroupedIssues, TIssue, TIssueMap, TPaginationData, ICalendarDate, ICalendarWeek } from "@plane/types";
-import { cn, getOrderedDays, renderFormattedPayloadDate } from "@plane/utils";
+// kardon imports
+import type { TGroupedIssues, TIssue, TIssueMap, TPaginationData, ICalendarDate, ICalendarWeek } from "@kardon/types";
+import { cn, getOrderedDays, renderFormattedPayloadDate } from "@kardon/utils";
 // hooks
 import { useUserProfile } from "@/hooks/store/user";
 // types
-import type { IProjectEpicsFilter } from "@/plane-web/store/issue/epic";
+import type { IProjectEpicsFilter } from "@/kardon-web/store/issue/epic";
 import type { ICycleIssuesFilter } from "@/store/issue/cycle";
 import type { IModuleIssuesFilter } from "@/store/issue/module";
 import type { IProjectIssuesFilter } from "@/store/issue/project";

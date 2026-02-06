@@ -6,11 +6,11 @@
 
 import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react";
-// plane package imports
-import { ModalPortal, EPortalWidth, EPortalPosition } from "@plane/propel/portal";
-import type { ICycle, IModule, IProject } from "@plane/types";
+// kardon package imports
+import { ModalPortal, EPortalWidth, EPortalPosition } from "@kardon/propel/portal";
+import type { ICycle, IModule, IProject } from "@kardon/types";
 import { useAnalytics } from "@/hooks/store/use-analytics";
-// plane web components
+// kardon web components
 import { WorkItemsModalMainContent } from "./content";
 import { WorkItemsModalHeader } from "./header";
 

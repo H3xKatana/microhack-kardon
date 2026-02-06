@@ -7,12 +7,12 @@
 import type { FC } from "react";
 import React from "react";
 // types
-import { CycleGroupIcon, ChevronDownIcon } from "@plane/propel/icons";
-import type { TCycleGroups } from "@plane/types";
+import { CycleGroupIcon, ChevronDownIcon } from "@kardon/propel/icons";
+import type { TCycleGroups } from "@kardon/types";
 // icons
-import { Row } from "@plane/ui";
+import { Row } from "@kardon/ui";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 
 type Props = {
   type: TCycleGroups;

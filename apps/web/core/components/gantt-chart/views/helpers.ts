@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import type { ChartDataType, IGanttBlock } from "@plane/types";
-import { addDaysToDate, findTotalDaysInRange, getDate } from "@plane/utils";
+import type { ChartDataType, IGanttBlock } from "@kardon/types";
+import { addDaysToDate, findTotalDaysInRange, getDate } from "@kardon/utils";
 import { DEFAULT_BLOCK_WIDTH } from "../constants";
 
 /**

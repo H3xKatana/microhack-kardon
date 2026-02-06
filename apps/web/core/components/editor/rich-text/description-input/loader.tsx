@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { Loader } from "@plane/ui";
-import { cn } from "@plane/utils";
+// kardon imports
+import { Loader } from "@kardon/ui";
+import { cn } from "@kardon/utils";
 
 type Props = {
   className?: string;

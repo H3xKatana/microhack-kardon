@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane package imports
-import type { ChartYAxisMetric, IState } from "@plane/types";
-import { ChartXAxisProperty } from "@plane/types";
+// kardon package imports
+import type { ChartYAxisMetric, IState } from "@kardon/types";
+import { ChartXAxisProperty } from "@kardon/types";
 
 interface ParamsProps {
   x_axis: ChartXAxisProperty;

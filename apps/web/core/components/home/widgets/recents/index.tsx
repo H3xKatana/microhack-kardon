@@ -7,15 +7,15 @@
 import { useRef, useState } from "react";
 import { observer } from "mobx-react";
 import useSWR from "swr";
-import { useTranslation } from "@plane/i18n";
-// plane types
-import { PageIcon, ProjectIcon, WorkItemsIcon } from "@plane/propel/icons";
-import type { TActivityEntityData, THomeWidgetProps, TRecentActivityFilterKeys } from "@plane/types";
-// plane ui
+import { useTranslation } from "@kardon/i18n";
+// kardon types
+import { PageIcon, ProjectIcon, WorkItemsIcon } from "@kardon/propel/icons";
+import type { TActivityEntityData, THomeWidgetProps, TRecentActivityFilterKeys } from "@kardon/types";
+// kardon ui
 // components
 import { ContentOverflowWrapper } from "@/components/core/content-overflow-HOC";
-// plane web services
-import { WorkspaceService } from "@/plane-web/services";
+// kardon web services
+import { WorkspaceService } from "@/kardon-web/services";
 import { RecentsEmptyState } from "../empty-states";
 import { EWidgetKeys, WidgetLoader } from "../loaders";
 import { FiltersDropdown } from "./filters";

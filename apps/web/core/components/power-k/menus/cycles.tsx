@@ -6,9 +6,9 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { ContrastIcon } from "@plane/propel/icons";
-import type { ICycle } from "@plane/types";
+// kardon imports
+import { ContrastIcon } from "@kardon/propel/icons";
+import type { ICycle } from "@kardon/types";
 // local imports
 import { PowerKMenuBuilder } from "./builder";
 

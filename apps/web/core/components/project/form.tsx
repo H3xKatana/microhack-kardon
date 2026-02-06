@@ -7,18 +7,18 @@
 import { useEffect, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { Info } from "lucide-react";
-import { NETWORK_CHOICES } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-// plane imports
-import { Button } from "@plane/propel/button";
-import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@plane/propel/emoji-icon-picker";
-import { LockIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import { EFileAssetType } from "@plane/types";
-import type { IProject, IWorkspace } from "@plane/types";
-import { CustomSelect, Input, TextArea } from "@plane/ui";
-import { renderFormattedDate } from "@plane/utils";
+import { NETWORK_CHOICES } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+// kardon imports
+import { Button } from "@kardon/propel/button";
+import { EmojiPicker, EmojiIconPickerTypes, Logo } from "@kardon/propel/emoji-icon-picker";
+import { LockIcon } from "@kardon/propel/icons";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { Tooltip } from "@kardon/propel/tooltip";
+import { EFileAssetType } from "@kardon/types";
+import type { IProject, IWorkspace } from "@kardon/types";
+import { CustomSelect, Input, TextArea } from "@kardon/ui";
+import { renderFormattedDate } from "@kardon/utils";
 import { CoverImage } from "@/components/common/cover-image";
 import { ImagePickerPopover } from "@/components/core/image-picker-popover";
 import { TimezoneSelect } from "@/components/global";

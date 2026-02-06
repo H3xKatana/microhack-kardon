@@ -11,14 +11,14 @@ import { createPortal } from "react-dom";
 import { usePopper } from "react-popper";
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
 // ui
-import type { DateRange, Matcher } from "@plane/propel/calendar";
-import { Calendar } from "@plane/propel/calendar";
-import { CloseIcon, DueDatePropertyIcon } from "@plane/propel/icons";
-import { ComboDropDown } from "@plane/ui";
-import { cn, renderFormattedDate } from "@plane/utils";
+import type { DateRange, Matcher } from "@kardon/propel/calendar";
+import { Calendar } from "@kardon/propel/calendar";
+import { CloseIcon, DueDatePropertyIcon } from "@kardon/propel/icons";
+import { ComboDropDown } from "@kardon/ui";
+import { cn, renderFormattedDate } from "@kardon/utils";
 // helpers
 // hooks
 import { useUserProfile } from "@/hooks/store/user";

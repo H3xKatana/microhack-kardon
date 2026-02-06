@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
+// kardon imports
+import { API_BASE_URL } from "@kardon/constants";
 
 /**
  * @description combine the file path with the base URL

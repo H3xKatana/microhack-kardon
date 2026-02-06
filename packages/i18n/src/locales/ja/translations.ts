@@ -88,7 +88,7 @@ export default {
       already_have_an_account: "すでにアカウントをお持ちですか？",
       login: "ログイン",
       create_account: "アカウントを作成",
-      new_to_plane: "Planeは初めてですか？",
+      new_to_kardon: "Planeは初めてですか？",
       back_to_sign_in: "サインインに戻る",
       resend_in: "{seconds}秒後に再送信",
       sign_in_with_unique_code: "ユニークコードでサインイン",
@@ -408,7 +408,7 @@ export default {
   full_changelog: "完全な変更履歴",
   support: "サポート",
   discord: "Discord",
-  powered_by_plane_pages: "Powered by Plane Pages",
+  powered_by_kardon_pages: "Powered by Plane Pages",
   please_select_at_least_one_invitation: "少なくとも1つの招待を選択してください。",
   please_select_at_least_one_invitation_description:
     "ワークスペースに参加するには少なくとも1つの招待を選択してください。",
@@ -617,7 +617,7 @@ export default {
         issues: "作業項目",
       },
     },
-    new_at_plane: {
+    new_at_kardon: {
       title: "Planeの新機能",
     },
     quick_tutorial: {
@@ -2637,7 +2637,7 @@ export default {
     edited_by: "編集者",
   },
   self_hosted_maintenance_message: {
-    plane_didnt_start_up_this_could_be_because_one_or_more_plane_services_failed_to_start:
+    kardon_didnt_start_up_this_could_be_because_one_or_more_kardon_services_failed_to_start:
       "Planeが起動しませんでした。これは1つまたは複数のPlaneサービスの起動に失敗したことが原因である可能性があります。",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "setup.shとDockerログからView Logsを選択して確認してください。",

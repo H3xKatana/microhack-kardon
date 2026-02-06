@@ -8,10 +8,10 @@ import { isEmpty, set } from "lodash-es";
 import { makeObservable, observable, action, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
 import { v4 as uuidv4 } from "uuid";
-// plane imports
-import { SitesFileService, SitesIssueService } from "@plane/services";
-import type { TFileSignedURLResponse, TIssuePublicComment } from "@plane/types";
-import { EFileAssetType } from "@plane/types";
+// kardon imports
+import { SitesFileService, SitesIssueService } from "@kardon/services";
+import type { TFileSignedURLResponse, TIssuePublicComment } from "@kardon/types";
+import { EFileAssetType } from "@kardon/types";
 // store
 import type { CoreRootStore } from "@/store/root.store";
 // types

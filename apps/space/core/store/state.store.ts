@@ -6,9 +6,9 @@
 
 import { clone } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
-// plane imports
-import { SitesStateService } from "@plane/services";
-import type { IState } from "@plane/types";
+// kardon imports
+import { SitesStateService } from "@kardon/services";
+import type { IState } from "@kardon/types";
 // helpers
 import { sortStates } from "@/helpers/state.helper";
 // store

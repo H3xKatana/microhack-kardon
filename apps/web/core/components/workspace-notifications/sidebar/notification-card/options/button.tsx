@@ -5,9 +5,9 @@
  */
 
 import type { ReactNode } from "react";
-import { Tooltip } from "@plane/propel/tooltip";
+import { Tooltip } from "@kardon/propel/tooltip";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
 

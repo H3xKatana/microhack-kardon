@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { EStartOfTheWeek } from "@plane/types";
+// kardon imports
+import { EStartOfTheWeek } from "@kardon/types";
 
 export const PROFILE_VIEWER_TAB = [
   {

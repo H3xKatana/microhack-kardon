@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-// plane package imports
+// kardon package imports
 import React from "react";
-import type { IAnalyticsResponseFields } from "@plane/types";
-import { Loader } from "@plane/ui";
+import type { IAnalyticsResponseFields } from "@kardon/types";
+import { Loader } from "@kardon/ui";
 
 export type InsightCardProps = {
   data?: IAnalyticsResponseFields;

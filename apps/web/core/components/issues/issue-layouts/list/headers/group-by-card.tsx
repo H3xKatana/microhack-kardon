@@ -8,24 +8,24 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { CircleDashed } from "lucide-react";
-import { PlusIcon } from "@plane/propel/icons";
+import { PlusIcon } from "@kardon/propel/icons";
 // types
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssue, ISearchIssueResponse, TIssueGroupByOptions } from "@plane/types";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import type { TIssue, ISearchIssueResponse, TIssueGroupByOptions } from "@kardon/types";
 // ui
-import { CustomMenu } from "@plane/ui";
+import { CustomMenu } from "@kardon/ui";
 // components
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 import { ExistingIssuesListModal } from "@/components/core/modals/existing-issues-list-modal";
 import { MultipleSelectGroupAction } from "@/components/core/multiple-select";
 import { CreateUpdateIssueModal } from "@/components/issues/issue-modal/modal";
 // constants
 import { useIssueStoreType } from "@/hooks/use-issue-layout-store";
 import type { TSelectionHelper } from "@/hooks/use-multiple-select";
-// plane-web
-import { CreateUpdateEpicModal } from "@/plane-web/components/epics/epic-modal";
+// kardon-web
+import { CreateUpdateEpicModal } from "@/kardon-web/components/epics/epic-modal";
 // Plane-web
-import { WorkFlowGroupTree } from "@/plane-web/components/workflow";
+import { WorkFlowGroupTree } from "@/kardon-web/components/workflow";
 
 interface IHeaderGroupByCard {
   groupID: string;

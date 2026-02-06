@@ -5,13 +5,13 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import type { TCycleFilters } from "@plane/types";
-import { Tag } from "@plane/ui";
-import { replaceUnderscoreIfSnakeCase } from "@plane/utils";
+// kardon imports
+import { EUserPermissions, EUserPermissionsLevel } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { CloseIcon } from "@kardon/propel/icons";
+import type { TCycleFilters } from "@kardon/types";
+import { Tag } from "@kardon/ui";
+import { replaceUnderscoreIfSnakeCase } from "@kardon/utils";
 // hooks
 import { useUserPermissions } from "@/hooks/store/user";
 // local imports

@@ -13,18 +13,18 @@ import { Popover, Transition } from "@headlessui/react";
 // hooks
 // ui
 // icons
-import type { TSupportedFilterTypeForUpdate } from "@plane/constants";
-import { EIssueFilterType } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CheckIcon, ChevronUpIcon } from "@plane/propel/icons";
-import type { TCalendarLayouts, TSupportedFilterForUpdate } from "@plane/types";
-import { ToggleSwitch } from "@plane/ui";
+import type { TSupportedFilterTypeForUpdate } from "@kardon/constants";
+import { EIssueFilterType } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { CheckIcon, ChevronUpIcon } from "@kardon/propel/icons";
+import type { TCalendarLayouts, TSupportedFilterForUpdate } from "@kardon/types";
+import { ToggleSwitch } from "@kardon/ui";
 // types
 // constants
 import { CALENDAR_LAYOUTS } from "@/constants/calendar";
 import { useCalendarView } from "@/hooks/store/use-calendar-view";
 import useSize from "@/hooks/use-window-size";
-import type { IProjectEpicsFilter } from "@/plane-web/store/issue/epic";
+import type { IProjectEpicsFilter } from "@/kardon-web/store/issue/epic";
 import type { ICycleIssuesFilter } from "@/store/issue/cycle";
 import type { IModuleIssuesFilter } from "@/store/issue/module";
 import type { IProjectIssuesFilter } from "@/store/issue/project";

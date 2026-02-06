@@ -4,11 +4,11 @@
  * See the LICENSE file for details.
  */
 
-import type { TPartialProject } from "@/plane-web/types";
-// plane propel imports
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
+import type { TPartialProject } from "@/kardon-web/types";
+// kardon propel imports
+import { Logo } from "@kardon/propel/emoji-icon-picker";
+import { ChevronDownIcon } from "@kardon/propel/icons";
+import { Tooltip } from "@kardon/propel/tooltip";
 
 type TProjectHeaderButtonProps = {
   project: TPartialProject;

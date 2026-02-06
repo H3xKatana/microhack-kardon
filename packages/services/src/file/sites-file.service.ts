@@ -4,20 +4,20 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
+// kardon imports
+import { API_BASE_URL } from "@kardon/constants";
 // local services
-import type { TFileEntityInfo, TFileSignedURLResponse } from "@plane/types";
+import type { TFileEntityInfo, TFileSignedURLResponse } from "@kardon/types";
 import { FileUploadService } from "./file-upload.service";
 // helpers
 import { FileService } from "./file.service";
 import { generateFileUploadPayload, getAssetIdFromUrl, getFileMetaDataForUpload } from "./helper";
 
 /**
- * Service class for managing file operations within plane sites application.
+ * Service class for managing file operations within kardon sites application.
  * Extends FileService to manage file-related operations.
  * @extends {FileService}
- * @remarks This service is only available for plane sites
+ * @remarks This service is only available for kardon sites
  */
 export class SitesFileService extends FileService {
   private cancelSource: any;

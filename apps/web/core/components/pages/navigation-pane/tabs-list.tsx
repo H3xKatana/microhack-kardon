@@ -5,10 +5,10 @@
  */
 
 import { Tab } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-// plane web components
-import { ORDERED_PAGE_NAVIGATION_TABS_LIST } from "@/plane-web/components/pages/navigation-pane";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+// kardon web components
+import { ORDERED_PAGE_NAVIGATION_TABS_LIST } from "@/kardon-web/components/pages/navigation-pane";
 
 export function PageNavigationPaneTabsList() {
   // translation

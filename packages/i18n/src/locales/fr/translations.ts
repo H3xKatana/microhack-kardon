@@ -88,7 +88,7 @@ export default {
       already_have_an_account: "Vous avez déjà un compte ?",
       login: "Se connecter",
       create_account: "Créer un compte",
-      new_to_plane: "Nouveau sur Plane ?",
+      new_to_kardon: "Nouveau sur Plane ?",
       back_to_sign_in: "Retour à la connexion",
       resend_in: "Renvoyer dans {seconds} secondes",
       sign_in_with_unique_code: "Se connecter avec un code unique",
@@ -415,7 +415,7 @@ export default {
   full_changelog: "Journal des modifications complet",
   support: "Support",
   discord: "Discord",
-  powered_by_plane_pages: "Propulsé par Plane Pages",
+  powered_by_kardon_pages: "Propulsé par Plane Pages",
   please_select_at_least_one_invitation: "Veuillez sélectionner au moins une invitation.",
   please_select_at_least_one_invitation_description:
     "Veuillez sélectionner au moins une invitation pour rejoindre l’espace de travail.",
@@ -629,7 +629,7 @@ export default {
         issues: "Éléments de travail",
       },
     },
-    new_at_plane: {
+    new_at_kardon: {
       title: "Nouveau sur Plane",
     },
     quick_tutorial: {
@@ -2669,7 +2669,7 @@ export default {
     edited_by: "Modifié par",
   },
   self_hosted_maintenance_message: {
-    plane_didnt_start_up_this_could_be_because_one_or_more_plane_services_failed_to_start:
+    kardon_didnt_start_up_this_could_be_because_one_or_more_kardon_services_failed_to_start:
       "Plane n’a pas démarré. Cela pourrait être dû au fait qu’un ou plusieurs services Plane ont échoué à démarrer.",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "Choisissez View Logs depuis setup.sh et les logs Docker pour en être sûr.",

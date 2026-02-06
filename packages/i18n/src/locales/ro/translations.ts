@@ -88,7 +88,7 @@ export default {
       already_have_an_account: "Ai deja un cont?",
       login: "Autentificare",
       create_account: "Creează un cont",
-      new_to_plane: "Ești nou în Plane?",
+      new_to_kardon: "Ești nou în Plane?",
       back_to_sign_in: "Înapoi la autentificare",
       resend_in: "Retrimite în {seconds} secunde",
       sign_in_with_unique_code: "Autentificare cu cod unic",
@@ -412,7 +412,7 @@ export default {
   full_changelog: "Jurnal complet al modificărilor",
   support: "Suport",
   discord: "Discord",
-  powered_by_plane_pages: "Oferit de Plane Documentație",
+  powered_by_kardon_pages: "Oferit de Plane Documentație",
   please_select_at_least_one_invitation: "Te rugăm să selectezi cel puțin o invitație.",
   please_select_at_least_one_invitation_description:
     "Te rugăm să selectezi cel puțin o invitație pentru a te alătura spațiului de lucru.",
@@ -623,7 +623,7 @@ export default {
         issues: "Activități",
       },
     },
-    new_at_plane: {
+    new_at_kardon: {
       title: "Noutăți în Plane",
     },
     quick_tutorial: {
@@ -2654,7 +2654,7 @@ export default {
     edited_by: "Editat de",
   },
   self_hosted_maintenance_message: {
-    plane_didnt_start_up_this_could_be_because_one_or_more_plane_services_failed_to_start:
+    kardon_didnt_start_up_this_could_be_because_one_or_more_kardon_services_failed_to_start:
       "Plane nu a pornit. Aceasta ar putea fi din cauza că unul sau mai multe servicii Plane au eșuat să pornească.",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "Alegeți View Logs din setup.sh și logurile Docker pentru a fi siguri.",

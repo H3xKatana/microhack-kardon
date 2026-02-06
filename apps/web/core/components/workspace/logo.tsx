@@ -5,9 +5,9 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { cn, getFileURL } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { cn, getFileURL } from "@kardon/utils";
 
 type Props = {
   logo: string | null | undefined;

@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { TBuildFilterExpressionParams, TExternalFilter, TFilterProperty, TFilterValue } from "@plane/types";
-import { LOGICAL_OPERATOR } from "@plane/types";
-import { getOperatorForPayload } from "@plane/utils";
+// kardon imports
+import type { TBuildFilterExpressionParams, TExternalFilter, TFilterProperty, TFilterValue } from "@kardon/types";
+import { LOGICAL_OPERATOR } from "@kardon/types";
+import { getOperatorForPayload } from "@kardon/utils";
 // local imports
 import { FilterInstance } from "../store/rich-filters/filter";
 

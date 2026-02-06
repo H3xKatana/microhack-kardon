@@ -7,9 +7,9 @@
 import { set } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
 // types
-import type { TLink, TLinkIdMap, TLinkMap } from "@plane/types";
+import type { TLink, TLinkIdMap, TLinkMap } from "@kardon/types";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/kardon-web/services";
 
 export interface IWorkspaceLinkStoreActions {
   addLinks: (projectId: string, links: TLink[]) => void;

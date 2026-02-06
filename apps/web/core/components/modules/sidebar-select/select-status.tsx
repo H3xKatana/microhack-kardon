@@ -9,12 +9,12 @@ import React from "react";
 // react-hook-form
 import type { Control, UseFormWatch } from "react-hook-form";
 import { Controller } from "react-hook-form";
-import { MODULE_STATUS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { StatePropertyIcon } from "@plane/propel/icons";
-import type { IModule } from "@plane/types";
+import { MODULE_STATUS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { StatePropertyIcon } from "@kardon/propel/icons";
+import type { IModule } from "@kardon/types";
 // ui
-import { CustomSelect } from "@plane/ui";
+import { CustomSelect } from "@kardon/ui";
 // types
 // common
 // constants

@@ -6,11 +6,11 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
-import { PageIcon } from "@plane/propel/icons";
-import type { ICustomSearchSelectOption } from "@plane/types";
-import { Breadcrumbs, Header, BreadcrumbNavigationSearchDropdown } from "@plane/ui";
-import { getPageName } from "@plane/utils";
+// kardon imports
+import { PageIcon } from "@kardon/propel/icons";
+import type { ICustomSearchSelectOption } from "@kardon/types";
+import { Breadcrumbs, Header, BreadcrumbNavigationSearchDropdown } from "@kardon/ui";
+import { getPageName } from "@kardon/utils";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 import { PageAccessIcon } from "@/components/common/page-access-icon";
@@ -20,10 +20,10 @@ import { PageSyncingBadge } from "@/components/pages/header/syncing-badge";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
-import { CommonProjectBreadcrumbs } from "@/plane-web/components/breadcrumbs/common";
-import { PageDetailsHeaderExtraActions } from "@/plane-web/components/pages";
-import { EPageStoreType, usePage, usePageStore } from "@/plane-web/hooks/store";
+// kardon web imports
+import { CommonProjectBreadcrumbs } from "@/kardon-web/components/breadcrumbs/common";
+import { PageDetailsHeaderExtraActions } from "@/kardon-web/components/pages";
+import { EPageStoreType, usePage, usePageStore } from "@/kardon-web/hooks/store";
 
 export interface IPagesHeaderProps {
   showButton?: boolean;

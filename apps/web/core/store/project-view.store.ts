@@ -8,12 +8,12 @@ import { set } from "lodash-es";
 import { observable, action, makeObservable, runInAction, computed } from "mobx";
 import { computedFn } from "mobx-utils";
 // types
-import type { IProjectView, TViewFilters } from "@plane/types";
+import type { IProjectView, TViewFilters } from "@kardon/types";
 // constants
 // helpers
-import { getValidatedViewFilters, getViewName, orderViews, shouldFilterView } from "@plane/utils";
+import { getValidatedViewFilters, getViewName, orderViews, shouldFilterView } from "@kardon/utils";
 // services
-import { ViewService } from "@/plane-web/services";
+import { ViewService } from "@/kardon-web/services";
 // store
 import type { CoreRootStore } from "./root.store";
 

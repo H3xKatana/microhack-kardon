@@ -6,9 +6,9 @@
 
 import React from "react";
 import { useTheme } from "next-themes";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import type { ISearchIssueResponse } from "@plane/types";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import type { ISearchIssueResponse } from "@kardon/types";
 // assets
 import darkIssuesAsset from "@/app/assets/empty-state/search/issues-dark.webp?url";
 import lightIssuesAsset from "@/app/assets/empty-state/search/issues-light.webp?url";
@@ -27,7 +27,7 @@ interface EmptyStateProps {
 export function IssueSearchModalEmptyState({ issues, searchTerm, debouncedSearchTerm, isSearching }: EmptyStateProps) {
   // theme hook
   const { resolvedTheme } = useTheme();
-  // plane hooks
+  // kardon hooks
   const { t } = useTranslation();
   // derived values
   const searchResolvedPath = resolvedTheme === "light" ? lightSearchAsset : darkSearchAsset;

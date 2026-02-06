@@ -7,11 +7,11 @@
 import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { TIssue, TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+// kardon imports
+import type { TIssue, TIssueServiceType } from "@kardon/types";
+import { EIssueServiceType } from "@kardon/types";
 // Plane-web imports
-import type { TIssueRelationTypes } from "@/plane-web/types";
+import type { TIssueRelationTypes } from "@/kardon-web/types";
 // local imports
 import { RelationIssueListItem } from "./issue-list-item";
 

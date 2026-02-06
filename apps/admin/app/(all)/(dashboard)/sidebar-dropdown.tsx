@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,11 +9,11 @@ import { observer } from "mobx-react";
 import { useTheme as useNextTheme } from "next-themes";
 import { LogOut, UserCog2, Palette } from "lucide-react";
 import { Menu, Transition } from "@headlessui/react";
-// plane internal packages
-import { API_BASE_URL } from "@plane/constants";
-import { AuthService } from "@plane/services";
-import { Avatar } from "@plane/ui";
-import { getFileURL, cn } from "@plane/utils";
+// kardon internal packages
+import { API_BASE_URL } from "@kardon/constants";
+import { AuthService } from "@kardon/services";
+import { Avatar } from "@kardon/ui";
+import { getFileURL, cn } from "@kardon/utils";
 // hooks
 import { useTheme, useUser } from "@/hooks/store";
 
@@ -84,9 +84,8 @@ export const AdminSidebarDropdown = observer(function AdminSidebarDropdown() {
     <div className="flex max-h-header items-center gap-x-5 gap-y-2 border-b border-subtle px-4 py-2.5">
       <div className="h-full w-full truncate">
         <div
-          className={`flex flex-grow items-center gap-x-2 truncate rounded-sm ${
-            isSidebarCollapsed ? "justify-center" : ""
-          }`}
+          className={`flex flex-grow items-center gap-x-2 truncate rounded-sm ${isSidebarCollapsed ? "justify-center" : ""
+            }`}
         >
           <Menu as="div" className="flex-shrink-0">
             <Menu.Button

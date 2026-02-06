@@ -5,13 +5,13 @@
  */
 
 import { ArrowDownWideNarrow } from "lucide-react";
-// plane imports
-import { PROJECT_ORDER_BY_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { getButtonStyling } from "@plane/propel/button";
-import { CheckIcon, ChevronDownIcon } from "@plane/propel/icons";
-import type { TProjectOrderByOptions } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
+// kardon imports
+import { PROJECT_ORDER_BY_OPTIONS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { getButtonStyling } from "@kardon/propel/button";
+import { CheckIcon, ChevronDownIcon } from "@kardon/propel/icons";
+import type { TProjectOrderByOptions } from "@kardon/types";
+import { CustomMenu } from "@kardon/ui";
 
 type Props = {
   onChange: (value: TProjectOrderByOptions) => void;

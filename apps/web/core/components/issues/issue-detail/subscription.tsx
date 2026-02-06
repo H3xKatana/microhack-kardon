@@ -9,14 +9,14 @@ import { useState } from "react";
 import { isNil } from "lodash-es";
 import { observer } from "mobx-react";
 import { Bell, BellOff } from "lucide-react";
-// plane-i18n
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
+// kardon-i18n
+import { EUserPermissions, EUserPermissionsLevel } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
 // UI
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { EIssueServiceType } from "@plane/types";
-import { Loader } from "@plane/ui";
+import { Button } from "@kardon/propel/button";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { EIssueServiceType } from "@kardon/types";
+import { Loader } from "@kardon/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useUserPermissions } from "@/hooks/store/user";

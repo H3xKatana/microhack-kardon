@@ -12,10 +12,10 @@ import { usePopper } from "react-popper";
 // components
 import { Combobox } from "@headlessui/react";
 // i18n
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@kardon/i18n";
 // icon
-import { CheckIcon, CycleGroupIcon, CycleIcon, SearchIcon } from "@plane/propel/icons";
-import type { TCycleGroups } from "@plane/types";
+import { CheckIcon, CycleGroupIcon, CycleIcon, SearchIcon } from "@kardon/propel/icons";
+import type { TCycleGroups } from "@kardon/types";
 // ui
 // store hooks
 import { useCycle } from "@/hooks/store/use-cycle";

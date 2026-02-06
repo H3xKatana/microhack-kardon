@@ -6,12 +6,12 @@
 
 import { useState } from "react";
 import { mutate } from "swr";
-// plane imports
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { APITokenService } from "@plane/services";
-import type { IApiToken } from "@plane/types";
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
-import { renderFormattedDate, csvDownload } from "@plane/utils";
+// kardon imports
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { APITokenService } from "@kardon/services";
+import type { IApiToken } from "@kardon/types";
+import { EModalPosition, EModalWidth, ModalCore } from "@kardon/ui";
+import { renderFormattedDate, csvDownload } from "@kardon/utils";
 // constants
 import { API_TOKENS_LIST } from "@/constants/fetch-keys";
 // local imports

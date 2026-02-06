@@ -5,16 +5,16 @@
  */
 
 import { useCallback } from "react";
-// plane editor
-import type { TMentionSection, TMentionSuggestion } from "@plane/editor";
-// plane types
-import type { TSearchEntities, TSearchEntityRequestPayload, TSearchResponse, TUserSearchResponse } from "@plane/types";
-// plane ui
-import { Avatar } from "@plane/ui";
+// kardon editor
+import type { TMentionSection, TMentionSuggestion } from "@kardon/editor";
+// kardon types
+import type { TSearchEntities, TSearchEntityRequestPayload, TSearchResponse, TUserSearchResponse } from "@kardon/types";
+// kardon ui
+import { Avatar } from "@kardon/ui";
 // helpers
-import { getFileURL } from "@plane/utils";
-// plane web hooks
-import { useAdditionalEditorMention } from "@/plane-web/hooks/use-additional-editor-mention";
+import { getFileURL } from "@kardon/utils";
+// kardon web hooks
+import { useAdditionalEditorMention } from "@/kardon-web/hooks/use-additional-editor-mention";
 
 type TArgs = {
   enableAdvancedMentions?: boolean;

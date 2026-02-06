@@ -9,15 +9,15 @@ import { observer } from "mobx-react";
 import { usePopper } from "react-popper";
 import { Loader } from "lucide-react";
 import { Combobox } from "@headlessui/react";
-// plane imports
-import { EUserPermissionsLevel, getRandomLabelColor } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { CheckIcon, SearchIcon, PlusIcon } from "@plane/propel/icons";
-import type { IIssueLabel } from "@plane/types";
-import { EUserProjectRoles } from "@plane/types";
+// kardon imports
+import { EUserPermissionsLevel, getRandomLabelColor } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { Button } from "@kardon/propel/button";
+import { CheckIcon, SearchIcon, PlusIcon } from "@kardon/propel/icons";
+import type { IIssueLabel } from "@kardon/types";
+import { EUserProjectRoles } from "@kardon/types";
 // helpers
-import { getTabIndex } from "@plane/utils";
+import { getTabIndex } from "@kardon/utils";
 // hooks
 import { useLabel } from "@/hooks/store/use-label";
 import { useUserPermissions } from "@/hooks/store/user";

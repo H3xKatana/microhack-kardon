@@ -4,17 +4,17 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
-import type { TProjectPublishSettings } from "@plane/types";
+// kardon imports
+import { API_BASE_URL } from "@kardon/constants";
+import type { TProjectPublishSettings } from "@kardon/types";
 // api service
 import { APIService } from "../api.service";
 
 /**
- * Service class for managing project publish operations within plane sites application.
+ * Service class for managing project publish operations within kardon sites application.
  * Extends APIService to handle HTTP requests to the project publish-related endpoints.
  * @extends {APIService}
- * @remarks This service is only available for plane sites
+ * @remarks This service is only available for kardon sites
  */
 export class SitesProjectPublishService extends APIService {
   constructor(BASE_URL?: string) {

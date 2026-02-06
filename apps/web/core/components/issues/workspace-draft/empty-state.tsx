@@ -8,10 +8,10 @@ import type { FC } from "react";
 import { Fragment, useState } from "react";
 // components
 import { observer } from "mobx-react";
-import { EUserPermissionsLevel } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { EmptyStateDetailed } from "@plane/propel/empty-state";
-import { EIssuesStoreType, EUserWorkspaceRoles } from "@plane/types";
+import { EUserPermissionsLevel } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { EmptyStateDetailed } from "@kardon/propel/empty-state";
+import { EIssuesStoreType, EUserWorkspaceRoles } from "@kardon/types";
 import { CreateUpdateIssueModal } from "@/components/issues/issue-modal/modal";
 // constants
 import { useUserPermissions } from "@/hooks/store/user";

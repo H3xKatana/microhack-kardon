@@ -10,14 +10,14 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import type { UseFormRegister } from "react-hook-form";
 import { useForm } from "react-hook-form";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { PlusIcon } from "@plane/propel/icons";
-import { setPromiseToast } from "@plane/propel/toast";
-import type { IProject, TIssue, EIssueLayoutTypes } from "@plane/types";
-import { cn, createIssuePayload } from "@plane/utils";
-// plane web imports
-import { QuickAddIssueFormRoot } from "@/plane-web/components/issues/quick-add";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { PlusIcon } from "@kardon/propel/icons";
+import { setPromiseToast } from "@kardon/propel/toast";
+import type { IProject, TIssue, EIssueLayoutTypes } from "@kardon/types";
+import { cn, createIssuePayload } from "@kardon/utils";
+// kardon web imports
+import { QuickAddIssueFormRoot } from "@/kardon-web/components/issues/quick-add";
 // local imports
 import { CreateIssueToastActionItems } from "../../create-issue-toast-action-items";
 

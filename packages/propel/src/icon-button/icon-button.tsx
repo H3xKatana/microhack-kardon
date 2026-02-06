@@ -47,6 +47,6 @@ const IconButton = React.forwardRef(function IconButton(
   );
 });
 
-IconButton.displayName = "plane-ui-icon-button";
+IconButton.displayName = "kardon-ui-icon-button";
 
 export { IconButton };

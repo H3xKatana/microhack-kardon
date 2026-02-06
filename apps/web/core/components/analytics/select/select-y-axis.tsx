@@ -6,14 +6,14 @@
 
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-import { EEstimateSystem } from "@plane/constants";
-import { ProjectIcon } from "@plane/propel/icons";
-import type { ChartYAxisMetric } from "@plane/types";
-// plane package imports
-import { CustomSelect } from "@plane/ui";
+import { EEstimateSystem } from "@kardon/constants";
+import { ProjectIcon } from "@kardon/propel/icons";
+import type { ChartYAxisMetric } from "@kardon/types";
+// kardon package imports
+import { CustomSelect } from "@kardon/ui";
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
-// plane web constants
+// kardon web constants
 type Props = {
   value: ChartYAxisMetric;
   onChange: (val: ChartYAxisMetric | null) => void;

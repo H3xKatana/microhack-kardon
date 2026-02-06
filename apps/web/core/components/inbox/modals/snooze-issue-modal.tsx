@@ -6,10 +6,10 @@
 
 import { useState } from "react";
 // ui
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { Calendar } from "@plane/propel/calendar";
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { useTranslation } from "@kardon/i18n";
+import { Button } from "@kardon/propel/button";
+import { Calendar } from "@kardon/propel/calendar";
+import { EModalPosition, EModalWidth, ModalCore } from "@kardon/ui";
 
 export type InboxIssueSnoozeModalProps = {
   isOpen: boolean;

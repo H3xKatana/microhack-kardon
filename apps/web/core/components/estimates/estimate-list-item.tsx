@@ -5,16 +5,16 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { EEstimateSystem } from "@plane/constants";
-import { convertMinutesToHoursMinutesString } from "@plane/utils";
+// kardon imports
+import { EEstimateSystem } from "@kardon/constants";
+import { convertMinutesToHoursMinutesString } from "@kardon/utils";
 // components
 import { SettingsBoxedControlItem } from "@/components/settings/boxed-control-item";
 // hooks
 import { useProjectEstimates } from "@/hooks/store/estimates";
 import { useEstimate } from "@/hooks/store/estimates/use-estimate";
-// plane web imports
-import { EstimateListItemButtons } from "@/plane-web/components/estimates";
+// kardon web imports
+import { EstimateListItemButtons } from "@/kardon-web/components/estimates";
 
 type TEstimateListItem = {
   estimateId: string;

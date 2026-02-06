@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TBaseLayoutType } from "@plane/types";
-import { cn } from "@plane/utils";
+import { useTranslation } from "@kardon/i18n";
+import { Tooltip } from "@kardon/propel/tooltip";
+import type { TBaseLayoutType } from "@kardon/types";
+import { cn } from "@kardon/utils";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 import { BASE_LAYOUTS } from "./constants";
 

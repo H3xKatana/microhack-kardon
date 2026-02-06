@@ -7,25 +7,25 @@
 import { isEmpty } from "lodash-es";
 import { autorun, makeObservable, observable } from "mobx";
 // types
-import type { ICycle, IIssueLabel, IModule, IProject, IState, IUserLite, TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-// plane web store
-import type { IProjectEpics, IProjectEpicsFilter } from "@/plane-web/store/issue/epic";
-import { ProjectEpics, ProjectEpicsFilter } from "@/plane-web/store/issue/epic";
-import type { IIssueDetail } from "@/plane-web/store/issue/issue-details/root.store";
-import { IssueDetail } from "@/plane-web/store/issue/issue-details/root.store";
-import type { ITeamIssuesFilter, ITeamIssues } from "@/plane-web/store/issue/team";
-import { TeamIssues, TeamIssuesFilter } from "@/plane-web/store/issue/team";
-import type { ITeamProjectWorkItemsFilter } from "@/plane-web/store/issue/team-project/filter.store";
-import { TeamProjectWorkItemsFilter } from "@/plane-web/store/issue/team-project/filter.store";
-import type { ITeamProjectWorkItems } from "@/plane-web/store/issue/team-project/issue.store";
-import { TeamProjectWorkItems } from "@/plane-web/store/issue/team-project/issue.store";
-import type { ITeamViewIssues, ITeamViewIssuesFilter } from "@/plane-web/store/issue/team-views";
-import { TeamViewIssues, TeamViewIssuesFilter } from "@/plane-web/store/issue/team-views";
+import type { ICycle, IIssueLabel, IModule, IProject, IState, IUserLite, TIssueServiceType } from "@kardon/types";
+import { EIssueServiceType } from "@kardon/types";
+// kardon web store
+import type { IProjectEpics, IProjectEpicsFilter } from "@/kardon-web/store/issue/epic";
+import { ProjectEpics, ProjectEpicsFilter } from "@/kardon-web/store/issue/epic";
+import type { IIssueDetail } from "@/kardon-web/store/issue/issue-details/root.store";
+import { IssueDetail } from "@/kardon-web/store/issue/issue-details/root.store";
+import type { ITeamIssuesFilter, ITeamIssues } from "@/kardon-web/store/issue/team";
+import { TeamIssues, TeamIssuesFilter } from "@/kardon-web/store/issue/team";
+import type { ITeamProjectWorkItemsFilter } from "@/kardon-web/store/issue/team-project/filter.store";
+import { TeamProjectWorkItemsFilter } from "@/kardon-web/store/issue/team-project/filter.store";
+import type { ITeamProjectWorkItems } from "@/kardon-web/store/issue/team-project/issue.store";
+import { TeamProjectWorkItems } from "@/kardon-web/store/issue/team-project/issue.store";
+import type { ITeamViewIssues, ITeamViewIssuesFilter } from "@/kardon-web/store/issue/team-views";
+import { TeamViewIssues, TeamViewIssuesFilter } from "@/kardon-web/store/issue/team-views";
 // root store
-import type { IWorkspaceIssues } from "@/plane-web/store/issue/workspace/issue.store";
-import { WorkspaceIssues } from "@/plane-web/store/issue/workspace/issue.store";
-import type { RootStore } from "@/plane-web/store/root.store";
+import type { IWorkspaceIssues } from "@/kardon-web/store/issue/workspace/issue.store";
+import { WorkspaceIssues } from "@/kardon-web/store/issue/workspace/issue.store";
+import type { RootStore } from "@/kardon-web/store/root.store";
 import type { IWorkspaceMembership } from "@/store/member/workspace/workspace-member.store";
 // issues data store
 import type { IArchivedIssuesFilter, IArchivedIssues } from "./archived";

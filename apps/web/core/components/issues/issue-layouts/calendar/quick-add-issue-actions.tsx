@@ -9,14 +9,14 @@ import { differenceInCalendarDays } from "date-fns/differenceInCalendarDays";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 
-import { useTranslation } from "@plane/i18n";
-// plane imports
-import { PlusIcon } from "@plane/propel/icons";
-import { setPromiseToast } from "@plane/propel/toast";
-import type { ISearchIssueResponse, TIssue } from "@plane/types";
-import { EIssueLayoutTypes } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
-import { cn } from "@plane/utils";
+import { useTranslation } from "@kardon/i18n";
+// kardon imports
+import { PlusIcon } from "@kardon/propel/icons";
+import { setPromiseToast } from "@kardon/propel/toast";
+import type { ISearchIssueResponse, TIssue } from "@kardon/types";
+import { EIssueLayoutTypes } from "@kardon/types";
+import { CustomMenu } from "@kardon/ui";
+import { cn } from "@kardon/utils";
 // components
 import { ExistingIssuesListModal } from "@/components/core/modals/existing-issues-list-modal";
 // hooks

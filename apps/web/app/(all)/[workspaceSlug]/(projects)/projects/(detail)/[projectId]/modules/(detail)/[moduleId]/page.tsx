@@ -6,8 +6,8 @@
 
 import { observer } from "mobx-react";
 import useSWR from "swr";
-// plane imports
-import { cn } from "@plane/utils";
+// kardon imports
+import { cn } from "@kardon/utils";
 // assets
 import emptyModule from "@/app/assets/empty-state/module.svg?url";
 // components

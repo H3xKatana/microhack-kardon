@@ -8,12 +8,12 @@ import { useState, useEffect } from "react";
 import { observer } from "mobx-react";
 import { useRouter } from "next/navigation";
 import { LogOut, Settings, Settings2 } from "lucide-react";
-// plane imports
-import { GOD_MODE_URL } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Avatar, CustomMenu } from "@plane/ui";
-import { getFileURL } from "@plane/utils";
+// kardon imports
+import { GOD_MODE_URL } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { Avatar, CustomMenu } from "@kardon/ui";
+import { getFileURL } from "@kardon/utils";
 // components
 import { CoverImage } from "@/components/common/cover-image";
 import { AppSidebarItem } from "@/components/sidebar/sidebar-item";

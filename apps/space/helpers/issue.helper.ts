@@ -5,9 +5,9 @@
  */
 
 import { differenceInCalendarDays } from "date-fns/differenceInCalendarDays";
-// plane internal
-import { STATE_GROUPS } from "@plane/constants";
-import type { TStateGroups } from "@plane/types";
+// kardon internal
+import { STATE_GROUPS } from "@kardon/constants";
+import type { TStateGroups } from "@kardon/types";
 // helpers
 import { getDate } from "@/helpers/date-time.helper";
 

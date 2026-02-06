@@ -57,6 +57,6 @@ function ToggleSwitch(props: IToggleSwitchProps) {
   );
 }
 
-ToggleSwitch.displayName = "plane-ui-toggle-switch";
+ToggleSwitch.displayName = "kardon-ui-toggle-switch";
 
 export { ToggleSwitch };

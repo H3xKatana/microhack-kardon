@@ -5,8 +5,8 @@
  */
 
 // types
-import { logger } from "@plane/logger";
-import type { IUser } from "@plane/types";
+import { logger } from "@kardon/logger";
+import type { IUser } from "@kardon/types";
 // services
 import { AppError } from "@/lib/errors";
 import { APIService } from "@/services/api.service";

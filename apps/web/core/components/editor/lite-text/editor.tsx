@@ -5,14 +5,14 @@
  */
 
 import React, { useState } from "react";
-// plane constants
-import type { EIssueCommentAccessSpecifier } from "@plane/constants";
-// plane imports
-import { LiteTextEditorWithRef } from "@plane/editor";
-import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@plane/editor";
-import { useTranslation } from "@plane/i18n";
-import type { MakeOptional } from "@plane/types";
-import { cn, isCommentEmpty } from "@plane/utils";
+// kardon constants
+import type { EIssueCommentAccessSpecifier } from "@kardon/constants";
+// kardon imports
+import { LiteTextEditorWithRef } from "@kardon/editor";
+import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@kardon/editor";
+import { useTranslation } from "@kardon/i18n";
+import type { MakeOptional } from "@kardon/types";
+import { cn, isCommentEmpty } from "@kardon/utils";
 // components
 import { EditorMentionsRoot } from "@/components/editor/embeds/mentions";
 import { IssueCommentToolbar } from "@/components/editor/lite-text/toolbar";
@@ -20,10 +20,10 @@ import { IssueCommentToolbar } from "@/components/editor/lite-text/toolbar";
 import { useEditorConfig, useEditorMention } from "@/hooks/editor";
 import { useMember } from "@/hooks/store/use-member";
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
-// plane web hooks
-import { useEditorFlagging } from "@/plane-web/hooks/use-editor-flagging";
-// plane web service
-import { WorkspaceService } from "@/plane-web/services";
+// kardon web hooks
+import { useEditorFlagging } from "@/kardon-web/hooks/use-editor-flagging";
+// kardon web service
+import { WorkspaceService } from "@/kardon-web/services";
 import { LiteToolbar } from "./lite-toolbar";
 const workspaceService = new WorkspaceService();
 

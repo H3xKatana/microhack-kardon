@@ -5,9 +5,9 @@
  */
 
 import { action, makeObservable, runInAction } from "mobx";
-// plane imports
-import { SitesIssueService } from "@plane/services";
-import type { IssuePaginationOptions, TLoader } from "@plane/types";
+// kardon imports
+import { SitesIssueService } from "@kardon/services";
+import type { IssuePaginationOptions, TLoader } from "@kardon/types";
 // store
 import type { CoreRootStore } from "@/store/root.store";
 // types

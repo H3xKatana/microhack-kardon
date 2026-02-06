@@ -41,6 +41,6 @@ const ContentWrapper = React.forwardRef(function ContentWrapper(
   );
 });
 
-ContentWrapper.displayName = "plane-ui-wrapper";
+ContentWrapper.displayName = "kardon-ui-wrapper";
 
 export { ContentWrapper };

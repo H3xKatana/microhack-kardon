@@ -6,12 +6,12 @@
 
 import type { FC } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { PlaneLockup, ChevronLeftIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TOnboardingStep } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
-import { cn } from "@plane/utils";
+// kardon imports
+import { PlaneLockup, ChevronLeftIcon } from "@kardon/propel/icons";
+import { Tooltip } from "@kardon/propel/tooltip";
+import type { TOnboardingStep } from "@kardon/types";
+import { EOnboardingSteps } from "@kardon/types";
+import { cn } from "@kardon/utils";
 // hooks
 import { useUser } from "@/hooks/store/user";
 // local imports

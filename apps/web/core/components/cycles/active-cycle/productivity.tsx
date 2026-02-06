@@ -9,10 +9,10 @@ import { Fragment } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import type { ICycle, TCycleEstimateType } from "@plane/types";
-import { Loader } from "@plane/ui";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import type { ICycle, TCycleEstimateType } from "@kardon/types";
+import { Loader } from "@kardon/ui";
 // assets
 import darkChartAsset from "@/app/assets/empty-state/active-cycle/chart-dark.webp?url";
 import lightChartAsset from "@/app/assets/empty-state/active-cycle/chart-light.webp?url";
@@ -33,7 +33,7 @@ export const ActiveCycleProductivity = observer(function ActiveCycleProductivity
   const { workspaceSlug, projectId, cycle } = props;
   // theme hook
   const { resolvedTheme } = useTheme();
-  // plane hooks
+  // kardon hooks
   const { t } = useTranslation();
   // hooks
   const { getEstimateTypeByCycleId, setEstimateType } = useCycle();

@@ -7,9 +7,9 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
-import type { TIssue } from "@plane/types";
-import { EIssueServiceType, EIssuesStoreType } from "@plane/types";
+// kardon imports
+import type { TIssue } from "@kardon/types";
+import { EIssueServiceType, EIssuesStoreType } from "@kardon/types";
 // components
 import { BulkDeleteIssuesModal } from "@/components/core/modals/bulk-delete-issues-modal";
 import { DeleteIssueModal } from "@/components/issues/delete-issue-modal";

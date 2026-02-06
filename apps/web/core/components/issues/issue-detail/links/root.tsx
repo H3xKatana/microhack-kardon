@@ -6,11 +6,11 @@
 
 import { useCallback, useMemo, useState } from "react";
 
-import { PlusIcon } from "@plane/propel/icons";
-// plane imports
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { TIssueLink } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+import { PlusIcon } from "@kardon/propel/icons";
+// kardon imports
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import type { TIssueLink } from "@kardon/types";
+import { EIssueServiceType } from "@kardon/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // local imports

@@ -5,10 +5,10 @@
  */
 
 import { useTheme } from "next-themes";
-// plane imports
-import type { TBillingFrequency } from "@plane/types";
-import { EProductSubscriptionEnum } from "@plane/types";
-import { cn } from "@plane/utils";
+// kardon imports
+import type { TBillingFrequency } from "@kardon/types";
+import { EProductSubscriptionEnum } from "@kardon/types";
+import { cn } from "@kardon/utils";
 
 import ScribbleBlack from "@/app/assets/scribble/scribble-black.svg?url";
 import ScribbleWhite from "@/app/assets/scribble/scribble-white.svg?url";

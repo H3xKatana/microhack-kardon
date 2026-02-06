@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { IFilterAdapter, TExternalFilter, TFilterExpression, TFilterProperty } from "@plane/types";
+// kardon imports
+import type { IFilterAdapter, TExternalFilter, TFilterExpression, TFilterProperty } from "@kardon/types";
 
 /**
  * Abstract base class for converting between external filter formats and internal filter expressions.

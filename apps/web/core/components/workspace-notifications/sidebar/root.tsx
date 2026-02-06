@@ -7,19 +7,19 @@
 import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane imports
-import type { TNotificationTab } from "@plane/constants";
-import { NOTIFICATION_TABS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Header, Row, ERowVariant, EHeaderVariant, ContentWrapper } from "@plane/ui";
-import { cn, getNumberCount } from "@plane/utils";
+// kardon imports
+import type { TNotificationTab } from "@kardon/constants";
+import { NOTIFICATION_TABS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { Header, Row, ERowVariant, EHeaderVariant, ContentWrapper } from "@kardon/ui";
+import { cn, getNumberCount } from "@kardon/utils";
 // components
 import { CountChip } from "@/components/common/count-chip";
 // hooks
 import { useWorkspaceNotifications } from "@/hooks/store/notifications";
 import { useWorkspace } from "@/hooks/store/use-workspace";
-// plane web components
-import { NotificationListRoot } from "@/plane-web/components/workspace-notifications/list-root";
+// kardon web components
+import { NotificationListRoot } from "@/kardon-web/components/workspace-notifications/list-root";
 // local imports
 import { NotificationEmptyState } from "./empty-state";
 import { AppliedFilters } from "./filters/applied-filter";

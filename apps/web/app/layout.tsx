@@ -9,10 +9,10 @@ import Script from "next/script";
 // styles
 import "@/styles/globals.css";
 
-import { SITE_DESCRIPTION, SITE_NAME } from "@plane/constants";
+import { SITE_DESCRIPTION, SITE_NAME } from "@kardon/constants";
 
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 
 // assets
 import favicon16 from "@/app/assets/favicon/favicon-16x16.png?url";
@@ -42,14 +42,14 @@ export const meta = () => [
     property: "og:description",
     content: "Open-source project management tool to manage work items, cycles, and product roadmaps easily",
   },
-  { property: "og:url", content: "https://app.plane.so/" },
-  { property: "og:image", content: "https://app.plane.so/og-image.png" },
+  { property: "og:url", content: "https://app.kardon.so/" },
+  { property: "og:image", content: "https://app.kardon.so/og-image.png" },
   { property: "og:image:width", content: "1200" },
   { property: "og:image:height", content: "630" },
   { property: "og:image:alt", content: "Plane - Modern project management" },
-  { name: "twitter:site", content: "@planepowers" },
+  { name: "twitter:site", content: "@kardonpowers" },
   { name: "twitter:card", content: "summary_large_image" },
-  { name: "twitter:image", content: "https://app.plane.so/og-image.png" },
+  { name: "twitter:image", content: "https://app.kardon.so/og-image.png" },
   { name: "twitter:image:width", content: "1200" },
   { name: "twitter:image:height", content: "630" },
   { name: "twitter:image:alt", content: "Plane - Modern project management" },

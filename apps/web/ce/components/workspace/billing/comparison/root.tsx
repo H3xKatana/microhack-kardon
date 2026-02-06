@@ -5,13 +5,13 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import type { EProductSubscriptionEnum, TBillingFrequency } from "@plane/types";
+// kardon imports
+import type { EProductSubscriptionEnum, TBillingFrequency } from "@kardon/types";
 // components
 import { PlansComparisonBase, shouldRenderPlanDetail } from "@/components/workspace/billing/comparison/base";
 import type { TPlanePlans } from "@/constants/plans";
 import { PLANE_PLANS } from "@/constants/plans";
-// plane web imports
+// kardon web imports
 import { PlanDetail } from "./plan-detail";
 
 type TPlansComparisonProps = {
@@ -33,7 +33,7 @@ export const PlansComparison = observer(function PlansComparison(props: TPlansCo
 
   return (
     <PlansComparisonBase
-      planeDetails={Object.entries(planDetails).map(([planKey, plan]) => {
+      kardonDetails={Object.entries(planDetails).map(([planKey, plan]) => {
         const currentPlanKey = planKey as TPlanePlans;
         if (!shouldRenderPlanDetail(currentPlanKey)) return null;
         return (

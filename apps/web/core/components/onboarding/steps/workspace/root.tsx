@@ -6,9 +6,9 @@
 
 import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { IWorkspaceMemberInvitation } from "@plane/types";
-import { ECreateOrJoinWorkspaceViews, EOnboardingSteps } from "@plane/types";
+// kardon imports
+import type { IWorkspaceMemberInvitation } from "@kardon/types";
+import { ECreateOrJoinWorkspaceViews, EOnboardingSteps } from "@kardon/types";
 // hooks
 import { useUser } from "@/hooks/store/user";
 // local components

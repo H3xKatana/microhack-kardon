@@ -7,10 +7,10 @@
 import React from "react";
 import { observer } from "mobx-react";
 // types
-import type { TIssue } from "@plane/types";
+import type { TIssue } from "@kardon/types";
 // helpers
-import { Row } from "@plane/ui";
-import { renderFormattedDate } from "@plane/utils";
+import { Row } from "@kardon/ui";
+import { renderFormattedDate } from "@kardon/utils";
 
 type Props = {
   issue: TIssue;

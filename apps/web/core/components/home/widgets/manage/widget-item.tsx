@@ -19,13 +19,13 @@ import { attachInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { createRoot } from "react-dom/client";
-// plane types
-import { useTranslation } from "@plane/i18n";
-import type { InstructionType, TWidgetEntityData } from "@plane/types";
-// plane ui
-import { DropIndicator, ToggleSwitch } from "@plane/ui";
-// plane utils
-import { cn } from "@plane/utils";
+// kardon types
+import { useTranslation } from "@kardon/i18n";
+import type { InstructionType, TWidgetEntityData } from "@kardon/types";
+// kardon ui
+import { DropIndicator, ToggleSwitch } from "@kardon/ui";
+// kardon utils
+import { cn } from "@kardon/utils";
 // hooks
 import { useHome } from "@/hooks/store/use-home";
 import { HOME_WIDGETS_LIST } from "../../home-dashboard-widgets";

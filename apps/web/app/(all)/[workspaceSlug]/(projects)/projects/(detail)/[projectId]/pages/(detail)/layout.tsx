@@ -9,8 +9,8 @@ import { Outlet } from "react-router";
 import useSWR from "swr";
 import { AppHeader } from "@/components/core/app-header";
 import { ContentWrapper } from "@/components/core/content-wrapper";
-// plane web hooks
-import { EPageStoreType, usePageStore } from "@/plane-web/hooks/store";
+// kardon web hooks
+import { EPageStoreType, usePageStore } from "@/kardon-web/hooks/store";
 // local components
 import type { Route } from "./+types/layout";
 import { PageDetailsHeader } from "./header";

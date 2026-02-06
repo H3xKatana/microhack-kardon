@@ -5,7 +5,7 @@
       "@/*": ["./core/*"],
       "@/app/*": ["./app/*"],
       "@/helpers/*": ["./helpers/*"],
-      "@/plane-web/*": ["./ce/*"],
+      "@/kardon-web/*": ["./ce/*"],
       "@/styles/*": ["./styles/*"],
       "app/*": ["./app/*"],
       "package.json": ["./package.json"],
@@ -19,6 +19,6 @@
     "noImplicitOverride": false,
     "types": ["vite/client"]
   },
-  "extends": "@plane/typescript-config/react-router.json",
+  "extends": "@kardon/typescript-config/react-router.json",
   "include": ["**/*", "**/.server/**/*", "**/.client/**/*", ".react-router/types/**/*"]
 }

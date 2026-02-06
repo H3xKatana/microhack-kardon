@@ -8,20 +8,20 @@ import { useState } from "react";
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { CircleCheck } from "lucide-react";
-// plane imports
-import { ORGANIZATION_SIZE, RESTRICTED_URLS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import type { IUser, IWorkspace } from "@plane/types";
-import { Spinner } from "@plane/ui";
-import { cn } from "@plane/utils";
+// kardon imports
+import { ORGANIZATION_SIZE, RESTRICTED_URLS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { Button } from "@kardon/propel/button";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import type { IUser, IWorkspace } from "@kardon/types";
+import { Spinner } from "@kardon/ui";
+import { cn } from "@kardon/utils";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserProfile, useUserSettings } from "@/hooks/store/user";
-// plane-web imports
-import { getIsWorkspaceCreationDisabled } from "@/plane-web/helpers/instance.helper";
-import { WorkspaceService } from "@/plane-web/services";
+// kardon-web imports
+import { getIsWorkspaceCreationDisabled } from "@/kardon-web/helpers/instance.helper";
+import { WorkspaceService } from "@/kardon-web/services";
 // local components
 import { CommonOnboardingHeader } from "../common";
 
@@ -43,7 +43,7 @@ export const WorkspaceCreateStep = observer(function WorkspaceCreateStep({
   // states
   const [slugError, setSlugError] = useState(false);
   const [invalidSlug, setInvalidSlug] = useState(false);
-  // plane hooks
+  // kardon hooks
   const { t } = useTranslation();
   // store hooks
   const { updateUserProfile } = useUserProfile();

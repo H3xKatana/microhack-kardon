@@ -6,12 +6,12 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { Button } from "@plane/propel/button";
-import { ChevronDownIcon } from "@plane/propel/icons";
-import { EUserProjectRoles, EUserWorkspaceRoles } from "@plane/types";
-// plane ui
-import { CustomMenu } from "@plane/ui";
+// kardon imports
+import { Button } from "@kardon/propel/button";
+import { ChevronDownIcon } from "@kardon/propel/icons";
+import { EUserProjectRoles, EUserWorkspaceRoles } from "@kardon/types";
+// kardon ui
+import { CustomMenu } from "@kardon/ui";
 // components
 import { FilterHeader, FilterOption } from "@/components/issues/issue-layouts/filters";
 

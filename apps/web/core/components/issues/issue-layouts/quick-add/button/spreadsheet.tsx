@@ -7,8 +7,8 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 
-import { useTranslation } from "@plane/i18n";
-import { PlusIcon } from "@plane/propel/icons";
+import { useTranslation } from "@kardon/i18n";
+import { PlusIcon } from "@kardon/propel/icons";
 import type { TQuickAddIssueButton } from "../root";
 
 export const SpreadsheetAddIssueButton = observer(function SpreadsheetAddIssueButton(props: TQuickAddIssueButton) {

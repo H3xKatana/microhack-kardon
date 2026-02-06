@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { SingleOrArray, TFilterExpression, TFilterProperty, TFilterValue } from "@plane/types";
+// kardon imports
+import type { SingleOrArray, TFilterExpression, TFilterProperty, TFilterValue } from "@kardon/types";
 // local imports
 import { getGroupChildren } from "../types";
 import { isConditionNode, isGroupNode } from "../types/core";

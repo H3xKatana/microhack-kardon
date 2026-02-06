@@ -5,8 +5,8 @@
  */
 
 import { action, makeObservable, observable, runInAction } from "mobx";
-// plane imports
-import { SitesCycleService } from "@plane/services";
+// kardon imports
+import { SitesCycleService } from "@kardon/services";
 import type { TPublicCycle } from "@/types/cycle";
 // store
 import type { CoreRootStore } from "./root.store";

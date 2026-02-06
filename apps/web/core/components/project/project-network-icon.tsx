@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-import type { TNetworkChoiceIconKey } from "@plane/constants";
-// plane imports
-import { GlobeIcon, LockIcon } from "@plane/propel/icons";
-import { cn } from "@plane/utils";
+import type { TNetworkChoiceIconKey } from "@kardon/constants";
+// kardon imports
+import { GlobeIcon, LockIcon } from "@kardon/propel/icons";
+import { cn } from "@kardon/utils";
 
 type Props = {
   iconKey: TNetworkChoiceIconKey;

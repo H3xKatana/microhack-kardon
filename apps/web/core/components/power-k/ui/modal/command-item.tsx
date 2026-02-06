@@ -7,9 +7,9 @@
 import React from "react";
 import { Command } from "cmdk";
 
-import { CheckIcon } from "@plane/propel/icons";
-// plane imports
-import { cn } from "@plane/utils";
+import { CheckIcon } from "@kardon/propel/icons";
+// kardon imports
+import { cn } from "@kardon/utils";
 // local imports
 import { KeySequenceBadge, ShortcutBadge } from "./command-item-shortcut-badge";
 

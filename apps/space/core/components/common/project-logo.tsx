@@ -5,9 +5,9 @@
  */
 
 // types
-import type { TLogoProps } from "@plane/types";
+import type { TLogoProps } from "@kardon/types";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 
 type Props = {
   className?: string;

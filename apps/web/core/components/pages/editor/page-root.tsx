@@ -6,16 +6,16 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { CollaborationState, EditorRefApi } from "@plane/editor";
-import type { TDocumentPayload, TPage, TPageVersion, TWebhookConnectionQueryParams } from "@plane/types";
+// kardon imports
+import type { CollaborationState, EditorRefApi } from "@kardon/editor";
+import type { TDocumentPayload, TPage, TPageVersion, TWebhookConnectionQueryParams } from "@kardon/types";
 // hooks
 import { usePageFallback } from "@/hooks/use-page-fallback";
-// plane web import
+// kardon web import
 import type { PageUpdateHandler, TCustomEventHandlers } from "@/hooks/use-realtime-page-events";
-import { PageModals } from "@/plane-web/components/pages";
-import { usePagesPaneExtensions, useExtendedEditorProps } from "@/plane-web/hooks/pages";
-import type { EPageStoreType } from "@/plane-web/hooks/store";
+import { PageModals } from "@/kardon-web/components/pages";
+import { usePagesPaneExtensions, useExtendedEditorProps } from "@/kardon-web/hooks/pages";
+import type { EPageStoreType } from "@/kardon-web/hooks/store";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 // local imports

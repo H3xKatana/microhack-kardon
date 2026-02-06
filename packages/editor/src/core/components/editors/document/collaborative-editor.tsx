@@ -5,8 +5,8 @@
  */
 
 import React, { useMemo } from "react";
-// plane imports
-import { cn } from "@plane/utils";
+// kardon imports
+import { cn } from "@kardon/utils";
 // components
 import { PageRenderer } from "@/components/editors";
 // constants

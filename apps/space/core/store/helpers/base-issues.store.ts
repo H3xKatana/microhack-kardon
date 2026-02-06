@@ -7,9 +7,9 @@
 import { concat, get, set, uniq, update } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import { ALL_ISSUES } from "@plane/constants";
-import { SitesIssueService } from "@plane/services";
+// kardon imports
+import { ALL_ISSUES } from "@kardon/constants";
+import { SitesIssueService } from "@kardon/services";
 import type {
   TIssueGroupByOptions,
   TGroupedIssues,
@@ -20,7 +20,7 @@ import type {
   TIssuePaginationData,
   TGroupedIssueCount,
   TPaginationData,
-} from "@plane/types";
+} from "@kardon/types";
 // types
 import type { IIssue, TIssuesResponse } from "@/types/issue";
 import type { CoreRootStore } from "../root.store";

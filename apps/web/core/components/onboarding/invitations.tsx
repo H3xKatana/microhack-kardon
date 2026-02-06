@@ -5,14 +5,14 @@
  */
 
 import { useState } from "react";
-// plane imports
-import { ROLE } from "@plane/constants";
+// kardon imports
+import { ROLE } from "@kardon/constants";
 // types
-import { Button } from "@plane/propel/button";
-import type { IWorkspaceMemberInvitation } from "@plane/types";
+import { Button } from "@kardon/propel/button";
+import type { IWorkspaceMemberInvitation } from "@kardon/types";
 // ui
-import { Checkbox, Spinner } from "@plane/ui";
-import { truncateText } from "@plane/utils";
+import { Checkbox, Spinner } from "@kardon/ui";
+import { truncateText } from "@kardon/utils";
 // constants
 // helpers
 import { WorkspaceLogo } from "@/components/workspace/logo";
@@ -20,7 +20,7 @@ import { WorkspaceLogo } from "@/components/workspace/logo";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserSettings } from "@/hooks/store/user";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/kardon-web/services";
 
 type Props = {
   invitations: IWorkspaceMemberInvitation[];

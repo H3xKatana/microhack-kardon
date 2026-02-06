@@ -6,14 +6,14 @@
 
 import { useRef } from "react";
 import { AlertCircle } from "lucide-react";
-// plane imports
-import { ISSUE_ORDER_BY_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import type { TIssueOrderByOptions } from "@plane/types";
+// kardon imports
+import { ISSUE_ORDER_BY_OPTIONS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import type { TIssueOrderByOptions } from "@kardon/types";
 // helpers
-import { cn } from "@plane/utils";
-// plane web imports
-import { WorkFlowDisabledOverlay } from "@/plane-web/components/workflow";
+import { cn } from "@kardon/utils";
+// kardon web imports
+import { WorkFlowDisabledOverlay } from "@/kardon-web/components/workflow";
 
 type Props = {
   dragColumnOrientation: "justify-start" | "justify-center" | "justify-end";

@@ -7,13 +7,13 @@
 import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { useRouter, useSearchParams } from "next/navigation";
-// plane imports
-import type { TPageVersion } from "@plane/types";
-import { cn } from "@plane/utils";
+// kardon imports
+import type { TPageVersion } from "@kardon/types";
+import { cn } from "@kardon/utils";
 // hooks
 import { useQueryParams } from "@/hooks/use-query-params";
-// plane web imports
-import type { EPageStoreType } from "@/plane-web/hooks/store";
+// kardon web imports
+import type { EPageStoreType } from "@/kardon-web/hooks/store";
 // local imports
 import { PAGE_NAVIGATION_PANE_VERSION_QUERY_PARAM, PAGE_NAVIGATION_PANE_WIDTH } from "../navigation-pane";
 import type { TVersionEditorProps } from "./editor";

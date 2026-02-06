@@ -7,12 +7,12 @@
 import React, { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { Tab } from "@headlessui/react";
-// plane package imports
-import type { ICycle, IModule, IProject } from "@plane/types";
-import { Spinner } from "@plane/ui";
+// kardon package imports
+import type { ICycle, IModule, IProject } from "@kardon/types";
+import { Spinner } from "@kardon/ui";
 // hooks
 import { useAnalytics } from "@/hooks/store/use-analytics";
-// plane web components
+// kardon web components
 import TotalInsights from "../../total-insights";
 import CreatedVsResolved from "../created-vs-resolved";
 import CustomizedInsights from "../customized-insights";

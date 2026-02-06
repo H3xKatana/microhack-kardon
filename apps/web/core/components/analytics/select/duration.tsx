@@ -4,14 +4,14 @@
  * See the LICENSE file for details.
  */
 
-// plane package imports
+// kardon package imports
 import type { ReactNode } from "react";
 import React from "react";
 import { Calendar } from "lucide-react";
-// plane package imports
-import { ANALYTICS_DURATION_FILTER_OPTIONS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CustomSearchSelect } from "@plane/ui";
+// kardon package imports
+import { ANALYTICS_DURATION_FILTER_OPTIONS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { CustomSearchSelect } from "@kardon/ui";
 // types
 import type { TDropdownProps } from "@/components/dropdowns/types";
 

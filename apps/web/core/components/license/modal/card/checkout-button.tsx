@@ -5,10 +5,10 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { Button } from "@plane/propel/button";
-import type { EProductSubscriptionEnum, IPaymentProduct, TSubscriptionPrice } from "@plane/types";
-import { Loader } from "@plane/ui";
+// kardon imports
+import { Button } from "@kardon/propel/button";
+import type { EProductSubscriptionEnum, IPaymentProduct, TSubscriptionPrice } from "@kardon/types";
+import { Loader } from "@kardon/ui";
 // local imports
 import { DiscountInfo } from "./discount-info";
 
@@ -19,7 +19,7 @@ export type TCheckoutParams = {
 };
 
 type Props = {
-  planeName: string;
+  kardonName: string;
   planVariant: EProductSubscriptionEnum;
   isLoading?: boolean;
   product: IPaymentProduct | undefined;
@@ -34,7 +34,7 @@ type Props = {
 
 export const PlanCheckoutButton = observer(function PlanCheckoutButton(props: Props) {
   const {
-    planeName,
+    kardonName,
     planVariant,
     isLoading,
     product,
@@ -88,7 +88,7 @@ export const PlanCheckoutButton = observer(function PlanCheckoutButton(props: Pr
             }}
             disabled={!!upgradeLoaderType}
           >
-            {upgradeLoaderType === planVariant ? "Redirecting to Stripe" : (upgradeCTA ?? `Upgrade to ${planeName}`)}
+            {upgradeLoaderType === planVariant ? "Redirecting to Stripe" : (upgradeCTA ?? `Upgrade to ${kardonName}`)}
           </Button>
           {isTrialAllowed && !isSelfHosted && (
             <div className="mt-1 h-3">

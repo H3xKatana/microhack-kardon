@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { ChevronDownIcon, ChevronUpIcon } from "@plane/propel/icons";
+// kardon imports
+import { ChevronDownIcon, ChevronUpIcon } from "@kardon/propel/icons";
 
 type Props = {
   title: string;

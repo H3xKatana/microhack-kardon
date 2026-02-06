@@ -8,11 +8,11 @@ import { useEffect } from "react";
 import { observer } from "mobx-react";
 import { useTheme } from "next-themes";
 import useSWR from "swr";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import type { TIssue } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-import { Loader } from "@plane/ui";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import type { TIssue } from "@kardon/types";
+import { EIssueServiceType } from "@kardon/types";
+import { Loader } from "@kardon/ui";
 // assets
 import emptyIssueDark from "@/app/assets/empty-state/search/issues-dark.webp?url";
 import emptyIssueLight from "@/app/assets/empty-state/search/issues-light.webp?url";
@@ -24,10 +24,10 @@ import { useAppTheme } from "@/hooks/store/use-app-theme";
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
-import { useWorkItemProperties } from "@/plane-web/hooks/use-issue-properties";
-import { ProjectAuthWrapper } from "@/plane-web/layouts/project-wrapper";
-import { WorkItemDetailRoot } from "@/plane-web/components/browse/workItem-detail";
+// kardon web imports
+import { useWorkItemProperties } from "@/kardon-web/hooks/use-issue-properties";
+import { ProjectAuthWrapper } from "@/kardon-web/layouts/project-wrapper";
+import { WorkItemDetailRoot } from "@/kardon-web/components/browse/workItem-detail";
 
 import type { Route } from "./+types/page";
 

@@ -6,8 +6,8 @@
 
 import { observer } from "mobx-react";
 import { Outlet } from "react-router";
-// plane web imports
-import { AutomationsListWrapper } from "@/plane-web/components/automations/list/wrapper";
+// kardon web imports
+import { AutomationsListWrapper } from "@/kardon-web/components/automations/list/wrapper";
 import type { Route } from "./+types/layout";
 
 function AutomationsListLayout({ params }: Route.ComponentProps) {

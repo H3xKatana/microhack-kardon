@@ -6,12 +6,12 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
-import type { IFilterInstance } from "@plane/shared-state";
-import type { TExternalFilter, TFilterProperty, TSupportedOperators } from "@plane/types";
-import { CustomSearchSelect } from "@plane/ui";
-import { getOperatorForPayload } from "@plane/utils";
+// kardon imports
+import { setToast, TOAST_TYPE } from "@kardon/propel/toast";
+import type { IFilterInstance } from "@kardon/shared-state";
+import type { TExternalFilter, TFilterProperty, TSupportedOperators } from "@kardon/types";
+import { CustomSearchSelect } from "@kardon/ui";
+import { getOperatorForPayload } from "@kardon/utils";
 
 export type TAddFilterDropdownProps<P extends TFilterProperty, E extends TExternalFilter> = {
   customButton: React.ReactNode;

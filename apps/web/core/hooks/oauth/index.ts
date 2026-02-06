@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { TOAuthConfigs } from "@plane/types";
+// kardon imports
+import type { TOAuthConfigs } from "@kardon/types";
 // local imports
 import { useCoreOAuthConfig } from "./core";
 import { useExtendedOAuthConfig } from "./extended";

@@ -9,15 +9,15 @@ import { observer } from "mobx-react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowRightCircle } from "lucide-react";
 import { Tab } from "@headlessui/react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { Tooltip } from "@kardon/propel/tooltip";
 // hooks
 import { useQueryParams } from "@/hooks/use-query-params";
-// plane web components
-import type { TPageNavigationPaneTab } from "@/plane-web/components/pages/navigation-pane";
+// kardon web components
+import type { TPageNavigationPaneTab } from "@/kardon-web/components/pages/navigation-pane";
 // store
-import type { EPageStoreType } from "@/plane-web/hooks/store";
+import type { EPageStoreType } from "@/kardon-web/hooks/store";
 import type { TPageInstance } from "@/store/pages/base-page";
 // local imports
 import type { TPageRootHandlers } from "../editor/page-root";

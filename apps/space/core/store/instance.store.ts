@@ -6,9 +6,9 @@
 
 import { set } from "lodash-es";
 import { observable, action, makeObservable, runInAction } from "mobx";
-// plane imports
-import { InstanceService } from "@plane/services";
-import type { IInstance, IInstanceConfig } from "@plane/types";
+// kardon imports
+import { InstanceService } from "@kardon/services";
+import type { IInstance, IInstanceConfig } from "@kardon/types";
 // store
 import type { CoreRootStore } from "@/store/root.store";
 

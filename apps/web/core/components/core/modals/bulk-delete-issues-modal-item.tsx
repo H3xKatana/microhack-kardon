@@ -7,9 +7,9 @@
 import { observer } from "mobx-react";
 import { Combobox } from "@headlessui/react";
 // hooks
-import type { ISearchIssueResponse } from "@plane/types";
-// plane web hooks
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+import type { ISearchIssueResponse } from "@kardon/types";
+// kardon web hooks
+import { IssueIdentifier } from "@/kardon-web/components/issues/issue-details/issue-identifier";
 
 interface Props {
   issue: ISearchIssueResponse;

@@ -6,8 +6,8 @@
 
 import { useCallback, useMemo } from "react";
 import { AtSign, Briefcase } from "lucide-react";
-// plane imports
-import { Logo } from "@plane/propel/emoji-icon-picker";
+// kardon imports
+import { Logo } from "@kardon/propel/emoji-icon-picker";
 import {
   CalendarLayoutIcon,
   CycleGroupIcon,
@@ -22,7 +22,7 @@ import {
   DueDatePropertyIcon,
   UserCirclePropertyIcon,
   PriorityPropertyIcon,
-} from "@plane/propel/icons";
+} from "@kardon/propel/icons";
 import type {
   ICycle,
   IState,
@@ -32,8 +32,8 @@ import type {
   IModule,
   IProject,
   TWorkItemFilterProperty,
-} from "@plane/types";
-import { Avatar } from "@plane/ui";
+} from "@kardon/types";
+import { Avatar } from "@kardon/ui";
 import {
   getAssigneeFilterConfig,
   getCreatedAtFilterConfig,
@@ -52,7 +52,7 @@ import {
   getTargetDateFilterConfig,
   getUpdatedAtFilterConfig,
   isLoaderReady,
-} from "@plane/utils";
+} from "@kardon/utils";
 // store hooks
 import { useCycle } from "@/hooks/store/use-cycle";
 import { useLabel } from "@/hooks/store/use-label";
@@ -60,8 +60,8 @@ import { useMember } from "@/hooks/store/use-member";
 import { useModule } from "@/hooks/store/use-module";
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectState } from "@/hooks/store/use-project-state";
-// plane web imports
-import { useFiltersOperatorConfigs } from "@/plane-web/hooks/rich-filters/use-filters-operator-configs";
+// kardon web imports
+import { useFiltersOperatorConfigs } from "@/kardon-web/hooks/rich-filters/use-filters-operator-configs";
 
 export type TWorkItemFiltersEntityProps = {
   workspaceSlug: string;

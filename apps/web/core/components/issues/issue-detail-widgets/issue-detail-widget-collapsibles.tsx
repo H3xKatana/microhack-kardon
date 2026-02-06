@@ -7,13 +7,13 @@
 import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { TIssueServiceType, TWorkItemWidgets } from "@plane/types";
+// kardon imports
+import type { TIssueServiceType, TWorkItemWidgets } from "@kardon/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // Plane-web
-import { WorkItemAdditionalWidgetCollapsibles } from "@/plane-web/components/issues/issue-detail-widgets/collapsibles";
-import { useTimeLineRelationOptions } from "@/plane-web/components/relations";
+import { WorkItemAdditionalWidgetCollapsibles } from "@/kardon-web/components/issues/issue-detail-widgets/collapsibles";
+import { useTimeLineRelationOptions } from "@/kardon-web/components/relations";
 // local imports
 import { AttachmentsCollapsible } from "./attachments";
 import { LinksCollapsible } from "./links";

@@ -5,9 +5,9 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { ArchiveIcon } from "@plane/propel/icons";
-import { renderFormattedDate } from "@plane/utils";
+// kardon imports
+import { ArchiveIcon } from "@kardon/propel/icons";
+import { renderFormattedDate } from "@kardon/utils";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 

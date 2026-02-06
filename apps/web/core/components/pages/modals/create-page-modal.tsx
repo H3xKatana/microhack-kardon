@@ -6,15 +6,15 @@
 
 import { useEffect, useState } from "react";
 // constants
-import type { EPageAccess } from "@plane/constants";
-import type { TPage } from "@plane/types";
+import type { EPageAccess } from "@kardon/constants";
+import type { TPage } from "@kardon/types";
 // ui
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
+import { EModalPosition, EModalWidth, ModalCore } from "@kardon/ui";
 // hooks
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web hooks
-import type { EPageStoreType } from "@/plane-web/hooks/store";
-import { usePageStore } from "@/plane-web/hooks/store";
+// kardon web hooks
+import type { EPageStoreType } from "@/kardon-web/hooks/store";
+import { usePageStore } from "@/kardon-web/hooks/store";
 // local imports
 import { PageForm } from "./page-form";
 

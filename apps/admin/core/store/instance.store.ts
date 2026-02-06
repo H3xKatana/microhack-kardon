@@ -6,10 +6,10 @@
 
 import { set } from "lodash-es";
 import { observable, action, computed, makeObservable, runInAction } from "mobx";
-// plane internal packages
-import type { TInstanceStatus } from "@plane/constants";
-import { EInstanceStatus } from "@plane/constants";
-import { InstanceService } from "@plane/services";
+// kardon internal packages
+import type { TInstanceStatus } from "@kardon/constants";
+import { EInstanceStatus } from "@kardon/constants";
+import { InstanceService } from "@kardon/services";
 import type {
   IInstance,
   IInstanceAdmin,
@@ -17,7 +17,7 @@ import type {
   IFormattedInstanceConfiguration,
   IInstanceInfo,
   IInstanceConfig,
-} from "@plane/types";
+} from "@kardon/types";
 // root store
 import type { CoreRootStore } from "@/store/root.store";
 

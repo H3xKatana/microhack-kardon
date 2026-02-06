@@ -4,13 +4,13 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { TDocumentPayload, TDuplicateAssetData, TDuplicateAssetResponse, TEditorAssetType } from "@plane/types";
-// plane web imports
+// kardon imports
+import type { TDocumentPayload, TDuplicateAssetData, TDuplicateAssetResponse, TEditorAssetType } from "@kardon/types";
+// kardon web imports
 import {
   extractAdditionalAssetsFromHTMLContent,
   replaceAdditionalAssetsInHTMLContent,
-} from "@/plane-editor/helpers/parser";
+} from "@/kardon-editor/helpers/parser";
 // local imports
 import { convertHTMLDocumentToAllFormats } from "./yjs-utils";
 

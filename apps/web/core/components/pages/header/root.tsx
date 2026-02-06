@@ -7,18 +7,18 @@
 import { useCallback } from "react";
 import { observer } from "mobx-react";
 import { ListFilter } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import type { TPageFilterProps, TPageNavigationTabs } from "@plane/types";
-import { Header, EHeaderVariant } from "@plane/ui";
-import { calculateTotalFilters } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import type { TPageFilterProps, TPageNavigationTabs } from "@kardon/types";
+import { Header, EHeaderVariant } from "@kardon/ui";
+import { calculateTotalFilters } from "@kardon/utils";
 // components
 import { FiltersDropdown } from "@/components/issues/issue-layouts/filters";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
-// plane web hooks
-import type { EPageStoreType } from "@/plane-web/hooks/store";
-import { usePageStore } from "@/plane-web/hooks/store";
+// kardon web hooks
+import type { EPageStoreType } from "@/kardon-web/hooks/store";
+import { usePageStore } from "@/kardon-web/hooks/store";
 // local imports
 import { PageAppliedFiltersList } from "../list/applied-filters";
 import { PageFiltersSelection } from "../list/filters";

@@ -6,15 +6,15 @@
 
 import { useEffect } from "react";
 import { Controller, useForm } from "react-hook-form";
-// plane imports
-import { ETabIndices } from "@plane/constants";
+// kardon imports
+import { ETabIndices } from "@kardon/constants";
 // types
-import { useTranslation } from "@plane/i18n";
-import { Button } from "@plane/propel/button";
-import type { ICycle } from "@plane/types";
+import { useTranslation } from "@kardon/i18n";
+import { Button } from "@kardon/propel/button";
+import type { ICycle } from "@kardon/types";
 // ui
-import { Input, TextArea } from "@plane/ui";
-import { getDate, renderFormattedPayloadDate, getTabIndex } from "@plane/utils";
+import { Input, TextArea } from "@kardon/ui";
+import { getDate, renderFormattedPayloadDate, getTabIndex } from "@kardon/utils";
 // components
 import { DateRangeDropdown } from "@/components/dropdowns/date-range";
 import { ProjectDropdown } from "@/components/dropdowns/project/dropdown";
@@ -40,7 +40,7 @@ const defaultValues: Partial<ICycle> = {
 
 export function CycleForm(props: Props) {
   const { handleFormSubmit, handleClose, status, projectId, setActiveProject, data, isMobile = false } = props;
-  // plane hooks
+  // kardon hooks
   const { t } = useTranslation();
   // store hooks
   const { projectsWithCreatePermissions } = useUser();

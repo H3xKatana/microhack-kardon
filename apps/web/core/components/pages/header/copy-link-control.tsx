@@ -7,11 +7,11 @@
 import { useState, useRef, useEffect, useCallback } from "react";
 import { observer } from "mobx-react";
 
-import { LinkIcon, CheckIcon } from "@plane/propel/icons";
-// plane imports
-import { Tooltip } from "@plane/propel/tooltip";
-import { IconButton } from "@plane/propel/icon-button";
-import { cn } from "@plane/utils";
+import { LinkIcon, CheckIcon } from "@kardon/propel/icons";
+// kardon imports
+import { Tooltip } from "@kardon/propel/tooltip";
+import { IconButton } from "@kardon/propel/icon-button";
+import { cn } from "@kardon/utils";
 // hooks
 import { usePageOperations } from "@/hooks/use-page-operations";
 // store

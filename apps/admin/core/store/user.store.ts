@@ -5,11 +5,11 @@
  */
 
 import { action, observable, runInAction, makeObservable } from "mobx";
-// plane internal packages
-import type { TUserStatus } from "@plane/constants";
-import { EUserStatus } from "@plane/constants";
-import { AuthService, UserService } from "@plane/services";
-import type { IUser } from "@plane/types";
+// kardon internal packages
+import type { TUserStatus } from "@kardon/constants";
+import { EUserStatus } from "@kardon/constants";
+import { AuthService, UserService } from "@kardon/services";
+import type { IUser } from "@kardon/types";
 // root store
 import type { CoreRootStore } from "@/store/root.store";
 

@@ -7,18 +7,18 @@
 import { concat, orderBy, set, uniq, update } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane package imports
-import type { E_SORT_ORDER } from "@plane/constants";
-import { EActivityFilterType } from "@plane/constants";
+// kardon package imports
+import type { E_SORT_ORDER } from "@kardon/constants";
+import { EActivityFilterType } from "@kardon/constants";
 import type {
   TIssueActivityComment,
   TIssueActivity,
   TIssueActivityMap,
   TIssueActivityIdMap,
   TIssueServiceType,
-} from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-// plane web constants
+} from "@kardon/types";
+import { EIssueServiceType } from "@kardon/types";
+// kardon web constants
 // services
 import { IssueActivityService } from "@/services/issue";
 // store

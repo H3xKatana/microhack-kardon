@@ -202,25 +202,25 @@ importers:
       '@headlessui/react':
         specifier: ^1.7.19
         version: 1.7.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@plane/constants':
+      '@kardon/constants':
         specifier: workspace:*
         version: link:../../packages/constants
-      '@plane/hooks':
+      '@kardon/hooks':
         specifier: workspace:*
         version: link:../../packages/hooks
-      '@plane/propel':
+      '@kardon/propel':
         specifier: workspace:*
         version: link:../../packages/propel
-      '@plane/services':
+      '@kardon/services':
         specifier: workspace:*
         version: link:../../packages/services
-      '@plane/types':
+      '@kardon/types':
         specifier: workspace:*
         version: link:../../packages/types
-      '@plane/ui':
+      '@kardon/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@plane/utils':
+      '@kardon/utils':
         specifier: workspace:*
         version: link:../../packages/utils
       '@react-router/node':
@@ -281,10 +281,10 @@ importers:
       '@dotenvx/dotenvx':
         specifier: 'catalog:'
         version: 1.51.1
-      '@plane/tailwind-config':
+      '@kardon/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@react-router/dev':
@@ -341,16 +341,16 @@ importers:
       '@hocuspocus/transformer':
         specifier: 2.15.2
         version: 2.15.2(@tiptap/core@2.26.3(@tiptap/pm@3.6.6))(@tiptap/pm@3.6.6)(y-prosemirror@1.3.7(prosemirror-model@1.25.3)(prosemirror-state@1.4.3)(prosemirror-view@1.40.0)(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27))(yjs@13.6.27)
-      '@plane/decorators':
+      '@kardon/decorators':
         specifier: workspace:*
         version: link:../../packages/decorators
-      '@plane/editor':
+      '@kardon/editor':
         specifier: workspace:*
         version: link:../../packages/editor
-      '@plane/logger':
+      '@kardon/logger':
         specifier: workspace:*
         version: link:../../packages/logger
-      '@plane/types':
+      '@kardon/types':
         specifier: workspace:*
         version: link:../../packages/types
       '@react-pdf/renderer':
@@ -420,7 +420,7 @@ importers:
         specifier: ^3.25.76
         version: 3.25.76
     devDependencies:
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@types/compression':
@@ -480,28 +480,28 @@ importers:
       '@headlessui/react':
         specifier: ^1.7.19
         version: 1.7.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@plane/constants':
+      '@kardon/constants':
         specifier: workspace:*
         version: link:../../packages/constants
-      '@plane/editor':
+      '@kardon/editor':
         specifier: workspace:*
         version: link:../../packages/editor
-      '@plane/i18n':
+      '@kardon/i18n':
         specifier: workspace:*
         version: link:../../packages/i18n
-      '@plane/propel':
+      '@kardon/propel':
         specifier: workspace:*
         version: link:../../packages/propel
-      '@plane/services':
+      '@kardon/services':
         specifier: workspace:*
         version: link:../../packages/services
-      '@plane/types':
+      '@kardon/types':
         specifier: workspace:*
         version: link:../../packages/types
-      '@plane/ui':
+      '@kardon/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@plane/utils':
+      '@kardon/utils':
         specifier: workspace:*
         version: link:../../packages/utils
       '@popperjs/core':
@@ -574,10 +574,10 @@ importers:
       '@dotenvx/dotenvx':
         specifier: 'catalog:'
         version: 1.51.1
-      '@plane/tailwind-config':
+      '@kardon/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@react-router/dev':
@@ -637,34 +637,34 @@ importers:
       '@intercom/messenger-js-sdk':
         specifier: ^0.0.12
         version: 0.0.12
-      '@plane/constants':
+      '@kardon/constants':
         specifier: workspace:*
         version: link:../../packages/constants
-      '@plane/editor':
+      '@kardon/editor':
         specifier: workspace:*
         version: link:../../packages/editor
-      '@plane/hooks':
+      '@kardon/hooks':
         specifier: workspace:*
         version: link:../../packages/hooks
-      '@plane/i18n':
+      '@kardon/i18n':
         specifier: workspace:*
         version: link:../../packages/i18n
-      '@plane/propel':
+      '@kardon/propel':
         specifier: workspace:*
         version: link:../../packages/propel
-      '@plane/services':
+      '@kardon/services':
         specifier: workspace:*
         version: link:../../packages/services
-      '@plane/shared-state':
+      '@kardon/shared-state':
         specifier: workspace:*
         version: link:../../packages/shared-state
-      '@plane/types':
+      '@kardon/types':
         specifier: workspace:*
         version: link:../../packages/types
-      '@plane/ui':
+      '@kardon/ui':
         specifier: workspace:*
         version: link:../../packages/ui
-      '@plane/utils':
+      '@kardon/utils':
         specifier: workspace:*
         version: link:../../packages/utils
       '@popperjs/core':
@@ -782,10 +782,10 @@ importers:
       '@dotenvx/dotenvx':
         specifier: 'catalog:'
         version: 1.51.1
-      '@plane/tailwind-config':
+      '@kardon/tailwind-config':
         specifier: workspace:*
         version: link:../../packages/tailwind-config
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../../packages/typescript-config
       '@react-router/dev':
@@ -839,11 +839,11 @@ importers:
 
   packages/constants:
     dependencies:
-      '@plane/types':
+      '@kardon/types':
         specifier: workspace:*
         version: link:../types
     devDependencies:
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/node':
@@ -861,7 +861,7 @@ importers:
 
   packages/decorators:
     devDependencies:
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/express':
@@ -897,22 +897,22 @@ importers:
       '@hocuspocus/provider':
         specifier: 2.15.2
         version: 2.15.2(y-protocols@1.0.6(yjs@13.6.27))(yjs@13.6.27)
-      '@plane/constants':
+      '@kardon/constants':
         specifier: workspace:*
         version: link:../constants
-      '@plane/hooks':
+      '@kardon/hooks':
         specifier: workspace:*
         version: link:../hooks
-      '@plane/propel':
+      '@kardon/propel':
         specifier: workspace:*
         version: link:../propel
-      '@plane/types':
+      '@kardon/types':
         specifier: workspace:*
         version: link:../types
-      '@plane/ui':
+      '@kardon/ui':
         specifier: workspace:*
         version: link:../ui
-      '@plane/utils':
+      '@kardon/utils':
         specifier: workspace:*
         version: link:../utils
       '@tiptap/core':
@@ -1039,10 +1039,10 @@ importers:
         specifier: ^13.6.20
         version: 13.6.27
     devDependencies:
-      '@plane/tailwind-config':
+      '@kardon/tailwind-config':
         specifier: workspace:*
         version: link:../tailwind-config
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/lodash-es':
@@ -1073,7 +1073,7 @@ importers:
         specifier: 'catalog:'
         version: 18.3.1
     devDependencies:
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/node':
@@ -1091,7 +1091,7 @@ importers:
 
   packages/i18n:
     dependencies:
-      '@plane/utils':
+      '@kardon/utils':
         specifier: workspace:*
         version: link:../utils
       intl-messageformat:
@@ -1110,7 +1110,7 @@ importers:
         specifier: 'catalog:'
         version: 18.3.1
     devDependencies:
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/lodash-es':
@@ -1138,7 +1138,7 @@ importers:
         specifier: ^3.17.0
         version: 3.17.0
     devDependencies:
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/express':
@@ -1159,16 +1159,16 @@ importers:
       '@base-ui-components/react':
         specifier: 1.0.0-beta.3
         version: 1.0.0-beta.3(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@plane/constants':
+      '@kardon/constants':
         specifier: workspace:*
         version: link:../constants
-      '@plane/hooks':
+      '@kardon/hooks':
         specifier: workspace:*
         version: link:../hooks
-      '@plane/types':
+      '@kardon/types':
         specifier: workspace:*
         version: link:../types
-      '@plane/utils':
+      '@kardon/utils':
         specifier: workspace:*
         version: link:../utils
       '@tanstack/react-table':
@@ -1211,10 +1211,10 @@ importers:
         specifier: ^1.3.0
         version: 1.3.0(react@18.3.1)
     devDependencies:
-      '@plane/tailwind-config':
+      '@kardon/tailwind-config':
         specifier: workspace:*
         version: link:../tailwind-config
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@storybook/addon-designs':
@@ -1244,10 +1244,10 @@ importers:
 
   packages/services:
     dependencies:
-      '@plane/constants':
+      '@kardon/constants':
         specifier: workspace:*
         version: link:../constants
-      '@plane/types':
+      '@kardon/types':
         specifier: workspace:*
         version: link:../types
       axios:
@@ -1257,7 +1257,7 @@ importers:
         specifier: ^21.0.0
         version: 21.0.0
     devDependencies:
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       tsdown:
@@ -1269,13 +1269,13 @@ importers:
 
   packages/shared-state:
     dependencies:
-      '@plane/constants':
+      '@kardon/constants':
         specifier: workspace:*
         version: link:../constants
-      '@plane/types':
+      '@kardon/types':
         specifier: workspace:*
         version: link:../types
-      '@plane/utils':
+      '@kardon/utils':
         specifier: workspace:*
         version: link:../utils
       lodash-es:
@@ -1294,7 +1294,7 @@ importers:
         specifier: ^3.22.2
         version: 3.25.76
     devDependencies:
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/lodash-es':
@@ -1331,7 +1331,7 @@ importers:
         specifier: 'catalog:'
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/node':
@@ -1369,19 +1369,19 @@ importers:
       '@headlessui/react':
         specifier: ^1.7.3
         version: 1.7.19(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@plane/constants':
+      '@kardon/constants':
         specifier: workspace:*
         version: link:../constants
-      '@plane/hooks':
+      '@kardon/hooks':
         specifier: workspace:*
         version: link:../hooks
-      '@plane/propel':
+      '@kardon/propel':
         specifier: workspace:*
         version: link:../propel
-      '@plane/types':
+      '@kardon/types':
         specifier: workspace:*
         version: link:../types
-      '@plane/utils':
+      '@kardon/utils':
         specifier: workspace:*
         version: link:../utils
       '@popperjs/core':
@@ -1424,10 +1424,10 @@ importers:
       '@chromatic-com/storybook':
         specifier: ^1.4.0
         version: 1.9.0(react@18.3.1)
-      '@plane/tailwind-config':
+      '@kardon/tailwind-config':
         specifier: workspace:*
         version: link:../tailwind-config
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@storybook/addon-essentials':
@@ -1496,10 +1496,10 @@ importers:
 
   packages/utils:
     dependencies:
-      '@plane/constants':
+      '@kardon/constants':
         specifier: workspace:*
         version: link:../constants
-      '@plane/types':
+      '@kardon/types':
         specifier: workspace:*
         version: link:../types
       chroma-js:
@@ -1554,7 +1554,7 @@ importers:
         specifier: 'catalog:'
         version: 13.0.0
     devDependencies:
-      '@plane/typescript-config':
+      '@kardon/typescript-config':
         specifier: workspace:*
         version: link:../typescript-config
       '@types/chroma-js':

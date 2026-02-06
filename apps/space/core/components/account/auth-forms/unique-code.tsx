@@ -6,11 +6,11 @@
 
 import React, { useEffect, useState } from "react";
 import { CircleCheck, XCircle } from "lucide-react";
-// plane imports
-import { API_BASE_URL } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { AuthService } from "@plane/services";
-import { Input, Spinner } from "@plane/ui";
+// kardon imports
+import { API_BASE_URL } from "@kardon/constants";
+import { Button } from "@kardon/propel/button";
+import { AuthService } from "@kardon/services";
+import { Input, Spinner } from "@kardon/ui";
 // hooks
 import useTimer from "@/hooks/use-timer";
 // types

@@ -5,9 +5,9 @@
  */
 
 import { observer } from "mobx-react";
-// plane types
-import type { IIssueLabel, TIssue } from "@plane/types";
-import { Spinner } from "@plane/ui";
+// kardon types
+import type { IIssueLabel, TIssue } from "@kardon/types";
+import { Spinner } from "@kardon/ui";
 // components
 import { PowerKLabelsMenu } from "@/components/power-k/menus/labels";
 // hooks

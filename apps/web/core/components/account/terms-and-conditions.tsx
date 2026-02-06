@@ -6,7 +6,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { EAuthModes } from "@plane/constants";
+import { EAuthModes } from "@kardon/constants";
 
 interface TermsAndConditionsProps {
   authType?: EAuthModes;
@@ -14,8 +14,8 @@ interface TermsAndConditionsProps {
 
 // Constants for better maintainability
 const LEGAL_LINKS = {
-  termsOfService: "https://plane.so/legals/terms-and-conditions",
-  privacyPolicy: "https://plane.so/legals/privacy-policy",
+  termsOfService: "https://kardon.so/legals/terms-and-conditions",
+  privacyPolicy: "https://kardon.so/legals/privacy-policy",
 } as const;
 
 const MESSAGES = {

@@ -7,7 +7,7 @@
 import { setupSentry } from "./instrument";
 setupSentry();
 
-import { logger } from "@plane/logger";
+import { logger } from "@kardon/logger";
 import { AppError } from "@/lib/errors";
 import { Server } from "./server";
 

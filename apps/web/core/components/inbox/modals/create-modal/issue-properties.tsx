@@ -7,11 +7,11 @@
 import type { FC } from "react";
 import { useState } from "react";
 import { observer } from "mobx-react";
-import { ETabIndices } from "@plane/constants";
-import { ParentPropertyIcon } from "@plane/propel/icons";
-import type { ISearchIssueResponse, TIssue } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
-import { renderFormattedPayloadDate, getDate, getTabIndex } from "@plane/utils";
+import { ETabIndices } from "@kardon/constants";
+import { ParentPropertyIcon } from "@kardon/propel/icons";
+import type { ISearchIssueResponse, TIssue } from "@kardon/types";
+import { CustomMenu } from "@kardon/ui";
+import { renderFormattedPayloadDate, getDate, getTabIndex } from "@kardon/utils";
 // components
 import { CycleDropdown } from "@/components/dropdowns/cycle";
 import { DateDropdown } from "@/components/dropdowns/date";

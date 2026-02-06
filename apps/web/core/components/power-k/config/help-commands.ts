@@ -5,8 +5,8 @@
  */
 
 import { FileText, GithubIcon, MessageSquare, Rocket } from "lucide-react";
-// plane imports
-import { DiscordIcon } from "@plane/propel/icons";
+// kardon imports
+import { DiscordIcon } from "@kardon/propel/icons";
 // components
 import type { TPowerKCommandConfig } from "@/components/power-k/core/types";
 // hooks
@@ -35,13 +35,13 @@ export const usePowerKHelpCommands = (): TPowerKCommandConfig[] => {
       closeOnSelect: true,
     },
     {
-      id: "open_plane_documentation",
+      id: "open_kardon_documentation",
       type: "action",
       group: "help",
-      i18n_title: "power_k.help_actions.open_plane_documentation",
+      i18n_title: "power_k.help_actions.open_kardon_documentation",
       icon: FileText,
       action: () => {
-        window.open("https://docs.plane.so/", "_blank", "noopener,noreferrer");
+        window.open("https://docs.kardon.so/", "_blank", "noopener,noreferrer");
       },
       isEnabled: () => true,
       isVisible: () => true,
@@ -67,7 +67,7 @@ export const usePowerKHelpCommands = (): TPowerKCommandConfig[] => {
       i18n_title: "power_k.help_actions.report_bug",
       icon: GithubIcon,
       action: () => {
-        window.open("https://github.com/makeplane/plane/issues/new/choose", "_blank", "noopener,noreferrer");
+        window.open("https://github.com/makekardon/kardon/issues/new/choose", "_blank", "noopener,noreferrer");
       },
       isEnabled: () => true,
       isVisible: () => true,

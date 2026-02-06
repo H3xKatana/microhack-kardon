@@ -7,14 +7,14 @@
 import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
-// plane constants
-import { ISSUE_DISPLAY_PROPERTIES } from "@plane/constants";
-// plane i18n
-import { useTranslation } from "@plane/i18n";
+// kardon constants
+import { ISSUE_DISPLAY_PROPERTIES } from "@kardon/constants";
+// kardon i18n
+import { useTranslation } from "@kardon/i18n";
 // types
-import type { IIssueDisplayProperties } from "@plane/types";
-// plane web helpers
-import { shouldRenderDisplayProperty } from "@/plane-web/helpers/issue-filter.helper";
+import type { IIssueDisplayProperties } from "@kardon/types";
+// kardon web helpers
+import { shouldRenderDisplayProperty } from "@/kardon-web/helpers/issue-filter.helper";
 // components
 import { FilterHeader } from "../helpers/filter-header";
 

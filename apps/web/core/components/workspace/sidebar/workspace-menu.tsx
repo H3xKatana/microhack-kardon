@@ -8,9 +8,9 @@ import React from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Disclosure, Transition } from "@headlessui/react";
-// plane imports
-import { AnalyticsIcon, CycleIcon, ProjectIcon, ViewsIcon } from "@plane/propel/icons";
-import { EUserWorkspaceRoles } from "@plane/types";
+// kardon imports
+import { AnalyticsIcon, CycleIcon, ProjectIcon, ViewsIcon } from "@kardon/propel/icons";
+import { EUserWorkspaceRoles } from "@kardon/types";
 // hooks
 import useLocalStorage from "@/hooks/use-local-storage";
 // local imports

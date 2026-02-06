@@ -6,10 +6,10 @@
 
 import React from "react";
 import Link from "next/link";
-// plane imports
-import { cn } from "@plane/utils";
+// kardon imports
+import { cn } from "@kardon/utils";
 import type { LucideIcon } from "lucide-react";
-import type { ISvgIcons } from "@plane/propel/icons";
+import type { ISvgIcons } from "@kardon/propel/icons";
 
 type Props = {
   isActive: boolean;

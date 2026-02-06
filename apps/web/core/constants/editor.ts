@@ -30,10 +30,10 @@ import {
   TextQuote,
   Underline,
 } from "lucide-react";
-// plane imports
-import type { TCommandExtraProps, TEditorCommands, TEditorFontStyle } from "@plane/editor";
-import { MonospaceIcon, SansSerifIcon, SerifIcon } from "@plane/propel/icons";
-import { convertRemToPixel } from "@plane/utils";
+// kardon imports
+import type { TCommandExtraProps, TEditorCommands, TEditorFontStyle } from "@kardon/editor";
+import { MonospaceIcon, SansSerifIcon, SerifIcon } from "@kardon/propel/icons";
+import { convertRemToPixel } from "@kardon/utils";
 
 type TEditorTypes = "lite" | "document" | "sticky";
 

@@ -6,11 +6,11 @@
 
 import { ArrowLeft } from "lucide-react";
 import { observer } from "mobx-react";
-// plane imports
-import { ROLE_DETAILS } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { IconButton } from "@plane/propel/icon-button";
+// kardon imports
+import { ROLE_DETAILS } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { Logo } from "@kardon/propel/emoji-icon-picker";
+import { IconButton } from "@kardon/propel/icon-button";
 // hooks
 import { useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";

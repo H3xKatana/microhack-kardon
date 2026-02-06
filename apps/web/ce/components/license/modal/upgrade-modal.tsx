@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
+// kardon imports
 import {
   BUSINESS_PLAN_FEATURES,
   ENTERPRISE_PLAN_FEATURES,
@@ -14,10 +14,10 @@ import {
   SUBSCRIPTION_REDIRECTION_URLS,
   SUBSCRIPTION_WEBPAGE_URLS,
   TALK_TO_SALES_URL,
-} from "@plane/constants";
-import { EProductSubscriptionEnum } from "@plane/types";
-import { EModalWidth, ModalCore } from "@plane/ui";
-import { cn } from "@plane/utils";
+} from "@kardon/constants";
+import { EProductSubscriptionEnum } from "@kardon/types";
+import { EModalWidth, ModalCore } from "@kardon/ui";
+import { cn } from "@kardon/utils";
 // components
 import { FreePlanCard, PlanUpgradeCard } from "@/components/license";
 import type { TCheckoutParams } from "@/components/license/modal/card/checkout-button";
@@ -38,7 +38,7 @@ export const PaidPlanUpgradeModal = observer(function PaidPlanUpgradeModal(props
   const isTrialAllowed = false;
 
   const handleRedirection = ({ planVariant, priceId }: TCheckoutParams) => {
-    // Get the product and price using plane community constants
+    // Get the product and price using kardon community constants
     const product = PLANE_COMMUNITY_PRODUCTS[planVariant];
     const price = product.prices.find((price) => price.id === priceId);
     const frequency = price?.recurring ?? "year";

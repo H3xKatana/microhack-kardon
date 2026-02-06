@@ -6,9 +6,9 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { IState, TStateGroups, TStateOperationsCallbacks } from "@plane/types";
-import { cn } from "@plane/utils";
+// kardon imports
+import type { IState, TStateGroups, TStateOperationsCallbacks } from "@kardon/types";
+import { cn } from "@kardon/utils";
 // components
 import { GroupItem } from "@/components/project-states";
 

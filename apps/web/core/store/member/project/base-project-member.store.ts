@@ -7,17 +7,17 @@
 import { uniq, unset, set, update, sortBy } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import { EUserPermissions } from "@plane/constants";
+// kardon imports
+import { EUserPermissions } from "@kardon/constants";
 import type {
   EUserProjectRoles,
   IProjectBulkAddFormData,
   IProjectUserPropertiesResponse,
   IUserLite,
   TProjectMembership,
-} from "@plane/types";
-// plane web imports
-import type { RootStore } from "@/plane-web/store/root.store";
+} from "@kardon/types";
+// kardon web imports
+import type { RootStore } from "@/kardon-web/store/root.store";
 // services
 import { ProjectMemberService, ProjectService } from "@/services/project";
 // store

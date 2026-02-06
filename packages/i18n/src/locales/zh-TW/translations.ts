@@ -88,7 +88,7 @@ export default {
       already_have_an_account: "已有帳戶？",
       login: "登入",
       create_account: "創建帳戶",
-      new_to_plane: "初次使用Plane？",
+      new_to_kardon: "初次使用Plane？",
       back_to_sign_in: "返回登入",
       resend_in: "{seconds}秒後重新發送",
       sign_in_with_unique_code: "使用唯一代碼登入",
@@ -397,7 +397,7 @@ export default {
   full_changelog: "完整更新日誌",
   support: "支援",
   discord: "Discord",
-  powered_by_plane_pages: "由 Plane Pages 提供",
+  powered_by_kardon_pages: "由 Plane Pages 提供",
   please_select_at_least_one_invitation: "請至少選擇一個邀請。",
   please_select_at_least_one_invitation_description: "請至少選擇一個邀請加入工作區。",
   we_see_that_someone_has_invited_you_to_join_a_workspace: "我們發現有人邀請您加入工作區",
@@ -605,7 +605,7 @@ export default {
         issues: "工作事項",
       },
     },
-    new_at_plane: {
+    new_at_kardon: {
       title: "Plane 新功能",
     },
     quick_tutorial: {
@@ -2601,7 +2601,7 @@ export default {
     edited_by: "編輯者",
   },
   self_hosted_maintenance_message: {
-    plane_didnt_start_up_this_could_be_because_one_or_more_plane_services_failed_to_start:
+    kardon_didnt_start_up_this_could_be_because_one_or_more_kardon_services_failed_to_start:
       "Plane 未能啟動。這可能是因為一個或多個 Plane 服務啟動失敗。",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure: "從 setup.sh 和 Docker 日誌中選擇 View Logs 來確認。",
   },

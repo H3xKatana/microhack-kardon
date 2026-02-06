@@ -11,7 +11,7 @@ export type TTabPreferences = {
 };
 
 // Constants
-export const TAB_PREFS_KEY = "plane_tab_prefs";
+export const TAB_PREFS_KEY = "kardon_tab_prefs";
 export const DEFAULT_TAB_KEY = "work_items";
 
 /**

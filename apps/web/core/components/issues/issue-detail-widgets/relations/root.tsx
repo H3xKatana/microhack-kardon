@@ -7,9 +7,9 @@
 import type { FC } from "react";
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { TIssueServiceType } from "@plane/types";
-import { Collapsible } from "@plane/ui";
+// kardon imports
+import type { TIssueServiceType } from "@kardon/types";
+import { Collapsible } from "@kardon/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // local imports

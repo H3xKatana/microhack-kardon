@@ -6,10 +6,10 @@
 
 import { set } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
-// plane imports
-import { UserService } from "@plane/services";
-import type { TUserProfile } from "@plane/types";
-import { EStartOfTheWeek } from "@plane/types";
+// kardon imports
+import { UserService } from "@kardon/services";
+import type { TUserProfile } from "@kardon/types";
+import { EStartOfTheWeek } from "@kardon/types";
 // store
 import type { CoreRootStore } from "@/store/root.store";
 

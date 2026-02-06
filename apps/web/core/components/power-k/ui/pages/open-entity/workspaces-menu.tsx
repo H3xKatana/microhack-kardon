@@ -5,9 +5,9 @@
  */
 
 import { observer } from "mobx-react";
-// plane types
-import type { IWorkspace } from "@plane/types";
-import { Spinner } from "@plane/ui";
+// kardon types
+import type { IWorkspace } from "@kardon/types";
+import { Spinner } from "@kardon/ui";
 // components
 import { PowerKWorkspacesMenu } from "@/components/power-k/menus/workspaces";
 // hooks

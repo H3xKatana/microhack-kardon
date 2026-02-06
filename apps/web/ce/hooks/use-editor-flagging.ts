@@ -5,8 +5,8 @@
  */
 
 // editor
-import type { TExtensions } from "@plane/editor";
-import type { EPageStoreType } from "@/plane-web/hooks/store";
+import type { TExtensions } from "@kardon/editor";
+import type { EPageStoreType } from "@/kardon-web/hooks/store";
 
 export type TEditorFlaggingHookReturnType = {
   document: {

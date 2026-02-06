@@ -7,8 +7,8 @@
 import { useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { useSearchParams } from "next/navigation";
-// plane imports
-import { OAuthOptions } from "@plane/ui";
+// kardon imports
+import { OAuthOptions } from "@kardon/ui";
 // helpers
 import type { TAuthErrorInfo } from "@/helpers/authentication.helper";
 import {

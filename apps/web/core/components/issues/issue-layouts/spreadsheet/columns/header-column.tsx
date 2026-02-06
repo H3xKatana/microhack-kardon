@@ -7,12 +7,12 @@
 //ui
 import { ArrowDownWideNarrow, ArrowUpNarrowWide, CheckIcon, ChevronDownIcon, Eraser, MoveRight } from "lucide-react";
 // constants
-import { SPREADSHEET_PROPERTY_DETAILS } from "@plane/constants";
+import { SPREADSHEET_PROPERTY_DETAILS } from "@kardon/constants";
 // i18n
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@kardon/i18n";
 // types
-import type { IIssueDisplayFilterOptions, IIssueDisplayProperties, TIssueOrderByOptions } from "@plane/types";
-import { CustomMenu, Row } from "@plane/ui";
+import type { IIssueDisplayFilterOptions, IIssueDisplayProperties, TIssueOrderByOptions } from "@kardon/types";
+import { CustomMenu, Row } from "@kardon/ui";
 import useLocalStorage from "@/hooks/use-local-storage";
 import { SpreadSheetPropertyIcon } from "../../utils";
 

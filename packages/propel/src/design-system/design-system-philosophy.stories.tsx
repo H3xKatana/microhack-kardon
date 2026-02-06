@@ -195,7 +195,7 @@ export const ModalException: Story = {
   render: () => (
     <DemoRoot>
       <Info title="✅ Modal Exception Pattern">
-        Modals exist on a <strong>different plane</strong>, so they can use surfaces even when there&apos;s a surface
+        Modals exist on a <strong>different kardon</strong>, so they can use surfaces even when there&apos;s a surface
         below
       </Info>
 
@@ -210,7 +210,7 @@ export const ModalException: Story = {
           <h4 className="text-primary mb-3 font-semibold">Modal Dialog</h4>
           <p className="text-secondary mb-4 text-13">
             This modal uses bg-surface-1 even though the page below also uses bg-surface-1. This is allowed because
-            they&apos;re on different planes.
+            they&apos;re on different kardons.
           </p>
 
           <Layer className="bg-layer-1 hover:bg-layer-1-hover rounded-md p-3">

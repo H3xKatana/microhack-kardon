@@ -9,18 +9,18 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { ArchiveRestoreIcon, Settings, UserPlus } from "lucide-react";
-// plane imports
-import { EUserPermissions, EUserPermissionsLevel, IS_FAVORITE_MENU_OPEN } from "@plane/constants";
-import { useLocalStorage } from "@plane/hooks";
-import { Button } from "@plane/propel/button";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { LinkIcon, LockIcon, NewTabIcon, TrashIcon, CheckIcon } from "@plane/propel/icons";
-import { setPromiseToast, setToast, TOAST_TYPE } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { IProject } from "@plane/types";
-import type { TContextMenuItem } from "@plane/ui";
-import { Avatar, AvatarGroup, ContextMenu, FavoriteStar } from "@plane/ui";
-import { copyUrlToClipboard, cn, getFileURL, renderFormattedDate } from "@plane/utils";
+// kardon imports
+import { EUserPermissions, EUserPermissionsLevel, IS_FAVORITE_MENU_OPEN } from "@kardon/constants";
+import { useLocalStorage } from "@kardon/hooks";
+import { Button } from "@kardon/propel/button";
+import { Logo } from "@kardon/propel/emoji-icon-picker";
+import { LinkIcon, LockIcon, NewTabIcon, TrashIcon, CheckIcon } from "@kardon/propel/icons";
+import { setPromiseToast, setToast, TOAST_TYPE } from "@kardon/propel/toast";
+import { Tooltip } from "@kardon/propel/tooltip";
+import type { IProject } from "@kardon/types";
+import type { TContextMenuItem } from "@kardon/ui";
+import { Avatar, AvatarGroup, ContextMenu, FavoriteStar } from "@kardon/ui";
+import { copyUrlToClipboard, cn, getFileURL, renderFormattedDate } from "@kardon/utils";
 // components
 // hooks
 import { useMember } from "@/hooks/store/use-member";

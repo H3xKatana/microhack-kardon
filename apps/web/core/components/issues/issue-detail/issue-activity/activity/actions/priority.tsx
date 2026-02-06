@@ -5,7 +5,7 @@
  */
 
 import { observer } from "mobx-react";
-import { PriorityPropertyIcon } from "@plane/propel/icons";
+import { PriorityPropertyIcon } from "@kardon/propel/icons";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // components

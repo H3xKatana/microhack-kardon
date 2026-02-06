@@ -7,17 +7,17 @@
 import React, { useEffect, useRef, useState } from "react";
 import type { LucideIcon } from "lucide-react";
 import { CornerDownRight, RefreshCcw, Sparkles, TriangleAlert } from "lucide-react";
-// plane editor
-import type { EditorRefApi } from "@plane/editor";
-import { ChevronRightIcon } from "@plane/propel/icons";
-// plane ui
-import { Tooltip } from "@plane/propel/tooltip";
+// kardon editor
+import type { EditorRefApi } from "@kardon/editor";
+import { ChevronRightIcon } from "@kardon/propel/icons";
+// kardon ui
+import { Tooltip } from "@kardon/propel/tooltip";
 // components
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 import { RichTextEditor } from "@/components/editor/rich-text";
-// plane web constants
-import { AI_EDITOR_TASKS, LOADING_TEXTS } from "@/plane-web/constants/ai";
-// plane web services
+// kardon web constants
+import { AI_EDITOR_TASKS, LOADING_TEXTS } from "@/kardon-web/constants/ai";
+// kardon web services
 import type { TTaskPayload } from "@/services/ai.service";
 import { AIService } from "@/services/ai.service";
 import { AskPiMenu } from "./ask-pi-menu";

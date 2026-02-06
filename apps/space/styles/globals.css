@@ -1,6 +1,6 @@
-@import "@plane/tailwind-config/index.css";
-@import "@plane/editor/styles";
-@import "@plane/propel/styles/react-day-picker.css";
+@import "@kardon/tailwind-config/index.css";
+@import "@kardon/editor/styles";
+@import "@kardon/propel/styles/react-day-picker.css";
 @plugin "@tailwindcss/typography";
 
 /* stickies and editor colors */

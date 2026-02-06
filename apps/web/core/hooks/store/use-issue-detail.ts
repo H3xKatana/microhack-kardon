@@ -5,12 +5,12 @@
  */
 
 import { useContext } from "react";
-import type { TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+import type { TIssueServiceType } from "@kardon/types";
+import { EIssueServiceType } from "@kardon/types";
 // mobx store
 import { StoreContext } from "@/lib/store-context";
 // types
-import type { IIssueDetail } from "@/plane-web/store/issue/issue-details/root.store";
+import type { IIssueDetail } from "@/kardon-web/store/issue/issue-details/root.store";
 
 export const useIssueDetail = (serviceType: TIssueServiceType = EIssueServiceType.ISSUES): IIssueDetail => {
   const context = useContext(StoreContext);

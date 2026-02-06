@@ -6,8 +6,8 @@
 
 import React from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { TFilterValue, TFilterProperty } from "@plane/types";
+// kardon imports
+import type { TFilterValue, TFilterProperty } from "@kardon/types";
 // local imports
 import type { TFilterValueInputProps } from "@/components/rich-filters/shared";
 

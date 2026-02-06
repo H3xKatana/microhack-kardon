@@ -89,7 +89,7 @@ export default {
       already_have_an_account: "Zaten bir hesabınız var mı?",
       login: "Giriş yap",
       create_account: "Hesap oluştur",
-      new_to_plane: "Plane'e yeni mi geldiniz?",
+      new_to_kardon: "Plane'e yeni mi geldiniz?",
       back_to_sign_in: "Giriş yapmaya geri dön",
       resend_in: "{seconds} saniye içinde tekrar gönder",
       sign_in_with_unique_code: "Benzersiz kod ile giriş yap",
@@ -409,7 +409,7 @@ export default {
   full_changelog: "Tam Değişiklik Kaydı",
   support: "Destek",
   discord: "Discord",
-  powered_by_plane_pages: "Plane Pages tarafından desteklenmektedir",
+  powered_by_kardon_pages: "Plane Pages tarafından desteklenmektedir",
   please_select_at_least_one_invitation: "Lütfen en az bir davet seçin.",
   please_select_at_least_one_invitation_description: "Çalışma alanına katılmak için lütfen en az bir davet seçin.",
   we_see_that_someone_has_invited_you_to_join_a_workspace: "Birinin sizi bir çalışma alanına davet ettiğini görüyoruz",
@@ -619,7 +619,7 @@ export default {
         issues: "İş öğeleri",
       },
     },
-    new_at_plane: {
+    new_at_kardon: {
       title: "Plane'de Yenilikler",
     },
     quick_tutorial: {
@@ -2625,7 +2625,7 @@ export default {
     edited_by: "Tarafından düzenlendi",
   },
   self_hosted_maintenance_message: {
-    plane_didnt_start_up_this_could_be_because_one_or_more_plane_services_failed_to_start:
+    kardon_didnt_start_up_this_could_be_because_one_or_more_kardon_services_failed_to_start:
       "Plane başlatılamadı. Bu, bir veya daha fazla Plane servisinin başlatılamaması nedeniyle olabilir.",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "Emin olmak için setup.sh ve Docker loglarından View Logs&apos;u seçin.",

@@ -7,14 +7,14 @@
 import { set, groupBy } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import { STATE_GROUPS } from "@plane/constants";
-import type { IIntakeState, IState } from "@plane/types";
+// kardon imports
+import { STATE_GROUPS } from "@kardon/constants";
+import type { IIntakeState, IState } from "@kardon/types";
 // helpers
-import { sortStates } from "@plane/utils";
-// plane web
-import { ProjectStateService } from "@/plane-web/services/project/project-state.service";
-import type { RootStore } from "@/plane-web/store/root.store";
+import { sortStates } from "@kardon/utils";
+// kardon web
+import { ProjectStateService } from "@/kardon-web/services/project/project-state.service";
+import type { RootStore } from "@/kardon-web/store/root.store";
 
 export interface IStateStore {
   //Loaders

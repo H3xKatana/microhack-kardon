@@ -5,16 +5,16 @@
  */
 
 import { useEffect, useState } from "react";
-import { EModalPosition, EModalWidth, ModalCore } from "@plane/ui";
-import { getAssetIdFromUrl, checkURLValidity } from "@plane/utils";
-// plane ui
+import { EModalPosition, EModalWidth, ModalCore } from "@kardon/ui";
+import { getAssetIdFromUrl, checkURLValidity } from "@kardon/utils";
+// kardon ui
 // helpers
 // hooks
 import useKeypress from "@/hooks/use-keypress";
-// plane web components
-import { CreateProjectForm } from "@/plane-web/components/projects/create/root";
-// plane web types
-import type { TProject } from "@/plane-web/types/projects";
+// kardon web components
+import { CreateProjectForm } from "@/kardon-web/components/projects/create/root";
+// kardon web types
+import type { TProject } from "@/kardon-web/types/projects";
 // services
 import { FileService } from "@/services/file.service";
 const fileService = new FileService();

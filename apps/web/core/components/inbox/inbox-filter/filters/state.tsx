@@ -7,10 +7,10 @@
 import type { FC } from "react";
 import { useState } from "react";
 import { observer } from "mobx-react";
-import { EIconSize } from "@plane/constants";
-import { StateGroupIcon } from "@plane/propel/icons";
-import type { IState } from "@plane/types";
-import { Loader } from "@plane/ui";
+import { EIconSize } from "@kardon/constants";
+import { StateGroupIcon } from "@kardon/propel/icons";
+import type { IState } from "@kardon/types";
+import { Loader } from "@kardon/ui";
 // components
 import { FilterHeader, FilterOption } from "@/components/issues/issue-layouts/filters";
 // hooks

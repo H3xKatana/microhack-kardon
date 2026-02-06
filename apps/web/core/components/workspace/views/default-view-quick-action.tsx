@@ -6,15 +6,15 @@
 
 import { observer } from "mobx-react";
 
-import { useTranslation } from "@plane/i18n";
-// plane imports
-import { LinkIcon, NewTabIcon } from "@plane/propel/icons";
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
+import { useTranslation } from "@kardon/i18n";
+// kardon imports
+import { LinkIcon, NewTabIcon } from "@kardon/propel/icons";
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
 // ui
-import type { TStaticViewTypes } from "@plane/types";
-import type { TContextMenuItem } from "@plane/ui";
-import { CustomMenu } from "@plane/ui";
-import { copyUrlToClipboard, cn } from "@plane/utils";
+import type { TStaticViewTypes } from "@kardon/types";
+import type { TContextMenuItem } from "@kardon/ui";
+import { CustomMenu } from "@kardon/ui";
+import { copyUrlToClipboard, cn } from "@kardon/utils";
 // helpers
 type Props = {
   workspaceSlug: string;

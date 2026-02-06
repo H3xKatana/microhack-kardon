@@ -5,14 +5,14 @@
  */
 
 import { useParams } from "next/navigation";
-// plane imports
-import { getPageName } from "@plane/utils";
+// kardon imports
+import { getPageName } from "@kardon/utils";
 // hooks
 import { useCycle } from "@/hooks/store/use-cycle";
 import { useModule } from "@/hooks/store/use-module";
-// plane web imports
-import { useExtendedContextIndicator } from "@/plane-web/components/command-palette/power-k/hooks/use-extended-context-indicator";
-import { EPageStoreType, usePageStore } from "@/plane-web/hooks/store";
+// kardon web imports
+import { useExtendedContextIndicator } from "@/kardon-web/components/command-palette/power-k/hooks/use-extended-context-indicator";
+import { EPageStoreType, usePageStore } from "@/kardon-web/hooks/store";
 // local imports
 import type { TPowerKContextType } from "../core/types";
 

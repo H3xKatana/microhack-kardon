@@ -7,11 +7,11 @@
 import { useCallback, useMemo, useState } from "react";
 import { isEqual, cloneDeep } from "lodash-es";
 import { observer } from "mobx-react";
-// plane imports
-import { DEFAULT_GLOBAL_VIEWS_LIST, EUserPermissionsLevel } from "@plane/constants";
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
-import type { IWorkspaceView, TWorkItemFilterExpression } from "@plane/types";
-import { EUserProjectRoles, EViewAccess } from "@plane/types";
+// kardon imports
+import { DEFAULT_GLOBAL_VIEWS_LIST, EUserPermissionsLevel } from "@kardon/constants";
+import { setToast, TOAST_TYPE } from "@kardon/propel/toast";
+import type { IWorkspaceView, TWorkItemFilterExpression } from "@kardon/types";
+import { EUserProjectRoles, EViewAccess } from "@kardon/types";
 // components
 import { removeNillKeys } from "@/components/issues/issue-layouts/utils";
 import { CreateUpdateWorkspaceViewModal } from "@/components/workspace/views/modal";

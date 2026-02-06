@@ -12,9 +12,9 @@ import type { Express, Request, Response, Router } from "express";
 import express from "express";
 import expressWs from "express-ws";
 import helmet from "helmet";
-// plane imports
-import { registerController } from "@plane/decorators";
-import { logger, loggerMiddleware } from "@plane/logger";
+// kardon imports
+import { registerController } from "@kardon/decorators";
+import { logger, loggerMiddleware } from "@kardon/logger";
 // controllers
 import { CONTROLLERS } from "@/controllers";
 // env

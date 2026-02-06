@@ -6,14 +6,14 @@
 
 import { observer } from "mobx-react";
 
-import { MODULE_TRACKER_ELEMENTS } from "@plane/constants";
-import { CopyIcon, EditIcon, TrashIcon } from "@plane/propel/icons";
-// plane types
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { ILinkDetails } from "@plane/types";
-// plane ui
-import { getIconForLink, copyTextToClipboard, calculateTimeAgo } from "@plane/utils";
+import { MODULE_TRACKER_ELEMENTS } from "@kardon/constants";
+import { CopyIcon, EditIcon, TrashIcon } from "@kardon/propel/icons";
+// kardon types
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { Tooltip } from "@kardon/propel/tooltip";
+import type { ILinkDetails } from "@kardon/types";
+// kardon ui
+import { getIconForLink, copyTextToClipboard, calculateTimeAgo } from "@kardon/utils";
 // helpers
 //
 // hooks

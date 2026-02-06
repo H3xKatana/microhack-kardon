@@ -5,9 +5,9 @@
  */
 
 import { useEffect, useRef } from "react";
-// plane imports
-import type { IWorkspaceMemberInvitation } from "@plane/types";
-import { EOnboardingSteps } from "@plane/types";
+// kardon imports
+import type { IWorkspaceMemberInvitation } from "@kardon/types";
+import { EOnboardingSteps } from "@kardon/types";
 // local components
 import { ProfileSetupStep } from "./profile";
 import { RoleSetupStep } from "./role";

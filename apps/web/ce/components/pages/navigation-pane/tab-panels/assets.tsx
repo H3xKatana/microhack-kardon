@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { TEditorAsset } from "@plane/editor";
+// kardon imports
+import type { TEditorAsset } from "@kardon/editor";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 

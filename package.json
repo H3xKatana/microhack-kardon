@@ -1,9 +1,9 @@
 {
-  "name": "plane",
+  "name": "kardon",
   "description": "Open-source project management that unlocks customer value",
-  "repository": "https://github.com/makeplane/plane.git",
+  "repository": "https://github.com/H3xKatana/microhack-kardon",
   "version": "1.2.0",
-  "license": "AGPL-3.0",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "build": "turbo run build",

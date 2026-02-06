@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { IFavorite } from "@plane/types";
+// kardon imports
+import type { IFavorite } from "@kardon/types";
 // components
 import { getFavoriteItemIcon } from "@/components/workspace/sidebar/favorites/favorite-items/common";
 

@@ -5,13 +5,13 @@
  */
 
 import type { Node as ProseMirrorNode } from "@tiptap/pm/model";
-// plane imports
-import type { ADDITIONAL_EXTENSIONS } from "@plane/utils";
-import { CORE_EXTENSIONS } from "@plane/utils";
+// kardon imports
+import type { ADDITIONAL_EXTENSIONS } from "@kardon/utils";
+import { CORE_EXTENSIONS } from "@kardon/utils";
 // extensions
 import { getImageBlockId } from "@/extensions/custom-image/utils";
-// plane editor imports
-import { ADDITIONAL_ASSETS_META_DATA_RECORD } from "@/plane-editor/constants/assets";
+// kardon editor imports
+import { ADDITIONAL_ASSETS_META_DATA_RECORD } from "@/kardon-editor/constants/assets";
 // types
 import type { TEditorAsset } from "@/types";
 

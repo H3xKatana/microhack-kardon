@@ -7,16 +7,16 @@
 import { useCallback } from "react";
 import { useParams } from "next/navigation";
 import { ArchiveIcon, ArchiveRestoreIcon, LockKeyhole, LockKeyholeOpen, Star, StarOff } from "lucide-react";
-import { useTranslation } from "@plane/i18n";
-// plane imports
-import { LinkIcon, GlobeIcon, LockIcon } from "@plane/propel/icons";
-import { setToast, TOAST_TYPE } from "@plane/propel/toast";
-import { EPageAccess } from "@plane/types";
-import { copyTextToClipboard } from "@plane/utils";
+import { useTranslation } from "@kardon/i18n";
+// kardon imports
+import { LinkIcon, GlobeIcon, LockIcon } from "@kardon/propel/icons";
+import { setToast, TOAST_TYPE } from "@kardon/propel/toast";
+import { EPageAccess } from "@kardon/types";
+import { copyTextToClipboard } from "@kardon/utils";
 // components
 import type { TPowerKCommandConfig } from "@/components/power-k/core/types";
-// plane web imports
-import { EPageStoreType, usePageStore } from "@/plane-web/hooks/store";
+// kardon web imports
+import { EPageStoreType, usePageStore } from "@/kardon-web/hooks/store";
 
 export const usePowerKPageContextBasedActions = (): TPowerKCommandConfig[] => {
   // navigation

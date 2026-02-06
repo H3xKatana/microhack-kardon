@@ -7,18 +7,18 @@
 import React, { useEffect, useState, useCallback } from "react";
 import type { LucideIcon } from "lucide-react";
 
-import { EIssueCommentAccessSpecifier } from "@plane/constants";
+import { EIssueCommentAccessSpecifier } from "@kardon/constants";
 // editor
-import type { EditorRefApi } from "@plane/editor";
+import type { EditorRefApi } from "@kardon/editor";
 // i18n
-import { useTranslation } from "@plane/i18n";
+import { useTranslation } from "@kardon/i18n";
 // ui
-import { Button } from "@plane/propel/button";
-import { GlobeIcon, LockIcon } from "@plane/propel/icons";
-import type { ISvgIcons } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
+import { Button } from "@kardon/propel/button";
+import { GlobeIcon, LockIcon } from "@kardon/propel/icons";
+import type { ISvgIcons } from "@kardon/propel/icons";
+import { Tooltip } from "@kardon/propel/tooltip";
 // constants
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 import type { ToolbarMenuItem } from "@/constants/editor";
 import { TOOLBAR_ITEMS } from "@/constants/editor";
 // helpers

@@ -1,5 +1,5 @@
 services:
-  plane-redis:
+  kardon-redis:
     image: valkey/valkey:7.2.11-alpine
     restart: unless-stopped
     networks:
@@ -9,7 +9,7 @@ services:
     ports:
       - "6379:6379"
 
-  plane-mq:
+  kardon-mq:
     image: rabbitmq:3.13.6-management-alpine
     restart: unless-stopped
     networks:
@@ -23,7 +23,7 @@ services:
       RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD}
       RABBITMQ_DEFAULT_VHOST: ${RABBITMQ_VHOST}
 
-  plane-minio:
+  kardon-minio:
     image: minio/minio
     restart: unless-stopped
     networks:
@@ -48,7 +48,7 @@ services:
       - "9000:9000"
       - "9090:9090"
 
-  plane-db:
+  kardon-db:
     image: postgres:15.7-alpine
     restart: unless-stopped
     networks:
@@ -63,62 +63,50 @@ services:
     ports:
       - "5432:5432"
 
-  # web:
-  #   build:
-  #     context: .
-  #     dockerfile: ./web/Dockerfile.dev
-  #   restart: unless-stopped
-  #   networks:
-  #     - dev_env
-  #   volumes:
-  #     - ./web:/app/web
-  #   env_file:
-  #     - ./web/.env
-  #   depends_on:
-  #     - api
-  #     - worker
+  web:
+    build:
+      context: .
+      dockerfile: ./web/Dockerfile.dev
+    restart: unless-stopped
+    networks:
+      - dev_env
+    volumes:
+      - ./web:/app/web
+    env_file:
+      - .env
+    depends_on:
+      - api
+      - worker
+    ports:
+      - 3000:3000
 
-  # space:
-  #   build:
-  #     context: .
-  #     dockerfile: ./space/Dockerfile.dev
-  #   restart: unless-stopped
-  #   networks:
-  #     - dev_env
-  #   volumes:
-  #     - ./space:/app/space
-  #   depends_on:
-  #     - api
-  #     - worker
-  #     - web
+  space:
+    build:
+      context: .
+      dockerfile: ./space/Dockerfile.dev
+    restart: unless-stopped
+    networks:
+      - dev_env
+    volumes:
+      - ./space:/app/space
+    depends_on:
+      - api
+      - worker
+      - web
 
-  # admin:
-  #   build:
-  #     context: .
-  #     dockerfile: ./admin/Dockerfile.dev
-  #   restart: unless-stopped
-  #   networks:
-  #     - dev_env
-  #   volumes:
-  #     - ./admin:/app/admin
-  #   depends_on:
-  #     - api
-  #     - worker
-  #     - web
-
-  # live:
-  #   build:
-  #     context: .
-  #     dockerfile: ./live/Dockerfile.dev
-  #   restart: unless-stopped
-  #   networks:
-  #     - dev_env
-  #   volumes:
-  #     - ./live:/app/live
-  #   depends_on:
-  #     - api
-  #     - worker
-  #     - web
+  admin:
+    build:
+      context: .
+      dockerfile: ./admin/Dockerfile.dev
+    restart: unless-stopped
+    networks:
+      - dev_env
+    volumes:
+      - ./admin:/app/admin
+    depends_on:
+      - api
+      - worker
+      - web
 
   api:
     build:
@@ -135,9 +123,9 @@ services:
     env_file:
       - ./apps/api/.env
     depends_on:
-      - plane-db
-      - plane-redis
-      - plane-mq
+      - kardon-db
+      - kardon-redis
+      - kardon-mq
     ports:
       - "8000:8000"
 
@@ -157,8 +145,8 @@ services:
       - ./apps/api/.env
     depends_on:
       - api
-      - plane-db
-      - plane-redis
+      - kardon-db
+      - kardon-redis
 
   beat-worker:
     build:
@@ -176,8 +164,8 @@ services:
       - ./apps/api/.env
     depends_on:
       - api
-      - plane-db
-      - plane-redis
+      - kardon-db
+      - kardon-redis
 
   migrator:
     build:
@@ -190,12 +178,12 @@ services:
       - dev_env
     volumes:
       - ./apps/api:/code
-    command: ./bin/docker-entrypoint-migrator.sh --settings=plane.settings.local
+    command: ./bin/docker-entrypoint-migrator.sh --settings=kardon.settings.local
     env_file:
       - ./apps/api/.env
     depends_on:
-      - plane-db
-      - plane-redis
+      - kardon-db
+      - kardon-redis
 
   # proxy:
   #   build:

@@ -5,9 +5,9 @@
  */
 
 import { Info } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { CloseIcon } from "@kardon/propel/icons";
 // helpers
 import type React from "react";
 

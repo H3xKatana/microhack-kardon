@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { STATE_GROUPS } from "@plane/constants";
-import type { IState, TFilterProperty, TStateGroups, TSupportedOperators } from "@plane/types";
-import { COLLECTION_OPERATOR, EQUALITY_OPERATOR } from "@plane/types";
+// kardon imports
+import { STATE_GROUPS } from "@kardon/constants";
+import type { IState, TFilterProperty, TStateGroups, TSupportedOperators } from "@kardon/types";
+import { COLLECTION_OPERATOR, EQUALITY_OPERATOR } from "@kardon/types";
 // local imports
 import type { IFilterIconConfig, TCreateFilterConfig, TCreateFilterConfigParams } from "../../../rich-filters";
 import { createFilterConfig, getMultiSelectConfig, createOperatorConfigEntry } from "../../../rich-filters";

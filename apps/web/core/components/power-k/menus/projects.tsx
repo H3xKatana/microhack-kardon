@@ -6,9 +6,9 @@
 
 import React from "react";
 // components
-import { Logo } from "@plane/propel/emoji-icon-picker";
-// plane imports
-import type { TPartialProject } from "@/plane-web/types";
+import { Logo } from "@kardon/propel/emoji-icon-picker";
+// kardon imports
+import type { TPartialProject } from "@/kardon-web/types";
 // local imports
 import { PowerKMenuBuilder } from "./builder";
 

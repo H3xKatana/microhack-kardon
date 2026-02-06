@@ -1,5 +1,5 @@
 {
-  "extends": "@plane/typescript-config/react-router.json",
+  "extends": "@kardon/typescript-config/react-router.json",
   "compilerOptions": {
     "noImplicitOverride": false,
     "exactOptionalPropertyTypes": false,
@@ -12,7 +12,7 @@
       "ce/*": ["./ce/*"],
       "@/app/*": ["./app/*"],
       "@/*": ["./core/*"],
-      "@/plane-admin/*": ["./ce/*"],
+      "@/kardon-admin/*": ["./ce/*"],
       "@/ce/*": ["./ce/*"],
       "@/styles/*": ["./styles/*"]
     }

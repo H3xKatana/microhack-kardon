@@ -6,13 +6,13 @@
 
 import { set } from "lodash-es";
 import { action, computed, makeObservable, observable, reaction, runInAction } from "mobx";
-// plane imports
-import { EPageAccess } from "@plane/constants";
-import type { TChangeHandlerProps } from "@plane/propel/emoji-icon-picker";
-import type { TDocumentPayload, TLogoProps, TNameDescriptionLoader, TPage } from "@plane/types";
-// plane web store
-import { ExtendedBasePage } from "@/plane-web/store/pages/extended-base-page";
-import type { RootStore } from "@/plane-web/store/root.store";
+// kardon imports
+import { EPageAccess } from "@kardon/constants";
+import type { TChangeHandlerProps } from "@kardon/propel/emoji-icon-picker";
+import type { TDocumentPayload, TLogoProps, TNameDescriptionLoader, TPage } from "@kardon/types";
+// kardon web store
+import { ExtendedBasePage } from "@/kardon-web/store/pages/extended-base-page";
+import type { RootStore } from "@/kardon-web/store/root.store";
 // local imports
 import { PageEditorInstance } from "./page-editor-info";
 

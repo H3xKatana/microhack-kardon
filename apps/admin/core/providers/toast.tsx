@@ -5,8 +5,8 @@
  */
 
 import { useTheme } from "next-themes";
-import { Toast } from "@plane/propel/toast";
-import { resolveGeneralTheme } from "@plane/utils";
+import { Toast } from "@kardon/propel/toast";
+import { resolveGeneralTheme } from "@kardon/utils";
 
 export function ToastWithTheme() {
   const { resolvedTheme } = useTheme();

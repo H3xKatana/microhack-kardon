@@ -5,9 +5,9 @@
  */
 
 import { orderBy } from "lodash-es";
-// plane imports
-import type { IPaymentProduct, TProductSubscriptionType, TSubscriptionPrice } from "@plane/types";
-import { EProductSubscriptionEnum } from "@plane/types";
+// kardon imports
+import type { IPaymentProduct, TProductSubscriptionType, TSubscriptionPrice } from "@kardon/types";
+import { EProductSubscriptionEnum } from "@kardon/types";
 
 /**
  * Calculates the yearly discount percentage when switching from monthly to yearly billing

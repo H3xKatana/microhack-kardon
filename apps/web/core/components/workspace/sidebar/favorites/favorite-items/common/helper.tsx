@@ -4,13 +4,13 @@
  * See the LICENSE file for details.
  */
 
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { PageIcon } from "@plane/propel/icons";
-// plane imports
-import type { IFavorite, TLogoProps } from "@plane/types";
+import { Logo } from "@kardon/propel/emoji-icon-picker";
+import { PageIcon } from "@kardon/propel/icons";
+// kardon imports
+import type { IFavorite, TLogoProps } from "@kardon/types";
 // components
-// plane web constants
-import { FAVORITE_ITEM_ICONS, FAVORITE_ITEM_LINKS } from "@/plane-web/constants/sidebar-favorites";
+// kardon web constants
+import { FAVORITE_ITEM_ICONS, FAVORITE_ITEM_LINKS } from "@/kardon-web/constants/sidebar-favorites";
 
 export const getFavoriteItemIcon = (type: string, logo?: TLogoProps) => {
   const Icon = FAVORITE_ITEM_ICONS[type] || PageIcon;

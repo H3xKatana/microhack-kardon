@@ -8,9 +8,9 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
-// plane utils
-import { useTranslation } from "@plane/i18n";
-import { cn } from "@plane/utils";
+// kardon utils
+import { useTranslation } from "@kardon/i18n";
+import { cn } from "@kardon/utils";
 // hooks
 import { useSticky } from "@/hooks/use-stickies";
 // components

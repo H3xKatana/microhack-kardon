@@ -5,10 +5,10 @@
  */
 
 import { Mail, MessageCircle } from "lucide-react";
-import { DiscordIcon } from "@plane/propel/icons";
-import { EProductSubscriptionEnum } from "@plane/types";
-// plane imports
-import { cn } from "@plane/utils";
+import { DiscordIcon } from "@kardon/propel/icons";
+import { EProductSubscriptionEnum } from "@kardon/types";
+// kardon imports
+import { cn } from "@kardon/utils";
 
 export type TPlanFeatureData = React.ReactNode | boolean | null;
 
@@ -1237,7 +1237,7 @@ export const PLANS_COMPARISON_LIST: TPlansComparisonDetails[] = [
         description: (
           <>
             Get business-friendly SLAs with higher plans. SLAs are by priority of work item and tiers{" "}
-            <a href="https://plane.so/talk-to-sales" target="_blank" rel="noopener noreferrer" className="underline">
+            <a href="https://kardon.so/talk-to-sales" target="_blank" rel="noopener noreferrer" className="underline">
               can be requested
             </a>
             .

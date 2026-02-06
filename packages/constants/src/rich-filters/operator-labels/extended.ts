@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-import type { TExtendedSupportedOperators } from "@plane/types";
+import type { TExtendedSupportedOperators } from "@kardon/types";
 
 /**
  * Extended operator labels

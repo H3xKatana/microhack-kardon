@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,11 +9,11 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { HelpCircle, MoveLeft } from "lucide-react";
 import { Transition } from "@headlessui/react";
-import { WEB_BASE_URL } from "@plane/constants";
-// plane internal packages
-import { DiscordIcon, GithubIcon, NewTabIcon, PageIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import { cn } from "@plane/utils";
+import { WEB_BASE_URL } from "@kardon/constants";
+// kardon internal packages
+import { DiscordIcon, GithubIcon, NewTabIcon, PageIcon } from "@kardon/propel/icons";
+import { Tooltip } from "@kardon/propel/tooltip";
+import { cn } from "@kardon/utils";
 // hooks
 import { useInstance, useTheme } from "@/hooks/store";
 // assets
@@ -21,7 +21,7 @@ import { useInstance, useTheme } from "@/hooks/store";
 const helpOptions = [
   {
     name: "Documentation",
-    href: "https://docs.plane.so/",
+    href: "https://docs.kardon.so/",
     Icon: PageIcon,
   },
   {
@@ -31,7 +31,7 @@ const helpOptions = [
   },
   {
     name: "Report a bug",
-    href: "https://github.com/makeplane/plane/issues/new/choose",
+    href: "https://github.com/makekardon/kardon/issues/new/choose",
     Icon: GithubIcon,
   },
 ];
@@ -57,21 +57,20 @@ export const AdminSidebarHelpSection = observer(function AdminSidebarHelpSection
       )}
     >
       <div className={`flex items-center gap-1 ${isSidebarCollapsed ? "flex-col justify-center" : "w-full"}`}>
-        <Tooltip tooltipContent="Redirect to Plane" position="right" className="ml-4" disabled={!isSidebarCollapsed}>
+        <Tooltip tooltipContent="Redirect to Kardon" position="right" className="ml-4" disabled={!isSidebarCollapsed}>
           <a
             href={redirectionLink}
             className={`relative px-2 py-1 flex items-center gap-1 rounded-sm bg-layer-1 text-body-xs-medium text-secondary whitespace-nowrap`}
           >
             <NewTabIcon width={14} height={14} />
-            {!isSidebarCollapsed && "Redirect to Plane"}
+            {!isSidebarCollapsed && "Redirect to Kardon"}
           </a>
         </Tooltip>
         <Tooltip tooltipContent="Help" position={isSidebarCollapsed ? "right" : "top"} className="ml-4">
           <button
             type="button"
-            className={`ml-auto grid place-items-center rounded-md p-1.5 text-secondary outline-none hover:bg-layer-1-hover hover:text-primary ${
-              isSidebarCollapsed ? "w-full" : ""
-            }`}
+            className={`ml-auto grid place-items-center rounded-md p-1.5 text-secondary outline-none hover:bg-layer-1-hover hover:text-primary ${isSidebarCollapsed ? "w-full" : ""
+              }`}
             onClick={() => setIsNeedHelpOpen((prev) => !prev)}
           >
             <HelpCircle className="size-4" />
@@ -80,9 +79,8 @@ export const AdminSidebarHelpSection = observer(function AdminSidebarHelpSection
         <Tooltip tooltipContent="Toggle sidebar" position={isSidebarCollapsed ? "right" : "top"} className="ml-4">
           <button
             type="button"
-            className={`grid place-items-center rounded-md p-1.5 text-secondary outline-none hover:bg-layer-1-hover hover:text-primary ${
-              isSidebarCollapsed ? "w-full" : ""
-            }`}
+            className={`grid place-items-center rounded-md p-1.5 text-secondary outline-none hover:bg-layer-1-hover hover:text-primary ${isSidebarCollapsed ? "w-full" : ""
+              }`}
             onClick={() => toggleSidebar(!isSidebarCollapsed)}
           >
             <MoveLeft className={`size-4 duration-300 ${isSidebarCollapsed ? "rotate-180" : ""}`} />
@@ -101,9 +99,8 @@ export const AdminSidebarHelpSection = observer(function AdminSidebarHelpSection
           leaveTo="transform opacity-0 scale-95"
         >
           <div
-            className={`absolute bottom-2 min-w-[10rem] z-[15] ${
-              isSidebarCollapsed ? "left-full" : "-left-[75px]"
-            } divide-y divide-subtle-1 whitespace-nowrap rounded-sm bg-surface-1 p-1 shadow-raised-100`}
+            className={`absolute bottom-2 min-w-[10rem] z-[15] ${isSidebarCollapsed ? "left-full" : "-left-[75px]"
+              } divide-y divide-subtle-1 whitespace-nowrap rounded-sm bg-surface-1 p-1 shadow-raised-100`}
             ref={helpOptionsRef}
           >
             <div className="space-y-1 pb-2">

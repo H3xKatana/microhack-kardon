@@ -5,10 +5,10 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { InboxIcon } from "@plane/propel/icons";
-import { Breadcrumbs, Header } from "@plane/ui";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { InboxIcon } from "@kardon/propel/icons";
+import { Breadcrumbs, Header } from "@kardon/ui";
 // components
 import { BreadcrumbLink } from "@/components/common/breadcrumb-link";
 // local imports

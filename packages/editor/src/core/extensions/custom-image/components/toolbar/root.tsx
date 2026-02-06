@@ -6,8 +6,8 @@
 
 import type { Editor } from "@tiptap/core";
 import { useState } from "react";
-// plane imports
-import { cn } from "@plane/utils";
+// kardon imports
+import { cn } from "@kardon/utils";
 // local imports
 import type { TCustomImageAlignment } from "../../types";
 import { ImageAlignmentAction } from "./alignment";

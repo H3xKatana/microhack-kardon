@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-import type { TCommandPaletteActionList, TCommandPaletteShortcut, TCommandPaletteShortcutList } from "@plane/types";
+import type { TCommandPaletteActionList, TCommandPaletteShortcut, TCommandPaletteShortcutList } from "@kardon/types";
 // store
 import { store } from "@/lib/store-context";
 

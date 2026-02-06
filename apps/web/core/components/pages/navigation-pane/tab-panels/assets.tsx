@@ -8,14 +8,14 @@ import { useMemo } from "react";
 import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import { Download } from "lucide-react";
-// plane imports
-import { CORE_EXTENSIONS } from "@plane/editor";
-import type { TEditorAsset } from "@plane/editor";
-import { useTranslation } from "@plane/i18n";
-import { getEditorAssetDownloadSrc, getEditorAssetSrc } from "@plane/utils";
-// plane web imports
-import { AdditionalPageNavigationPaneAssetItem } from "@/plane-web/components/pages/navigation-pane/tab-panels/assets";
-import { PageNavigationPaneAssetsTabEmptyState } from "@/plane-web/components/pages/navigation-pane/tab-panels/empty-states/assets";
+// kardon imports
+import { CORE_EXTENSIONS } from "@kardon/editor";
+import type { TEditorAsset } from "@kardon/editor";
+import { useTranslation } from "@kardon/i18n";
+import { getEditorAssetDownloadSrc, getEditorAssetSrc } from "@kardon/utils";
+// kardon web imports
+import { AdditionalPageNavigationPaneAssetItem } from "@/kardon-web/components/pages/navigation-pane/tab-panels/assets";
+import { PageNavigationPaneAssetsTabEmptyState } from "@/kardon-web/components/pages/navigation-pane/tab-panels/empty-states/assets";
 // store
 import type { TPageInstance } from "@/store/pages/base-page";
 

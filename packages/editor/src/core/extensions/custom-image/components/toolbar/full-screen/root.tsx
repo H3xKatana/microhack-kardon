@@ -6,8 +6,8 @@
 
 import { Maximize } from "lucide-react";
 import { useEffect, useState } from "react";
-// plane imports
-import { Tooltip } from "@plane/propel/tooltip";
+// kardon imports
+import { Tooltip } from "@kardon/propel/tooltip";
 // local imports
 import { ImageFullScreenModal } from "./modal";
 

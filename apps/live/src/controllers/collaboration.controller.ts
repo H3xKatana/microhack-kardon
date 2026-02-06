@@ -7,9 +7,9 @@
 import type { Hocuspocus } from "@hocuspocus/server";
 import type { Request } from "express";
 import type WebSocket from "ws";
-// plane imports
-import { Controller, WebSocket as WSDecorator } from "@plane/decorators";
-import { logger } from "@plane/logger";
+// kardon imports
+import { Controller, WebSocket as WSDecorator } from "@kardon/decorators";
+import { logger } from "@kardon/logger";
 
 @Controller("/collaboration")
 export class CollaborationController {

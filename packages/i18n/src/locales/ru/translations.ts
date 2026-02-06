@@ -88,7 +88,7 @@ export default {
       already_have_an_account: "Уже есть аккаунт?",
       login: "Войти",
       create_account: "Создать аккаунт",
-      new_to_plane: "Впервые в Plane?",
+      new_to_kardon: "Впервые в Plane?",
       back_to_sign_in: "Вернуться к входу",
       resend_in: "Отправить снова через {seconds} секунд",
       sign_in_with_unique_code: "Войти с уникальным кодом",
@@ -409,7 +409,7 @@ export default {
   full_changelog: "Полный журнал изменений",
   support: "Поддержка",
   discord: "Discord",
-  powered_by_plane_pages: "Работает на Plane Pages",
+  powered_by_kardon_pages: "Работает на Plane Pages",
   please_select_at_least_one_invitation: "Пожалуйста, выберите хотя бы одно приглашение.",
   please_select_at_least_one_invitation_description:
     "Для присоединения к рабочему пространству выберите хотя бы одно приглашение.",
@@ -620,7 +620,7 @@ export default {
         issues: "Рабочие элементы",
       },
     },
-    new_at_plane: {
+    new_at_kardon: {
       title: "Новое в Plane",
     },
     quick_tutorial: {
@@ -2632,7 +2632,7 @@ export default {
     edited_by: "Отредактировано",
   },
   self_hosted_maintenance_message: {
-    plane_didnt_start_up_this_could_be_because_one_or_more_plane_services_failed_to_start:
+    kardon_didnt_start_up_this_could_be_because_one_or_more_kardon_services_failed_to_start:
       "Plane не запустился. Это может быть из-за того, что один или несколько сервисов Plane не смогли запуститься.",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "Выберите View Logs из setup.sh и логов Docker, чтобы убедиться.",

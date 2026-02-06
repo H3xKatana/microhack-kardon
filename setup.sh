@@ -2,7 +2,7 @@
 
 # Plane Project Setup Script
 # This script prepares the local development environment by setting up all necessary .env files
-# https://github.com/makeplane/plane
+# https://github.com/makekardon/kardon
 
 # Set colors for output messages
 GREEN='\033[0;32m'
@@ -92,6 +92,6 @@ if [ "$success" = true ]; then
     echo -e "\n${GREEN}Happy coding! 🚀${NC}"
 else
     echo -e "${RED}✗${NC} Some issues occurred during setup. Please check the errors above.\n"
-    echo -e "For help, visit: ${BLUE}https://github.com/makeplane/plane${NC}"
+    echo -e "For help, visit: ${BLUE}https://github.com/H3xKatana/microhack-kardon${NC}"
     exit 1
 fi

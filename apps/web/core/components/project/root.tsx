@@ -7,10 +7,10 @@
 import { useCallback, useEffect } from "react";
 import { observer } from "mobx-react";
 import { useParams, usePathname } from "next/navigation";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import type { TProjectAppliedDisplayFilterKeys, TProjectFilters } from "@plane/types";
-import { calculateTotalFilters } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import type { TProjectAppliedDisplayFilterKeys, TProjectFilters } from "@kardon/types";
+import { calculateTotalFilters } from "@kardon/utils";
 // components
 import { PageHead } from "@/components/core/page-title";
 // hooks

@@ -5,9 +5,9 @@
  */
 
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import type { IBaseLayoutsKanbanItem, IBaseLayoutsKanbanGroupProps } from "@plane/types";
-import { cn } from "@plane/utils";
+import { useTranslation } from "@kardon/i18n";
+import type { IBaseLayoutsKanbanItem, IBaseLayoutsKanbanGroupProps } from "@kardon/types";
+import { cn } from "@kardon/utils";
 import { useGroupDropTarget } from "../hooks/use-group-drop-target";
 import { GroupHeader } from "./group-header";
 import { BaseKanbanItem } from "./item";

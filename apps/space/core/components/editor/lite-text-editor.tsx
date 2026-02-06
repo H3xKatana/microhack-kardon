@@ -5,17 +5,17 @@
  */
 
 import React from "react";
-// plane imports
-import { LiteTextEditorWithRef } from "@plane/editor";
-import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@plane/editor";
-import type { MakeOptional } from "@plane/types";
-import { cn, isCommentEmpty } from "@plane/utils";
+// kardon imports
+import { LiteTextEditorWithRef } from "@kardon/editor";
+import type { EditorRefApi, ILiteTextEditorProps, TFileHandler } from "@kardon/editor";
+import type { MakeOptional } from "@kardon/types";
+import { cn, isCommentEmpty } from "@kardon/utils";
 // helpers
 import { getEditorFileHandlers } from "@/helpers/editor.helper";
 // hooks
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
-// plane web imports
-import { useEditorFlagging } from "@/plane-web/hooks/use-editor-flagging";
+// kardon web imports
+import { useEditorFlagging } from "@/kardon-web/hooks/use-editor-flagging";
 // local imports
 import { EditorMentionsRoot } from "./embeds/mentions";
 import { IssueCommentToolbar } from "./toolbar";

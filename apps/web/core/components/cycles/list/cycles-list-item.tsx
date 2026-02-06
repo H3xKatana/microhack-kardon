@@ -8,12 +8,12 @@ import type { MouseEvent } from "react";
 import { useRef } from "react";
 import { observer } from "mobx-react";
 import { usePathname, useSearchParams } from "next/navigation";
-import { CheckIcon } from "@plane/propel/icons";
-// plane imports
-import type { TCycleGroups } from "@plane/types";
-import { CircularProgressIndicator } from "@plane/ui";
+import { CheckIcon } from "@kardon/propel/icons";
+// kardon imports
+import type { TCycleGroups } from "@kardon/types";
+import { CircularProgressIndicator } from "@kardon/ui";
 // components
-import { generateQueryParams, calculateCycleProgress } from "@plane/utils";
+import { generateQueryParams, calculateCycleProgress } from "@kardon/utils";
 import { ListItem } from "@/components/core/list";
 // hooks
 import { useCycle } from "@/hooks/store/use-cycle";

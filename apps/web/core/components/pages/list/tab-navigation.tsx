@@ -6,9 +6,9 @@
 
 import Link from "next/link";
 // types
-import type { TPageNavigationTabs } from "@plane/types";
+import type { TPageNavigationTabs } from "@kardon/types";
 // helpers
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 
 type TPageTabNavigation = {
   workspaceSlug: string;

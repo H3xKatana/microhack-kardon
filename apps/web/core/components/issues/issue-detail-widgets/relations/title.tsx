@@ -7,14 +7,14 @@
 import type { FC } from "react";
 import React, { useMemo } from "react";
 import { observer } from "mobx-react";
-import { useTranslation } from "@plane/i18n";
-import type { TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
-import { CollapsibleButton } from "@plane/ui";
+import { useTranslation } from "@kardon/i18n";
+import type { TIssueServiceType } from "@kardon/types";
+import { EIssueServiceType } from "@kardon/types";
+import { CollapsibleButton } from "@kardon/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // Plane-web
-import { useTimeLineRelationOptions } from "@/plane-web/components/relations";
+import { useTimeLineRelationOptions } from "@/kardon-web/components/relations";
 // local imports
 import { RelationActionButton } from "./quick-action-button";
 

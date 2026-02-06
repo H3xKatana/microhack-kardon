@@ -8,17 +8,17 @@ import React from "react";
 import { observer } from "mobx-react";
 import type { Control } from "react-hook-form";
 import { Controller } from "react-hook-form";
-import { ETabIndices } from "@plane/constants";
-import { CloseIcon } from "@plane/propel/icons";
-// plane imports
+import { ETabIndices } from "@kardon/constants";
+import { CloseIcon } from "@kardon/propel/icons";
+// kardon imports
 // types
-import type { ISearchIssueResponse, TIssue } from "@plane/types";
+import type { ISearchIssueResponse, TIssue } from "@kardon/types";
 // helpers
-import { getTabIndex } from "@plane/utils";
+import { getTabIndex } from "@kardon/utils";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web components
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+// kardon web components
+import { IssueIdentifier } from "@/kardon-web/components/issues/issue-details/issue-identifier";
 
 type TIssueParentTagProps = {
   control: Control<TIssue>;

@@ -6,15 +6,15 @@
 
 import { observer } from "mobx-react";
 // component
-import { EUserPermissions, EUserPermissionsLevel } from "@plane/constants";
+import { EUserPermissions, EUserPermissionsLevel } from "@kardon/constants";
 import { NotAuthorizedView } from "@/components/auth-screens/not-authorized-view";
 import { PageHead } from "@/components/core/page-title";
 import { SettingsContentWrapper } from "@/components/settings/content-wrapper";
 // hooks
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useUserPermissions } from "@/hooks/store/user";
-// plane web components
-import { BillingRoot } from "@/plane-web/components/workspace/billing";
+// kardon web components
+import { BillingRoot } from "@/kardon-web/components/workspace/billing";
 // local imports
 import { BillingWorkspaceSettingsHeader } from "./header";
 

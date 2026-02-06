@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import { ScrollArea } from "@plane/propel/scrollarea";
-import type { TProfileSettingsTabs } from "@plane/types";
-import { cn } from "@plane/utils";
+// kardon imports
+import { ScrollArea } from "@kardon/propel/scrollarea";
+import type { TProfileSettingsTabs } from "@kardon/types";
+import { cn } from "@kardon/utils";
 // local imports
 import { ProfileSettingsSidebarHeader } from "./header";
 import { ProfileSettingsSidebarItemCategories } from "./item-categories";

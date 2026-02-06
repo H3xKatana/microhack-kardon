@@ -6,9 +6,9 @@
 
 import { set } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
-// plane imports
-import { SitesLabelService } from "@plane/services";
-import type { IIssueLabel } from "@plane/types";
+// kardon imports
+import { SitesLabelService } from "@kardon/services";
+import type { IIssueLabel } from "@kardon/types";
 // store
 import type { CoreRootStore } from "./root.store";
 

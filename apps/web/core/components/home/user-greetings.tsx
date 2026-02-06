@@ -5,10 +5,10 @@
  */
 
 import type { FC } from "react";
-// plane types
-import { useTranslation } from "@plane/i18n";
-import type { IUser } from "@plane/types";
-// plane ui
+// kardon types
+import { useTranslation } from "@kardon/i18n";
+import type { IUser } from "@kardon/types";
+// kardon ui
 // hooks
 import { useCurrentTime } from "@/hooks/use-current-time";
 

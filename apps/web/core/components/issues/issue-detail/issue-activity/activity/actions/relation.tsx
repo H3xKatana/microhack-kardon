@@ -8,8 +8,8 @@ import { observer } from "mobx-react";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 // Plane-web
-import { getRelationActivityContent, useTimeLineRelationOptions } from "@/plane-web/components/relations";
-import type { TIssueRelationTypes } from "@/plane-web/types";
+import { getRelationActivityContent, useTimeLineRelationOptions } from "@/kardon-web/components/relations";
+import type { TIssueRelationTypes } from "@/kardon-web/types";
 //
 import { IssueActivityBlockComponent } from "./";
 

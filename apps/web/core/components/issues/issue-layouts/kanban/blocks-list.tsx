@@ -6,8 +6,8 @@
 
 import type { MutableRefObject } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import type { TIssue, IIssueDisplayProperties, IIssueMap } from "@plane/types";
+// kardon imports
+import type { TIssue, IIssueDisplayProperties, IIssueMap } from "@kardon/types";
 // local imports
 import type { TRenderQuickActions } from "../list/list-view-types";
 import { KanbanIssueBlock } from "./block";

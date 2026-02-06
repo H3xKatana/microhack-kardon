@@ -8,13 +8,13 @@ import { useCallback, useEffect, useMemo } from "react";
 import { observer } from "mobx-react";
 import Link from "next/link";
 import useSWR from "swr";
-// plane types
-import { getButtonStyling } from "@plane/propel/button";
-import type { TSearchEntityRequestPayload, TWebhookConnectionQueryParams } from "@plane/types";
-import { EFileAssetType } from "@plane/types";
-// plane ui
-// plane utils
-import { cn } from "@plane/utils";
+// kardon types
+import { getButtonStyling } from "@kardon/propel/button";
+import type { TSearchEntityRequestPayload, TWebhookConnectionQueryParams } from "@kardon/types";
+import { EFileAssetType } from "@kardon/types";
+// kardon ui
+// kardon utils
+import { cn } from "@kardon/utils";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";
 import { PageHead } from "@/components/core/page-title";
@@ -26,10 +26,10 @@ import { useEditorConfig } from "@/hooks/editor";
 import { useEditorAsset } from "@/hooks/store/use-editor-asset";
 import { useWorkspace } from "@/hooks/store/use-workspace";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web hooks
-import { EPageStoreType, usePage, usePageStore } from "@/plane-web/hooks/store";
-// plane web services
-import { WorkspaceService } from "@/plane-web/services";
+// kardon web hooks
+import { EPageStoreType, usePage, usePageStore } from "@/kardon-web/hooks/store";
+// kardon web services
+import { WorkspaceService } from "@/kardon-web/services";
 // services
 import { ProjectPageService, ProjectPageVersionService } from "@/services/page";
 import type { Route } from "./+types/page";

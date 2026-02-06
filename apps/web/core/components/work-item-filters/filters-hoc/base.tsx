@@ -7,15 +7,15 @@
 import { useEffect, useMemo } from "react";
 import { observer } from "mobx-react";
 import { v4 as uuidv4 } from "uuid";
-// plane imports
-import type { TSaveViewOptions, TUpdateViewOptions } from "@plane/constants";
-import type { IWorkItemFilterInstance } from "@plane/shared-state";
-import type { IIssueFilters, TWorkItemFilterExpression } from "@plane/types";
+// kardon imports
+import type { TSaveViewOptions, TUpdateViewOptions } from "@kardon/constants";
+import type { IWorkItemFilterInstance } from "@kardon/shared-state";
+import type { IIssueFilters, TWorkItemFilterExpression } from "@kardon/types";
 // store hooks
 import { useWorkItemFilters } from "@/hooks/store/work-item-filters/use-work-item-filters";
-// plane web imports
-import type { TWorkItemFiltersEntityProps } from "@/plane-web/hooks/work-item-filters/use-work-item-filters-config";
-import { useWorkItemFiltersConfig } from "@/plane-web/hooks/work-item-filters/use-work-item-filters-config";
+// kardon web imports
+import type { TWorkItemFiltersEntityProps } from "@/kardon-web/hooks/work-item-filters/use-work-item-filters-config";
+import { useWorkItemFiltersConfig } from "@/kardon-web/hooks/work-item-filters/use-work-item-filters-config";
 // local imports
 import type { TSharedWorkItemFiltersHOCProps, TSharedWorkItemFiltersProps } from "./shared";
 

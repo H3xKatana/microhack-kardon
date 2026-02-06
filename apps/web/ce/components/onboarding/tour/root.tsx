@@ -6,10 +6,10 @@
 
 import { useState } from "react";
 import { observer } from "mobx-react";
-// plane imports
-import { PRODUCT_TOUR_TRACKER_ELEMENTS } from "@plane/constants";
-import { Button } from "@plane/propel/button";
-import { CloseIcon, PlaneLockup } from "@plane/propel/icons";
+// kardon imports
+import { PRODUCT_TOUR_TRACKER_ELEMENTS } from "@kardon/constants";
+import { Button } from "@kardon/propel/button";
+import { CloseIcon, PlaneLockup } from "@kardon/propel/icons";
 // assets
 import CyclesTour from "@/app/assets/onboarding/cycles.webp?url";
 import IssuesTour from "@/app/assets/onboarding/issues.webp?url";

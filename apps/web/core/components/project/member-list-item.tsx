@@ -5,15 +5,15 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { TOAST_TYPE, setToast } from "@plane/propel/toast";
-import { Table } from "@plane/ui";
+// kardon imports
+import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
+import { Table } from "@kardon/ui";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { useUser, useUserPermissions } from "@/hooks/store/user";
 import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
-import { useProjectColumns } from "@/plane-web/components/projects/settings/useProjectColumns";
+// kardon web imports
+import { useProjectColumns } from "@/kardon-web/components/projects/settings/useProjectColumns";
 // store
 import type { IProjectMemberDetails } from "@/store/member/project/base-project-member.store";
 // local imports

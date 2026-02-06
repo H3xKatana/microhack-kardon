@@ -9,14 +9,14 @@ import { observer } from "mobx-react";
 import { useParams, useRouter } from "next/navigation";
 import { MoreHorizontal, ArchiveIcon, Settings } from "lucide-react";
 import { Disclosure } from "@headlessui/react";
-// plane imports
-import { EUserPermissionsLevel } from "@plane/constants";
-import { useOutsideClickDetector } from "@plane/hooks";
-import { useTranslation } from "@plane/i18n";
-import { ChevronRightIcon } from "@plane/propel/icons";
-import { EUserWorkspaceRoles } from "@plane/types";
-import { CustomMenu } from "@plane/ui";
-import { cn } from "@plane/utils";
+// kardon imports
+import { EUserPermissionsLevel } from "@kardon/constants";
+import { useOutsideClickDetector } from "@kardon/hooks";
+import { useTranslation } from "@kardon/i18n";
+import { ChevronRightIcon } from "@kardon/propel/icons";
+import { EUserWorkspaceRoles } from "@kardon/types";
+import { CustomMenu } from "@kardon/ui";
+import { cn } from "@kardon/utils";
 // store hooks
 import { useUserPermissions } from "@/hooks/store/user";
 

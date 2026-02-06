@@ -5,12 +5,12 @@
  */
 
 import { Command } from "cmdk";
-import { useTranslation } from "@plane/i18n";
-import { SearchIcon } from "@plane/propel/icons";
-// plane imports
+import { useTranslation } from "@kardon/i18n";
+import { SearchIcon } from "@kardon/propel/icons";
+// kardon imports
 // components
 import type { TPowerKContext } from "@/components/power-k/core/types";
-// plane web imports
+// kardon web imports
 import { PowerKModalCommandItem } from "@/components/power-k/ui/modal/command-item";
 
 export type TPowerKModalNoSearchResultsCommandProps = {

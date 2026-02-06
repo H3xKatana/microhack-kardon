@@ -15,16 +15,16 @@ import type {
   TIssueReaction,
   TIssueServiceType,
   TWorkItemWidgets,
-} from "@plane/types";
-// plane web store
-import { IssueActivityStore } from "@/plane-web/store/issue/issue-details/activity.store";
+} from "@kardon/types";
+// kardon web store
+import { IssueActivityStore } from "@/kardon-web/store/issue/issue-details/activity.store";
 import type {
   IIssueActivityStore,
   IIssueActivityStoreActions,
   TActivityLoader,
-} from "@/plane-web/store/issue/issue-details/activity.store";
-import type { RootStore } from "@/plane-web/store/root.store";
-import type { TIssueRelationTypes } from "@/plane-web/types";
+} from "@/kardon-web/store/issue/issue-details/activity.store";
+import type { RootStore } from "@/kardon-web/store/root.store";
+import type { TIssueRelationTypes } from "@/kardon-web/types";
 import type { IIssueRootStore } from "../root.store";
 import { IssueAttachmentStore } from "./attachment.store";
 import type { IIssueAttachmentStore, IIssueAttachmentStoreActions } from "./attachment.store";

@@ -12,7 +12,7 @@ import type {
   TPublishEntityType,
   TProjectPublishSettings,
   TProjectPublishViewProps,
-} from "@plane/types";
+} from "@kardon/types";
 // store
 import type { CoreRootStore } from "../root.store";
 

@@ -85,7 +85,7 @@ import {
 
 export const ICON_REGISTRY = {
   // Sub-brand icons
-  "sub-brand.plane": PlaneNewIcon,
+  "sub-brand.kardon": PlaneNewIcon,
   "sub-brand.wiki": WikiIcon,
   "sub-brand.pi-chat": PiChatLogo,
 

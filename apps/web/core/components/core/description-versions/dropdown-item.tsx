@@ -5,11 +5,11 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import type { TDescriptionVersion } from "@plane/types";
-import { Avatar, CustomMenu } from "@plane/ui";
-import { calculateTimeAgo, getFileURL } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import type { TDescriptionVersion } from "@kardon/types";
+import { Avatar, CustomMenu } from "@kardon/ui";
+import { calculateTimeAgo, getFileURL } from "@kardon/utils";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 

@@ -5,17 +5,17 @@
  */
 
 import { forwardRef } from "react";
-// plane imports
-import { RichTextEditorWithRef } from "@plane/editor";
-import type { EditorRefApi, IRichTextEditorProps, TFileHandler } from "@plane/editor";
-import type { MakeOptional } from "@plane/types";
+// kardon imports
+import { RichTextEditorWithRef } from "@kardon/editor";
+import type { EditorRefApi, IRichTextEditorProps, TFileHandler } from "@kardon/editor";
+import type { MakeOptional } from "@kardon/types";
 // helpers
 import { getEditorFileHandlers } from "@/helpers/editor.helper";
 // hooks
 import { useMember } from "@/hooks/store/use-member";
 import { useParseEditorContent } from "@/hooks/use-parse-editor-content";
-// plane web imports
-import { useEditorFlagging } from "@/plane-web/hooks/use-editor-flagging";
+// kardon web imports
+import { useEditorFlagging } from "@/kardon-web/hooks/use-editor-flagging";
 // local imports
 import { EditorMentionsRoot } from "./embeds/mentions";
 

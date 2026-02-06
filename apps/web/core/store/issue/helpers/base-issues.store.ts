@@ -7,8 +7,8 @@
 import { isEqual, concat, get, indexOf, isEmpty, orderBy, pull, set, uniq, update, clone } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane constants
-import { ALL_ISSUES, ISSUE_PRIORITIES } from "@plane/constants";
+// kardon constants
+import { ALL_ISSUES, ISSUE_PRIORITIES } from "@kardon/constants";
 // types
 import type {
   TIssue,
@@ -25,12 +25,12 @@ import type {
   TPaginationData,
   TBulkOperationsPayload,
   IBlockUpdateDependencyData,
-} from "@plane/types";
-import { EIssueServiceType, EIssueLayoutTypes } from "@plane/types";
+} from "@kardon/types";
+import { EIssueServiceType, EIssueLayoutTypes } from "@kardon/types";
 // helpers
-import { convertToISODateString } from "@plane/utils";
-// plane web imports
-import { workItemSortWithOrderByExtended } from "@/plane-web/store/issue/helpers/base-issue.store";
+import { convertToISODateString } from "@kardon/utils";
+// kardon web imports
+import { workItemSortWithOrderByExtended } from "@/kardon-web/store/issue/helpers/base-issue.store";
 // services
 import { CycleService } from "@/services/cycle.service";
 import { IssueArchiveService, IssueService } from "@/services/issue";

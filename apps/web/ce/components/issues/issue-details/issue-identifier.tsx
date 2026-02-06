@@ -5,8 +5,8 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import type { TIssueIdentifierProps, TIssueTypeIdentifier } from "@plane/types";
+// kardon imports
+import type { TIssueIdentifierProps, TIssueTypeIdentifier } from "@kardon/types";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useProject } from "@/hooks/store/use-project";

@@ -5,17 +5,17 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import type { E_SORT_ORDER, TActivityFilters, EActivityFilterType } from "@plane/constants";
-import { BASE_ACTIVITY_FILTER_TYPES, filterActivityOnSelectedFilters } from "@plane/constants";
-import type { TCommentsOperations } from "@plane/types";
+// kardon imports
+import type { E_SORT_ORDER, TActivityFilters, EActivityFilterType } from "@kardon/constants";
+import { BASE_ACTIVITY_FILTER_TYPES, filterActivityOnSelectedFilters } from "@kardon/constants";
+import type { TCommentsOperations } from "@kardon/types";
 // components
 import { CommentCard } from "@/components/comments/card/root";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// plane web components
-import { IssueAdditionalPropertiesActivity } from "@/plane-web/components/issues/issue-details/issue-properties-activity";
-import { IssueActivityWorklog } from "@/plane-web/components/issues/worklog/activity/root";
+// kardon web components
+import { IssueAdditionalPropertiesActivity } from "@/kardon-web/components/issues/issue-details/issue-properties-activity";
+import { IssueActivityWorklog } from "@/kardon-web/components/issues/worklog/activity/root";
 // local imports
 import { IssueActivityItem } from "./activity/activity-list";
 import { IssueActivityLoader } from "./loader";

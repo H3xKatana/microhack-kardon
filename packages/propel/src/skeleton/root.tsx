@@ -34,7 +34,7 @@ function SkeletonItem({ height = "auto", width = "auto", className = "" }: ItemP
 
 const Skeleton = Object.assign(SkeletonRoot, { Item: SkeletonItem });
 
-SkeletonRoot.displayName = "plane-ui-skeleton";
-SkeletonItem.displayName = "plane-ui-skeleton-item";
+SkeletonRoot.displayName = "kardon-ui-skeleton";
+SkeletonItem.displayName = "kardon-ui-skeleton-item";
 
 export { Skeleton, SkeletonRoot, SkeletonItem };

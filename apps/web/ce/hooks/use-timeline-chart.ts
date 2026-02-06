@@ -5,11 +5,11 @@
  */
 
 // types
-import type { TTimelineTypeCore } from "@plane/types";
-import { GANTT_TIMELINE_TYPE } from "@plane/types";
+import type { TTimelineTypeCore } from "@kardon/types";
+import { GANTT_TIMELINE_TYPE } from "@kardon/types";
 // Plane-web
 
-import type { IBaseTimelineStore } from "@/plane-web/store/timeline/base-timeline.store";
+import type { IBaseTimelineStore } from "@/kardon-web/store/timeline/base-timeline.store";
 import type { ITimelineStore } from "../store/timeline";
 
 export const getTimelineStore = (

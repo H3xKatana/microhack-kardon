@@ -4,8 +4,8 @@
  * See the LICENSE file for details.
  */
 
-import { logger } from "@plane/logger";
-import type { TPage } from "@plane/types";
+import { logger } from "@kardon/logger";
+import type { TPage } from "@kardon/types";
 // services
 import { AppError } from "@/lib/errors";
 import { APIService } from "../api.service";

@@ -6,18 +6,18 @@
 
 import { observer } from "mobx-react";
 import { CheckCheck, RefreshCw } from "lucide-react";
-// plane imports
-import { ENotificationLoader, ENotificationQueryParamType } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { Tooltip } from "@plane/propel/tooltip";
-import { Spinner } from "@plane/ui";
+// kardon imports
+import { ENotificationLoader, ENotificationQueryParamType } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { Tooltip } from "@kardon/propel/tooltip";
+import { Spinner } from "@kardon/ui";
 // hooks
 import { useWorkspaceNotifications } from "@/hooks/store/notifications";
 import { usePlatformOS } from "@/hooks/use-platform-os";
 // local imports
 import { NotificationFilter } from "../../filters/menu";
 import { NotificationHeaderMenuOption } from "./menu-option";
-import { IconButton } from "@plane/propel/icon-button";
+import { IconButton } from "@kardon/propel/icon-button";
 
 type TNotificationSidebarHeaderOptions = {
   workspaceSlug: string;

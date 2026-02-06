@@ -4,9 +4,9 @@
  * See the LICENSE file for details.
  */
 
-// plane imports
-import type { ETabIndices } from "@plane/constants";
-import { TAB_INDEX_MAP } from "@plane/constants";
+// kardon imports
+import type { ETabIndices } from "@kardon/constants";
+import { TAB_INDEX_MAP } from "@kardon/constants";
 
 export const getTabIndex = (type?: ETabIndices, isMobile: boolean = false) => {
   const getIndex = (key: string) =>

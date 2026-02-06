@@ -6,18 +6,18 @@
 
 import { useRef } from "react";
 import { observer } from "mobx-react";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import { PageIcon } from "@plane/propel/icons";
-// plane imports
-import { getPageName } from "@plane/utils";
+import { Logo } from "@kardon/propel/emoji-icon-picker";
+import { PageIcon } from "@kardon/propel/icons";
+// kardon imports
+import { getPageName } from "@kardon/utils";
 // components
 import { ListItem } from "@/components/core/list";
 import { BlockItemAction } from "@/components/pages/list/block-item-action";
 // hooks
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// plane web hooks
-import type { EPageStoreType } from "@/plane-web/hooks/store";
-import { usePage } from "@/plane-web/hooks/store";
+// kardon web hooks
+import type { EPageStoreType } from "@/kardon-web/hooks/store";
+import { usePage } from "@/kardon-web/hooks/store";
 
 type TPageListBlock = {
   pageId: string;

@@ -5,12 +5,12 @@
  */
 
 import { observer } from "mobx-react";
-// plane ui
-import { StateGroupIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-import type { TStateGroups } from "@plane/types";
-// plane utils
-import { cn } from "@plane/utils";
+// kardon ui
+import { StateGroupIcon } from "@kardon/propel/icons";
+import { Tooltip } from "@kardon/propel/tooltip";
+import type { TStateGroups } from "@kardon/types";
+// kardon utils
+import { cn } from "@kardon/utils";
 //hooks
 import { useStates } from "@/hooks/store/use-state";
 

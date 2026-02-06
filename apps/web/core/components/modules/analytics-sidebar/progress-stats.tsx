@@ -6,10 +6,10 @@
 
 import { observer } from "mobx-react";
 import { Tab } from "@headlessui/react";
-import { useTranslation } from "@plane/i18n";
-import type { TWorkItemFilterCondition } from "@plane/shared-state";
-import type { TModuleDistribution, TModuleEstimateDistribution, TModulePlotType } from "@plane/types";
-import { cn, toFilterArray } from "@plane/utils";
+import { useTranslation } from "@kardon/i18n";
+import type { TWorkItemFilterCondition } from "@kardon/shared-state";
+import type { TModuleDistribution, TModuleEstimateDistribution, TModulePlotType } from "@kardon/types";
+import { cn, toFilterArray } from "@kardon/utils";
 // components
 import type { TAssigneeData } from "@/components/core/sidebar/progress-stats/assignee";
 import { AssigneeStatComponent } from "@/components/core/sidebar/progress-stats/assignee";
@@ -50,7 +50,7 @@ export const ModuleProgressStats = observer(function ModuleProgressStats(props: 
     size = "sm",
     totalIssuesCount,
   } = props;
-  // plane imports
+  // kardon imports
   const { t } = useTranslation();
   // hooks
   const { storedValue: currentTab, setValue: setModuleTab } = useLocalStorage(

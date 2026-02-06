@@ -8,11 +8,11 @@ import type { CSSProperties, FC } from "react";
 import { extractInstruction } from "@atlaskit/pragmatic-drag-and-drop-hitbox/tree-item";
 import { clone, isNil, pull, uniq, concat } from "lodash-es";
 import scrollIntoView from "smooth-scroll-into-view-if-needed";
-// plane types
-import { EIconSize, ISSUE_PRIORITIES, STATE_GROUPS } from "@plane/constants";
-import { Logo } from "@plane/propel/emoji-icon-picker";
-import type { ISvgIcons } from "@plane/propel/icons";
-import { CycleGroupIcon, CycleIcon, ModuleIcon, PriorityIcon, StateGroupIcon } from "@plane/propel/icons";
+// kardon types
+import { EIconSize, ISSUE_PRIORITIES, STATE_GROUPS } from "@kardon/constants";
+import { Logo } from "@kardon/propel/emoji-icon-picker";
+import type { ISvgIcons } from "@kardon/propel/icons";
+import { CycleGroupIcon, CycleIcon, ModuleIcon, PriorityIcon, StateGroupIcon } from "@kardon/propel/icons";
 import type {
   GroupByColumnTypes,
   IGroupByColumn,
@@ -26,20 +26,20 @@ import type {
   TGroupedIssues,
   IIssueDisplayFilterOptions,
   TGetColumns,
-} from "@plane/types";
-import { EIssuesStoreType } from "@plane/types";
-// plane ui
-import { Avatar } from "@plane/ui";
-import { renderFormattedDate, getFileURL } from "@plane/utils";
+} from "@kardon/types";
+import { EIssuesStoreType } from "@kardon/types";
+// kardon ui
+import { Avatar } from "@kardon/ui";
+import { renderFormattedDate, getFileURL } from "@kardon/utils";
 // helpers
 // store
 import { store } from "@/lib/store-context";
-// plane web store
+// kardon web store
 import {
   getScopeMemberIds,
   getTeamProjectColumns,
   SpreadSheetPropertyIconMap,
-} from "@/plane-web/components/issues/issue-layouts/utils";
+} from "@/kardon-web/components/issues/issue-layouts/utils";
 // store
 import { ISSUE_FILTER_DEFAULT_DATA } from "@/store/issue/helpers/base-issues.store";
 import { DEFAULT_DISPLAY_PROPERTIES } from "@/store/issue/issue-details/sub_issues_filter.store";

@@ -4,10 +4,10 @@
  * See the LICENSE file for details.
  */
 
-// plane types
-import { API_BASE_URL } from "@plane/constants";
-import type { TIssueComment, TIssueServiceType } from "@plane/types";
-import { EIssueServiceType } from "@plane/types";
+// kardon types
+import { API_BASE_URL } from "@kardon/constants";
+import type { TIssueComment, TIssueServiceType } from "@kardon/types";
+import { EIssueServiceType } from "@kardon/types";
 // services
 import { APIService } from "@/services/api.service";
 import { FileUploadService } from "@/services/file-upload.service";

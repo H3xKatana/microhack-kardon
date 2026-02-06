@@ -5,7 +5,7 @@
  */
 
 // ui
-import { Button } from "@plane/propel/button";
+import { Button } from "@kardon/propel/button";
 
 function ErrorPage() {
   const handleRetry = () => {
@@ -20,8 +20,8 @@ function ErrorPage() {
           <p className="mx-auto md:w-1/2 text-13 text-secondary">
             That crashed Plane, pun intended. No worries, though. Our engineers have been notified. If you have more
             details, please write to{" "}
-            <a href="mailto:support@plane.so" className="text-accent-primary">
-              support@plane.so
+            <a href="mailto:support@kardon.so" className="text-accent-primary">
+              support@kardon.so
             </a>{" "}
             or on our{" "}
             <a

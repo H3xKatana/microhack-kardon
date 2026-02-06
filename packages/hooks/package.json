@@ -1,5 +1,5 @@
 {
-  "name": "@plane/hooks",
+  "name": "@kardon/hooks",
   "version": "1.2.0",
   "license": "AGPL-3.0",
   "description": "React hooks that are shared across multiple apps internally",
@@ -26,7 +26,7 @@
     "react": "catalog:"
   },
   "devDependencies": {
-    "@plane/typescript-config": "workspace:*",
+    "@kardon/typescript-config": "workspace:*",
     "@types/node": "catalog:",
     "@types/react": "catalog:",
     "tsdown": "catalog:",

@@ -7,10 +7,10 @@
 import { set, cloneDeep, isEqual } from "lodash-es";
 import { action, computed, makeObservable, observable, runInAction } from "mobx";
 import { computedFn } from "mobx-utils";
-// plane imports
-import type { IWorkspaceView } from "@plane/types";
+// kardon imports
+import type { IWorkspaceView } from "@kardon/types";
 // services
-import { WorkspaceService } from "@/plane-web/services";
+import { WorkspaceService } from "@/kardon-web/services";
 // store
 import type { CoreRootStore } from "./root.store";
 

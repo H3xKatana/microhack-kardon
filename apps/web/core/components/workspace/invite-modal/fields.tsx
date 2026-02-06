@@ -7,12 +7,12 @@
 import { observer } from "mobx-react";
 import type { Control, FieldArrayWithId, FormState } from "react-hook-form";
 import { Controller } from "react-hook-form";
-// plane imports
-import { ROLE } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { CloseIcon } from "@plane/propel/icons";
-import { CustomSelect, Input } from "@plane/ui";
-import { cn } from "@plane/utils";
+// kardon imports
+import { ROLE } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { CloseIcon } from "@kardon/propel/icons";
+import { CustomSelect, Input } from "@kardon/ui";
+import { cn } from "@kardon/utils";
 // hooks
 import { useUserPermissions } from "@/hooks/store/user";
 import type { InvitationFormValues } from "@/hooks/use-workspace-invitation";
@@ -35,7 +35,7 @@ export const InvitationFields = observer(function InvitationFields(props: TInvit
     remove,
     className,
   } = props;
-  // plane hooks
+  // kardon hooks
   const { t } = useTranslation();
   // store hooks
   const { workspaceInfoBySlug } = useUserPermissions();

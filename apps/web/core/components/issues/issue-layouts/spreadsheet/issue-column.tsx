@@ -7,10 +7,10 @@
 import { useRef } from "react";
 import { observer } from "mobx-react";
 // types
-import type { IIssueDisplayProperties, TIssue } from "@plane/types";
+import type { IIssueDisplayProperties, TIssue } from "@kardon/types";
 // components
-import { SPREADSHEET_COLUMNS } from "@/plane-web/components/issues/issue-layouts/utils";
-import { shouldRenderColumn } from "@/plane-web/helpers/issue-filter.helper";
+import { SPREADSHEET_COLUMNS } from "@/kardon-web/components/issues/issue-layouts/utils";
+import { shouldRenderColumn } from "@/kardon-web/helpers/issue-filter.helper";
 import { WithDisplayPropertiesHOC } from "../properties/with-display-properties-HOC";
 
 type Props = {

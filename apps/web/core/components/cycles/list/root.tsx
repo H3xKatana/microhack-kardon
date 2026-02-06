@@ -9,10 +9,10 @@ import React from "react";
 import { observer } from "mobx-react";
 import { Disclosure } from "@headlessui/react";
 // components
-import { useTranslation } from "@plane/i18n";
-import { ContentWrapper, ERowVariant } from "@plane/ui";
+import { useTranslation } from "@kardon/i18n";
+import { ContentWrapper, ERowVariant } from "@kardon/ui";
 import { ListLayout } from "@/components/core/list";
-import { ActiveCycleRoot } from "@/plane-web/components/cycles";
+import { ActiveCycleRoot } from "@/kardon-web/components/cycles";
 // local imports
 import { CyclePeekOverview } from "../cycle-peek-overview";
 import { CycleListGroupHeader } from "./cycle-list-group-header";

@@ -5,7 +5,7 @@
  */
 
 import React from "react";
-import { cn } from "@plane/utils";
+import { cn } from "@kardon/utils";
 
 // Reusable Label Component
 interface LabelProps {

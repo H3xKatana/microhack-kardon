@@ -6,10 +6,10 @@
 
 import { Command } from "cmdk";
 import { observer } from "mobx-react";
-import { EIconSize } from "@plane/constants";
-// plane imports
-import { CheckIcon, StateGroupIcon } from "@plane/propel/icons";
-import { Spinner } from "@plane/ui";
+import { EIconSize } from "@kardon/constants";
+// kardon imports
+import { CheckIcon, StateGroupIcon } from "@kardon/propel/icons";
+import { Spinner } from "@kardon/ui";
 // store hooks
 import { useProjectState } from "@/hooks/store/use-project-state";
 

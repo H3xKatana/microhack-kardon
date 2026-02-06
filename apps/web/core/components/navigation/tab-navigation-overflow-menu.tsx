@@ -7,12 +7,12 @@
 import React from "react";
 import { Link } from "react-router";
 import { MoreHorizontal, Pin } from "lucide-react";
-// plane imports
-import { useTranslation } from "@plane/i18n";
-import { SetAsDefaultIcon } from "@plane/propel/icons";
-import { Menu } from "@plane/propel/menu";
-import { Tooltip } from "@plane/propel/tooltip";
-import { cn } from "@plane/utils";
+// kardon imports
+import { useTranslation } from "@kardon/i18n";
+import { SetAsDefaultIcon } from "@kardon/propel/icons";
+import { Menu } from "@kardon/propel/menu";
+import { Tooltip } from "@kardon/propel/tooltip";
+import { cn } from "@kardon/utils";
 // local imports
 import type { TNavigationItem } from "./tab-navigation-root";
 import type { TTabPreferences } from "./tab-navigation-utils";

@@ -9,13 +9,13 @@ import { observer } from "mobx-react";
 import { useParams } from "next/navigation";
 import useSWR from "swr";
 import { StickyNote as StickyIcon } from "lucide-react";
-// plane hooks
-import { useOutsideClickDetector } from "@plane/hooks";
-// plane ui
-import { RecentStickyIcon, StickyNoteIcon, PlusIcon, CloseIcon } from "@plane/propel/icons";
-import { Tooltip } from "@plane/propel/tooltip";
-// plane utils
-import { cn } from "@plane/utils";
+// kardon hooks
+import { useOutsideClickDetector } from "@kardon/hooks";
+// kardon ui
+import { RecentStickyIcon, StickyNoteIcon, PlusIcon, CloseIcon } from "@kardon/propel/icons";
+import { Tooltip } from "@kardon/propel/tooltip";
+// kardon utils
+import { cn } from "@kardon/utils";
 // hooks
 import { useCommandPalette } from "@/hooks/store/use-command-palette";
 import { useSticky } from "@/hooks/use-stickies";

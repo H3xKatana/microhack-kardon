@@ -8,20 +8,20 @@ import type { ReactNode } from "react";
 import { useCallback, useEffect, useState } from "react";
 import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
-// plane imports
-import type { EditorRefApi } from "@plane/editor";
-import { useHashScroll } from "@plane/hooks";
-import { GlobeIcon, LockIcon } from "@plane/propel/icons";
-import { EIssueCommentAccessSpecifier } from "@plane/types";
-import type { TCommentsOperations, TIssueComment } from "@plane/types";
-import { calculateTimeAgo, cn, getFileURL, renderFormattedDate, renderFormattedTime } from "@plane/utils";
+// kardon imports
+import type { EditorRefApi } from "@kardon/editor";
+import { useHashScroll } from "@kardon/hooks";
+import { GlobeIcon, LockIcon } from "@kardon/propel/icons";
+import { EIssueCommentAccessSpecifier } from "@kardon/types";
+import type { TCommentsOperations, TIssueComment } from "@kardon/types";
+import { calculateTimeAgo, cn, getFileURL, renderFormattedDate, renderFormattedTime } from "@kardon/utils";
 // components
 import { LiteTextEditor } from "@/components/editor/lite-text";
 // local imports
 import { CommentReactions } from "../comment-reaction";
 import { CommentCardEditForm } from "./edit-form";
-import { EmojiReactionButton, EmojiReactionPicker } from "@plane/propel/emoji-reaction";
-import { Avatar, Tooltip } from "@plane/ui";
+import { EmojiReactionButton, EmojiReactionPicker } from "@kardon/propel/emoji-reaction";
+import { Avatar, Tooltip } from "@kardon/ui";
 import { useMember } from "@/hooks/store/use-member";
 
 export type TCommentCardDisplayProps = {

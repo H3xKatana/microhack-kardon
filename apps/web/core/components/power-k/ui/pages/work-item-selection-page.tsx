@@ -5,10 +5,10 @@
  */
 
 import React, { useState, useEffect } from "react";
-// plane imports
-// import { useTranslation } from "@plane/i18n";
-import type { TIssueEntityData, TIssueSearchResponse, TActivityEntityData } from "@plane/types";
-// import { generateWorkItemLink } from "@plane/utils";
+// kardon imports
+// import { useTranslation } from "@kardon/i18n";
+import type { TIssueEntityData, TIssueSearchResponse, TActivityEntityData } from "@kardon/types";
+// import { generateWorkItemLink } from "@kardon/utils";
 // components
 // import { CommandPaletteEntityList } from "@/components/command-palette";
 // import { SimpleEmptyState } from "@/components/empty-state/simple-empty-state-root";
@@ -16,9 +16,9 @@ import type { TIssueEntityData, TIssueSearchResponse, TActivityEntityData } from
 // import { useCommandPalette } from "@/hooks/store/use-command-palette";
 // import { usePowerK } from "@/hooks/store/use-power-k";
 // import { useAppRouter } from "@/hooks/use-app-router";
-// plane web imports
-// import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
-import { WorkspaceService } from "@/plane-web/services";
+// kardon web imports
+// import { IssueIdentifier } from "@/kardon-web/components/issues/issue-details/issue-identifier";
+import { WorkspaceService } from "@/kardon-web/services";
 
 const workspaceService = new WorkspaceService();
 
@@ -37,7 +37,7 @@ export function WorkItemSelectionPage(props: Props) {
   const { workspaceSlug, projectId, debouncedSearchTerm, isWorkspaceLevel = false } = props;
   // router
   // const router = useAppRouter();
-  // plane hooks
+  // kardon hooks
   // const { t } = useTranslation();
   // store hooks
   // const { togglePowerKModal } = usePowerK();

@@ -6,13 +6,13 @@
 
 import { observer } from "mobx-react";
 import { AlertOctagon, BarChart4, CircleDashed, Folder, Microscope } from "lucide-react";
-// plane imports
-import { MARKETING_PRICING_PAGE_LINK } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { getButtonStyling } from "@plane/propel/button";
-import { SearchIcon } from "@plane/propel/icons";
-import { ContentWrapper } from "@plane/ui";
-import { cn } from "@plane/utils";
+// kardon imports
+import { MARKETING_PRICING_PAGE_LINK } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { getButtonStyling } from "@kardon/propel/button";
+import { SearchIcon } from "@kardon/propel/icons";
+import { ContentWrapper } from "@kardon/ui";
+import { cn } from "@kardon/utils";
 // assets
 import ctaL1Dark from "@/app/assets/workspace-active-cycles/cta-l-1-dark.webp?url";
 import ctaL1Light from "@/app/assets/workspace-active-cycles/cta-l-1-light.webp?url";

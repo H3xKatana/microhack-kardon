@@ -5,14 +5,14 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { PriorityIcon, StateGroupIcon } from "@plane/propel/icons";
-import type { TIssue, TStateGroups } from "@plane/types";
+// kardon imports
+import { PriorityIcon, StateGroupIcon } from "@kardon/propel/icons";
+import type { TIssue, TStateGroups } from "@kardon/types";
 // hooks
 import { useProject } from "@/hooks/store/use-project";
 import { useProjectState } from "@/hooks/store/use-project-state";
-// plane web imports
-import { IssueIdentifier } from "@/plane-web/components/issues/issue-details/issue-identifier";
+// kardon web imports
+import { IssueIdentifier } from "@/kardon-web/components/issues/issue-details/issue-identifier";
 // local imports
 import { WorkItemPreviewCardDate } from "./date";
 

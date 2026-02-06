@@ -5,12 +5,12 @@
  */
 
 import { observer } from "mobx-react";
-// plane imports
-import { ISSUE_PRIORITIES } from "@plane/constants";
-import { useTranslation } from "@plane/i18n";
-import { PriorityIcon } from "@plane/propel/icons";
-import type { TIssuePriorities } from "@plane/types";
-import { cn } from "@plane/utils";
+// kardon imports
+import { ISSUE_PRIORITIES } from "@kardon/constants";
+import { useTranslation } from "@kardon/i18n";
+import { PriorityIcon } from "@kardon/propel/icons";
+import type { TIssuePriorities } from "@kardon/types";
+import { cn } from "@kardon/utils";
 
 export type TReadonlyPriorityProps = {
   className?: string;

@@ -7,8 +7,8 @@
 import type { FC } from "react";
 import React, { useState } from "react";
 import { observer } from "mobx-react";
-import { copyUrlToClipboard, generateWorkItemLink } from "@plane/utils";
-// plane imports
+import { copyUrlToClipboard, generateWorkItemLink } from "@kardon/utils";
+// kardon imports
 // helpers
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";

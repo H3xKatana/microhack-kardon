@@ -5,11 +5,11 @@
  */
 
 import type { AxiosRequestConfig } from "axios";
-// plane types
-import { API_BASE_URL } from "@plane/constants";
-import { getFileMetaDataForUpload, generateFileUploadPayload } from "@plane/services";
-import type { EFileAssetType, TFileEntityInfo, TFileSignedURLResponse } from "@plane/types";
-import { getAssetIdFromUrl } from "@plane/utils";
+// kardon types
+import { API_BASE_URL } from "@kardon/constants";
+import { getFileMetaDataForUpload, generateFileUploadPayload } from "@kardon/services";
+import type { EFileAssetType, TFileEntityInfo, TFileSignedURLResponse } from "@kardon/types";
+import { getAssetIdFromUrl } from "@kardon/utils";
 // helpers
 // services
 import { APIService } from "@/services/api.service";
