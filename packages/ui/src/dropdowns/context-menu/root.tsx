@@ -18,7 +18,7 @@ export type TContextMenuItem = {
   customContent?: React.ReactNode;
   title?: string;
   description?: string;
-  icon?: React.FC<any>;
+  icon?: React.FunctionComponent<any>;
   action: () => void;
   shouldRender?: boolean;
   closeOnClick?: boolean;

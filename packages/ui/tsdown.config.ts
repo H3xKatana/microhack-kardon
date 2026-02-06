@@ -5,4 +5,5 @@ export default defineConfig({
   format: ["esm"],
   dts: true,
   platform: "neutral",
+  external: ["react", "react-dom", "react/jsx-runtime"],
 });

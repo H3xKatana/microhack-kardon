@@ -23,6 +23,7 @@ export * from "./form-fields";
 export * from "./header";
 export * from "./link";
 export * from "./loader";
+export * from "./message";
 export * from "./modals";
 export * from "./popovers";
 export * from "./progress";

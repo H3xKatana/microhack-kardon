@@ -60,3 +60,14 @@ from .asset import (
 from .invite import WorkspaceInviteSerializer
 from .member import ProjectMemberSerializer
 from .sticky import StickySerializer
+from .message import (
+    Message,
+    MessageMember,
+    MessageNotification,
+    MessageReaction,
+    MessageRoom,
+    MessageNotificationSerializer,
+    MessageReactionSerializer,
+    MessageRoomSerializer,
+    MessageSerializer,
+)

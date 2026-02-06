@@ -90,3 +90,10 @@ from .device import Device, DeviceSession
 from .sticky import Sticky
 
 from .description import Description, DescriptionVersion
+from .message import (
+    Message,
+    MessageMember,
+    MessageNotification,
+    MessageReaction,
+    MessageRoom,
+)

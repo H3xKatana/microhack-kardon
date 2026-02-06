@@ -32,6 +32,7 @@
     "lodash-es": "catalog:",
     "mobx": "catalog:",
     "mobx-utils": "catalog:",
+    "nanoid": "3.3.8",
     "uuid": "catalog:",
     "zod": "^3.22.2"
   },

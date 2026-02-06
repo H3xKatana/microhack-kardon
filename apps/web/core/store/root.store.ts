@@ -7,8 +7,8 @@
 import { enableStaticRendering } from "mobx-react";
 // kardon imports
 import { FALLBACK_LANGUAGE, LANGUAGE_STORAGE_KEY } from "@kardon/i18n";
-import type { IWorkItemFilterStore } from "@kardon/shared-state";
-import { WorkItemFilterStore } from "@kardon/shared-state";
+import type { IMessageStore, IWorkItemFilterStore } from "@kardon/shared-state";
+import { MessageStore, WorkItemFilterStore } from "@kardon/shared-state";
 // kardon web store
 import type { IAnalyticsStore } from "@/kardon-web/store/analytics.store";
 import { AnalyticsStore } from "@/kardon-web/store/analytics.store";
@@ -101,6 +101,7 @@ export class CoreRootStore {
   editorAssetStore: IEditorAssetStore;
   workItemFilters: IWorkItemFilterStore;
   powerK: IPowerKStore;
+  message: IMessageStore;
 
   constructor() {
     this.router = new RouterStore();
@@ -132,6 +133,7 @@ export class CoreRootStore {
     this.analytics = new AnalyticsStore();
     this.workItemFilters = new WorkItemFilterStore();
     this.powerK = new PowerKStore();
+    this.message = new MessageStore(this);
   }
 
   resetOnSignOut() {
@@ -165,5 +167,6 @@ export class CoreRootStore {
     this.editorAssetStore = new EditorAssetStore();
     this.workItemFilters = new WorkItemFilterStore();
     this.powerK = new PowerKStore();
+    this.message = new MessageStore(this);
   }
 }

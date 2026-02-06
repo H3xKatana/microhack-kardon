@@ -43,6 +43,7 @@ export * from "./layer-stack";
 export * from "./layers-icon";
 export * from "./layouts";
 export * from "./lead-icon";
+export * from "./message-room-icon";
 export * from "./misc";
 export * from "./module";
 export * from "./monospace-icon";

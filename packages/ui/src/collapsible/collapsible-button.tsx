@@ -18,7 +18,7 @@ type Props = {
   actionItemElement?: React.ReactNode;
   className?: string;
   titleClassName?: string;
-  ChevronIcon?: React.FC<ISvgIcons>;
+  ChevronIcon?: React.FunctionComponent<ISvgIcons>;
 };
 
 export function CollapsibleButton(props: Props) {

@@ -7,3 +7,6 @@ from django.apps import AppConfig
 
 class DbConfig(AppConfig):
     name = "kardon.db"
+
+    def ready(self):
+        import kardon.db.signals  # noqa

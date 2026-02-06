@@ -4,6 +4,4 @@
  * See the LICENSE file for details.
  */
 
-export * from "./rich-filters";
-export * from "./work-item-filters";
-export * from "./message.store";
+export * from './message.service';
