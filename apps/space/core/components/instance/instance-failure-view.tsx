@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -23,7 +23,7 @@ export function InstanceFailureView() {
     <div className="relative h-screen overflow-x-hidden overflow-y-auto container px-5 mx-auto flex justify-center items-center">
       <div className="w-auto max-w-2xl relative space-y-8 py-10">
         <div className="relative flex flex-col justify-center items-center space-y-4">
-          <img src={instanceImage} alt="Plane instance failure image" />
+          <img src={instanceImage} alt="Kardon instance failure image" />
           <h3 className="font-medium text-20 text-on-color ">Unable to fetch instance details.</h3>
           <p className="font-medium text-14 text-center">
             We were unable to fetch the details of the instance. <br />

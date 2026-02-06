@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -23,7 +23,7 @@ export function IssueEmbedUpgradeCard(props: any) {
       <div className="flex items-center gap-4">
         <ProIcon className="flex-shrink-0 size-4" />
         <p className="text-secondary !text-14">
-          Embed and access issues in pages seamlessly, upgrade to Plane Pro now.
+          Embed and access issues in pages seamlessly, upgrade to Kardon Pro now.
         </p>
       </div>
       <a

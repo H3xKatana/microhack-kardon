@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -15,7 +15,7 @@ import type { TIssueServiceType } from "@kardon/types";
 import { CustomMenu } from "@kardon/ui";
 // hooks
 import { useIssueDetail } from "@/hooks/store/use-issue-detail";
-// Plane-web
+// Kardon-web
 import { useTimeLineRelationOptions } from "@/kardon-web/components/relations";
 import type { TIssueRelationTypes } from "@/kardon-web/types";
 

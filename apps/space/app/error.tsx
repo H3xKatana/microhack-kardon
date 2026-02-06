@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -18,7 +18,7 @@ function ErrorPage() {
         <div className="space-y-2">
           <h3 className="text-16 font-semibold">Yikes! That doesn{"'"}t look good.</h3>
           <p className="mx-auto md:w-1/2 text-13 text-secondary">
-            That crashed Plane, pun intended. No worries, though. Our engineers have been notified. If you have more
+            That crashed Kardon, pun intended. No worries, though. Our engineers have been notified. If you have more
             details, please write to{" "}
             <a href="mailto:support@kardon.so" className="text-accent-primary">
               support@kardon.so

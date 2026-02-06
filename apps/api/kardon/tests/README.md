@@ -1,6 +1,6 @@
-# Plane Tests
+# Kardon Tests
 
-This directory contains tests for the Plane application. The tests are organized using pytest.
+This directory contains tests for the Kardon application. The tests are organized using pytest.
 
 ## Test Structure
 
@@ -14,7 +14,7 @@ Tests are organized into the following categories:
 
 ## API vs App Endpoints
 
-Plane has two types of API endpoints:
+Kardon has two types of API endpoints:
 
 1. **External API** (`kardon.api`):
    - Available at `/api/v1/` endpoint

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,10 +10,10 @@ import { useTheme } from "next-themes";
 import useSWR from "swr";
 // kardon imports
 import { SPACE_BASE_PATH } from "@kardon/constants";
-import { PlaneLockup } from "@kardon/propel/icons";
+import { KardonLockup } from "@kardon/propel/icons";
 // assets
-import PlaneBackgroundPatternDark from "@/app/assets/auth/background-pattern-dark.svg?url";
-import PlaneBackgroundPattern from "@/app/assets/auth/background-pattern.svg?url";
+import KardonBackgroundPatternDark from "@/app/assets/auth/background-pattern-dark.svg?url";
+import KardonBackgroundPattern from "@/app/assets/auth/background-pattern.svg?url";
 // components
 import { LogoSpinner } from "@/components/common/logo-spinner";
 import { InstanceFailureView } from "@/components/instance/instance-failure-view";
@@ -26,7 +26,7 @@ export const InstanceProvider = observer(function InstanceProvider({ children }:
   const { fetchCurrentUser } = useUser();
   const { resolvedTheme } = useTheme();
 
-  const patternBackground = resolvedTheme === "dark" ? PlaneBackgroundPatternDark : PlaneBackgroundPattern;
+  const patternBackground = resolvedTheme === "dark" ? KardonBackgroundPatternDark : KardonBackgroundPattern;
 
   useSWR("INSTANCE_INFO", () => fetchInstanceInfo(), {
     revalidateOnFocus: false,
@@ -53,12 +53,12 @@ export const InstanceProvider = observer(function InstanceProvider({ children }:
           <div className="container h-[110px] flex-shrink-0 mx-auto px-5 lg:px-0 flex items-center justify-between gap-5 z-50">
             <div className="flex items-center gap-x-2 py-10">
               <Link href={`${SPACE_BASE_PATH}/`}>
-                <PlaneLockup className="h-7 w-auto text-primary" />
+                <KardonLockup className="h-7 w-auto text-primary" />
               </Link>
             </div>
           </div>
           <div className="absolute inset-0 z-0">
-            <img src={patternBackground} className="w-screen h-full object-cover" alt="Plane background pattern" />
+            <img src={patternBackground} className="w-screen h-full object-cover" alt="Kardon background pattern" />
           </div>
           <div className="relative z-10 flex-grow">
             <div className="relative h-full w-full overflow-y-auto px-6 py-10 mx-auto flex justify-center items-center">

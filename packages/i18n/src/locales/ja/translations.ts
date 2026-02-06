@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -88,7 +88,7 @@ export default {
       already_have_an_account: "すでにアカウントをお持ちですか？",
       login: "ログイン",
       create_account: "アカウントを作成",
-      new_to_kardon: "Planeは初めてですか？",
+      new_to_kardon: "Kardonは初めてですか？",
       back_to_sign_in: "サインインに戻る",
       resend_in: "{seconds}秒後に再送信",
       sign_in_with_unique_code: "ユニークコードでサインイン",
@@ -408,7 +408,7 @@ export default {
   full_changelog: "完全な変更履歴",
   support: "サポート",
   discord: "Discord",
-  powered_by_kardon_pages: "Powered by Plane Pages",
+  powered_by_kardon_pages: "Powered by Kardon Pages",
   please_select_at_least_one_invitation: "少なくとも1つの招待を選択してください。",
   please_select_at_least_one_invitation_description:
     "ワークスペースに参加するには少なくとも1つの招待を選択してください。",
@@ -570,7 +570,7 @@ export default {
       not_right_now: "今はしない",
       create_project: {
         title: "プロジェクトを作成",
-        description: "Planeのほとんどはプロジェクトから始まります。",
+        description: "Kardonのほとんどはプロジェクトから始まります。",
         cta: "始める",
       },
       invite_team: {
@@ -584,7 +584,7 @@ export default {
         cta: "このワークスペースを設定",
       },
       personalize_account: {
-        title: "Planeをあなた好みにカスタマイズ。",
+        title: "Kardonをあなた好みにカスタマイズ。",
         description: "プロフィール画像、カラー、その他の設定を選択してください。",
         cta: "今すぐパーソナライズ",
       },
@@ -618,7 +618,7 @@ export default {
       },
     },
     new_at_kardon: {
-      title: "Planeの新機能",
+      title: "Kardonの新機能",
     },
     quick_tutorial: {
       title: "クイックチュートリアル",
@@ -1271,7 +1271,7 @@ export default {
   },
   workspace_creation: {
     heading: "ワークスペースを作成",
-    subheading: "Planeを使用するには、ワークスペースを作成するか参加する必要があります。",
+    subheading: "Kardonを使用するには、ワークスペースを作成するか参加する必要があります。",
     form: {
       name: {
         label: "ワークスペース名を設定",
@@ -1326,11 +1326,11 @@ export default {
       general: {
         title: "プロジェクト、アクティビティ、メトリクスの概要",
         description:
-          "Planeへようこそ。ご利用いただき嬉しく思います。最初のプロジェクトを作成して作業項目を追跡すると、このページは進捗を把握するのに役立つスペースに変わります。管理者はチームの進捗に役立つ項目も表示されます。",
+          "Kardonへようこそ。ご利用いただき嬉しく思います。最初のプロジェクトを作成して作業項目を追跡すると、このページは進捗を把握するのに役立つスペースに変わります。管理者はチームの進捗に役立つ項目も表示されます。",
         primary_button: {
           text: "最初のプロジェクトを作成",
           comic: {
-            title: "Planeではすべてがプロジェクトから始まります",
+            title: "Kardonではすべてがプロジェクトから始まります",
             description: "プロジェクトは製品のロードマップ、マーケティングキャンペーン、新車の発売などになります。",
           },
         },
@@ -1462,7 +1462,7 @@ export default {
         primary_button: {
           text: "最初のプロジェクトを開始",
           comic: {
-            title: "Planeではすべてがプロジェクトから始まります",
+            title: "Kardonではすべてがプロジェクトから始まります",
             description: "プロジェクトは製品のロードマップ、マーケティングキャンペーン、新車の発売などになります。",
           },
         },
@@ -1474,7 +1474,7 @@ export default {
         primary_button: {
           text: "最初のプロジェクトを開始",
           comic: {
-            title: "Planeではすべてがプロジェクトから始まります",
+            title: "Kardonではすべてがプロジェクトから始まります",
             description: "プロジェクトは製品のロードマップ、マーケティングキャンペーン、新車の発売などになります。",
           },
         },
@@ -1573,7 +1573,7 @@ export default {
     page_label: "{workspace} - 一般設定",
     key_created: "キーが作成されました",
     copy_key:
-      "このシークレットキーをコピーしてPlaneページに保存してください。閉じた後はこのキーを見ることができません。キーを含むCSVファイルがダウンロードされました。",
+      "このシークレットキーをコピーしてKardonページに保存してください。閉じた後はこのキーを見ることができません。キーを含むCSVファイルがダウンロードされました。",
     token_copied: "トークンがクリップボードにコピーされました。",
     settings: {
       general: {
@@ -1724,7 +1724,7 @@ export default {
         delete: {
           title: "APIトークンを削除",
           description:
-            "このトークンを使用しているアプリケーションはPlaneのデータにアクセスできなくなります。この操作は取り消せません。",
+            "このトークンを使用しているアプリケーションはKardonのデータにアクセスできなくなります。この操作は取り消せません。",
           success: {
             title: "成功！",
             message: "APIトークンが正常に削除されました",
@@ -1740,7 +1740,7 @@ export default {
       api_tokens: {
         title: "APIトークンがまだ作成されていません",
         description:
-          "PlaneのAPIを使用して、Planeのデータを外部システムと統合できます。トークンを作成して始めましょう。",
+          "KardonのAPIを使用して、Kardonのデータを外部システムと統合できます。トークンを作成して始めましょう。",
       },
       webhooks: {
         title: "Webhookが追加されていません",
@@ -1803,7 +1803,7 @@ export default {
       activity: {
         title: "アクティビティがまだありません",
         description:
-          "新しい作業項目を作成して始めましょう！詳細とプロパティを追加してください。Planeをさらに探索してアクティビティを確認しましょう。",
+          "新しい作業項目を作成して始めましょう！詳細とプロパティを追加してください。Kardonをさらに探索してアクティビティを確認しましょう。",
       },
       assigned: {
         title: "割り当てられた作業項目がありません",
@@ -1956,12 +1956,12 @@ export default {
       label: "自動化",
       "auto-archive": {
         title: "完了した作業項目を自動的にアーカイブ",
-        description: "Planeは完了またはキャンセルされた作業項目を自動的にアーカイブします。",
+        description: "Kardonは完了またはキャンセルされた作業項目を自動的にアーカイブします。",
         duration: "閉じられた作業項目を自動的にアーカイブ",
       },
       "auto-close": {
         title: "作業項目を自動的に閉じる",
-        description: "Planeは完了またはキャンセルされていない作業項目を自動的に閉じます。",
+        description: "Kardonは完了またはキャンセルされていない作業項目を自動的に閉じます。",
         duration: "非アクティブな作業項目を自動的に閉じる",
         auto_close_status: "自動クローズステータス",
       },
@@ -2154,9 +2154,9 @@ export default {
         primary_button: {
           text: "最初の作業項目を作成",
           comic: {
-            title: "作業項目はPlaneの構成要素です。",
+            title: "作業項目はKardonの構成要素です。",
             description:
-              "PlaneのUIの再設計、会社のリブランド、新しい燃料噴射システムの立ち上げなどは、サブ作業項目を持つ可能性が高い作業項目の例です。",
+              "KardonのUIの再設計、会社のリブランド、新しい燃料噴射システムの立ち上げなどは、サブ作業項目を持つ可能性が高い作業項目の例です。",
           },
         },
       },
@@ -2260,9 +2260,9 @@ export default {
     empty_state: {
       general: {
         title:
-          "メモ、ドキュメント、または完全なナレッジベースを作成しましょう。PlaneのAIアシスタントGalileoが開始をサポートします",
+          "メモ、ドキュメント、または完全なナレッジベースを作成しましょう。KardonのAIアシスタントGalileoが開始をサポートします",
         description:
-          "ページはPlaneの思考整理スペースです。会議のメモを取り、簡単に整形し、作業項目を埋め込み、コンポーネントライブラリを使用してレイアウトし、すべてをプロジェクトのコンテキストに保存できます。ドキュメントを素早く作成するには、ショートカットまたはボタンのクリックでPlaneのAI、Galileoを呼び出してください。",
+          "ページはKardonの思考整理スペースです。会議のメモを取り、簡単に整形し、作業項目を埋め込み、コンポーネントライブラリを使用してレイアウトし、すべてをプロジェクトのコンテキストに保存できます。ドキュメントを素早く作成するには、ショートカットまたはボタンのクリックでKardonのAI、Galileoを呼び出してください。",
         primary_button: {
           text: "最初のページを作成",
         },
@@ -2638,7 +2638,7 @@ export default {
   },
   self_hosted_maintenance_message: {
     kardon_didnt_start_up_this_could_be_because_one_or_more_kardon_services_failed_to_start:
-      "Planeが起動しませんでした。これは1つまたは複数のPlaneサービスの起動に失敗したことが原因である可能性があります。",
+      "Kardonが起動しませんでした。これは1つまたは複数のKardonサービスの起動に失敗したことが原因である可能性があります。",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "setup.shとDockerログからView Logsを選択して確認してください。",
   },

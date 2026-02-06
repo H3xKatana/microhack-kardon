@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,7 +7,7 @@
 import { lazy, Suspense } from "react";
 import { useTheme } from "next-themes";
 import { SWRConfig } from "swr";
-// Plane Imports
+// Kardon Imports
 import { WEB_SWR_CONFIG } from "@kardon/constants";
 import { TranslationProvider } from "@kardon/i18n";
 import { Toast } from "@kardon/propel/toast";

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Button } from "@kardon/propel/button";
 // assets
-import PlaneTakeOffImage from "@/app/assets/images/kardon-takeoff.png?url";
+import KardonTakeOffImage from "@/app/assets/images/kardon-takeoff.png?url";
 
 export function InstanceNotReady() {
   return (
@@ -9,7 +9,7 @@ export function InstanceNotReady() {
       <div className="w-auto max-w-2xl relative space-y-8 py-10">
         <div className="relative flex flex-col justify-center items-center space-y-4">
           <h1 className="text-24 font-bold pb-3">Welcome aboard Kardon!</h1>
-          <img src={PlaneTakeOffImage} alt="Kardon Logo" />
+          <img src={KardonTakeOffImage} alt="Kardon Logo" />
           <p className="font-medium text-14 text-placeholder">Get started by setting up your instance and workspace</p>
         </div>
 

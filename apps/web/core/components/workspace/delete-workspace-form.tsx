@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,7 +7,7 @@
 import { observer } from "mobx-react";
 import { Controller, useForm } from "react-hook-form";
 import { AlertTriangle } from "lucide-react";
-// Plane Imports
+// Kardon Imports
 import { useTranslation } from "@kardon/i18n";
 import { Button } from "@kardon/propel/button";
 import { TOAST_TYPE, setToast } from "@kardon/propel/toast";

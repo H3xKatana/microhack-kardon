@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -383,7 +383,7 @@ export const CommonMistakes: Story = {
 
       <div className="space-y-6">
         <div className="border-2 border-danger-strong rounded-md p-4">
-          <h4 className="text-primary mb-2 font-semibold">❌ Mistake 1: Nested Surfaces (Same Plane)</h4>
+          <h4 className="text-primary mb-2 font-semibold">❌ Mistake 1: Nested Surfaces (Same Kardon)</h4>
           <Surface>
             <p className="text-secondary mb-2 text-13">Surface 1</p>
             <div className="bg-surface-2 rounded-md p-4">

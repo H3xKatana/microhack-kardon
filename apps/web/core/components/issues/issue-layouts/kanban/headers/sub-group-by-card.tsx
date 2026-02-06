@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,9 +9,9 @@ import React from "react";
 import { observer } from "mobx-react";
 import { Circle } from "lucide-react";
 import { ChevronDownIcon, ChevronUpIcon } from "@kardon/propel/icons";
-// Plane
+// Kardon
 import type { TIssueGroupByOptions, TIssueKanbanFilters } from "@kardon/types";
-// Plane-web
+// Kardon-web
 import { WorkFlowGroupTree } from "@/kardon-web/components/workflow";
 // mobx
 

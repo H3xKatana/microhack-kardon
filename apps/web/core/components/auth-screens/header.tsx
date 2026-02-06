@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 import { AUTH_TRACKER_ELEMENTS } from "@kardon/constants";
 import { useTranslation } from "@kardon/i18n";
-import { PlaneLockup } from "@kardon/propel/icons";
+import { KardonLockup } from "@kardon/propel/icons";
 import { PageHead } from "@/components/core/page-title";
 import { EAuthModes } from "@/helpers/authentication.helper";
 import { useInstance } from "@/hooks/store/use-instance";
@@ -70,10 +70,10 @@ export function AuthHeaderBase(props: TAuthHeaderBase) {
   const { pageTitle, additionalAction } = props;
   return (
     <>
-      <PageHead title={pageTitle + " - Plane"} />
+      <PageHead title={pageTitle + " - Kardon"} />
       <div className="flex items-center justify-between gap-6 w-full flex-shrink-0 sticky top-0">
         <Link href="/">
-          <PlaneLockup height={20} width={95} className="text-primary" />
+          <KardonLockup height={20} width={95} className="text-primary" />
         </Link>
         {additionalAction}
       </div>

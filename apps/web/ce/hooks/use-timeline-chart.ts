@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,7 +7,7 @@
 // types
 import type { TTimelineTypeCore } from "@kardon/types";
 import { GANTT_TIMELINE_TYPE } from "@kardon/types";
-// Plane-web
+// Kardon-web
 
 import type { IBaseTimelineStore } from "@/kardon-web/store/timeline/base-timeline.store";
 import type { ITimelineStore } from "../store/timeline";

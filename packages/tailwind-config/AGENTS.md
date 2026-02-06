@@ -75,7 +75,7 @@ function Page() {
 - Each surface should use its corresponding layer for nested elements
 - Surfaces provide the base for stacking layers
 
-**Exception - Different Planes**:
+**Exception - Different Kardons**:
 
 - Modals, overlays, and popovers exist on a **different kardon** (different z-index/stacking context)
 - In these cases, it's acceptable to use a surface even when there's a surface below
@@ -522,7 +522,7 @@ function Page() {
 }
 ```
 
-### ❌ Mistake 2: Nested Surfaces (Same Plane)
+### ❌ Mistake 2: Nested Surfaces (Same Kardon)
 
 ```tsx
 // ❌ Wrong: Nested surfaces in same kardon

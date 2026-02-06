@@ -2,7 +2,7 @@
   "name": "live",
   "version": "1.2.0",
   "license": "AGPL-3.0",
-  "description": "A realtime collaborative server powers Plane's rich text editor",
+  "description": "A realtime collaborative server powers Kardon's rich text editor",
   "main": "./dist/start.mjs",
   "module": "./dist/start.mjs",
   "exports": {
@@ -25,7 +25,7 @@
     "fix:format": "prettier . --cache --write",
     "clean": "rm -rf .turbo && rm -rf .next && rm -rf node_modules && rm -rf dist"
   },
-  "author": "Plane Software Inc.",
+  "author": "Kardon Software Inc.",
   "dependencies": {
     "@dotenvx/dotenvx": "catalog:",
     "@effect/platform": "^0.94.0",

@@ -1,4 +1,4 @@
-# Copyright (c) 2023-present Plane Software, Inc. and contributors
+# Copyright (c) 2023-present Kardon Software, Inc. and contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 # See the LICENSE file for details.
 
@@ -285,8 +285,8 @@ def webhook_send_task(
         headers = {
             "Content-Type": "application/json",
             "User-Agent": "Autopilot",
-            "X-Plane-Delivery": str(uuid.uuid4()),
-            "X-Plane-Event": event,
+            "X-Kardon-Delivery": str(uuid.uuid4()),
+            "X-Kardon-Event": event,
         }
 
         # # Your secret key
@@ -318,7 +318,7 @@ def webhook_send_task(
                 hashlib.sha256,
             )
             signature = hmac_signature.hexdigest()
-            headers["X-Plane-Signature"] = signature
+            headers["X-Kardon-Signature"] = signature
     except Exception as e:
         log_exception(e)
         logger.error(f"Failed to send webhook: {e}")

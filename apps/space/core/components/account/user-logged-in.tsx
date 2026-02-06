@@ -1,11 +1,11 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { observer } from "mobx-react";
-import { PlaneLockup } from "@kardon/propel/icons";
+import { KardonLockup } from "@kardon/propel/icons";
 // assets
 import UserLoggedInImage from "@/app/assets/user-logged-in.svg?url";
 // components
@@ -23,7 +23,7 @@ export const UserLoggedIn = observer(function UserLoggedIn() {
   return (
     <div className="flex flex-col h-screen w-screen">
       <div className="relative flex w-full items-center justify-between gap-4 border-b border-subtle px-6 py-5">
-        <PlaneLockup className="h-6 w-auto text-primary" />
+        <KardonLockup className="h-6 w-auto text-primary" />
         <UserAvatar />
       </div>
 

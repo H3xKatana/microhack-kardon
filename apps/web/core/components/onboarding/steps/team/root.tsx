@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -343,7 +343,7 @@ export const InviteTeamStep = observer(function InviteTeamStep(props: Props) {
     >
       <CommonOnboardingHeader
         title="Invite your teammates"
-        description="Work in kardon happens best with your team. Invite them now to use Plane to its potential."
+        description="Work in kardon happens best with your team. Invite them now to use Kardon to its potential."
       />
       <div className="w-full text-13 py-4">
         <div className="group relative grid grid-cols-10 gap-4 mx-8 py-2">

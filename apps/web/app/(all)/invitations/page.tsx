@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -15,7 +15,7 @@ import { ROLE } from "@kardon/constants";
 import { useTranslation } from "@kardon/i18n";
 // types
 import { Button } from "@kardon/propel/button";
-import { PlaneLogo } from "@kardon/propel/icons";
+import { KardonLogo } from "@kardon/propel/icons";
 import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
 import type { IWorkspaceMemberInvitation } from "@kardon/types";
 import { truncateText } from "@kardon/utils";
@@ -118,7 +118,7 @@ function UserInvitationsPage() {
             href="/"
             className="absolute left-5 top-1/2 grid -translate-y-1/2 place-items-center px-3 sm:left-1/2 sm:top-12 sm:-translate-x-[15px] sm:translate-y-0 sm:px-0 sm:py-5 md:left-1/3 z-10"
           >
-            <PlaneLogo className="h-9 w-auto text-primary" />
+            <KardonLogo className="h-9 w-auto text-primary" />
           </Link>
           <div className="absolute right-4 top-1/4 -translate-y-1/2 text-13 text-primary sm:fixed sm:right-16 sm:top-12 sm:translate-y-0 sm:py-5">
             {currentUser?.email}

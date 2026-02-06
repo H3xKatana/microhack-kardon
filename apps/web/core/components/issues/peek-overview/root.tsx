@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,7 +7,7 @@
 import { useState, useMemo, useCallback } from "react";
 import { observer } from "mobx-react";
 import { usePathname } from "next/navigation";
-// Plane imports
+// Kardon imports
 import useSWR from "swr";
 import { EUserPermissions, EUserPermissionsLevel } from "@kardon/constants";
 import { useTranslation } from "@kardon/i18n";

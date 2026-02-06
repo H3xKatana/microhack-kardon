@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -11,7 +11,7 @@ import { observer } from "mobx-react";
 import type { IGanttBlock } from "@kardon/types";
 // helpers
 import { cn } from "@kardon/utils";
-//  Plane-web
+//  Kardon-web
 import { LeftDependencyDraggable, RightDependencyDraggable } from "@/kardon-web/components/gantt-chart";
 //
 import { LeftResizable } from "./blockResizables/left-resizable";

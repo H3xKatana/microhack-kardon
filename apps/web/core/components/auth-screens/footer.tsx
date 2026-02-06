@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -32,7 +32,7 @@ const BRAND_LOGOS: {
 export function AuthFooter() {
   return (
     <div className="flex flex-col items-center gap-6">
-      <span className="text-13 text-tertiary whitespace-nowrap">Join 10,000+ teams building with Plane</span>
+      <span className="text-13 text-tertiary whitespace-nowrap">Join 10,000+ teams building with Kardon</span>
       <div className="flex items-center justify-center gap-x-10 gap-y-4 w-full flex-wrap">
         {BRAND_LOGOS.map((brand) => (
           <div className="flex items-center justify-center h-7 flex-1" key={brand.id}>

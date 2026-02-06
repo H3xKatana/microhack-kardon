@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,7 +7,7 @@
 import { API_BASE_URL } from "@kardon/constants";
 import type { TIssueRelation, TIssue } from "@kardon/types";
 // helpers
-// Plane-web
+// Kardon-web
 import type { TIssueRelationTypes } from "@/kardon-web/types";
 // services
 import { APIService } from "@/services/api.service";

@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import type { EProductSubscriptionEnum, TBillingFrequency } from "@kardon/types";
 // components
 import { PlansComparisonBase, shouldRenderPlanDetail } from "@/components/workspace/billing/comparison/base";
-import type { TPlanePlans } from "@/constants/plans";
+import type { TKardonPlans } from "@/constants/plans";
 import { PLANE_PLANS } from "@/constants/plans";
 // kardon web imports
 import { PlanDetail } from "./plan-detail";
@@ -34,7 +34,7 @@ export const PlansComparison = observer(function PlansComparison(props: TPlansCo
   return (
     <PlansComparisonBase
       kardonDetails={Object.entries(planDetails).map(([planKey, plan]) => {
-        const currentPlanKey = planKey as TPlanePlans;
+        const currentPlanKey = planKey as TKardonPlans;
         if (!shouldRenderPlanDetail(currentPlanKey)) return null;
         return (
           <PlanDetail

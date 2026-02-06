@@ -1,4 +1,4 @@
-# Copyright (c) 2023-present Plane Software, Inc. and contributors
+# Copyright (c) 2023-present Kardon Software, Inc. and contributors
 # SPDX-License-Identifier: AGPL-3.0-only
 # See the LICENSE file for details.
 
@@ -12,14 +12,14 @@ SPECTACULAR_SETTINGS = {
     # ========================================================================
     # Basic API Information
     # ========================================================================
-    "TITLE": "The Plane REST API",
+    "TITLE": "The Kardon REST API",
     "DESCRIPTION": (
-        "The Plane REST API\n\n"
+        "The Kardon REST API\n\n"
         "Visit our quick start guide and full API documentation at "
         "[developers.kardon.so](https://developers.kardon.so/api-reference/introduction)."
     ),
     "CONTACT": {
-        "name": "Plane",
+        "name": "Kardon",
         "url": "https://kardon.so",
         "email": "support@kardon.so",
     },

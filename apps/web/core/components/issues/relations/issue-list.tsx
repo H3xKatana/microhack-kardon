@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -10,7 +10,7 @@ import { observer } from "mobx-react";
 // kardon imports
 import type { TIssue, TIssueServiceType } from "@kardon/types";
 import { EIssueServiceType } from "@kardon/types";
-// Plane-web imports
+// Kardon-web imports
 import type { TIssueRelationTypes } from "@/kardon-web/types";
 // local imports
 import { RelationIssueListItem } from "./issue-list-item";

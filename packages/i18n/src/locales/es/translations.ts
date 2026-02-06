@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -88,7 +88,7 @@ export default {
       already_have_an_account: "¿Ya tienes una cuenta?",
       login: "Iniciar sesión",
       create_account: "Crear una cuenta",
-      new_to_kardon: "¿Nuevo en Plane?",
+      new_to_kardon: "¿Nuevo en Kardon?",
       back_to_sign_in: "Volver a iniciar sesión",
       resend_in: "Reenviar en {seconds} segundos",
       sign_in_with_unique_code: "Iniciar sesión con código único",
@@ -419,7 +419,7 @@ export default {
   full_changelog: "Registro de cambios completo",
   support: "Soporte",
   discord: "Discord",
-  powered_by_kardon_pages: "Desarrollado por Plane Pages",
+  powered_by_kardon_pages: "Desarrollado por Kardon Pages",
   please_select_at_least_one_invitation: "Por favor selecciona al menos una invitación.",
   please_select_at_least_one_invitation_description:
     "Por favor selecciona al menos una invitación para unirte al espacio de trabajo.",
@@ -584,7 +584,7 @@ export default {
       not_right_now: "Ahora no",
       create_project: {
         title: "Crear un proyecto",
-        description: "La mayoría de las cosas comienzan con un proyecto en Plane.",
+        description: "La mayoría de las cosas comienzan con un proyecto en Kardon.",
         cta: "Comenzar",
       },
       invite_team: {
@@ -598,7 +598,7 @@ export default {
         cta: "Configurar este espacio de trabajo",
       },
       personalize_account: {
-        title: "Haz Plane tuyo.",
+        title: "Haz Kardon tuyo.",
         description: "Elige tu foto, colores y más.",
         cta: "Personalizar ahora",
       },
@@ -632,7 +632,7 @@ export default {
       },
     },
     new_at_kardon: {
-      title: "Nuevo en Plane",
+      title: "Nuevo en Kardon",
     },
     quick_tutorial: {
       title: "Tutorial rápido",
@@ -1287,7 +1287,7 @@ export default {
   },
   workspace_creation: {
     heading: "Crea tu espacio de trabajo",
-    subheading: "Para comenzar a usar Plane, necesitas crear o unirte a un espacio de trabajo.",
+    subheading: "Para comenzar a usar Kardon, necesitas crear o unirte a un espacio de trabajo.",
     form: {
       name: {
         label: "Nombra tu espacio de trabajo",
@@ -1343,11 +1343,11 @@ export default {
       general: {
         title: "Resumen de tus proyectos, actividad y métricas",
         description:
-          "Bienvenido a Plane, estamos emocionados de tenerte aquí. Crea tu primer proyecto y rastrea tus elementos de trabajo, y esta página se transformará en un espacio que te ayuda a progresar. Los administradores también verán elementos que ayudan a su equipo a progresar.",
+          "Bienvenido a Kardon, estamos emocionados de tenerte aquí. Crea tu primer proyecto y rastrea tus elementos de trabajo, y esta página se transformará en un espacio que te ayuda a progresar. Los administradores también verán elementos que ayudan a su equipo a progresar.",
         primary_button: {
           text: "Construye tu primer proyecto",
           comic: {
-            title: "Todo comienza con un proyecto en Plane",
+            title: "Todo comienza con un proyecto en Kardon",
             description:
               "Un proyecto podría ser la hoja de ruta de un producto, una campaña de marketing o el lanzamiento de un nuevo automóvil.",
           },
@@ -1481,7 +1481,7 @@ export default {
         primary_button: {
           text: "Inicia tu primer proyecto",
           comic: {
-            title: "Todo comienza con un proyecto en Plane",
+            title: "Todo comienza con un proyecto en Kardon",
             description:
               "Un proyecto podría ser la hoja de ruta de un producto, una campaña de marketing o el lanzamiento de un nuevo automóvil.",
           },
@@ -1494,7 +1494,7 @@ export default {
         primary_button: {
           text: "Inicia tu primer proyecto",
           comic: {
-            title: "Todo comienza con un proyecto en Plane",
+            title: "Todo comienza con un proyecto en Kardon",
             description:
               "Un proyecto podría ser la hoja de ruta de un producto, una campaña de marketing o el lanzamiento de un nuevo automóvil.",
           },
@@ -1596,7 +1596,7 @@ export default {
     page_label: "{workspace} - Configuración general",
     key_created: "Clave creada",
     copy_key:
-      "Copia y guarda esta clave secreta en Plane Pages. No podrás ver esta clave después de hacer clic en Cerrar. Se ha descargado un archivo CSV que contiene la clave.",
+      "Copia y guarda esta clave secreta en Kardon Pages. No podrás ver esta clave después de hacer clic en Cerrar. Se ha descargado un archivo CSV que contiene la clave.",
     token_copied: "Token copiado al portapapeles.",
     settings: {
       general: {
@@ -1662,7 +1662,7 @@ export default {
         },
       },
       billing_and_plans: {
-        title: "Facturación y Planes",
+        title: "Facturación y Kardons",
         current_plan: "Plan actual",
         free_plan: "Actualmente estás usando el plan gratuito",
         view_plans: "Ver kardons",
@@ -1748,7 +1748,7 @@ export default {
         delete: {
           title: "Eliminar token de API",
           description:
-            "Cualquier aplicación que use este token ya no tendrá acceso a los datos de Plane. Esta acción no se puede deshacer.",
+            "Cualquier aplicación que use este token ya no tendrá acceso a los datos de Kardon. Esta acción no se puede deshacer.",
           success: {
             title: "¡Éxito!",
             message: "El token de API se ha eliminado exitosamente",
@@ -1764,7 +1764,7 @@ export default {
       api_tokens: {
         title: "No se han creado tokens de API",
         description:
-          "Las APIs de Plane se pueden usar para integrar tus datos en Plane con cualquier sistema externo. Crea un token para comenzar.",
+          "Las APIs de Kardon se pueden usar para integrar tus datos en Kardon con cualquier sistema externo. Crea un token para comenzar.",
       },
       webhooks: {
         title: "No se han agregado webhooks",
@@ -1827,7 +1827,7 @@ export default {
       activity: {
         title: "Aún no hay actividades",
         description:
-          "¡Comienza creando un nuevo elemento de trabajo! Agrégale detalles y propiedades. Explora más en Plane para ver tu actividad.",
+          "¡Comienza creando un nuevo elemento de trabajo! Agrégale detalles y propiedades. Explora más en Kardon para ver tu actividad.",
       },
       assigned: {
         title: "No hay elementos de trabajo asignados a ti",
@@ -1983,13 +1983,13 @@ export default {
       "auto-archive": {
         title: "Archivar automáticamente elementos de trabajo cerrados",
         description:
-          "Plane archivará automáticamente los elementos de trabajo que hayan sido completados o cancelados.",
+          "Kardon archivará automáticamente los elementos de trabajo que hayan sido completados o cancelados.",
         duration: "Archivar automáticamente elementos de trabajo cerrados durante",
       },
       "auto-close": {
         title: "Cerrar automáticamente elementos de trabajo",
         description:
-          "Plane cerrará automáticamente los elementos de trabajo que no hayan sido completados o cancelados.",
+          "Kardon cerrará automáticamente los elementos de trabajo que no hayan sido completados o cancelados.",
         duration: "Cerrar automáticamente elementos de trabajo inactivos durante",
         auto_close_status: "Estado de cierre automático",
       },
@@ -2186,9 +2186,9 @@ export default {
         primary_button: {
           text: "Crea tu primer elemento de trabajo",
           comic: {
-            title: "Los elementos de trabajo son bloques de construcción en Plane.",
+            title: "Los elementos de trabajo son bloques de construcción en Kardon.",
             description:
-              "Rediseñar la interfaz de Plane, Cambiar la marca de la empresa o Lanzar el nuevo sistema de inyección de combustible son ejemplos de elementos de trabajo que probablemente tienen sub-elementos de trabajo.",
+              "Rediseñar la interfaz de Kardon, Cambiar la marca de la empresa o Lanzar el nuevo sistema de inyección de combustible son ejemplos de elementos de trabajo que probablemente tienen sub-elementos de trabajo.",
           },
         },
       },
@@ -2294,9 +2294,9 @@ export default {
     empty_state: {
       general: {
         title:
-          "Escribe una nota, un documento o una base de conocimiento completa. Obtén ayuda de Galileo, el asistente de IA de Plane, para comenzar",
+          "Escribe una nota, un documento o una base de conocimiento completa. Obtén ayuda de Galileo, el asistente de IA de Kardon, para comenzar",
         description:
-          "Las páginas son espacios para pensamientos en Plane. Toma notas de reuniones, fórmalas fácilmente, integra elementos de trabajo, organízalas usando una biblioteca de componentes y mantenlas todas en el contexto de tu proyecto. Para hacer cualquier documento rápidamente, invoca a Galileo, la IA de Plane, con un atajo o haciendo clic en un botón.",
+          "Las páginas son espacios para pensamientos en Kardon. Toma notas de reuniones, fórmalas fácilmente, integra elementos de trabajo, organízalas usando una biblioteca de componentes y mantenlas todas en el contexto de tu proyecto. Para hacer cualquier documento rápidamente, invoca a Galileo, la IA de Kardon, con un atajo o haciendo clic en un botón.",
         primary_button: {
           text: "Crea tu primera página",
         },
@@ -2675,7 +2675,7 @@ export default {
   },
   self_hosted_maintenance_message: {
     kardon_didnt_start_up_this_could_be_because_one_or_more_kardon_services_failed_to_start:
-      "Plane no se inició. Esto podría deberse a que uno o más servicios de Plane fallaron al iniciar.",
+      "Kardon no se inició. Esto podría deberse a que uno o más servicios de Kardon fallaron al iniciar.",
     choose_view_logs_from_setup_sh_and_docker_logs_to_be_sure:
       "Selecciona View Logs desde setup.sh y los logs de Docker para estar seguro.",
   },

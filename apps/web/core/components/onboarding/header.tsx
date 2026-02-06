@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -7,7 +7,7 @@
 import type { FC } from "react";
 import { observer } from "mobx-react";
 // kardon imports
-import { PlaneLockup, ChevronLeftIcon } from "@kardon/propel/icons";
+import { KardonLockup, ChevronLeftIcon } from "@kardon/propel/icons";
 import { Tooltip } from "@kardon/propel/tooltip";
 import type { TOnboardingStep } from "@kardon/types";
 import { EOnboardingSteps } from "@kardon/types";
@@ -85,7 +85,7 @@ export const OnboardingHeader = observer(function OnboardingHeader(props: Onboar
               <ChevronLeftIcon className="size-6 text-placeholder" />
             </button>
           )}
-          <PlaneLockup height={20} width={95} className="text-primary" />
+          <KardonLockup height={20} width={95} className="text-primary" />
         </div>
         <SwitchAccountDropdown fullName={userName} />
       </div>

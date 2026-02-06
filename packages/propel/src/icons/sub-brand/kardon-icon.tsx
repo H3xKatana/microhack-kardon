@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,7 +9,7 @@ import * as React from "react";
 import { IconWrapper } from "../icon-wrapper";
 import type { ISvgIcons } from "../type";
 
-export function PlaneNewIcon({ color = "currentColor", ...rest }: ISvgIcons) {
+export function KardonNewIcon({ color = "currentColor", ...rest }: ISvgIcons) {
   return (
     <IconWrapper color={color} {...rest}>
       <path

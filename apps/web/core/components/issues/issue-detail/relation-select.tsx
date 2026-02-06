@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -9,7 +9,7 @@ import { observer } from "mobx-react";
 import Link from "next/link";
 
 import { EditIcon, CloseIcon } from "@kardon/propel/icons";
-// Plane
+// Kardon
 import { TOAST_TYPE, setToast } from "@kardon/propel/toast";
 import { Tooltip } from "@kardon/propel/tooltip";
 import type { ISearchIssueResponse } from "@kardon/types";
@@ -21,7 +21,7 @@ import { useIssueDetail } from "@/hooks/store/use-issue-detail";
 import { useIssues } from "@/hooks/store/use-issues";
 import { useProject } from "@/hooks/store/use-project";
 import { usePlatformOS } from "@/hooks/use-platform-os";
-// Plane web imports
+// Kardon web imports
 import { useTimeLineRelationOptions } from "@/kardon-web/components/relations";
 import type { TIssueRelationTypes } from "@/kardon-web/types";
 import type { TRelationObject } from "../issue-detail-widgets/relations";

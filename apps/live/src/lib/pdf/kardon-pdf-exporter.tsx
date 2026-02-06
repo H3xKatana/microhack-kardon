@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -70,7 +70,7 @@ export const createPdfDocument = (doc: TipTapDocument, options: PDFExportOptions
   );
 };
 
-export const renderPlaneDocToPdfBuffer = async (
+export const renderKardonDocToPdfBuffer = async (
   doc: TipTapDocument,
   options: PDFExportOptions = {}
 ): Promise<Buffer> => {
@@ -81,7 +81,7 @@ export const renderPlaneDocToPdfBuffer = async (
   return Buffer.from(arrayBuffer);
 };
 
-export const renderPlaneDocToPdfBlob = async (doc: TipTapDocument, options: PDFExportOptions = {}): Promise<Blob> => {
+export const renderKardonDocToPdfBlob = async (doc: TipTapDocument, options: PDFExportOptions = {}): Promise<Blob> => {
   const pdfDocument = createPdfDocument(doc, options);
   const pdfInstance = pdf(pdfDocument);
   return await pdfInstance.toBlob();

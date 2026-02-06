@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -39,7 +39,7 @@ import { KanbanIssueBlockLoader } from "@/components/ui/loader/layouts/kanban-la
 import { useProjectState } from "@/hooks/store/use-project-state";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { useIssuesStore } from "@/hooks/use-issue-layout-store";
-// Plane-web
+// Kardon-web
 import { useWorkFlowFDragNDrop } from "@/kardon-web/components/workflow";
 //
 import { GroupDragOverlay } from "../group-drag-overlay";

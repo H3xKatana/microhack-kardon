@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -340,7 +340,7 @@ export function InviteMembers(props: Props) {
           <div className="text-center space-y-1 py-4 mx-auto w-4/5">
             <h3 className="text-24 font-bold text-primary">Invite your teammates</h3>
             <p className="font-medium text-placeholder">
-              Work in kardon happens best with your team. Invite them now to use Plane to its potential.
+              Work in kardon happens best with your team. Invite them now to use Kardon to its potential.
             </p>
           </div>
           <form

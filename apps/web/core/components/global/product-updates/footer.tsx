@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
@@ -8,7 +8,7 @@ import { USER_TRACKER_ELEMENTS } from "@kardon/constants";
 import { useTranslation } from "@kardon/i18n";
 // ui
 import { getButtonStyling } from "@kardon/propel/button";
-import { PlaneLogo } from "@kardon/propel/icons";
+import { KardonLogo } from "@kardon/propel/icons";
 // helpers
 import { cn } from "@kardon/utils";
 
@@ -69,7 +69,7 @@ export function ProductUpdatesFooter() {
         )}
         rel="noreferrer"
       >
-        <PlaneLogo className="h-4 w-auto text-primary" />
+        <KardonLogo className="h-4 w-auto text-primary" />
         {t("powered_by_kardon_pages")}
       </a>
     </div>

@@ -1,12 +1,12 @@
 /**
- * Copyright (c) 2023-present Plane Software, Inc. and contributors
+ * Copyright (c) 2023-present Kardon Software, Inc. and contributors
  * SPDX-License-Identifier: AGPL-3.0-only
  * See the LICENSE file for details.
  */
 
 import { pull, find, concat, update, set } from "lodash-es";
 import { action, makeObservable, observable, runInAction } from "mobx";
-// Plane Imports
+// Kardon Imports
 import type { TIssueCommentReaction, TIssueCommentReactionIdMap, TIssueCommentReactionMap } from "@kardon/types";
 import { groupReactions } from "@kardon/utils";
 // services
