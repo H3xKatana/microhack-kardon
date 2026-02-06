@@ -23,6 +23,7 @@ jobs:
     permissions:
       contents: read
       packages: write
+      security-events: write
 
     strategy:
       fail-fast: false
@@ -42,13 +43,13 @@ jobs:
             context: ./apps/api
           - service: worker
             context: ./apps/api
-            dockerfile: Dockerfile.api
+            dockerfile: ./apps/api/Dockerfile.api
           - service: beat-worker
             context: ./apps/api
-            dockerfile: Dockerfile.api
+            dockerfile: ./apps/api/Dockerfile.api
           - service: migrator
             context: ./apps/api
-            dockerfile: Dockerfile.api
+            dockerfile: ./apps/api/Dockerfile.api
           - service: live
             dockerfile: ./apps/live/Dockerfile.live
             context: .
@@ -105,7 +106,7 @@ jobs:
           exit-code: 1
 
       - name: Upload Trivy scan results to GitHub Security
-        uses: github/codeql-action/upload-sarif@v2
+        uses: github/codeql-action/upload-sarif@v3
         if: always()
         with:
           sarif_file: trivy-results-${{ matrix.service }}.sarif
