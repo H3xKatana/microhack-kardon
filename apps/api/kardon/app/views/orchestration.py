@@ -468,99 +468,121 @@ class WorkspaceOrchestrationEndpoint(BaseAPIView):
             # Get workspace context for better understanding
             context = self.get_workspace_context(workspace)
 
-            # Create specialized prompts based on the selected model
+            # Create specialized prompts based on the selected model with more distinctive approaches
             specialized_prompts = {
                 'project-manager': f"""
-                You are a Project Manager AI specialist. Focus on project planning, scheduling, resource allocation, and timeline management.
+                You are a Senior Project Manager with 15+ years of experience managing complex software development projects. 
+                Your expertise includes project planning, resource allocation, risk assessment, milestone tracking, and stakeholder communication.
                 
                 User request: "{text_input}"
                 
                 Workspace context: {context}
                 
-                Provide recommendations on project planning, scheduling, milestone setting, and resource allocation.
-                If asked to create a project, provide detailed planning advice.
-                If asked about timelines or schedules, focus on timeline analysis and optimization.
+                Approach this from a strategic project management perspective:
+                - Assess project scope and requirements
+                - Identify potential risks and dependencies
+                - Recommend project structure and phases
+                - Suggest resource allocation and timeline estimates
+                - Propose communication and reporting strategies
                 
-                Respond with actionable project management insights.
+                Provide detailed project management advice with specific methodologies and best practices.
+                Format your response with clear sections: Scope, Timeline, Resources, Risks, Recommendations.
                 """,
-                
+
                 'task-optimizer': f"""
-                You are a Task Optimization AI specialist. Focus on task efficiency, prioritization, workload distribution, and productivity enhancement.
+                You are a Task Optimization Specialist focused on maximizing productivity and efficiency.
+                Your expertise includes task prioritization frameworks (Eisenhower Matrix, MoSCoW, RICE), workflow optimization, 
+                bottleneck identification, and productivity enhancement techniques.
                 
                 User request: "{text_input}"
                 
                 Workspace context: {context}
                 
-                Analyze tasks for efficiency improvements, suggest optimal prioritization strategies, recommend workload balancing, and identify productivity bottlenecks.
-                If asked to create or update tasks, focus on optimizing their structure and priority.
-                Provide specific recommendations for improving task workflow.
+                Analyze tasks with a productivity lens:
+                - Apply prioritization frameworks to rank tasks
+                - Identify workflow inefficiencies and bottlenecks
+                - Suggest time-blocking and batching strategies
+                - Recommend tools and techniques for task management
+                - Propose ways to eliminate redundant or low-value activities
                 
-                Respond with concrete optimization suggestions.
+                Provide concrete, actionable optimization recommendations with specific methodologies.
                 """,
-                
+
                 'workflow-expert': f"""
-                You are a Workflow Expert AI specialist. Focus on process improvement, automation opportunities, workflow design, and operational efficiency.
+                You are a Business Process Improvement Consultant specializing in workflow design and automation.
+                Your expertise includes process mapping, automation opportunities, bottleneck analysis, and operational efficiency.
                 
                 User request: "{text_input}"
                 
                 Workspace context: {context}
                 
-                Analyze processes for automation opportunities, suggest workflow improvements, identify bottlenecks, and recommend process optimizations.
-                If asked about creating cycles or sprints, focus on workflow organization.
-                Recommend best practices for process standardization and automation.
+                Evaluate processes and workflows critically:
+                - Map out current process steps and identify redundancies
+                - Spot automation opportunities using available tools
+                - Analyze workflow bottlenecks and propose solutions
+                - Recommend process standardization and documentation
+                - Suggest integration points between different systems
                 
-                Respond with workflow and process improvement recommendations.
+                Provide detailed workflow analysis with process diagrams concepts and automation suggestions.
                 """,
-                
+
                 'resource-planner': f"""
-                You are a Resource Planning AI specialist. Focus on team allocation, capacity management, skill matching, and resource optimization.
+                You are a Resource Management Specialist with deep knowledge of team allocation, capacity planning, 
+                skill-based assignment, and workforce optimization.
                 
                 User request: "{text_input}"
                 
                 Workspace context: {context}
                 
-                Provide recommendations on team assignments, capacity planning, skill-based task allocation, and resource utilization.
-                If asked to assign tasks, consider team member skills and workload.
-                Focus on optimizing resource distribution and preventing overallocation.
+                Focus on human and material resources strategically:
+                - Analyze team capacity and workload distribution
+                - Match tasks to team members' skills and availability
+                - Identify resource conflicts and propose solutions
+                - Recommend cross-training opportunities
+                - Suggest resource leveling and smoothing techniques
                 
-                Respond with resource allocation and team management advice.
+                Provide detailed resource allocation plans with skill matrices and capacity analysis.
                 """,
-                
+
                 'timeline-analyst': f"""
-                You are a Timeline Analysis AI specialist. Focus on deadlines, milestones, scheduling, duration estimation, and critical path analysis.
+                You are a Schedule and Timeline Analyst specializing in project scheduling, critical path analysis, 
+                milestone planning, and deadline management.
                 
                 User request: "{text_input}"
                 
                 Workspace context: {context}
                 
-                Analyze timelines, suggest optimal scheduling, identify critical deadlines, estimate durations, and flag potential delays.
-                If asked about due dates or scheduling, provide detailed timeline analysis.
-                Recommend adjustments to meet deadlines and optimize project flow.
+                Perform detailed timeline analysis:
+                - Calculate task durations and dependencies
+                - Identify the critical path and potential delays
+                - Estimate buffer times and contingency plans
+                - Create milestone frameworks and checkpoints
+                - Assess schedule feasibility and propose adjustments
                 
-                Respond with timeline and scheduling recommendations.
+                Provide detailed scheduling analysis with Gantt chart concepts and critical path identification.
                 """,
-                
+
                 'orchestrator': f"""
                 You are an AI assistant for a project management system. Analyze the user's request and provide an appropriate response.
-                
+
                 User request: "{text_input}"
-                
+
                 Workspace context: {context}
-                
+
                 Available capabilities:
                 - Create: issues, projects, cycles, labels, states
                 - List: issues (tasks), projects, cycles, labels, states
                 - Update: issues (priority, due date, state, title)
                 - Assign: issues to users
                 - Set: priority, due date
-                
+
                 If the request matches any of these patterns, suggest the correct command format.
                 Otherwise, provide a helpful response.
-                
+
                 Respond in a clear, helpful way with specific examples if needed.
                 """
             }
-            
+
             # Select the appropriate prompt based on the model
             prompt = specialized_prompts.get(selected_model, specialized_prompts['orchestrator'])
 
@@ -572,9 +594,31 @@ class WorkspaceOrchestrationEndpoint(BaseAPIView):
                 print(f"Error from LLM: {error}")
                 # Check if it's a quota error and provide specific guidance
                 if "quota" in str(error).lower() or "exceeded" in str(error).lower() or "rate limit" in str(error).lower():
-                    return f"⚠️ LLM quota exceeded. Don't worry! The following commands work without LLM: create/list/update/assign issues, projects, cycles, labels, and states. Try: 'list my tasks', 'create issue #description', 'assign issue #123 to user'."
+                    return f"""⚠️ LLM quota exceeded. Don't worry! The following commands work without LLM:
+
+• Create: issues, projects, cycles, labels, and states
+• List: issues, projects, cycles, labels, and states  
+• Update: issues (priority, due date, state, title)
+• Assign: issues to users
+• Set: priority, due date
+
+Try these commands:
+• 'list my tasks'
+• 'create issue #description'  
+• 'assign issue #123 to user'"""
                 else:
-                    return f"❌ LLM error occurred. Available commands: create/list/update/assign issues, projects, cycles, labels, states. Try: 'list my tasks', 'create issue #description', 'assign issue #123 to user'."
+                    return f"""❌ LLM error occurred. Available commands:
+
+• Create: issues, projects, cycles, labels, states
+• List: issues, projects, cycles, labels, states
+• Update: issues (priority, due date, state, title)
+• Assign: issues to users
+• Set: priority, due date
+
+Try these commands:
+• 'list my tasks'
+• 'create issue #description'
+• 'assign issue #123 to user'"""
 
             print(f"Returning LLM response: {text}")
             return text

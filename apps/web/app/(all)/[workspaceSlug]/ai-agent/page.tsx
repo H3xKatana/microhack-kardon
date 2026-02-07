@@ -446,7 +446,7 @@ const PiChatPage = observer(() => {
                   </Button>
                 </div>
                 <p className="text-xs text-secondary mt-3 text-center">
-                  Agents Orchestrator may produce inaccurate information about people, places, or facts.
+                  All chat is stored in the browser for security reasons. No chat data with the AI is being stored.
                 </p>
               </div>
             )}
