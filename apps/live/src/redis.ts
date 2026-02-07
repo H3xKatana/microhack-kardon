@@ -214,6 +214,48 @@ export class RedisManager {
       return false;
     }
   }
+
+  // Pub/Sub methods for messaging
+  public async subscribe(channel: string, callback: (message: string) => void): Promise<void> {
+    const client = this.getClient();
+    if (!client) {
+      logger.warn(`REDIS_MANAGER: Cannot subscribe to ${channel}, Redis not available`);
+      return;
+    }
+
+    try {
+      // Create a duplicate client for subscription (required for Redis pub/sub)
+      const subscriber = client.duplicate();
+
+      subscriber.on("message", (receivedChannel: string, message: string) => {
+        if (receivedChannel === channel) {
+          callback(message);
+        }
+      });
+
+      await subscriber.subscribe(channel);
+      logger.info(`REDIS_MANAGER: Subscribed to channel: ${channel}`);
+    } catch (error) {
+      logger.error(`REDIS_MANAGER: Error subscribing to channel ${channel}:`, error);
+    }
+  }
+
+  public async publish(channel: string, message: string): Promise<number> {
+    const client = this.getClient();
+    if (!client) {
+      logger.warn(`REDIS_MANAGER: Cannot publish to ${channel}, Redis not available`);
+      return 0;
+    }
+
+    try {
+      const result = await client.publish(channel, message);
+      logger.info(`REDIS_MANAGER: Published to ${channel}, received by ${result} subscriber(s)`);
+      return result;
+    } catch (error) {
+      logger.error(`REDIS_MANAGER: Error publishing to channel ${channel}:`, error);
+      return 0;
+    }
+  }
 }
 
 // Export a default instance for convenience

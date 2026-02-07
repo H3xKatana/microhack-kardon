@@ -40,7 +40,7 @@ export const usePersonalNavigationPreferences = () => {
       return DEFAULT_PERSONAL_PREFERENCES;
     }
 
-    // Extract personal items from the store (stickies, your_work, drafts)
+    // Extract personal items from the store (stickies, your_work, drafts, agents_orchestrator, pi_chat, channels)
     const personalItems: Record<TPersonalNavigationItemKey, { enabled: boolean; sort_order: number }> = {
       stickies: {
         enabled: storePreferences.stickies?.is_pinned ?? DEFAULT_PERSONAL_PREFERENCES.items.stickies.enabled,
@@ -53,6 +53,22 @@ export const usePersonalNavigationPreferences = () => {
       drafts: {
         enabled: storePreferences.drafts?.is_pinned ?? DEFAULT_PERSONAL_PREFERENCES.items.drafts.enabled,
         sort_order: storePreferences.drafts?.sort_order ?? DEFAULT_PERSONAL_PREFERENCES.items.drafts.sort_order,
+      },
+      agents_orchestrator: {
+        enabled:
+          storePreferences.agents_orchestrator?.is_pinned ??
+          DEFAULT_PERSONAL_PREFERENCES.items.agents_orchestrator.enabled,
+        sort_order:
+          storePreferences.agents_orchestrator?.sort_order ??
+          DEFAULT_PERSONAL_PREFERENCES.items.agents_orchestrator.sort_order,
+      },
+      pi_chat: {
+        enabled: storePreferences.pi_chat?.is_pinned ?? DEFAULT_PERSONAL_PREFERENCES.items.pi_chat.enabled,
+        sort_order: storePreferences.pi_chat?.sort_order ?? DEFAULT_PERSONAL_PREFERENCES.items.pi_chat.sort_order,
+      },
+      channels: {
+        enabled: storePreferences.channels?.is_pinned ?? DEFAULT_PERSONAL_PREFERENCES.items.channels.enabled,
+        sort_order: storePreferences.channels?.sort_order ?? DEFAULT_PERSONAL_PREFERENCES.items.channels.sort_order,
       },
     };
 

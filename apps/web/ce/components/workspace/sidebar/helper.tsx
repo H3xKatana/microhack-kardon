@@ -18,6 +18,7 @@ import {
   AiIcon,
 } from "@kardon/propel/icons";
 import { cn } from "@kardon/utils";
+import { Hash } from "lucide-react";
 
 export const getSidebarNavigationItemIcon = (key: string, className: string = "") => {
   switch (key) {
@@ -43,6 +44,7 @@ export const getSidebarNavigationItemIcon = (key: string, className: string = ""
       return <MultipleStickyIcon className={cn("size-4 flex-shrink-0", className)} />;
     case "agents_orchestrator":
       return <AiIcon className={cn("size-4 flex-shrink-0", className)} />;
-    
+    case "channels":
+      return <Hash className={cn("size-4 flex-shrink-0", className)} />;
   }
 };
