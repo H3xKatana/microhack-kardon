@@ -1,0 +1,46 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: proxy-config
+  namespace: kardon-prod
+data:
+  traefik.yaml: |
+    global:
+      checkNewVersion: false
+      sendAnonymousUsage: false
+
+    log:
+      level: INFO
+      format: json
+
+    entryPoints:
+      web:
+        address: ":80"
+        http:
+          redirections:
+            entryPoint:
+              to: websecure
+              permanent: true
+      websecure:
+        address: ":443"
+        http:
+          tls: true
+
+    providers:
+      kubernetesCRD:
+        enabled: true
+        ingressClass: traefik
+      file:
+        directory: /etc/traefik
+        watch: true
+
+    metrics:
+      prometheus:
+        entryPoint: metrics
+
+    api:
+      dashboard: true
+      insecure: false
+
+    pilot:
+      token: ${PILOT_TOKEN}

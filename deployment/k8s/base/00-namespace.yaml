@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kardon
+  labels:
+    app: kardon
+    tier: backend
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: kardon-infra
+  labels:
+    app: kardon
+    tier: infrastructure

@@ -1,0 +1,50 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - 01-configmap.yaml
+  - services/web.yaml
+  - services/admin.yaml
+  - services/space.yaml
+  - services/api.yaml
+  - services/worker.yaml
+  - services/beat-worker.yaml
+  - services/migrator.yaml
+  - services/live.yaml
+  - services/proxy.yaml
+
+images:
+  - name: ghcr.io/h3xkatana/microhack-kardon/web
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/admin
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/space
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/api
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/worker
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/beat-worker
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/migrator
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/live
+    newTag: latest
+  - name: ghcr.io/h3xkatana/microhack-kardon/proxy
+    newTag: latest
+
+patches:
+  - patch: |
+      - op: replace
+        path: /spec/replicas
+        value: 1
+    target:
+      kind: Deployment
+      labelSelector: "tier=frontend"
+  - patch: |
+      - op: replace
+        path: /spec/replicas
+        value: 1
+    target:
+      kind: Deployment
+      labelSelector: "tier=backend"

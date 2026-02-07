@@ -1,0 +1,77 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: proxy
+  namespace: kardon
+  labels:
+    app: proxy
+    tier: gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: proxy
+  template:
+    metadata:
+      labels:
+        app: proxy
+        tier: gateway
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        fsGroup: 1000
+      containers:
+        - name: proxy
+          image: ghcr.io/h3xkatana/microhack-kardon/proxy:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+              name: http
+            - containerPort: 443
+              name: https
+          envFrom:
+            - configMapRef:
+                name: kardon-config
+          env:
+            - name: LISTEN_HTTP_PORT
+              value: "80"
+            - name: LISTEN_HTTPS_PORT
+              value: "443"
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "25m"
+            limits:
+              memory: "128Mi"
+              cpu: "100m"
+          volumeMounts:
+            - name: config
+              mountPath: /etc/traefik
+      volumes:
+        - name: config
+          configMap:
+            name: proxy-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: proxy
+  namespace: kardon
+  labels:
+    app: proxy
+spec:
+  type: NodePort
+  ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+      name: http
+      nodePort: 30080
+    - port: 443
+      targetPort: 443
+      protocol: TCP
+      name: https
+      nodePort: 30443
+  selector:
+    app: proxy
