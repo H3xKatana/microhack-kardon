@@ -221,9 +221,11 @@ const PiChatPage = observer(() => {
                   
                   <div className="mb-8 text-center relative z-10">
                     <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-layer-1 border border-subtle">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-accent-primary" viewBox="0 0 20 20" fill="currentColor">
-                        <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd" />
-                      </svg>
+                      <img 
+                        src="/app/assets/logo.png" 
+                        alt="Kardon Logo" 
+                        className="h-24 scale-200 w-24 object-contain"
+                      />
                     </div>
                     <h1 className="text-3xl font-bold text-primary mb-2">Agents Orchestrator</h1>
                     <p className="text-secondary max-w-md">
@@ -232,15 +234,27 @@ const PiChatPage = observer(() => {
                   </div>
                   
                   {/* Centered input field with elegant styling */}
-                  <div className="mb-4 flex justify-center">
-                    <select 
-                      value={selectedModel} 
+                  <div className="mb-4 flex flex-col sm:flex-row gap-3 justify-center items-center">
+                    <select
+                      value={selectedModel}
                       onChange={(e) => setSelectedModel(e.target.value)}
-                      className="px-4 py-2 border rounded-lg bg-surface-1 text-primary"
+                      className="px-4 py-2 border rounded-lg bg-surface-1 text-primary min-w-[200px]"
                     >
                       <option value="orchestrator">Orchestrator (Auto-select)</option>
-                      <option value="general">General Assistant</option>
+                      <option value="project-manager">Project Manager (Planning & Scheduling)</option>
+                      <option value="task-optimizer">Task Optimizer (Efficiency & Prioritization)</option>
+                      <option value="workflow-expert">Workflow Expert (Process & Automation)</option>
+                      <option value="resource-planner">Resource Planner (Allocation & Teams)</option>
+                      <option value="timeline-analyst">Timeline Analyst (Deadlines & Milestones)</option>
                     </select>
+                    <div className="text-sm text-secondary">
+                      {selectedModel === 'orchestrator' && 'Handles project management tasks automatically'}
+                      {selectedModel === 'project-manager' && 'Specialized in project planning and scheduling'}
+                      {selectedModel === 'task-optimizer' && 'Optimizes task efficiency and prioritization'}
+                      {selectedModel === 'workflow-expert' && 'Expert in workflows, processes and automation'}
+                      {selectedModel === 'resource-planner' && 'Manages resource allocation and team coordination'}
+                      {selectedModel === 'timeline-analyst' && 'Analyzes timelines, deadlines and milestones'}
+                    </div>
                   </div>
                   <div className="w-full max-w-2xl relative z-10">
                     <div className="relative">
@@ -296,16 +310,44 @@ const PiChatPage = observer(() => {
                             : 'bg-layer-1 text-primary rounded-bl-none'
                         }`}
                       >
-                        {message.contentHtml ? (
-                          <div 
-                            className="whitespace-pre-wrap text-base prose prose-sm max-w-none"
-                            dangerouslySetInnerHTML={{ __html: message.contentHtml }} 
-                          />
-                        ) : (
-                          <div className="whitespace-pre-wrap text-base">
-                            {message.content}
-                          </div>
-                        )}
+                        {(() => {
+                          // Check if this is a quota exceeded message that needs special formatting
+                          if (message.content.includes('Available commands')) {
+                            // Format the message with proper line breaks and styling
+                            const formattedContent = message.content
+                              .replace('Available commands:', '<div class="font-semibold mb-2">Available commands:</div>')
+                              .replace('create/list/update/assign issues, projects, cycles, labels, states.', '<div class="ml-4 mb-1">• create/list/update/assign issues, projects, cycles, labels, states</div>')
+                              .replace("Try: 'list my tasks', 'create issue #description', 'assign issue #123 to user'.", 
+                                "<div class='mt-3 font-semibold'>Try these commands:</div><div class='ml-4'>• list my tasks</div><div class='ml-4'>• create issue #description</div><div class='ml-4'>• assign issue #123 to user</div>");
+                            
+                            return (
+                              <div 
+                                className="whitespace-pre-wrap text-base bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded prose prose-sm max-w-none"
+                                dangerouslySetInnerHTML={{ __html: formattedContent }} 
+                              />
+                            );
+                          } else {
+                            // For regular messages, use the original display logic
+                            return message.contentHtml ? (
+                              <div 
+                                className={`whitespace-pre-wrap text-base prose prose-sm max-w-none ${
+                                  message.content.includes('quota exceeded') || message.content.includes('LLM error') 
+                                    ? 'bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded' 
+                                    : ''
+                                }`}
+                                dangerouslySetInnerHTML={{ __html: message.contentHtml }} 
+                              />
+                            ) : (
+                              <div className={`whitespace-pre-wrap text-base ${
+                                message.content.includes('quota exceeded') || message.content.includes('LLM error') 
+                                  ? 'bg-yellow-50 border-l-4 border-yellow-400 p-3 rounded' 
+                                  : ''
+                              }`}>
+                                {message.content}
+                              </div>
+                            );
+                          }
+                        })()}
                         <div
                           className={`text-xs mt-2 flex flex-wrap gap-2 ${
                             message.sender === 'user' ? 'text-on-accent/70' : 'text-secondary'
@@ -352,27 +394,53 @@ const PiChatPage = observer(() => {
             {/* Input Area - only show when there are messages */}
             {messages.length > 0 && (
               <div className="border-t border-subtle p-4 bg-surface-1 sticky bottom-0">
-                <div className="flex gap-3">
-                  <Input
-                    value={inputValue}
-                    onChange={(e) => setInputValue(e.target.value)}
-                    onKeyPress={handleKeyPress}
-                    placeholder="Continue conversation..."
-                    className="flex-1 py-5 px-4 text-base rounded-xl"
-                    disabled={isLoading}
-                  />
-                  <Button
-                    onClick={handleSendMessage}
-                    disabled={isLoading || !inputValue.trim()}
-                    className="px-6 py-5 rounded-xl"
+                <div className="mb-3 flex flex-col sm:flex-row gap-3 justify-between items-center">
+                  <select
+                    value={selectedModel}
+                    onChange={(e) => setSelectedModel(e.target.value)}
+                    className="px-3 py-1.5 border rounded-md bg-surface-1 text-primary text-sm min-w-[200px]"
                   >
-                    Send
-                  </Button>
+                    <option value="orchestrator">Orchestrator (Auto-select)</option>
+                    <option value="project-manager">Project Manager (Planning & Scheduling)</option>
+                    <option value="task-optimizer">Task Optimizer (Efficiency & Prioritization)</option>
+                    <option value="workflow-expert">Workflow Expert (Process & Automation)</option>
+                    <option value="resource-planner">Resource Planner (Allocation & Teams)</option>
+                    <option value="timeline-analyst">Timeline Analyst (Deadlines & Milestones)</option>
+                  </select>
+                  <div className="text-xs text-secondary">
+                    {selectedModel === 'orchestrator' && 'Handles project management tasks automatically'}
+                    {selectedModel === 'project-manager' && 'Specialized in project planning and scheduling'}
+                    {selectedModel === 'task-optimizer' && 'Optimizes task efficiency and prioritization'}
+                    {selectedModel === 'workflow-expert' && 'Expert in workflows, processes and automation'}
+                    {selectedModel === 'resource-planner' && 'Manages resource allocation and team coordination'}
+                    {selectedModel === 'timeline-analyst' && 'Analyzes timelines, deadlines and milestones'}
+                  </div>
+                </div>
+                <div className="flex gap-2 items-center">
+                  <div className="relative flex-1">
+                    <Input
+                      value={inputValue}
+                      onChange={(e) => setInputValue(e.target.value)}
+                      onKeyPress={handleKeyPress}
+                      placeholder="Continue conversation..."
+                      className="w-full py-5 pl-4 pr-20 text-base rounded-xl"
+                      disabled={isLoading}
+                    />
+                    <Button
+                      onClick={handleSendMessage}
+                      disabled={isLoading || !inputValue.trim()}
+                      className="absolute right-3 top-1/2 transform -translate-y-1/2 py-5 px-4 rounded-lg"
+                    >
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                        <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                      </svg>
+                    </Button>
+                  </div>
                   <Button
                     variant="secondary"
                     size="md"
                     onClick={handleNewConversation}
-                    className="rounded-xl"
+                    className="px-4 py-5 rounded-xl"
                   >
                     New Chat
                   </Button>

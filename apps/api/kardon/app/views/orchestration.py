@@ -52,29 +52,19 @@ class WorkspaceOrchestrationEndpoint(BaseAPIView):
             # Create a unique conversation ID based on user and workspace
             conversation_id = f"{workspace.id}_{request.user.id if hasattr(request, 'user') and request.user else 'unknown'}"
             
+            # Check if this is a specialized model or orchestrator
             if selected_model == "orchestrator":
                 print("Using orchestration logic")
                 # Process with orchestration logic
                 response = self.handle_orchestration(text_input, workspace, conversation_id)
+            elif selected_model in ["project-manager", "task-optimizer", "workflow-expert", "resource-planner", "timeline-analyst"]:
+                print(f"Using specialized model: {selected_model}")
+                # Use specialized model with enhanced fallback orchestration
+                response = self.fallback_orchestration(text_input, workspace, selected_model)
             else:
-                print("Using fallback LLM response")
-                # Fallback to general response using existing LLM functionality
-                api_key, model, provider = get_llm_config()
-                if not api_key or not model or not provider:
-                    print("LLM provider not configured")
-                    return Response(
-                        {"error": "LLM provider configuration is required"},
-                        status=status.HTTP_400_BAD_REQUEST
-                    )
-                
-                text, error = get_llm_response("ASK_ANYTHING", text_input, api_key, model, provider)
-                if not text and error:
-                    print(f"Error from LLM: {error}")
-                    return Response(
-                        {"error": "An internal error has occurred."},
-                        status=status.HTTP_500_INTERNAL_SERVER_ERROR
-                    )
-                response = text
+                print(f"Using fallback orchestration with model: {selected_model}")
+                # Use fallback orchestration with the specified model (could be 'general' or other)
+                response = self.fallback_orchestration(text_input, workspace, selected_model)
             
             print(f"Final response: {response}")
             
@@ -449,26 +439,26 @@ class WorkspaceOrchestrationEndpoint(BaseAPIView):
             log_exception(e)
             return f"❌ Failed to create cycle: {str(e)}"
     
-    def fallback_orchestration(self, text_input: str, workspace: Workspace) -> str:
+    def fallback_orchestration(self, text_input: str, workspace: Workspace, selected_model: str = 'orchestrator') -> str:
         """
         Use LLM to determine intent when keywords don't match known actions
         """
         try:
-            print("fallback_orchestration called")
-            
+            print(f"fallback_orchestration called with model: {selected_model}")
+
             # Hardcode to use Gemini configuration from environment
             import os
             api_key = os.environ.get("LLM_API_KEY")
             model = os.environ.get("LLM_MODEL", "gemini-2.0-flash")  # Default to gemini model
             provider = os.environ.get("LLM_PROVIDER", "gemini")  # Default to gemini provider
-            
+
             print(f"Hardcoded LLM Config - API Key exists: {bool(api_key)}, Model: {model}, Provider: {provider}")
-            
+
             # Log environment configuration for debugging
             print(f"DEBUG - LLM_API_KEY exists: {'LLM_API_KEY' in os.environ}")
             print(f"DEBUG - LLM_PROVIDER: {os.environ.get('LLM_PROVIDER', 'Not set')}")
             print(f"DEBUG - LLM_MODEL: {os.environ.get('LLM_MODEL', 'Not set')}")
-            
+
             if not api_key or not model or not provider:
                 print("LLM configuration is missing or invalid")
                 # Fallback to general response if LLM not configured
@@ -478,38 +468,113 @@ class WorkspaceOrchestrationEndpoint(BaseAPIView):
             # Get workspace context for better understanding
             context = self.get_workspace_context(workspace)
 
-            # Create a prompt that guides the LLM to return structured output
-            prompt = f"""
-            You are an AI assistant for a project management system. Analyze the user's request and provide an appropriate response.
+            # Create specialized prompts based on the selected model
+            specialized_prompts = {
+                'project-manager': f"""
+                You are a Project Manager AI specialist. Focus on project planning, scheduling, resource allocation, and timeline management.
+                
+                User request: "{text_input}"
+                
+                Workspace context: {context}
+                
+                Provide recommendations on project planning, scheduling, milestone setting, and resource allocation.
+                If asked to create a project, provide detailed planning advice.
+                If asked about timelines or schedules, focus on timeline analysis and optimization.
+                
+                Respond with actionable project management insights.
+                """,
+                
+                'task-optimizer': f"""
+                You are a Task Optimization AI specialist. Focus on task efficiency, prioritization, workload distribution, and productivity enhancement.
+                
+                User request: "{text_input}"
+                
+                Workspace context: {context}
+                
+                Analyze tasks for efficiency improvements, suggest optimal prioritization strategies, recommend workload balancing, and identify productivity bottlenecks.
+                If asked to create or update tasks, focus on optimizing their structure and priority.
+                Provide specific recommendations for improving task workflow.
+                
+                Respond with concrete optimization suggestions.
+                """,
+                
+                'workflow-expert': f"""
+                You are a Workflow Expert AI specialist. Focus on process improvement, automation opportunities, workflow design, and operational efficiency.
+                
+                User request: "{text_input}"
+                
+                Workspace context: {context}
+                
+                Analyze processes for automation opportunities, suggest workflow improvements, identify bottlenecks, and recommend process optimizations.
+                If asked about creating cycles or sprints, focus on workflow organization.
+                Recommend best practices for process standardization and automation.
+                
+                Respond with workflow and process improvement recommendations.
+                """,
+                
+                'resource-planner': f"""
+                You are a Resource Planning AI specialist. Focus on team allocation, capacity management, skill matching, and resource optimization.
+                
+                User request: "{text_input}"
+                
+                Workspace context: {context}
+                
+                Provide recommendations on team assignments, capacity planning, skill-based task allocation, and resource utilization.
+                If asked to assign tasks, consider team member skills and workload.
+                Focus on optimizing resource distribution and preventing overallocation.
+                
+                Respond with resource allocation and team management advice.
+                """,
+                
+                'timeline-analyst': f"""
+                You are a Timeline Analysis AI specialist. Focus on deadlines, milestones, scheduling, duration estimation, and critical path analysis.
+                
+                User request: "{text_input}"
+                
+                Workspace context: {context}
+                
+                Analyze timelines, suggest optimal scheduling, identify critical deadlines, estimate durations, and flag potential delays.
+                If asked about due dates or scheduling, provide detailed timeline analysis.
+                Recommend adjustments to meet deadlines and optimize project flow.
+                
+                Respond with timeline and scheduling recommendations.
+                """,
+                
+                'orchestrator': f"""
+                You are an AI assistant for a project management system. Analyze the user's request and provide an appropriate response.
+                
+                User request: "{text_input}"
+                
+                Workspace context: {context}
+                
+                Available capabilities:
+                - Create: issues, projects, cycles, labels, states
+                - List: issues (tasks), projects, cycles, labels, states
+                - Update: issues (priority, due date, state, title)
+                - Assign: issues to users
+                - Set: priority, due date
+                
+                If the request matches any of these patterns, suggest the correct command format.
+                Otherwise, provide a helpful response.
+                
+                Respond in a clear, helpful way with specific examples if needed.
+                """
+            }
             
-            User request: "{text_input}"
-            
-            Workspace context: {context}
-            
-            Available capabilities:
-            - Create: issues, projects, cycles, labels, states
-            - List: issues (tasks), projects, cycles, labels, states
-            - Update: issues (priority, due date, state, title)
-            - Assign: issues to users
-            - Set: priority, due date
-            
-            If the request matches any of these patterns, suggest the correct command format.
-            Otherwise, provide a helpful response.
-            
-            Respond in a clear, helpful way with specific examples if needed.
-            """
-            
+            # Select the appropriate prompt based on the model
+            prompt = specialized_prompts.get(selected_model, specialized_prompts['orchestrator'])
+
             # Use hardcoded provider instead of the one from config
             text, error = get_llm_response("ASK_ANYTHING", prompt, api_key, model, provider)
             print(f"LLM response - Success: {bool(text)}, Error: {error}")
-            
+
             if not text and error:
                 print(f"Error from LLM: {error}")
                 # Check if it's a quota error and provide specific guidance
                 if "quota" in str(error).lower() or "exceeded" in str(error).lower() or "rate limit" in str(error).lower():
-                    return f"LLM quota exceeded. Available commands work without LLM: create/list/update/assign issues, projects, cycles, labels, states. Try: 'list my tasks', 'create issue #description', 'assign issue #123 to user'."
+                    return f"⚠️ LLM quota exceeded. Don't worry! The following commands work without LLM: create/list/update/assign issues, projects, cycles, labels, and states. Try: 'list my tasks', 'create issue #description', 'assign issue #123 to user'."
                 else:
-                    return f"LLM error occurred. Available commands: create/list/update/assign issues, projects, cycles, labels, states. Try: 'list my tasks', 'create issue #description', 'assign issue #123 to user'."
+                    return f"❌ LLM error occurred. Available commands: create/list/update/assign issues, projects, cycles, labels, states. Try: 'list my tasks', 'create issue #description', 'assign issue #123 to user'."
 
             print(f"Returning LLM response: {text}")
             return text
