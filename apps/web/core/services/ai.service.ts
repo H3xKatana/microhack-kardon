@@ -41,6 +41,11 @@ export class AIService extends APIService {
     data: TTaskPayload
   ): Promise<{
     response: string;
+    response_html?: string;
+    success?: boolean;
+    failure?: boolean;
+    operation_type?: string;
+    timestamp?: string;
   }> {
     // Use different endpoint for orchestration tasks
     const endpoint = data.task === AI_EDITOR_TASKS.ORCHESTRATE_TASK
