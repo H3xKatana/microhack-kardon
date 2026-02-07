@@ -108,14 +108,7 @@ export const TourRoot = observer(function TourRoot(props: TOnboardingTourProps) 
               </p>
               <div className="flex h-full items-end">
                 <div className="mt-12 flex items-center gap-6">
-                  <Button
-                    variant="primary"
-                    onClick={() => {
-                      setStep("work-items");
-                    }}
-                  >
-                    Take a Product Tour
-                  </Button>
+              
                   <button
                     type="button"
                     className="bg-transparent text-11 font-medium text-accent-primary outline-subtle-1"
@@ -123,7 +116,18 @@ export const TourRoot = observer(function TourRoot(props: TOnboardingTourProps) 
                       onComplete();
                     }}
                   >
-                    No thanks, I will explore it myself
+                     Explore the app
+                  </button>
+                </div>  <div className="mt-12 flex items-center gap-6">
+            
+                  <button
+                    type="button"
+                    className="bg-transparent text-11 font-medium text-accent-primary outline-subtle-1"
+                    onClick={() => {
+                      onComplete();
+                    }}
+                  >
+                   Explore the app
                   </button>
                 </div>
               </div>

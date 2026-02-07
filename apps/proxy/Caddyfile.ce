@@ -1,35 +1,36 @@
 {
-        admin off
-        {$CERT_EMAIL}
-        acme_ca {$CERT_ACME_CA:https://acme-v02.api.letsencrypt.org/directory}
-        {$CERT_ACME_DNS}
+    admin off
+    {$CERT_EMAIL}
+    acme_ca {$CERT_ACME_CA:https://acme-v02.api.letsencrypt.org/directory}
+    {$CERT_ACME_DNS}
 }
 
 (kardon_proxy) {
-        request_body {
-                max_size {$FILE_SIZE_LIMIT}
-        }
+    request_body {
+        max_size {$FILE_SIZE_LIMIT}
+    }
 
-        redir /spaces /spaces/ permanent
-        reverse_proxy /spaces/* space:3000
+    redir /spaces /spaces/ permanent
+    reverse_proxy /spaces/* space:3000
 
-        redir /god-mode /god-mode/ permanent
-        reverse_proxy /god-mode/* admin:3000
+    redir /god-mode /god-mode/ permanent
+    reverse_proxy /god-mode/* admin:3000
 
-        reverse_proxy /live/* live:3000
+    reverse_proxy /live/* live:3000
 
-        reverse_proxy /api/* api:8000
+    reverse_proxy /api/* api:8000
 
-        reverse_proxy /auth/* api:8000
+    reverse_proxy /auth/* api:8000
 
-        reverse_proxy /static/* api:8000
+    reverse_proxy /static/* api:8000
 
-        reverse_proxy /{$BUCKET_NAME}/* kardon-minio:9000
-        reverse_proxy /{$BUCKET_NAME} kardon-minio:9000
+    reverse_proxy /{$BUCKET_NAME}/* kardon-minio:9000
+    reverse_proxy /{$BUCKET_NAME} kardon-minio:9000
 
-        reverse_proxy /* web:3000
+    # Catch-all fallback for everything else
+    reverse_proxy /* web:3000
 }
 
 :80 {
-        import plane_proxy
+    import kardon_proxy
 }

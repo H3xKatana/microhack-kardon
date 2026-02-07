@@ -124,25 +124,53 @@ def get_llm_response(task, prompt, api_key: str, model: str, provider: str) -> T
     """Helper to get LLM completion response"""
     final_text = task + "\n" + prompt
     try:
-        # For Gemini, prepend provider name to model
         if provider.lower() == "gemini":
-            model = f"gemini/{model}"
-
-        client = OpenAI(api_key=api_key)
-        chat_completion = client.chat.completions.create(
-            model=model, messages=[{"role": "user", "content": final_text}]
-        )
-        text = chat_completion.choices[0].message.content
-        return text, None
+            # Handle Gemini API differently
+            try:
+                import google.generativeai as genai
+            except ImportError:
+                return None, "Google Generative AI library not installed. Please install 'google-generativeai'"
+            
+            genai.configure(api_key=api_key)
+            gemini_model = genai.GenerativeModel(model_name=model)
+            
+            response = gemini_model.generate_content(final_text)
+            text = response.text
+            return text, None
+        elif provider.lower() == "anthropic":
+            # Handle Anthropic API differently
+            try:
+                import anthropic
+            except ImportError:
+                return None, "Anthropic library not installed. Please install 'anthropic'"
+            
+            client = anthropic.Anthropic(api_key=api_key)
+            
+            response = client.messages.create(
+                model=model,
+                max_tokens=1024,
+                messages=[
+                    {"role": "user", "content": final_text}
+                ]
+            )
+            text = response.content[0].text
+            return text, None
+        else:  # OpenAI and compatible providers
+            client = OpenAI(api_key=api_key)
+            chat_completion = client.chat.completions.create(
+                model=model, messages=[{"role": "user", "content": final_text}]
+            )
+            text = chat_completion.choices[0].message.content
+            return text, None
     except Exception as e:
         log_exception(e)
-        error_type = e.__class__.__name__
-        if error_type == "AuthenticationError":
+        error_type = type(e).__name__
+        if "AuthenticationError" in str(type(e)) or "Invalid API key" in str(e):
             return None, f"Invalid API key for {provider}"
-        elif error_type == "RateLimitError":
+        elif "RateLimitError" in str(type(e)) or "rate limit" in str(e).lower():
             return None, f"Rate limit exceeded for {provider}"
         else:
-            return None, f"Error occurred while generating response from {provider}"
+            return None, f"Error occurred while generating response from {provider}: {str(e)}"
 
 
 class GPTIntegrationEndpoint(BaseAPIView):

@@ -7,7 +7,7 @@
 // helpers
 import { API_BASE_URL } from "@kardon/constants";
 // kardon web constants
-import type { AI_EDITOR_TASKS } from "@/kardon-web/constants/ai";
+import { AI_EDITOR_TASKS } from "@/kardon-web/constants/ai";
 // services
 import { APIService } from "@/services/api.service";
 // types
@@ -41,6 +41,11 @@ export class AIService extends APIService {
     data: TTaskPayload
   ): Promise<{
     response: string;
+    response_html?: string;
+    success?: boolean;
+    failure?: boolean;
+    operation_type?: string;
+    timestamp?: string;
   }> {
     // Use different endpoint for orchestration tasks
     const endpoint = data.task === AI_EDITOR_TASKS.ORCHESTRATE_TASK
