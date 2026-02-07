@@ -14,7 +14,7 @@ export function KardonLockup({
   return (
     <div className={`flex items-center gap-2 ${className ?? ""}`}>
       <img
-        src="/app/assets/logo.png"
+        src="/app/assets/images/logo-spinner-dark"
         alt="Kardon Logo"
         width={width}
         height={height}

@@ -37,6 +37,7 @@ from kardon.app.views import (
     WorkspaceStickyViewSet,
     WorkspaceUserPreferenceViewSet,
 )
+from kardon.app.views.orchestration import WorkspaceOrchestrationEndpoint
 
 
 urlpatterns = [
@@ -256,5 +257,11 @@ urlpatterns = [
         "workspaces/<str:slug>/sidebar-preferences/",
         WorkspaceUserPreferenceViewSet.as_view(),
         name="workspace-user-preference",
+    ),
+    # Orchestration
+    path(
+        "workspaces/<str:slug>/orchestration/",
+        WorkspaceOrchestrationEndpoint.as_view(),
+        name="workspace-orchestration",
     ),
 ]

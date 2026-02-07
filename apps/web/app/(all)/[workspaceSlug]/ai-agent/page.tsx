@@ -46,6 +46,7 @@ const PiChatPage = observer(() => {
   // states
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [selectedModel, setSelectedModel] = useState<string>('orchestrator');
   // Use localStorage to persist conversation history
   const { storedValue: conversationHistory, setValue: setConversationHistory } = useLocalStorage<IMessage[][]>(
     `ai-agent-history-${workspaceSlug}`,
@@ -83,7 +84,15 @@ const PiChatPage = observer(() => {
 
   // Handle sending a message
   const handleSendMessage = async () => {
-    if (!inputValue.trim() || isLoading) return;
+    console.log("handleSendMessage called");
+    console.log("inputValue:", inputValue);
+    console.log("isLoading:", isLoading);
+    console.log("selectedModel:", selectedModel);
+    
+    if (!inputValue.trim() || isLoading) {
+      console.log("Early return: input empty or loading");
+      return;
+    }
 
     // Add user message to chat
     const userMessage: IMessage = {
@@ -96,20 +105,30 @@ const PiChatPage = observer(() => {
     setMessages(prev => [...prev, userMessage]);
     setInputValue("");
     setIsLoading(true);
+    console.log("Set loading to true");
 
     try {
+      // Determine task based on selected model
+      const taskType = selectedModel === 'orchestrator' 
+        ? AI_EDITOR_TASKS.ORCHESTRATE_TASK 
+        : AI_EDITOR_TASKS.ASK_ANYTHING;
+      
+      console.log("taskType determined:", taskType);
+
       // Prepare payload for AI service
       const payload: TTaskPayload = {
-        task: AI_EDITOR_TASKS.ASK_ANYTHING, // Using the existing AI task type
+        task: taskType,
         text_input: inputValue,
+        selected_model: selectedModel,
       };
+      
+      console.log("payload prepared:", payload);
 
       // Call AI service to get response
       if (workspaceSlug) {
-        const response = await aiService.performEditorTask(workspaceSlug.toString(), {
-          task: AI_EDITOR_TASKS.ASK_ANYTHING,
-          text_input: inputValue,
-        });
+        console.log("Calling aiService with workspaceSlug:", workspaceSlug.toString());
+        const response = await aiService.performEditorTask(workspaceSlug.toString(), payload);
+        console.log("Response received:", response);
 
         // Add AI response to chat
         const aiMessage: IMessage = {
@@ -135,6 +154,7 @@ const PiChatPage = observer(() => {
       setMessages(prev => [...prev, errorMessage]);
     } finally {
       setIsLoading(false);
+      console.log("Set loading to false");
     }
   };
 
@@ -191,6 +211,16 @@ const PiChatPage = observer(() => {
                   </div>
                   
                   {/* Centered input field with elegant styling */}
+                  <div className="mb-4 flex justify-center">
+                    <select 
+                      value={selectedModel} 
+                      onChange={(e) => setSelectedModel(e.target.value)}
+                      className="px-4 py-2 border rounded-lg bg-surface-1 text-primary"
+                    >
+                      <option value="orchestrator">Orchestrator (Auto-select)</option>
+                      <option value="general">General Assistant</option>
+                    </select>
+                  </div>
                   <div className="w-full max-w-2xl relative z-10">
                     <div className="relative">
                       <Input
