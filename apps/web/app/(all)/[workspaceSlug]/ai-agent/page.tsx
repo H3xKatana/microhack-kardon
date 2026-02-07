@@ -29,8 +29,11 @@ const aiService = new AIService();
 interface IMessage {
   id: string;
   content: string;
+  contentHtml?: string;
   sender: 'user' | 'ai';
   timestamp: Date | string;
+  operationType?: string;
+  success?: boolean;
 }
 
 const PiChatPage = observer(() => {
@@ -56,9 +59,14 @@ const PiChatPage = observer(() => {
   const [messages, setMessages] = useState<IMessage[]>(() => {
     // Load the most recent conversation if available
     if (conversationHistory.length > 0) {
-      // Convert timestamp strings back to Date objects
+      // Convert timestamp strings back to Date objects and restore all message properties
       return conversationHistory[conversationHistory.length - 1].map(msg => ({
-        ...msg,
+        id: msg.id,
+        content: msg.content,
+        contentHtml: msg.contentHtml,
+        operationType: msg.operationType,
+        success: msg.success,
+        sender: msg.sender,
         timestamp: typeof msg.timestamp === 'string' ? new Date(msg.timestamp) : msg.timestamp
       }));
     }
@@ -130,10 +138,17 @@ const PiChatPage = observer(() => {
         const response = await aiService.performEditorTask(workspaceSlug.toString(), payload);
         console.log("Response received:", response);
 
+        // Handle enhanced response format from backend
+        let responseContent = response.response || "No response received";
+        let responseHtml = response.response_html || responseContent.replace(/\n/g, '<br/>');
+        
         // Add AI response to chat
         const aiMessage: IMessage = {
           id: `ai-${Date.now()}`,
-          content: response.response,
+          content: responseContent,
+          contentHtml: responseHtml,
+          operationType: response.operation_type,
+          success: response.success,
           sender: 'ai',
           timestamp: new Date(),
         };
@@ -146,8 +161,9 @@ const PiChatPage = observer(() => {
       // Add error message to chat
       const errorMessage: IMessage = {
         id: `error-${Date.now()}`,
-        content: "Sorry, I encountered an error processing your request.",
+        content: error?.response?.data?.error || error?.data?.error || "Sorry, I encountered an error processing your request.",
         sender: 'ai',
+        success: false,
         timestamp: new Date(),
       };
 
@@ -162,9 +178,14 @@ const PiChatPage = observer(() => {
   useEffect(() => {
     if (messages.length > 0) {
       const updatedHistory = [...conversationHistory];
-      // Convert Date objects to strings for storage
+      // Convert Date objects to strings for storage and preserve all message properties
       const messagesForStorage = messages.map(msg => ({
-        ...msg,
+        id: msg.id,
+        content: msg.content,
+        contentHtml: msg.contentHtml,
+        operationType: msg.operationType,
+        success: msg.success,
+        sender: msg.sender,
         timestamp: msg.timestamp instanceof Date ? msg.timestamp.toISOString() : msg.timestamp
       }));
       if (updatedHistory.length > 0) {
@@ -275,13 +296,36 @@ const PiChatPage = observer(() => {
                             : 'bg-layer-1 text-primary rounded-bl-none'
                         }`}
                       >
-                        <div className="whitespace-pre-wrap text-base">{message.content}</div>
+                        {message.contentHtml ? (
+                          <div 
+                            className="whitespace-pre-wrap text-base"
+                            dangerouslySetInnerHTML={{ __html: message.contentHtml }} 
+                          />
+                        ) : (
+                          <div className="whitespace-pre-wrap text-base">
+                            {message.content}
+                          </div>
+                        )}
                         <div
-                          className={`text-xs mt-2 ${
+                          className={`text-xs mt-2 flex flex-wrap gap-2 ${
                             message.sender === 'user' ? 'text-on-accent/70' : 'text-secondary'
                           }`}
                         >
-                          {new Date(message.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                          {message.operationType && (
+                            <span className="inline-block px-2 py-1 rounded bg-layer-2 text-xs">
+                              {message.operationType}
+                            </span>
+                          )}
+                          {typeof message.success !== 'undefined' && (
+                            <span className={`inline-block px-2 py-1 rounded text-xs ${
+                              message.success ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+                            }`}>
+                              {message.success ? 'Success' : 'Failed'}
+                            </span>
+                          )}
+                          <span>
+                            {new Date(message.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                          </span>
                         </div>
                       </div>
                     </div>
