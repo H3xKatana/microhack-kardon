@@ -63,9 +63,9 @@ export const DesktopSidebarWorkspaceMenu = observer(function DesktopSidebarWorks
         sort_order: personalPreferences.items.drafts.sort_order,
       });
     }
-    if (personalPreferences.items.pi_chat?.enabled && WORKSPACE_SIDEBAR_STATIC_NAVIGATION_ITEMS["pi-chat"]) {
+    if (personalPreferences.items.pi_chat?.enabled && WORKSPACE_SIDEBAR_STATIC_NAVIGATION_ITEMS["agents-orchestrator"]) {
       personalItems.push({
-        ...WORKSPACE_SIDEBAR_STATIC_NAVIGATION_ITEMS["pi-chat"],
+        ...WORKSPACE_SIDEBAR_STATIC_NAVIGATION_ITEMS["agents-orchestrator"],
         sort_order: personalPreferences.items.pi_chat.sort_order,
       });
     }
@@ -91,8 +91,8 @@ export const DesktopSidebarWorkspaceMenu = observer(function DesktopSidebarWorks
     home: HomeIcon,
     "your-work": YourWorkIcon,
     drafts: DraftIcon,
-    "pi-chat": PiChatLogo,
-    "agents_orchestrator": PiChatLogo,
+    "ai-agent": PiChatLogo,
+    "agents-orchestrator": PiChatLogo,
   };
 
   return (

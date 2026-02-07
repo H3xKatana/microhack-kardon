@@ -267,7 +267,7 @@ export const WORKSPACE_SIDEBAR_STATIC_NAVIGATION_ITEMS: Record<string, IWorkspac
   "agents-orchestrator": {
     key: "agents_orchestrator",
     labelTranslationKey: "sidebar.agents_orchestrator",
-    href: `/pi-chat/`,
+    href: `/ai-agent/`,
     access: [EUserWorkspaceRoles.ADMIN, EUserWorkspaceRoles.MEMBER, EUserWorkspaceRoles.GUEST],
     highlight: (pathname: string, url: string) => pathname.includes(url),
   },

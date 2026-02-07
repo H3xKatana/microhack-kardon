@@ -48,7 +48,7 @@ const PiChatPage = observer(() => {
   const [isLoading, setIsLoading] = useState(false);
   // Use localStorage to persist conversation history
   const { storedValue: conversationHistory, setValue: setConversationHistory } = useLocalStorage<IMessage[][]>(
-    `pi-chat-history-${workspaceSlug}`,
+    `ai-agent-history-${workspaceSlug}`,
     []
   );
   // Current conversation messages

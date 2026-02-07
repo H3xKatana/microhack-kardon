@@ -82,9 +82,9 @@ export const coreRoutes: RouteConfigEntry[] = [
           route(":workspaceSlug/drafts", "./(all)/[workspaceSlug]/(projects)/drafts/page.tsx"),
         ]),
 
-        // PiChat
-        layout("./(all)/[workspaceSlug]/pi-chat/layout.tsx", [
-          route(":workspaceSlug/pi-chat", "./(all)/[workspaceSlug]/pi-chat/page.tsx"),
+        // AIAgent
+        layout("./(all)/[workspaceSlug]/ai-agent/layout.tsx", [
+          route(":workspaceSlug/ai-agent", "./(all)/[workspaceSlug]/ai-agent/page.tsx"),
         ]),
 
         // Notifications
