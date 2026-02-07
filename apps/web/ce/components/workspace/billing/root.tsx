@@ -44,28 +44,45 @@ export const BillingRoot = observer(function BillingRoot() {
     setProductBillingFrequency({ ...productBillingFrequency, [subscriptionType]: frequency });
 
   return (
-    <section className="relative size-full overflow-y-auto scrollbar-hide">
-      <div>
-        <SettingsHeading
-          title={t("workspace_settings.settings.billing_and_plans.heading")}
-          description={t("workspace_settings.settings.billing_and_plans.description")}
-        />
-        <div className="mt-6">
-          <SettingsBoxedControlItem
-            title="Community"
-            description="Unlimited projects, issues, cycles, modules, pages, and storage"
-          />
+
+  <section className="relative size-full overflow-y-auto scrollbar-hide p-6">
+    <div className="max-w-2xl rounded-sm  backdrop-blur-xl border border-white/10 shadow-xl overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10"></div>
+      
+      <div className="relative p-6">
+        <div className="flex items-center gap-2 mb-2">
+          <h3 className="text-lg font-bold text-white">MicroHack 3.0</h3>
+          <span className="px-2 py-0.5 text-xs font-bold rounded-full bg-gradient-to-r from-orange-500 to-pink-500 text-white">
+            EXCLUSIVE
+          </span>
+        </div>
+        
+        <p className="text-sm text-gray-400 mb-6">
+          Enterprise Annual Plan - APCS Collaboration Platform
+        </p>
+        
+        <div className="flex items-baseline gap-2 mb-6">
+          <span className="text-4xl font-bold text-white">100M</span>
+          <span className="text-gray-400">DZD/year</span>
+          <span className="ml-auto text-xs font-semibold text-green-400">Save 33%</span>
+        </div>
+
+        <div className="space-y-2">
+          <button className="w-full px-4 py-2.5 rounded-lg border  border-white/20   text-white font-semibold hover:shadow-lg hover:bg-white/10  transition-all">
+            Claim Offer
+          </button>
+          <a 
+            href="https://microhack.microclub.info/themes/theme1" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block w-full px-4 py-2.5 rounded-lg border border-white/20 text-white text-center font-semibold hover:bg-white/10  transition-all"
+          >
+            View Details
+          </a>
         </div>
       </div>
-      <div className="mt-10 flex flex-col gap-y-3">
-        <h4 className="text-h6-semibold">All plans</h4>
-        <PlansComparison
-          isCompareAllFeaturesSectionOpen={isCompareAllFeaturesSectionOpen}
-          getBillingFrequency={getBillingFrequency}
-          setBillingFrequency={setBillingFrequency}
-          setIsCompareAllFeaturesSectionOpen={setIsCompareAllFeaturesSectionOpen}
-        />
-      </div>
-    </section>
+    </div>
+  </section>
+
   );
 });

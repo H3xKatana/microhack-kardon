@@ -4,7 +4,7 @@
  * See the LICENSE file for details.
  */
 
-export type TPersonalNavigationItemKey = "stickies" | "your_work" | "drafts";
+export type TPersonalNavigationItemKey = "stickies" | "your_work" | "drafts"  | "agents_orchestrator";
 
 export interface TPersonalNavigationItem {
   key: TPersonalNavigationItemKey;
@@ -55,7 +55,9 @@ export const DEFAULT_PERSONAL_PREFERENCES: TPersonalNavigationPreferences = {
   items: {
     stickies: { enabled: false, sort_order: 0 },
     your_work: { enabled: true, sort_order: 1 },
-    drafts: { enabled: true, sort_order: 2 },
+    drafts: { enabled: true, sort_order: 5 },
+    pi_chat: { enabled: true, sort_order: 6 },
+    agents_orchestrator: { enabled: true, sort_order: 2 },
   },
 };
 

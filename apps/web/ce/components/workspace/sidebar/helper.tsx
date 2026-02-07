@@ -15,6 +15,7 @@ import {
   ProjectIcon,
   ViewsIcon,
   YourWorkIcon,
+  AiIcon,
 } from "@kardon/propel/icons";
 import { cn } from "@kardon/utils";
 
@@ -40,5 +41,8 @@ export const getSidebarNavigationItemIcon = (key: string, className: string = ""
       return <ArchiveIcon className={cn("size-4 flex-shrink-0", className)} />;
     case "stickies":
       return <MultipleStickyIcon className={cn("size-4 flex-shrink-0", className)} />;
+    case "agents_orchestrator":
+      return <AiIcon className={cn("size-4 flex-shrink-0", className)} />;
+    
   }
 };

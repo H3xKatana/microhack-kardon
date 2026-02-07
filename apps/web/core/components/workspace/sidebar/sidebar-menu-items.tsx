@@ -8,6 +8,7 @@ import React, { useMemo } from "react";
 import { observer } from "mobx-react";
 import { Ellipsis } from "lucide-react";
 import { Disclosure, Transition } from "@headlessui/react";
+import { useParams } from "next/navigation";
 // kardon imports
 import {
   WORKSPACE_SIDEBAR_DYNAMIC_NAVIGATION_ITEMS_LINKS,
@@ -15,6 +16,7 @@ import {
   WORKSPACE_SIDEBAR_STATIC_NAVIGATION_ITEMS_LINKS,
   WORKSPACE_SIDEBAR_STATIC_PINNED_NAVIGATION_ITEMS_LINKS,
 } from "@kardon/constants";
+import { EUserWorkspaceRoles } from "@kardon/types";
 import { useTranslation } from "@kardon/i18n";
 import { ChevronRightIcon } from "@kardon/propel/icons";
 import { cn } from "@kardon/utils";
@@ -32,6 +34,7 @@ import { SidebarItem } from "@/kardon-web/components/workspace/sidebar/sidebar-i
 
 export const SidebarMenuItems = observer(function SidebarMenuItems() {
   // routers
+  const { workspaceSlug } = useParams();
   const { setValue: toggleWorkspaceMenu, storedValue: isWorkspaceMenuOpen } = useLocalStorage<boolean>(
     "is_workspace_menu_open",
     true
@@ -72,6 +75,13 @@ export const SidebarMenuItems = observer(function SidebarMenuItems() {
       personalItems.push({
         ...WORKSPACE_SIDEBAR_STATIC_NAVIGATION_ITEMS["drafts"],
         sort_order: personalPreferences.items.drafts.sort_order,
+      });
+    }
+    // Always add Agents Orchestrator item regardless of preferences
+    if (WORKSPACE_SIDEBAR_STATIC_NAVIGATION_ITEMS["agents-orchestrator"]) {
+      personalItems.push({
+        ...WORKSPACE_SIDEBAR_STATIC_NAVIGATION_ITEMS["agents-orchestrator"],
+        sort_order: 2, // Position after your_work (1) and before drafts (5)
       });
     }
 

@@ -2753,5 +2753,6 @@ export default {
   sidebar: {
     stickies: "Stickies",
     your_work: "Your work",
+    agents_orchestrator: "Agents Orchestrator",
   },
 } as const;
