@@ -1,0 +1,6 @@
+# Copyright (c) 2023-present Kardon Software, Inc. and contributors
+# SPDX-License-Identifier: AGPL-3.0-only
+
+from .notification import MessageNotificationService
+
+__all__ = ["MessageNotificationService"]
