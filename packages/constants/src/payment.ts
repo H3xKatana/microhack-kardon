@@ -117,7 +117,7 @@ export const PLANE_COMMUNITY_PRODUCTS: Record<string, IPaymentProduct> = {
 /**
  * URL for the "Talk to Sales" page where users can contact sales team
  */
-export const TALK_TO_SALES_URL = "https://kardon.so/talk-to-sales";
+export const TALK_TO_SALES_URL = "https://hawiyat.org/schedule";
 
 /**
  * Mapping of subscription types to their respective upgrade/redirection URLs based on billing frequency

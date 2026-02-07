@@ -14,7 +14,7 @@ import type {
 
 export type TPowerKContextType = "work-item" | "page" | "cycle" | "module" | TPowerKContextTypeExtended;
 
-export type TPowerKContext = {
+export type observerTPowerKContext = {
   // Route information
   params: Record<string, string | string[] | undefined>;
   // Current user

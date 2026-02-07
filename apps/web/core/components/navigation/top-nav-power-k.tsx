@@ -87,9 +87,9 @@ export const TopNavPowerK = observer(() => {
       activeCommand,
       activeContext,
       shouldShowContextBasedActions,
-      params,
       projectId,
       router,
+      params,
       setActivePage,
       closePanel,
     ]

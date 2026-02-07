@@ -298,7 +298,7 @@ const PiChatPage = observer(() => {
                       >
                         {message.contentHtml ? (
                           <div 
-                            className="whitespace-pre-wrap text-base"
+                            className="whitespace-pre-wrap text-base prose prose-sm max-w-none"
                             dangerouslySetInnerHTML={{ __html: message.contentHtml }} 
                           />
                         ) : (
