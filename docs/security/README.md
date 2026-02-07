@@ -139,7 +139,7 @@ flowchart TD
     C --> D[Set SameSite=Strict]
     D --> E[Generate Session Token]
     E --> F[Store in Redis]
-    F --> G[Set TTL (24h)]
+    F --> G[Set TTL 24h]
 
     G --> H[Session Validated]
     H --> I{Cookie Present?}
@@ -404,6 +404,7 @@ graph TB
             P6[📋 Policy Enforcement]
             P7[🎯 Consent Management]
             P8[👁️ Access Controls]
+        end
     end
 ```
 

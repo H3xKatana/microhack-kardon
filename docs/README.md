@@ -6,6 +6,7 @@ Documentation for the Kardon project management platform.
 
 - [Docker Compose Setup](deployment/docker-compose/README.md) - Get running with Docker
 - [Architecture Overview](architecture/README.md) - System design and components
+- [Database ER Model](db/ER_Model.md) - Entity relationship diagram
 - [AI Integration](ai/README.md) - Setting up AI providers
 - [Features](features/README.md) - Platform capabilities
 
@@ -70,6 +71,8 @@ docs/
 ├── deployment/
 │   └── docker-compose/    - Docker setup guides
 ├── architecture/          - System architecture docs
+├── db/                   - Database documentation
+│   └── ER_Model.md       - Entity relationship diagram
 ├── ai/                   - AI integration guide
 └── features/             - Feature documentation
 ```

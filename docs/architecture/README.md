@@ -97,7 +97,7 @@ graph TB
         subgraph "Data Layer"
             DB[(💾 PostgreSQL<br/>15.7<br/>Port: 5432)]
             CACHE[(⚡ Valkey/Redis<br/>7.2<br/>Port: 6379)]
-            MQ[📬 RabbitMQ<br/>3.13<br/>Port: 5672)]
+            MQ[(📬 RabbitMQ<br/>3.13<br/>Port: 5672)]
             S3[(📦 MinIO<br/>S3-Compatible<br/>Port: 9000)]
         end
     end
@@ -405,22 +405,22 @@ graph TB
     subgraph "Infrastructure Services"
         DB[(PostgreSQL<br/>kardon-db)]
         RC[(Valkey<br/>kardon-redis)]
-        MQ[RabbitMQ<br/>kardon-mq)]
-        MI[MinIO<br/>kardon-minio)]
+        MQ[(RabbitMQ<br/>kardon-mq)]
+        MI[(MinIO<br/>kardon-minio)]
     end
 
     subgraph "Application Services"
         API[API<br/>kardon-api]
         WEB[Web<br/>kardon-web]
         SPACE[Space<br/>kardon-space]
-        ADMIN[Admin<br/>kardon-admin)]
-        LIVE[Live<br/>kardon-live)]
-        PROXY[Proxy<br/>kardon-proxy)]
+        ADMIN[(Admin<br/>kardon-admin)]
+        LIVE[(Live<br/>kardon-live)]
+        PROXY[(Proxy<br/>kardon-proxy)]
     end
 
     subgraph "Worker Services"
-        WORKER[Worker<br/>kardon-worker)]
-        BEAT[Beat<br/>kardon-beat)]
+        WORKER[(Worker<br/>kardon-worker)]
+        BEAT[(Beat<br/>kardon-beat)]
     end
 
     DB & RC & MQ & MI --> API
@@ -467,6 +467,7 @@ graph TB
 
 ## Next Steps
 
+- **[Database ER Model](../db/ER_Model.md)** - Entity relationship diagram
 - **[Detailed Architecture](detailed.md)** - In-depth component documentation
 - **[Docker Setup](../deployment/docker-compose/README.md)** - Deployment guide
 - **[Security Guidelines](../security/README.md)** - Security architecture

@@ -59,54 +59,63 @@ graph TB
 
 ```mermaid
 graph LR
-    subgraph "API v1 Structure"
+    subgraph APIv1["API v1 Structure"]
         API[/api/v1/]
 
-        subgraph "Users"
+        subgraph Users
             USR[/users/]
             ME[/users/me/]
         end
 
-        subgraph "Workspaces"
+        subgraph Workspaces
             WS[/workspaces/]
-            WSMEM[/workspaces/{slug}/members/]
-            WSSET[/workspaces/{slug}/settings/]
+            WSMEM[/workspaces/:slug/members/]
+            WSSET[/workspaces/:slug/settings/]
         end
 
-        subgraph "Projects"
-            PRJ[/workspaces/{slug}/projects/]
-            PRJMEM[/workspaces/{slug}/projects/{id}/members/]
+        subgraph Projects
+            PRJ[/workspaces/:slug/projects/]
+            PRJMEM[/workspaces/:slug/projects/:id/members/]
         end
 
-        subgraph "Issues"
-            ISS[/workspaces/{slug}/issues/]
-            ISSCOM[/workspaces/{slug}/issues/{id}/comments/]
-            ISSLAB[/workspaces/{slug}/labels/]
-            ISSSTA[/workspaces/{slug}/states/]
+        subgraph Issues
+            ISS[/workspaces/:slug/issues/]
+            ISSCOM[/workspaces/:slug/issues/:id/comments/]
+            ISSLAB[/workspaces/:slug/labels/]
+            ISSSTA[/workspaces/:slug/states/]
         end
 
-        subgraph "Modules & Cycles"
-            MOD[/workspaces/{slug}/modules/]
-            CYC[/workspaces/{slug}/cycles/]
+        subgraph ModulesCycles["Modules & Cycles"]
+            MOD[/workspaces/:slug/modules/]
+            CYC[/workspaces/:slug/cycles/]
         end
 
-        subgraph "Pages"
-            PGS[/workspaces/{slug}/pages/]
-            PGSCOL[/workspaces/{slug}/pages/{id}/collaborators/]
+        subgraph Pages
+            PGS[/workspaces/:slug/pages/]
+            PGSCOL[/workspaces/:slug/pages/:id/collaborators/]
         end
 
-        subgraph "Files"
-            FIL[/workspaces/{slug}/assets/]
-            FILUP[/workspaces/{slug}/assets/upload/]
+        subgraph Files
+            FIL[/workspaces/:slug/assets/]
+            FILUP[/workspaces/:slug/assets/upload/]
         end
 
-        subgraph "AI"
-            AI[/workspaces/{slug}/ai-assistant/]
-            AIREP[/workspaces/{slug}/rephrase-grammar/]
+        subgraph AI
+            AIASSIST[/workspaces/:slug/ai-assistant/]
+            AIREP[/workspaces/:slug/rephrase-grammar/]
         end
     end
 
-    API --> USR & ME & WS & PRJ & ISS & MOD & CYC & PGS & FIL & AI
+    API --> USR
+    API --> ME
+    API --> WS
+    API --> PRJ
+    API --> ISS
+    API --> MOD
+    API --> CYC
+    API --> PGS
+    API --> FIL
+    API --> AIASSIST
 ```
 
 ### API Request/Response Flow
@@ -236,95 +245,6 @@ flowchart TD
     L --> M[Other Clients Update]
 ```
 
----
-
-## Data Models
-
-### Core Database Schema
-
-```mermaid
-erDiagram
-    USER ||--o{ WORKSPACE_MEMBER : belongs
-    USER ||--o{ ISSUE_ASSIGNEE : assigned
-    WORKSPACE ||--o{ WORKSPACE_MEMBER : has
-    WORKSPACE ||--o{ PROJECT : contains
-    WORKSPACE ||--o{ ISSUE : contains
-    WORKSPACE ||--o{ PAGE : contains
-    PROJECT ||--o{ MODULE : contains
-    PROJECT ||--o{ ISSUE : contains
-    PROJECT ||--o{ CYCLE : contains
-    MODULE ||--o{ ISSUE : categorized
-    CYCLE ||--o{ ISSUE : scheduled
-    ISSUE ||--o{ COMMENT : has
-    ISSUE ||--o{ LABEL : tagged
-    ISSUE ||--o{ ISSUE_ASSIGNEE : assigned
-
-    USER {
-        uuid id PK
-        string email
-        string name
-        string avatar
-        timestamp created_at
-    }
-
-    WORKSPACE {
-        uuid id PK
-        string name
-        string slug
-        text description
-        uuid owner_id FK
-        boolean is_public
-    }
-
-    PROJECT {
-        uuid id PK
-        string name
-        string key
-        uuid workspace_id FK
-        uuid lead_id FK
-    }
-
-    ISSUE {
-        uuid id PK
-        string title
-        text description
-        uuid project_id FK
-        uuid workspace_id FK
-        uuid created_by FK
-        uuid state_id FK
-        int priority
-    }
-```
-
-### Data Relationships
-
-```mermaid
-graph TB
-    subgraph "User Hierarchy"
-        USR[👤 Users] --> TE[👥 Teams]
-        TE --> ORG[🏢 Organizations]
-        ORG --> WS[👥 Workspaces]
-    end
-
-    subgraph "Project Hierarchy"
-        WS --> PRO[📁 Projects]
-        PRO --> MOD[📦 Modules]
-        MOD --> ISS[📋 Issues]
-    end
-
-    subgraph "Time-Based"
-        PRO --> CYC[🔄 Cycles/Sprints]
-        CYC --> ISS
-    end
-
-    subgraph "Content"
-        WS --> PGS[📄 Pages]
-        PGS --> ATT[📎 Attachments]
-    end
-```
-
----
-
 ## Authentication Flow
 
 ### Session-Based Authentication
@@ -373,7 +293,7 @@ sequenceDiagram
 
 ```mermaid
 flowchart TD
-    A[User Clicks "Login with Google"] --> B[Redirect to Google OAuth]
+    A[User Clicks Login with Google] --> B[Redirect to Google OAuth]
     B --> C[User Grants Permission]
     C --> D[Google Returns Code]
     D --> E[Kardon Exchange Code]
@@ -476,8 +396,8 @@ graph TB
 
     subgraph "Storage Structure"
         S3 --> BKT[(Bucket: kardon-uploads)]
-        BKT --> WS[/workspaces/{id}/]
-        BKT --> USR[/users/{id}/]
+        BKT --> WS[/workspaces/:id/]
+        BKT --> USR[/users/:id/]
         BKT --> TMP[/tmp/]
     end
 ```
@@ -571,6 +491,7 @@ flowchart TD
 
 ## Next Steps
 
+- **[Database ER Model](../db/ER_Model.md)** - Entity relationship diagram
 - **[Security Documentation](../security/README.md)** - Security implementation details
 - **[AI Integration Guide](../ai/README.md)** - AI model integration
 - **[Deployment Guide](../deployment/docker-compose/README.md)** - Production deployment
