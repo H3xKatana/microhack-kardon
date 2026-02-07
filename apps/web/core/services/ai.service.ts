@@ -47,10 +47,10 @@ export class AIService extends APIService {
     operation_type?: string;
     timestamp?: string;
   }> {
-    // Always use the orchestration endpoint for all tasks
-    // This ensures all requests go through the enhanced orchestration system
-    // which handles all specialized agent models
-    const endpoint = `/api/workspaces/${workspaceSlug}/orchestration/`;
+    // Use different endpoint for orchestration tasks
+    const endpoint = data.task === AI_EDITOR_TASKS.ORCHESTRATE_TASK
+      ? `/api/workspaces/${workspaceSlug}/orchestration/`
+      : `/api/workspaces/${workspaceSlug}/ai-assistant/`; // Use existing working endpoint as fallback
 
     return this.post(endpoint, data)
       .then((res) => res?.data)

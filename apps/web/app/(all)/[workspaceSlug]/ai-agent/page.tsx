@@ -234,27 +234,15 @@ const PiChatPage = observer(() => {
                   </div>
                   
                   {/* Centered input field with elegant styling */}
-                  <div className="mb-4 flex flex-col sm:flex-row gap-3 justify-center items-center">
-                    <select
-                      value={selectedModel}
+                  <div className="mb-4 flex justify-center">
+                    <select 
+                      value={selectedModel} 
                       onChange={(e) => setSelectedModel(e.target.value)}
-                      className="px-4 py-2 border rounded-lg bg-surface-1 text-primary min-w-[200px]"
+                      className="px-4 py-2 border rounded-lg bg-surface-1 text-primary"
                     >
                       <option value="orchestrator">Orchestrator (Auto-select)</option>
-                      <option value="project-manager">Project Manager (Planning & Scheduling)</option>
-                      <option value="task-optimizer">Task Optimizer (Efficiency & Prioritization)</option>
-                      <option value="workflow-expert">Workflow Expert (Process & Automation)</option>
-                      <option value="resource-planner">Resource Planner (Allocation & Teams)</option>
-                      <option value="timeline-analyst">Timeline Analyst (Deadlines & Milestones)</option>
+                      <option value="general">General Assistant</option>
                     </select>
-                    <div className="text-sm text-secondary">
-                      {selectedModel === 'orchestrator' && 'Handles project management tasks automatically'}
-                      {selectedModel === 'project-manager' && 'Specialized in project planning and scheduling'}
-                      {selectedModel === 'task-optimizer' && 'Optimizes task efficiency and prioritization'}
-                      {selectedModel === 'workflow-expert' && 'Expert in workflows, processes and automation'}
-                      {selectedModel === 'resource-planner' && 'Manages resource allocation and team coordination'}
-                      {selectedModel === 'timeline-analyst' && 'Analyzes timelines, deadlines and milestones'}
-                    </div>
                   </div>
                   <div className="w-full max-w-2xl relative z-10">
                     <div className="relative">

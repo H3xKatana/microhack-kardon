@@ -1,0 +1,127 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kardon-minio
+  namespace: kardon-infra
+  labels:
+    app: kardon-minio
+    tier: storage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kardon-minio
+  template:
+    metadata:
+      labels:
+        app: kardon-minio
+        tier: storage
+    spec:
+      serviceAccountName: kardon-minio
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        fsGroup: 1000
+      containers:
+        - name: minio
+          image: minio/minio
+          command:
+            - server
+            - /export
+            - --console-address
+            - ":9090"
+          ports:
+            - containerPort: 9000
+              name: s3
+            - containerPort: 9090
+              name: console
+          envFrom:
+            - secretRef:
+                name: kardon-secrets
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "100m"
+            limits:
+              memory: "1Gi"
+              cpu: "500m"
+          volumeMounts:
+            - name: minio-data
+              mountPath: /export
+          livenessProbe:
+            httpGet:
+              path: /minio/health/live
+              port: 9000
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /minio/health/ready
+              port: 9000
+            initialDelaySeconds: 5
+            periodSeconds: 5
+      volumes:
+        - name: minio-data
+          persistentVolumeClaim:
+            claimName: minio-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: kardon-minio
+  namespace: kardon-infra
+  labels:
+    app: kardon-minio
+spec:
+  type: ClusterIP
+  ports:
+    - port: 9000
+      targetPort: 9000
+      protocol: TCP
+      name: s3
+    - port: 9090
+      targetPort: 9090
+      protocol: TCP
+      name: console
+  selector:
+    app: kardon-minio
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: minio-pvc
+  namespace: kardon-infra
+  labels:
+    app: kardon-minio
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 20Gi
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: kardon-minio
+  namespace: kardon-infra
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: minio-console-ingress
+  namespace: kardon-infra
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+    - host: minio.kardon.example.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: kardon-minio
+                port:
+                  number: 9090

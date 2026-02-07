@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: worker
+  namespace: kardon
+  labels:
+    app: worker
+    tier: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: worker
+  template:
+    metadata:
+      labels:
+        app: worker
+        tier: backend
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        fsGroup: 1000
+      containers:
+        - name: worker
+          image: ghcr.io/h3xkatana/microhack-kardon/worker:latest
+          imagePullPolicy: Always
+          command: ["./bin/docker-entrypoint-worker.sh"]
+          envFrom:
+            - configMapRef:
+                name: kardon-config
+            - secretRef:
+                name: kardon-secrets
+          env:
+            - name: CELERY_WORKER
+              value: "true"
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "100m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: worker
+  namespace: kardon
+  labels:
+    app: worker
+spec:
+  type: ClusterIP
+  ports:
+    - port: 8000
+      targetPort: 8000
+      protocol: TCP
+      name: http
+  selector:
+    app: worker
