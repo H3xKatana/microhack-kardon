@@ -37,6 +37,15 @@ from kardon.app.views import (
     WorkspaceStickyViewSet,
     WorkspaceUserPreferenceViewSet,
 )
+from kardon.app.views.message import (
+    ChannelViewSet,
+    ChannelMemberViewSet,
+    JoinChannelEndpoint,
+    LeaveChannelEndpoint,
+    MarkChannelReadEndpoint,
+    MessageViewSet,
+    MessageReactionViewSet,
+)
 from kardon.app.views.orchestration import WorkspaceOrchestrationEndpoint
 
 
@@ -263,5 +272,62 @@ urlpatterns = [
         "workspaces/<str:slug>/orchestration/",
         WorkspaceOrchestrationEndpoint.as_view(),
         name="workspace-orchestration",
+    ),
+    # Messaging - Channels
+    path(
+        "workspaces/<str:slug>/channels/",
+        ChannelViewSet.as_view({"get": "list", "post": "create"}),
+        name="channel-list",
+    ),
+    path(
+        "workspaces/<str:slug>/channels/<uuid:pk>/",
+        ChannelViewSet.as_view({"get": "retrieve", "patch": "partial_update", "delete": "destroy"}),
+        name="channel-detail",
+    ),
+    path(
+        "workspaces/<str:slug>/channels/<uuid:pk>/join/",
+        JoinChannelEndpoint.as_view({"post": "post"}),
+        name="channel-join",
+    ),
+    path(
+        "workspaces/<str:slug>/channels/<uuid:pk>/leave/",
+        LeaveChannelEndpoint.as_view({"post": "post"}),
+        name="channel-leave",
+    ),
+    path(
+        "workspaces/<str:slug>/channels/<uuid:pk>/mark-read/",
+        MarkChannelReadEndpoint.as_view({"post": "post"}),
+        name="channel-mark-read",
+    ),
+    path(
+        "workspaces/<str:slug>/channels/<uuid:channel_id>/members/",
+        ChannelMemberViewSet.as_view({"get": "list", "post": "create"}),
+        name="channel-member-list",
+    ),
+    path(
+        "workspaces/<str:slug>/channels/<uuid:channel_id>/members/<uuid:pk>/",
+        ChannelMemberViewSet.as_view({"delete": "destroy"}),
+        name="channel-member-detail",
+    ),
+    # Messaging - Messages
+    path(
+        "workspaces/<str:slug>/channels/<uuid:channel_id>/messages/",
+        MessageViewSet.as_view({"get": "list", "post": "create"}),
+        name="message-list",
+    ),
+    path(
+        "workspaces/<str:slug>/channels/<uuid:channel_id>/messages/<uuid:pk>/",
+        MessageViewSet.as_view({"patch": "partial_update", "delete": "destroy"}),
+        name="message-detail",
+    ),
+    path(
+        "workspaces/<str:slug>/channels/<uuid:channel_id>/messages/<uuid:message_id>/reactions/",
+        MessageReactionViewSet.as_view({"get": "list", "post": "create"}),
+        name="reaction-list",
+    ),
+    path(
+        "workspaces/<str:slug>/channels/<uuid:channel_id>/messages/<uuid:message_id>/reactions/<uuid:pk>/",
+        MessageReactionViewSet.as_view({"delete": "destroy"}),
+        name="reaction-detail",
     ),
 ]
