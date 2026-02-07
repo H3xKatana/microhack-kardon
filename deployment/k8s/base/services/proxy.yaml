@@ -7,7 +7,7 @@ metadata:
     app: proxy
     tier: gateway
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: proxy
@@ -16,11 +16,7 @@ spec:
       labels:
         app: proxy
         tier: gateway
-      annotations:
-        prometheus.io/scrape: "true"
-        prometheus.io/port: "8080"
     spec:
-      serviceAccountName: kardon-app
       securityContext:
         runAsNonRoot: true
         runAsUser: 1000
@@ -44,23 +40,11 @@ spec:
               value: "443"
           resources:
             requests:
-              memory: "128Mi"
-              cpu: "50m"
+              memory: "64Mi"
+              cpu: "25m"
             limits:
-              memory: "256Mi"
-              cpu: "200m"
-          livenessProbe:
-            httpGet:
-              path: /health
-              port: 8080
-            initialDelaySeconds: 5
-            periodSeconds: 10
-          readinessProbe:
-            httpGet:
-              path: /ready
-              port: 8080
-            initialDelaySeconds: 2
-            periodSeconds: 5
+              memory: "128Mi"
+              cpu: "100m"
           volumeMounts:
             - name: config
               mountPath: /etc/traefik
@@ -77,116 +61,17 @@ metadata:
   labels:
     app: proxy
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
     - port: 80
       targetPort: 80
       protocol: TCP
       name: http
+      nodePort: 30080
     - port: 443
       targetPort: 443
       protocol: TCP
       name: https
+      nodePort: 30443
   selector:
     app: proxy
----
-apiVersion: autoscaling/v2
-kind: HorizontalPodAutoscaler
-metadata:
-  name: proxy-hpa
-  namespace: kardon
-spec:
-  scaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
-    name: proxy
-  minReplicas: 2
-  maxReplicas: 5
-  metrics:
-    - type: Resource
-      resource:
-        name: cpu
-        target:
-          type: Utilization
-          averageUtilization: 70
----
-apiVersion: policy/v1
-kind: PodDisruptionBudget
-metadata:
-  name: proxy-pdb
-  namespace: kardon
-spec:
-  minAvailable: 1
-  selector:
-    matchLabels:
-      app: proxy
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: kardon-ingress
-  namespace: kardon
-  annotations:
-    kubernetes.io/ingress.class: traefik
-    traefik.ingress.kubernetes.io/router.entrypoints: web, websecure
-    cert-manager.io/cluster-issuer: letsencrypt-prod
-spec:
-  tls:
-    - hosts:
-        - kardon.example.com
-        - api.kardon.example.com
-        - admin.kardon.example.com
-        - space.kardon.example.com
-        - live.kardon.example.com
-      secretName: kardon-tls
-  rules:
-    - host: kardon.example.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: web
-                port:
-                  number: 80
-    - host: api.kardon.example.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: api
-                port:
-                  number: 8000
-    - host: admin.kardon.example.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: admin
-                port:
-                  number: 80
-    - host: space.kardon.example.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: space
-                port:
-                  number: 80
-    - host: live.kardon.example.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: live
-                port:
-                  number: 80

@@ -7,7 +7,7 @@ metadata:
     app: worker
     tier: backend
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: worker
@@ -16,11 +16,7 @@ spec:
       labels:
         app: worker
         tier: backend
-      annotations:
-        prometheus.io/scrape: "true"
-        prometheus.io/port: "8000"
     spec:
-      serviceAccountName: kardon-app
       securityContext:
         runAsNonRoot: true
         runAsUser: 1000
@@ -40,21 +36,11 @@ spec:
               value: "true"
           resources:
             requests:
-              memory: "512Mi"
-              cpu: "250m"
+              memory: "256Mi"
+              cpu: "100m"
             limits:
-              memory: "2Gi"
-              cpu: "1000m"
-          livenessProbe:
-            exec:
-              command:
-                - celery
-                - -A
-                - app
-                - inspect
-                - --ping
-            initialDelaySeconds: 60
-            periodSeconds: 30
+              memory: "512Mi"
+              cpu: "500m"
 ---
 apiVersion: v1
 kind: Service
@@ -72,38 +58,3 @@ spec:
       name: http
   selector:
     app: worker
----
-apiVersion: autoscaling/v2
-kind: HorizontalPodAutoscaler
-metadata:
-  name: worker-hpa
-  namespace: kardon
-spec:
-  scaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
-    name: worker
-  minReplicas: 2
-  maxReplicas: 10
-  metrics:
-    - type: External
-      external:
-        metric:
-          name: rabbitmq_queue_messages
-          selector:
-            matchLabels:
-              queue: celery
-        target:
-          type: AverageValue
-          averageValue: "100"
----
-apiVersion: policy/v1
-kind: PodDisruptionBudget
-metadata:
-  name: worker-pdb
-  namespace: kardon
-spec:
-  minAvailable: 1
-  selector:
-    matchLabels:
-      app: worker

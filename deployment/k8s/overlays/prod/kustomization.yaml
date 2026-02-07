@@ -5,47 +5,30 @@ namespace: kardon-prod
 
 namePrefix: prod-
 
-bases:
-  - ../../base
-
 resources:
+  - ../../base
   - namespace-prod.yaml
-
-configMapGenerator:
-  - behavior: merge
-    files:
-      - app-config.yaml
-    name: kardon-config
-    options:
-      disableNameSuffixHash: true
-
-secretGenerator:
-  - behavior: replace
-    files:
-      - secrets.yaml
-    name: kardon-secrets
-    options:
-      disableNameSuffixHash: true
+  - app-config.yaml
 
 images:
   - name: ghcr.io/h3xkatana/microhack-kardon/web
-    newTag: main
+    newTag: latest
   - name: ghcr.io/h3xkatana/microhack-kardon/admin
-    newTag: main
+    newTag: latest
   - name: ghcr.io/h3xkatana/microhack-kardon/space
-    newTag: main
+    newTag: latest
   - name: ghcr.io/h3xkatana/microhack-kardon/api
-    newTag: main
+    newTag: latest
   - name: ghcr.io/h3xkatana/microhack-kardon/worker
-    newTag: main
+    newTag: latest
   - name: ghcr.io/h3xkatana/microhack-kardon/beat-worker
-    newTag: main
+    newTag: latest
   - name: ghcr.io/h3xkatana/microhack-kardon/migrator
-    newTag: main
+    newTag: latest
   - name: ghcr.io/h3xkatana/microhack-kardon/live
-    newTag: main
+    newTag: latest
   - name: ghcr.io/h3xkatana/microhack-kardon/proxy
-    newTag: main
+    newTag: latest
 
 replicas:
   - count: 3

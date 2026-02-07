@@ -7,7 +7,7 @@ metadata:
     app: api
     tier: backend
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: api
@@ -16,11 +16,7 @@ spec:
       labels:
         app: api
         tier: backend
-      annotations:
-        prometheus.io/scrape: "true"
-        prometheus.io/port: "8000"
     spec:
-      serviceAccountName: kardon-app
       securityContext:
         runAsNonRoot: true
         runAsUser: 1000
@@ -40,11 +36,11 @@ spec:
                 name: kardon-secrets
           resources:
             requests:
-              memory: "512Mi"
-              cpu: "250m"
+              memory: "256Mi"
+              cpu: "100m"
             limits:
-              memory: "2Gi"
-              cpu: "1000m"
+              memory: "512Mi"
+              cpu: "500m"
           livenessProbe:
             httpGet:
               path: /health/
@@ -74,40 +70,3 @@ spec:
       name: http
   selector:
     app: api
----
-apiVersion: autoscaling/v2
-kind: HorizontalPodAutoscaler
-metadata:
-  name: api-hpa
-  namespace: kardon
-spec:
-  scaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
-    name: api
-  minReplicas: 3
-  maxReplicas: 20
-  metrics:
-    - type: Resource
-      resource:
-        name: cpu
-        target:
-          type: Utilization
-          averageUtilization: 70
-    - type: Resource
-      resource:
-        name: memory
-        target:
-          type: Utilization
-          averageUtilization: 80
----
-apiVersion: policy/v1
-kind: PodDisruptionBudget
-metadata:
-  name: api-pdb
-  namespace: kardon
-spec:
-  minAvailable: 2
-  selector:
-    matchLabels:
-      app: api

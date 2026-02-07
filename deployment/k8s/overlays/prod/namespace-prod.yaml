@@ -5,12 +5,3 @@ metadata:
   labels:
     app: kardon
     env: production
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: kardon-config
-  namespace: kardon-prod
-data:
-  DEBUG: "false"
-  ALLOWED_HOSTS: "kardon.example.com,api.kardon.example.com"
