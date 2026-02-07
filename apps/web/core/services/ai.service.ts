@@ -20,6 +20,7 @@ export type TTaskPayload = {
   formal_score?: number;
   task: AI_EDITOR_TASKS;
   text_input: string;
+  selected_model?: string;
 };
 
 export class AIService extends APIService {
@@ -41,7 +42,12 @@ export class AIService extends APIService {
   ): Promise<{
     response: string;
   }> {
-    return this.post(`/api/workspaces/${workspaceSlug}/rephrase-grammar/`, data)
+    // Use different endpoint for orchestration tasks
+    const endpoint = data.task === AI_EDITOR_TASKS.ORCHESTRATE_TASK
+      ? `/api/workspaces/${workspaceSlug}/orchestration/`
+      : `/api/workspaces/${workspaceSlug}/ai-assistant/`; // Use existing working endpoint as fallback
+
+    return this.post(endpoint, data)
       .then((res) => res?.data)
       .catch((error) => {
         throw error?.response?.data;
