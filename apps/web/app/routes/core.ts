@@ -92,6 +92,12 @@ export const coreRoutes: RouteConfigEntry[] = [
           route(":workspaceSlug/notifications", "./(all)/[workspaceSlug]/(projects)/notifications/page.tsx"),
         ]),
 
+        // Channels - inside projects layout to get sidebar
+        layout("./(all)/[workspaceSlug]/channels/layout.tsx", [
+          route(":workspaceSlug/channels", "./(all)/[workspaceSlug]/channels/index.tsx"),
+          route(":workspaceSlug/channels/:channelId", "./(all)/[workspaceSlug]/channels/[channelId]/index.tsx"),
+        ]),
+
         // Profile
         layout("./(all)/[workspaceSlug]/(projects)/profile/[userId]/layout.tsx", [
           route(":workspaceSlug/profile/:userId", "./(all)/[workspaceSlug]/(projects)/profile/[userId]/page.tsx"),

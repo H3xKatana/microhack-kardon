@@ -133,3 +133,14 @@ from .draft import (
     DraftIssueSerializer,
     DraftIssueDetailSerializer,
 )
+
+from .message import (
+    MessageSerializer,
+    MessageCreateSerializer,
+    MessageUpdateSerializer,
+    ChannelSerializer,
+    ChannelCreateSerializer,
+    ChannelUpdateSerializer,
+    ChannelMemberSerializer,
+    MessageReactionSerializer,
+)
